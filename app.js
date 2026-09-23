@@ -47,7 +47,7 @@ $('restart').onclick=()=>{finderStep=0;answers={coffee:null,automation:null,budg
 
 function priceFit(p,budget){
  if(!budget)return .5;
- const band=priceBand(p);if(!band)return .5;
+ const band=priceBand(p);if(!band)return .7;
  const order={low:0,mid:1,upper:2,premium:3},d=Math.abs(order[band]-order[budget]);return d===0?1:d===1?.65:.25;
 }
 function coffeeFit(p,coffee){const c=(p.coffee||[]).map(x=>String(x).toLowerCase());if(coffee==='black')return c.some(x=>['svart','bryggkaffe','americano'].includes(x))?1:.45;if(coffee==='espresso')return c.includes('espresso')?1:.4;if(coffee==='milk')return c.some(x=>['cappuccino','latte'].includes(x))?1:.45;if(coffee==='mixed')return Math.min(1,c.length/4);return .5}
@@ -56,11 +56,11 @@ function cleaningFit(p,c){const x=Number(p.cleaning)||0;if(c==='high')return x>=
 function espressoFit(p,a){const x=Number(p.espresso)||0;return a==='manual'?(x/5):a==='easy'?.5:(x/5)}
 function versatility(p){const c=(p.coffee||[]).length;return Math.min(1,(c/4)*.7+(Number(p.milk)||0)/5*.15+(Number(p.espresso)||0)/5*.15)}
 function weightedScore(p){
- const s=priceFit(p,answers.budget)*.30+coffeeFit(p,answers.coffee)*.22+automationFit(p,answers.automation)*.20+cleaningFit(p,answers.cleaning)*.12+espressoFit(p,answers.automation)*.10+versatility(p)*.06;
+ const s=priceFit(p,answers.budget)*.22+coffeeFit(p,answers.coffee)*.28+automationFit(p,answers.automation)*.22+cleaningFit(p,answers.cleaning)*.10+espressoFit(p,answers.automation)*.10+versatility(p)*.08;
  return Math.round(55+s*44);
 }
 function rankedProducts(budgetOverride=null){const a={...answers};if(budgetOverride)a.budget=budgetOverride;return products.map(p=>({...p,match:weightedScoreWith(p,a)})).sort((x,y)=>y.match-x.match)}
-function weightedScoreWith(p,a){const old=answers;answers=a;const s=priceFit(p,a.budget)*.30+coffeeFit(p,a.coffee)*.22+automationFit(p,a.automation)*.20+cleaningFit(p,a.cleaning)*.12+espressoFit(p,a.automation)*.10+versatility(p)*.06;answers=old;return Math.max(55,Math.min(99,Math.round(55+s*44)))}
+function weightedScoreWith(p,a){const old=answers;answers=a;const s=priceFit(p,a.budget)*.22+coffeeFit(p,a.coffee)*.28+automationFit(p,a.automation)*.22+cleaningFit(p,a.cleaning)*.10+espressoFit(p,a.automation)*.10+versatility(p)*.08;answers=old;return Math.max(55,Math.min(99,Math.round(55+s*44)))}
 function profileText(){const coffee={black:'svart kaffe',espresso:'espresso',milk:'cappuccino och latte',mixed:'lite av allt'}[answers.coffee],auto={easy:'så lite handpåläggning som möjligt',some:'lite egen kontroll',manual:'mycket egen kontroll'}[answers.automation],budget={low:'under 2 000 kr',mid:'2–5 000 kr',upper:'5–10 000 kr',premium:'10 000+ kr'}[answers.budget];return `Du prioriterar ${coffee}, vill ha ${auto} och har valt ${budget}.`}
 function showResults(){
  const ranked=rankedProducts().slice(0,6);$('results').classList.remove('hidden');$('profile').innerHTML=`<strong>Din profil:</strong> ${profileText()}`;const top=ranked[0];$('matchSummary').innerHTML=top?`<span class="eyebrow">VARFÖR DEN HÄR?</span><p><strong>${escapeHtml(top.brand+' '+top.model)}</strong> ligger först eftersom den bäst balanserar dina svar. Titta gärna på alternativen under om du vill prioritera pris, kontroll eller funktion annorlunda.</p>`:'';renderDNA();renderDecisionMap(ranked);$('resultsGrid').innerHTML=buildRecommendationCards(ranked).map(card).join('');wireCards();updateSimulator();$('results').scrollIntoView({behavior:'smooth'});
