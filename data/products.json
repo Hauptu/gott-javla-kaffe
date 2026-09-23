@@ -1,0 +1,1270 @@
+[
+  {
+    "id": "delonghi-magnifica-s",
+    "brand": "De'Longhi",
+    "model": "Magnifica S",
+    "type": "Helautomatisk",
+    "price": 2990,
+    "automation": 5,
+    "control": 2,
+    "ease": 5,
+    "espresso": 4,
+    "milk": 3,
+    "cleaning": 4,
+    "noise": 3,
+    "enthusiast": 2,
+    "grinder": true,
+    "milk_system": "Manuell ångstav",
+    "coffee": [
+      "svart",
+      "espresso",
+      "cappuccino"
+    ],
+    "audience": [
+      "vardagsdrickare",
+      "familj",
+      "nybörjare"
+    ],
+    "tags": [
+      "enkel",
+      "prisvärd",
+      "bönor"
+    ],
+    "description": "En enkel väg från hela bönor till espresso och kaffe med inbyggd kvarn.",
+    "pros": [
+      "Enkel att komma igång med",
+      "Inbyggd kvarn",
+      "Relativt kompakt"
+    ],
+    "cons": [
+      "Mindre kontroll för entusiaster",
+      "Manuell mjölkskumning"
+    ],
+    "needs_review": true,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": null,
+    "feed_source": "",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "philips-3300-lattego",
+    "brand": "Philips",
+    "model": "Series 3300 LatteGo",
+    "type": "Helautomatisk",
+    "price": 6490,
+    "automation": 5,
+    "control": 2,
+    "ease": 5,
+    "espresso": 4,
+    "milk": 5,
+    "cleaning": 5,
+    "noise": 3,
+    "enthusiast": 2,
+    "grinder": true,
+    "milk_system": "LatteGo",
+    "coffee": [
+      "svart",
+      "espresso",
+      "cappuccino",
+      "latte"
+    ],
+    "audience": [
+      "vardagsdrickare",
+      "familj",
+      "nybörjare"
+    ],
+    "tags": [
+      "enkel",
+      "mjölkdrycker",
+      "familj"
+    ],
+    "description": "Helautomatisk maskin med fokus på enkla mjölkdrycker och smidig rengöring.",
+    "pros": [
+      "Mycket enkel mjölkhantering",
+      "Smidig rengöring",
+      "Många dryckesval"
+    ],
+    "cons": [
+      "Begränsad manuell kontroll",
+      "Större än enklare modeller"
+    ],
+    "needs_review": true,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": null,
+    "feed_source": "",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "delonghi-rivelia",
+    "brand": "De'Longhi",
+    "model": "Rivelia",
+    "type": "Helautomatisk",
+    "price": 8990,
+    "automation": 5,
+    "control": 3,
+    "ease": 5,
+    "espresso": 4,
+    "milk": 5,
+    "cleaning": 4,
+    "noise": 3,
+    "enthusiast": 3,
+    "grinder": true,
+    "milk_system": "Automatiskt mjölksystem",
+    "coffee": [
+      "svart",
+      "espresso",
+      "cappuccino",
+      "latte"
+    ],
+    "audience": [
+      "vardagsdrickare",
+      "familj",
+      "kaffeentusiast"
+    ],
+    "tags": [
+      "premium",
+      "mjölkdrycker",
+      "familj"
+    ],
+    "description": "Modern helautomatisk maskin för den som vill ha många drycker utan mycket handpåläggning.",
+    "pros": [
+      "Brett dryckesutbud",
+      "Mycket automatiserad",
+      "Bra för flera användare"
+    ],
+    "cons": [
+      "Dyrare",
+      "Inte byggd för maximal espressoexperimentering"
+    ],
+    "needs_review": true,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": null,
+    "feed_source": "",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "siemens-eq6",
+    "brand": "Siemens",
+    "model": "EQ.6 plus",
+    "type": "Helautomatisk",
+    "price": 7990,
+    "automation": 5,
+    "control": 3,
+    "ease": 4,
+    "espresso": 4,
+    "milk": 4,
+    "cleaning": 4,
+    "noise": 3,
+    "enthusiast": 3,
+    "grinder": true,
+    "milk_system": "Automatiskt mjölksystem",
+    "coffee": [
+      "svart",
+      "espresso",
+      "cappuccino",
+      "latte"
+    ],
+    "audience": [
+      "vardagsdrickare",
+      "familj"
+    ],
+    "tags": [
+      "familj",
+      "mjölkdrycker"
+    ],
+    "description": "Helautomatisk allroundmaskin med inbyggd kvarn och flera mjölkbaserade drycker.",
+    "pros": [
+      "Bra allround",
+      "Automatiska drycker",
+      "Inbyggd kvarn"
+    ],
+    "cons": [
+      "Relativt stor",
+      "Mindre manuell kontroll"
+    ],
+    "needs_review": true,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": null,
+    "feed_source": "",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "jura-e4",
+    "brand": "JURA",
+    "model": "E4",
+    "type": "Helautomatisk",
+    "price": 10990,
+    "automation": 5,
+    "control": 3,
+    "ease": 5,
+    "espresso": 5,
+    "milk": 2,
+    "cleaning": 4,
+    "noise": 3,
+    "enthusiast": 3,
+    "grinder": true,
+    "milk_system": "Ingen automatisk mjölkmodul",
+    "coffee": [
+      "svart",
+      "espresso"
+    ],
+    "audience": [
+      "vardagsdrickare",
+      "kaffeentusiast"
+    ],
+    "tags": [
+      "premium",
+      "svart kaffe",
+      "espresso"
+    ],
+    "description": "Premiumorienterad helautomatisk maskin för den som främst dricker svart kaffe och espresso.",
+    "pros": [
+      "Fokus på kaffe och espresso",
+      "Hög automationsnivå",
+      "Premiumkänsla"
+    ],
+    "cons": [
+      "Dyrare",
+      "Mindre lämpad om mjölkdrycker är huvudfokus"
+    ],
+    "needs_review": true,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": null,
+    "feed_source": "",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "sage-barista-express",
+    "brand": "Sage",
+    "model": "Barista Express",
+    "type": "Espressomaskin",
+    "price": 6990,
+    "automation": 2,
+    "control": 5,
+    "ease": 3,
+    "espresso": 5,
+    "milk": 4,
+    "cleaning": 3,
+    "noise": 3,
+    "enthusiast": 5,
+    "grinder": true,
+    "milk_system": "Manuell ångstav",
+    "coffee": [
+      "espresso",
+      "cappuccino",
+      "latte",
+      "svart"
+    ],
+    "audience": [
+      "kaffeentusiast",
+      "kaffenörd"
+    ],
+    "tags": [
+      "entusiast",
+      "manuell",
+      "inbyggd kvarn"
+    ],
+    "description": "Halvautomatisk espressomaskin för den som vill mala, dosera, tampa och skumma själv.",
+    "pros": [
+      "Mycket kontroll",
+      "Bra plattform för att lära sig espresso",
+      "Inbyggd kvarn"
+    ],
+    "cons": [
+      "Tar tid att lära sig",
+      "Mer rengöring och handarbete"
+    ],
+    "needs_review": true,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": null,
+    "feed_source": "",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "sage-barista-pro",
+    "brand": "Sage",
+    "model": "Barista Pro",
+    "type": "Espressomaskin",
+    "price": 8490,
+    "automation": 2,
+    "control": 5,
+    "ease": 3,
+    "espresso": 5,
+    "milk": 5,
+    "cleaning": 3,
+    "noise": 3,
+    "enthusiast": 5,
+    "grinder": true,
+    "milk_system": "Manuell ångstav",
+    "coffee": [
+      "espresso",
+      "cappuccino",
+      "latte",
+      "svart"
+    ],
+    "audience": [
+      "kaffeentusiast",
+      "kaffenörd"
+    ],
+    "tags": [
+      "entusiast",
+      "manuell",
+      "snabbare"
+    ],
+    "description": "Mer avancerad halvautomatisk maskin med fokus på espresso och manuell mjölkskumning.",
+    "pros": [
+      "Hög kontroll",
+      "Bra för entusiaster",
+      "Snabbare arbetsflöde"
+    ],
+    "cons": [
+      "Kräver mer engagemang",
+      "Inte den enklaste vägen till kaffe"
+    ],
+    "needs_review": true,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": null,
+    "feed_source": "",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "sage-barista-express-impress",
+    "brand": "Sage",
+    "model": "Barista Express Impress",
+    "type": "Espressomaskin",
+    "price": 9990,
+    "automation": 3,
+    "control": 5,
+    "ease": 4,
+    "espresso": 5,
+    "milk": 5,
+    "cleaning": 3,
+    "noise": 3,
+    "enthusiast": 5,
+    "grinder": true,
+    "milk_system": "Manuell ångstav",
+    "coffee": [
+      "espresso",
+      "cappuccino",
+      "latte",
+      "svart"
+    ],
+    "audience": [
+      "kaffeentusiast",
+      "kaffenörd"
+    ],
+    "tags": [
+      "entusiast",
+      "manuell",
+      "hjälpmedel"
+    ],
+    "description": "Manuell espressomaskin som hjälper till med dosering och tampning men behåller mycket kontroll.",
+    "pros": [
+      "Bra kompromiss mellan kontroll och hjälp",
+      "Inbyggd kvarn",
+      "Bra för espresso"
+    ],
+    "cons": [
+      "Dyr",
+      "Fortfarande ett aktivt arbetsflöde"
+    ],
+    "needs_review": true,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": null,
+    "feed_source": "",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "moccamaster-kbg-select",
+    "brand": "Moccamaster",
+    "model": "KBG Select",
+    "type": "Kaffebryggare",
+    "price": 2390,
+    "automation": 4,
+    "control": 1,
+    "ease": 5,
+    "espresso": 1,
+    "milk": 1,
+    "cleaning": 5,
+    "noise": 1,
+    "enthusiast": 2,
+    "grinder": false,
+    "milk_system": "—",
+    "coffee": [
+      "svart"
+    ],
+    "audience": [
+      "vardagsdrickare",
+      "familj",
+      "nybörjare"
+    ],
+    "tags": [
+      "bryggkaffe",
+      "enkel",
+      "familj"
+    ],
+    "description": "Klassisk filterbryggare för dig som främst vill ha gott bryggkaffe enkelt.",
+    "pros": [
+      "Enkel",
+      "Snabb",
+      "Bra för flera koppar"
+    ],
+    "cons": [
+      "Ingen espresso",
+      "Ingen inbyggd kvarn"
+    ],
+    "needs_review": true,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": null,
+    "feed_source": "",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "nespresso-vertuo-pop",
+    "brand": "Nespresso",
+    "model": "Vertuo Pop",
+    "type": "Kapselmaskin",
+    "price": 899,
+    "automation": 5,
+    "control": 1,
+    "ease": 5,
+    "espresso": 3,
+    "milk": 2,
+    "cleaning": 5,
+    "noise": 2,
+    "enthusiast": 1,
+    "grinder": false,
+    "milk_system": "—",
+    "coffee": [
+      "svart",
+      "espresso"
+    ],
+    "audience": [
+      "vardagsdrickare",
+      "nybörjare"
+    ],
+    "tags": [
+      "kapsel",
+      "enkel",
+      "liten"
+    ],
+    "description": "Kompakt kapselmaskin för maximal enkelhet och minimal handpåläggning.",
+    "pros": [
+      "Mycket enkel",
+      "Kompakt",
+      "Snabb"
+    ],
+    "cons": [
+      "Kapselberoende",
+      "Lite kontroll"
+    ],
+    "needs_review": true,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": null,
+    "feed_source": "",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "jura-z10",
+    "brand": "JURA",
+    "model": "Z10",
+    "type": "Helautomatisk",
+    "price": 28990,
+    "automation": 5,
+    "control": 4,
+    "ease": 4,
+    "espresso": 5,
+    "milk": 5,
+    "cleaning": 4,
+    "noise": 3,
+    "enthusiast": 4,
+    "grinder": true,
+    "milk_system": "Automatiskt mjölksystem",
+    "coffee": [
+      "svart",
+      "espresso",
+      "cappuccino",
+      "latte"
+    ],
+    "audience": [
+      "kaffeentusiast",
+      "kaffenörd",
+      "familj"
+    ],
+    "tags": [
+      "premium",
+      "entusiast",
+      "mjölkdrycker"
+    ],
+    "description": "Avancerad premiumautomat för den som vill ha stort dryckesutbud och mycket automation.",
+    "pros": [
+      "Mycket stort dryckesutbud",
+      "Hög automationsnivå",
+      "Avancerad"
+    ],
+    "cons": [
+      "Mycket dyr",
+      "Mindre manuell kontroll än riktig espressoutrustning"
+    ],
+    "needs_review": true,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": null,
+    "feed_source": "",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "gaggia-classic-evo",
+    "brand": "Gaggia",
+    "model": "Classic",
+    "type": "Espressomaskin",
+    "price": 4990,
+    "automation": 2,
+    "control": 5,
+    "ease": 3,
+    "espresso": 5,
+    "milk": 4,
+    "cleaning": 3,
+    "noise": 3,
+    "enthusiast": 5,
+    "grinder": false,
+    "milk_system": "Manuell ångstav",
+    "coffee": [
+      "espresso",
+      "cappuccino",
+      "latte"
+    ],
+    "audience": [
+      "kaffeentusiast",
+      "kaffenörd"
+    ],
+    "tags": [
+      "entusiast",
+      "manuell",
+      "moddbar"
+    ],
+    "description": "Kompakt manuell espressomaskin för den som vill bygga sin espressoförmåga över tid.",
+    "pros": [
+      "Mycket kontroll",
+      "Kompakt",
+      "Intressant för entusiaster och modifieringar"
+    ],
+    "cons": [
+      "Kräver separat kvarn",
+      "Mer att lära sig"
+    ],
+    "needs_review": true,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": null,
+    "feed_source": "",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "delonghi-magnifica-evo",
+    "brand": "De'Longhi",
+    "model": "Magnifica Evo",
+    "type": "Helautomatisk",
+    "price": 4999,
+    "automation": 5,
+    "control": 2,
+    "ease": 5,
+    "espresso": 4,
+    "milk": 4,
+    "cleaning": 4,
+    "noise": 3,
+    "enthusiast": 2,
+    "grinder": true,
+    "milk_system": "LatteCrema Hot / manuell beroende på variant",
+    "coffee": [
+      "svart",
+      "espresso",
+      "cappuccino",
+      "latte"
+    ],
+    "audience": [
+      "vardagsdrickare",
+      "familj",
+      "nybörjare"
+    ],
+    "tags": [
+      "enkel",
+      "bönor",
+      "mjölkdrycker"
+    ],
+    "description": "Helautomatisk maskin för färska bönor med fokus på enkel vardagsanvändning.",
+    "pros": [
+      "Enkel att använda",
+      "Inbyggd kvarn",
+      "Bra bredd av drycker"
+    ],
+    "cons": [
+      "Begränsad manuell kontroll",
+      "Variant påverkar mjölksystem"
+    ],
+    "needs_review": false,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": "2026-09-23",
+    "feed_source": "De'Longhi Sverige",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "delonghi-eletta-explore",
+    "brand": "De'Longhi",
+    "model": "Eletta Explore",
+    "type": "Helautomatisk",
+    "price": 11999,
+    "automation": 5,
+    "control": 3,
+    "ease": 5,
+    "espresso": 4,
+    "milk": 5,
+    "cleaning": 4,
+    "noise": 3,
+    "enthusiast": 2,
+    "grinder": true,
+    "milk_system": "LatteCrema Hot & Cold",
+    "coffee": [
+      "svart",
+      "espresso",
+      "cappuccino",
+      "latte",
+      "cold brew"
+    ],
+    "audience": [
+      "familj",
+      "vardagsdrickare",
+      "kaffeintresserad"
+    ],
+    "tags": [
+      "premium",
+      "mjölkdrycker",
+      "cold brew"
+    ],
+    "description": "Premiumhelautomat med stort dryckesutbud och fokus på både varma och kalla kaffedrycker.",
+    "pros": [
+      "Mycket stort dryckesutbud",
+      "Bra mjölkfokus",
+      "Kalla drycker"
+    ],
+    "cons": [
+      "Dyr",
+      "Mer maskin än många behöver"
+    ],
+    "needs_review": false,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": "2026-09-23",
+    "feed_source": "De'Longhi Sverige",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "delonghi-magnifica-plus",
+    "brand": "De'Longhi",
+    "model": "Magnifica Plus ECAM320.70.TB",
+    "type": "Helautomatisk",
+    "price": 8049,
+    "automation": 5,
+    "control": 3,
+    "ease": 5,
+    "espresso": 4,
+    "milk": 5,
+    "cleaning": 4,
+    "noise": 3,
+    "enthusiast": 2,
+    "grinder": true,
+    "milk_system": "LatteCrema Hot",
+    "coffee": [
+      "svart",
+      "espresso",
+      "cappuccino",
+      "latte"
+    ],
+    "audience": [
+      "vardagsdrickare",
+      "familj"
+    ],
+    "tags": [
+      "allround",
+      "mjölkdrycker",
+      "bönor"
+    ],
+    "description": "Helautomatisk allroundmaskin med färska bönor och automatisk mjölkberedning.",
+    "pros": [
+      "Enkel vardag",
+      "Bra mjölkdrycker",
+      "Brett utbud"
+    ],
+    "cons": [
+      "Begränsad manuell kontroll",
+      "Relativt stor"
+    ],
+    "needs_review": false,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": "2026-09-23",
+    "feed_source": "De'Longhi Sverige",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "delonghi-dinamica-plus-ecam382-70-b",
+    "brand": "De'Longhi",
+    "model": "Dinamica Plus ECAM382.70.B",
+    "type": "Helautomatisk",
+    "price": 7499,
+    "automation": 5,
+    "control": 4,
+    "ease": 5,
+    "espresso": 4,
+    "milk": 5,
+    "cleaning": 4,
+    "noise": 3,
+    "enthusiast": 3,
+    "grinder": true,
+    "milk_system": "LatteCrema Hot",
+    "coffee": [
+      "svart",
+      "espresso",
+      "cappuccino",
+      "latte"
+    ],
+    "audience": [
+      "vardagsdrickare",
+      "familj",
+      "kaffeintresserad"
+    ],
+    "tags": [
+      "allround",
+      "touchdisplay",
+      "mjölkdrycker"
+    ],
+    "description": "Avancerad helautomat med många drycker, touchdisplay och LatteCrema Hot.",
+    "pros": [
+      "Många drycker",
+      "Bra mjölksystem",
+      "Mer kontroll än enklare helautomater"
+    ],
+    "cons": [
+      "Dyrare än instegsmodeller",
+      "Fortfarande begränsad jämfört med manuell espresso"
+    ],
+    "needs_review": false,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": "2026-09-23",
+    "feed_source": "De'Longhi Sverige",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "delonghi-dinamica-plus-ecam380-95-tb",
+    "brand": "De'Longhi",
+    "model": "Dinamica Plus ECAM380.95.TB",
+    "type": "Helautomatisk",
+    "price": 7899,
+    "automation": 5,
+    "control": 4,
+    "ease": 5,
+    "espresso": 4,
+    "milk": 5,
+    "cleaning": 4,
+    "noise": 3,
+    "enthusiast": 3,
+    "grinder": true,
+    "milk_system": "LatteCrema Hot",
+    "coffee": [
+      "svart",
+      "espresso",
+      "cappuccino",
+      "latte"
+    ],
+    "audience": [
+      "vardagsdrickare",
+      "familj",
+      "kaffeintresserad"
+    ],
+    "tags": [
+      "allround",
+      "många drycker",
+      "premium"
+    ],
+    "description": "Helautomatisk maskin med stort dryckesutbud och enkel knappstyrning.",
+    "pros": [
+      "Många drycker",
+      "Enkel användning",
+      "Bra mjölkfokus"
+    ],
+    "cons": [
+      "Prisnivån",
+      "Inte för den som vill göra allt manuellt"
+    ],
+    "needs_review": false,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": "2026-09-23",
+    "feed_source": "De'Longhi Sverige",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "delonghi-primadonna-soul",
+    "brand": "De'Longhi",
+    "model": "PrimaDonna Soul ECAM612.55.SB",
+    "type": "Helautomatisk",
+    "price": 11629,
+    "automation": 5,
+    "control": 4,
+    "ease": 5,
+    "espresso": 5,
+    "milk": 5,
+    "cleaning": 4,
+    "noise": 3,
+    "enthusiast": 3,
+    "grinder": true,
+    "milk_system": "LatteCrema Hot",
+    "coffee": [
+      "svart",
+      "espresso",
+      "cappuccino",
+      "latte"
+    ],
+    "audience": [
+      "familj",
+      "kaffeintresserad",
+      "premium"
+    ],
+    "tags": [
+      "premium",
+      "mjölkdrycker",
+      "bönor"
+    ],
+    "description": "Premiumhelautomat för den som vill ha stort dryckesutbud och minimalt manuellt arbete.",
+    "pros": [
+      "Premiumkänsla",
+      "Brett dryckesutbud",
+      "Bra mjölksystem"
+    ],
+    "cons": [
+      "Dyr",
+      "Överdimensionerad för enkel kaffedrickning"
+    ],
+    "needs_review": false,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": "2026-09-23",
+    "feed_source": "De'Longhi Sverige",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "sage-bambino-plus",
+    "brand": "Sage",
+    "model": "Bambino Plus",
+    "type": "Espressomaskin",
+    "price": 6999,
+    "automation": 2,
+    "control": 5,
+    "ease": 4,
+    "espresso": 5,
+    "milk": 5,
+    "cleaning": 3,
+    "noise": 3,
+    "enthusiast": 4,
+    "grinder": false,
+    "milk_system": "Automatiskt ångrör",
+    "coffee": [
+      "espresso",
+      "cappuccino",
+      "latte"
+    ],
+    "audience": [
+      "nybörjare",
+      "kaffeintresserad",
+      "entusiast"
+    ],
+    "tags": [
+      "espresso",
+      "kompakt",
+      "mjölkskum"
+    ],
+    "description": "Kompakt manuell espressomaskin med automatiskt ångrör och snabb uppvärmning.",
+    "pros": [
+      "Kompakt",
+      "Bra espressofokus",
+      "Automatisk mjölktextur"
+    ],
+    "cons": [
+      "Ingen inbyggd kvarn",
+      "Mer arbete än helautomat"
+    ],
+    "needs_review": false,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": "2026-09-23",
+    "feed_source": "Sage Sverige",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "philips-series-2200",
+    "brand": "Philips",
+    "model": "Series 2200",
+    "type": "Helautomatisk",
+    "price": null,
+    "automation": 5,
+    "control": 2,
+    "ease": 5,
+    "espresso": 4,
+    "milk": 3,
+    "cleaning": 4,
+    "noise": 3,
+    "enthusiast": 2,
+    "grinder": true,
+    "milk_system": "Klassisk mjölkskummare",
+    "coffee": [
+      "svart",
+      "espresso",
+      "cappuccino"
+    ],
+    "audience": [
+      "vardagsdrickare",
+      "nybörjare"
+    ],
+    "tags": [
+      "prisvärd",
+      "enkel",
+      "bönor"
+    ],
+    "description": "Instegshelautomat för dig som vill gå från bönor till kaffe med få moment.",
+    "pros": [
+      "Enkel",
+      "Inbyggd kvarn",
+      "Bra som första helautomat"
+    ],
+    "cons": [
+      "Mindre mjölkkomfort",
+      "Begränsad kontroll"
+    ],
+    "needs_review": true,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": null,
+    "feed_source": "",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "philips-series-5400",
+    "brand": "Philips",
+    "model": "Series 5400",
+    "type": "Helautomatisk",
+    "price": null,
+    "automation": 5,
+    "control": 3,
+    "ease": 5,
+    "espresso": 4,
+    "milk": 5,
+    "cleaning": 4,
+    "noise": 3,
+    "enthusiast": 2,
+    "grinder": true,
+    "milk_system": "LatteGo",
+    "coffee": [
+      "svart",
+      "espresso",
+      "cappuccino",
+      "latte"
+    ],
+    "audience": [
+      "familj",
+      "vardagsdrickare",
+      "kaffeintresserad"
+    ],
+    "tags": [
+      "lattego",
+      "allround",
+      "bönor"
+    ],
+    "description": "Helautomatisk modell med brett dryckesutbud och fokus på enkel mjölkhantering.",
+    "pros": [
+      "Enkel mjölkrengöring",
+      "Brett utbud",
+      "Inbyggd kvarn"
+    ],
+    "cons": [
+      "Mindre kontroll",
+      "Pris behöver verifieras"
+    ],
+    "needs_review": true,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": null,
+    "feed_source": "",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "philips-cafe-aromis-8000",
+    "brand": "Philips",
+    "model": "Café Aromis 8000",
+    "type": "Helautomatisk",
+    "price": null,
+    "automation": 5,
+    "control": 3,
+    "ease": 5,
+    "espresso": 4,
+    "milk": 4,
+    "cleaning": 4,
+    "noise": 3,
+    "enthusiast": 2,
+    "grinder": true,
+    "milk_system": "Automatisk mjölk",
+    "coffee": [
+      "svart",
+      "espresso",
+      "cappuccino",
+      "latte"
+    ],
+    "audience": [
+      "vardagsdrickare",
+      "familj"
+    ],
+    "tags": [
+      "premium",
+      "allround",
+      "bönor"
+    ],
+    "description": "Helautomatisk premiuminriktad modell för stort vardagsutbud.",
+    "pros": [
+      "Bekväm vardag",
+      "Brett dryckesutbud",
+      "Bönor direkt"
+    ],
+    "cons": [
+      "Pris behöver verifieras",
+      "Mindre manuell kontroll"
+    ],
+    "needs_review": true,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": null,
+    "feed_source": "",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "melitta-look-therm-perfection",
+    "brand": "Melitta",
+    "model": "LOOK Therm Perfection",
+    "type": "Kaffebryggare",
+    "price": 999,
+    "automation": 5,
+    "control": 2,
+    "ease": 5,
+    "espresso": 1,
+    "milk": 1,
+    "cleaning": 4,
+    "noise": 1,
+    "enthusiast": 2,
+    "grinder": false,
+    "milk_system": "Ingen",
+    "coffee": [
+      "svart"
+    ],
+    "audience": [
+      "vardagsdrickare",
+      "familj"
+    ],
+    "tags": [
+      "bryggkaffe",
+      "termos",
+      "prisvärd"
+    ],
+    "description": "Klassisk kaffebryggare med termoskanna och möjlighet att justera kaffestyrkan.",
+    "pros": [
+      "Billig",
+      "Enkel",
+      "Termoskanna"
+    ],
+    "cons": [
+      "Ingen espresso",
+      "Ingen mjölkfunktion"
+    ],
+    "needs_review": false,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": "2026-09-23",
+    "feed_source": "Melitta Sverige",
+    "lifecycle_status": "active"
+  },
+  {
+    "id": "melitta-easytop",
+    "brand": "Melitta",
+    "model": "EasyTop",
+    "type": "Kaffebryggare",
+    "price": null,
+    "automation": 5,
+    "control": 1,
+    "ease": 5,
+    "espresso": 1,
+    "milk": 1,
+    "cleaning": 4,
+    "noise": 1,
+    "enthusiast": 1,
+    "grinder": false,
+    "milk_system": "Ingen",
+    "coffee": [
+      "svart"
+    ],
+    "audience": [
+      "vardagsdrickare",
+      "familj",
+      "nybörjare"
+    ],
+    "tags": [
+      "enkel",
+      "bryggkaffe",
+      "budget"
+    ],
+    "description": "Enkel kaffebryggare för klassiskt bryggkaffe och minimal handpåläggning.",
+    "pros": [
+      "Enkel",
+      "Prisvärd",
+      "Lätt att förstå"
+    ],
+    "cons": [
+      "Ingen espresso",
+      "Begränsad kontroll"
+    ],
+    "needs_review": true,
+    "affiliate_url": "",
+    "affiliate_status": "none",
+    "merchant_name": "",
+    "feed_price": null,
+    "feed_currency": "SEK",
+    "feed_stock": null,
+    "feed_image_url": "",
+    "feed_updated_at": null,
+    "feed_source": "",
+    "lifecycle_status": "active"
+  }
+]
