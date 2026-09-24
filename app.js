@@ -70,22 +70,15 @@ function showResults(){
 function renderDNA(){const vals=[['Bekvämlighet',automationValue(),answers.automation==='easy'?90:answers.automation==='some'?65:35],['Kontroll',answers.automation==='manual'?90:answers.automation==='some'?60:30],['Enkel rengöring',answers.cleaning==='high'?90:answers.cleaning==='normal'?65:35]];$('dna').innerHTML=`<div class="dna-head"><div><span class="eyebrow">DINA PRIORITERINGAR</span><h3>Så här ser dina prioriteringar ut</h3></div></div><div class="dna-bars">${vals.map(v=>`<div class="dna-row"><span>${v[0]}</span><div><i style="width:${v[2]}%"></i></div><b>${v[2]}</b></div>`).join('')}</div>`}
 function automationValue(){return answers.automation==='easy'?'Bekvämlighet':answers.automation==='manual'?'Kontroll':'Balans'}
 function renderDecisionMap(ranked){
- const groups=[
-  {key:'tl',label:'Mer kontroll · mer espresso'},
-  {key:'tr',label:'Mer bekvämlighet · mer espresso'},
-  {key:'bl',label:'Mer kontroll · mer vardagskaffe'},
-  {key:'br',label:'Mer bekvämlighet · mer vardagskaffe'}
- ];
- const grouped={tl:[],tr:[],bl:[],br:[]};
- ranked.slice(0,8).forEach((p,i)=>{
-  const automation=Number(p.automation)||3;
-  const espresso=Number(p.espresso)||3;
-  const horizontal=automation>=4?'r':'l';
-  const vertical=espresso>=3?'t':'b';
-  grouped[vertical+horizontal].push({...p,rank:i+1});
- });
- $('decisionMap').innerHTML=groups.map(g=>`<div class="decision-quadrant ${g.key}"><span class="decision-quadrant-label">${g.label}</span><div class="decision-pills">${grouped[g.key].map(p=>`<button class="decision-pill" data-detail="${p.id}"><b>${p.rank}</b><span>${escapeHtml(p.brand+' '+p.model)}</span></button>`).join('')}</div></div>`).join('');
- document.querySelectorAll('.decision-pill').forEach(b=>b.onclick=()=>openModal(b.dataset.detail));
+ const points=ranked.slice(0,8).map((p,i)=>{
+  const automation=Math.max(1,Math.min(5,Number(p.automation)||3));
+  const espresso=Math.max(1,Math.min(5,Number(p.espresso)||3));
+  const x=10+((automation-1)/4)*80;
+  const y=90-((espresso-1)/4)*80;
+  return `<button class="decision-dot" style="left:${x}%;top:${y}%" data-detail="${p.id}" title="${escapeHtml(p.brand+' '+p.model)}"><span>${i+1}</span></button>`;
+ }).join('');
+ $('decisionMap').innerHTML=`<div class="decision-y-labels"><span>Mer espresso</span><span>Mer vardagskaffe</span></div><div class="decision-plot"><div class="decision-gridline vertical"></div><div class="decision-gridline horizontal"></div>${points}</div><div class="decision-x-labels"><span>Mer kontroll</span><span>Mer bekvämlighet</span></div>`;
+ document.querySelectorAll('.decision-dot').forEach(b=>b.onclick=()=>openModal(b.dataset.detail));
 }
 function buildRecommendationCards(ranked){const top=ranked[0];const topPrice=priceVerified(top)?currentPrice(top):null;const cheaper=ranked.find(p=>{const a=priceVerified(p)?currentPrice(p):null;return a&&topPrice&&a<topPrice*.8});const premium=ranked.find(p=>{const a=priceVerified(p)?currentPrice(p):null;return a&&topPrice&&a>topPrice*1.25});const alt=ranked.find(p=>p.id!==top?.id&&!priceVerified(p));return [top,cheaper,premium||alt].filter((p,i,a)=>p&&a.findIndex(x=>x.id===p.id)===i).map((p,i)=>({...p,recommendationLabel:i===0?'FÖRSTA FÖRSLAGET':i===1?'SAMMA BEHOV · BILLIGARE':currentPrice(p)?'OM DU VILL GÅ UPP EN NIVÅ':'ALTERNATIV · PRIS EJ VERIFIERAT'}))}
 function matchLabel(n){n=Number(n)||0;return n>=90?'Mycket stark match':n>=80?'Stark match':n>=70?'Bra match':'Svagare match'}
