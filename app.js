@@ -15,7 +15,7 @@ const currentPrice=p=>{const n=Number(p.feed_price);return Number.isFinite(n)&&n
 const priceVerified=p=>p&&p.needs_review!==true&&currentPrice(p)>0;
 const priceText=p=>priceVerified(p)?currentPrice(p).toLocaleString('sv-SE')+' kr':'Pris ej verifierat';
 const priceMeta=p=>{if(!priceVerified(p))return '';const source=p.feed_source?escapeHtml(p.feed_source):'Verifierad källa';const date=p.feed_updated_at?new Date(p.feed_updated_at+'T00:00:00').toLocaleDateString('sv-SE',{day:'numeric',month:'short',year:'numeric'}):'';return `<small class="price-meta">Källa: ${source}${date?' · '+date:''}</small>`};
-const priceBand=p=>{if(!priceVerified(p))return null;const v=currentPrice(p);if(v<2000)return'low';if(v<5000)return'mid';if(v<10000)return'upper';return'premium'};
+const priceBand=p=>{const v=currentPrice(p);if(!v)return null;if(v<2000)return'low';if(v<5000)return'mid';if(v<10000)return'upper';return'premium'};
 
 function track(event,params={}){const payload={event,...params,ts:new Date().toISOString()};window.dataLayer=window.dataLayer||[];window.dataLayer.push(payload);try{const k='gottjavlakaffe_events',e=JSON.parse(localStorage.getItem(k)||'[]');e.push(payload);localStorage.setItem(k,JSON.stringify(e.slice(-250)))}catch(_){} }
 
