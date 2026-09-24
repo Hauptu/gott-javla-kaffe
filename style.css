@@ -8,4 +8,4 @@
 
 .price-meta{display:block;margin-top:-2px;margin-bottom:12px;color:var(--muted);font-size:11px;line-height:1.4}
 .hero-card{transition:transform .2s ease,box-shadow .2s ease}.hero-card:hover{transform:translateY(-2px);box-shadow:0 22px 55px rgba(48,38,28,.11)}
-.recommendation-heading{margin-top:34px}.recommendation-heading .section-intro{max-width:620px;margin:6px 0 0}.recommendation-grid{position:relative}.recommendation-grid .product-card:first-child{border-color:var(--accent2);box-shadow:0 12px 32px rgba(48,38,28,.1)}.recommendation-grid .product-card:first-child .rec-label{background:var(--accent2)}
+.recommendation-heading{margin-top:34px}.recommendation-heading .section-intro{max-width:620px;margin:6px 0 0}.recommendation-grid{position:relative}.recommendation-grid .product-card:first-child{border-color:var(--accent2);box-shadow:0 12px 32px rgba(48,38,28,.1)}.recommendation-grid .product-card:first-child .rec-label{background:var(--accent2)}.recommendation-grid .product-card:nth-child(3){border-color:var(--line);background:linear-gradient(180deg,#fffdf9,#faf4eb)}.recommendation-grid .product-card:nth-child(3) .rec-label{background:var(--accent2)}
