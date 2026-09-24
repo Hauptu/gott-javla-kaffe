@@ -47,7 +47,7 @@ $('restart').onclick=()=>{finderStep=0;answers={coffee:null,automation:null,budg
 
 function priceFit(p,budget){
  if(!budget)return .5;
- const band=priceBand(p);if(!band)return .7;
+ const band=priceBand(p);if(!band)return budget==='low'?.45:.65;
  const order={low:0,mid:1,upper:2,premium:3},d=Math.abs(order[band]-order[budget]);return d===0?1:d===1?.65:.25;
 }
 function coffeeFit(p,coffee){const c=(p.coffee||[]).map(x=>String(x).toLowerCase());if(coffee==='black')return c.some(x=>['svart','bryggkaffe','americano'].includes(x))?1:.45;if(coffee==='espresso')return c.includes('espresso')?1:.4;if(coffee==='milk')return c.some(x=>['cappuccino','latte'].includes(x))?1:.45;if(coffee==='mixed')return Math.min(1,c.length/4);return .5}
