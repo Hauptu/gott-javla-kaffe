@@ -22,7 +22,7 @@ function track(event,params={}){const payload={event,...params,ts:new Date().toI
 async function init(){
  try{const r=await fetch('data/products.json');if(!r.ok)throw new Error('products.json '+r.status);products=await r.json();}
  catch(e){console.error(e);$('productGrid').innerHTML='<div class="empty">Produktdata kunde inte laddas.</div>';return}
- setupFilters();renderProducts(products);renderQuestion();wireQuickStarts();wireSimulator();track('page_view',{path:location.pathname});
+ setupFilters();const initialQuery=new URLSearchParams(location.search).get('q');if(initialQuery){$('search').value=initialQuery;filterProducts()}else{renderProducts(products)}renderQuestion();wireQuickStarts();wireSimulator();track('page_view',{path:location.pathname,query:initialQuery||''});
 }
 function setupFilters(){
  const types=[...new Set(products.map(p=>p.type).filter(Boolean))];
@@ -33,7 +33,7 @@ function setupFilters(){
 function filterProducts(){
  const q=$('search').value.trim().toLowerCase(),type=$('typeFilter').value,range=$('priceFilter').value;
  let [a,b]=range?range.split('-').map(Number):[0,Infinity];
- const out=products.filter(p=>{const text=`${p.brand} ${p.model} ${p.description||''}`.toLowerCase(),v=currentPrice(p);return(!q||text.includes(q))&&(!type||p.type===type)&&(!range||(v!==null&&v>=a&&v<=b));});
+ const out=products.filter(p=>{const text=`${p.brand} ${p.model} ${p.description||''} ${(p.tags||[]).join(' ')}`.toLowerCase(),v=priceVerified(p)?currentPrice(p):null;return(!q||text.includes(q))&&(!type||p.type===type)&&(!range||(v!==null&&v>=a&&v<=b));});
  renderProducts(out);track('product_filter',{q,type,range,count:out.length});
 }
 function renderQuestion(){
