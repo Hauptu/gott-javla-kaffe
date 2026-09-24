@@ -9,3 +9,19 @@
 .price-meta{display:block;margin-top:-2px;margin-bottom:12px;color:var(--muted);font-size:11px;line-height:1.4}
 .hero-card{transition:transform .2s ease,box-shadow .2s ease}.hero-card:hover{transform:translateY(-2px);box-shadow:0 22px 55px rgba(48,38,28,.11)}
 .recommendation-heading{margin-top:34px}.recommendation-heading .section-intro{max-width:620px;margin:6px 0 0}.recommendation-grid{position:relative}.recommendation-grid .product-card:first-child{border-color:var(--accent2);box-shadow:0 12px 32px rgba(48,38,28,.1)}.recommendation-grid .product-card:first-child .rec-label{background:var(--accent2)}.recommendation-grid .product-card:nth-child(3){border-color:var(--line);background:linear-gradient(180deg,#fffdf9,#faf4eb)}.recommendation-grid .product-card:nth-child(3) .rec-label{background:var(--accent2)}
+/* V1 polish: clearer hierarchy and commercial readiness */
+.hero-lead{font-size:18px;color:var(--muted);max-width:640px;margin:0 0 24px;line-height:1.6}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.button.ghost{background:transparent;border:1px solid var(--line);color:var(--ink)}
+.hero-note{display:block;margin:12px 0 0}
+.section-intro{max-width:720px;margin:5px 0 0;color:var(--muted);line-height:1.55}
+.product-image{position:relative}
+.image-placeholder{display:grid;place-items:center;text-align:center;color:var(--muted);font-size:15px;line-height:1.35;padding:20px}
+.image-placeholder small{font-size:10px;max-width:160px}
+.card-buy{margin-top:10px}
+.buy-button{display:flex;align-items:center;justify-content:center;width:100%;background:var(--ink);color:#fff;text-decoration:none;border-radius:999px;padding:11px 14px;font-size:12px;font-weight:800}
+.buy-button:hover{opacity:.9}
+.affiliate-pending{display:block;padding:9px 2px;color:var(--muted);font-size:10px;line-height:1.35}
+.product-card{height:100%;display:flex;flex-direction:column}
+.product-card .card-actions{margin-top:auto}
+@media(max-width:560px){.hero-actions{flex-direction:column;align-items:stretch}.hero-actions .button{width:100%}.hero-lead{font-size:16px}}
