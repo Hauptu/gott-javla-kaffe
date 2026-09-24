@@ -24,14 +24,14 @@
 </head>
 <body>
 <header class="topbar">
-  <div class="brand"><span class="brand-mark">◒</span> Gott Jävla Kaffe</div>
+  <div class="brand">Gott Jävla Kaffe</div>
   <nav><a href="#finder">Hitta rätt</a><a href="#products">Maskiner</a><a href="#compare">Jämför <span id="compareCount">0</span></a></nav>
 </header>
 
 <main>
 <section class="hero">
   <div>
-    <span class="eyebrow">GUIDE + MATCHNING</span>
+    <span class="eyebrow">KAFFEGUIDE</span>
     <h1>Hitta kaffemaskinen<br><em>som passar dig.</em></h1>
     <p>Inte en topplista. Få förslag direkt — eller låt oss matcha dig på fyra snabba frågor. Du behöver inte kunna något om kaffemaskiner.</p>
     <a class="button primary" href="#finder">Hitta min maskin →</a><span class="hero-note">4 frågor · cirka 30 sekunder</span>
@@ -49,10 +49,10 @@
     <a class="text-button" href="#products">Se alla maskiner →</a>
   </div>
   <div class="quick-grid">
-    <button class="quick-card" data-quick="easy"><span class="quick-icon">☕</span><strong>Jag vill bara ha bra kaffe</strong><small>Enkelt, snabbt och utan onödigt pyssel.</small><span>Visa förslag →</span></button>
-    <button class="quick-card" data-quick="milk"><span class="quick-icon">🥛</span><strong>Jag dricker cappuccino & latte</strong><small>Fokus på mjölkdrycker och enkel vardag.</small><span>Visa förslag →</span></button>
-    <button class="quick-card" data-quick="budget"><span class="quick-icon">€</span><strong>Jag vill hålla nere priset</strong><small>Prisvärda alternativ, även under 2 000 kr.</small><span>Visa förslag →</span></button>
-    <button class="quick-card" data-quick="manual"><span class="quick-icon">◒</span><strong>Jag vill göra espresso själv</strong><small>Mer kontroll, mer hantverk och mer att lära sig.</small><span>Visa förslag →</span></button>
+    <button class="quick-card" data-quick="easy"><span class="quick-kicker">VARDAG</span><strong>Jag vill bara ha bra kaffe</strong><small>Enkelt, snabbt och utan onödigt pyssel.</small><span>Visa förslag →</span></button>
+    <button class="quick-card" data-quick="milk"><span class="quick-kicker">MJÖLKKOPPEN</span><strong>Jag dricker cappuccino & latte</strong><small>Fokus på mjölkdrycker och enkel vardag.</small><span>Visa förslag →</span></button>
+    <button class="quick-card" data-quick="budget"><span class="quick-kicker">BUDGET</span><strong>Jag vill hålla nere priset</strong><small>Prisvärda alternativ, även under 2 000 kr.</small><span>Visa förslag →</span></button>
+    <button class="quick-card" data-quick="manual"><span class="quick-kicker">ESPRESSO</span><strong>Jag vill göra espresso själv</strong><small>Mer kontroll, mer hantverk och mer att lära sig.</small><span>Visa förslag →</span></button>
   </div>
 </section>
 
@@ -73,13 +73,13 @@
   <div id="profile"></div>
   <div id="matchSummary" class="match-summary"></div>
   <div id="dna" class="dna-panel"></div>
-  <div class="decision-head"><div><span class="eyebrow">BESLUTSKARTA</span><h3>Se skillnaden mellan alternativen</h3></div><span class="decision-note">Mer kontroll ↔ mer bekvämlighet</span></div>
+  <div class="decision-head"><div><span class="eyebrow">TVÅ SAKER ATT VÄGA</span><h3>Mer kontroll eller mer bekvämlighet?</h3></div><span class="decision-note">Mer kontroll ↔ mer bekvämlighet</span></div>
   <div id="decisionMap" class="decision-map"></div>
-  <div class="decision-head"><div><span class="eyebrow">MATCHNINGAR</span><h3>Inte bara “bäst” — bäst för vad?</h3></div></div>
+  <div class="decision-head"><div><span class="eyebrow">DINA FÖRSLAG</span><h3>Olika maskiner, olika kompromisser.</h3></div></div>
   <div id="resultsGrid" class="product-grid"></div>
   <div id="simulator" class="simulator-panel">
     <div class="simulator-copy">
-      <span class="eyebrow">TESTA ETT VAL</span>
+      <span class="eyebrow">OM DU ÄNDRAR BUDGETEN</span>
       <h3>Vad händer om du ändrar en sak?</h3>
       <p>Flytta budgeten och se hur dina matcher förändras. Vi visar inte bara vad som klättrar — utan varför.</p>
     </div>
@@ -93,7 +93,7 @@
 </section>
 
 <section id="products" class="section">
-  <div class="section-head"><div><span class="eyebrow">UTFORSKA</span><h2>Alla maskiner</h2><p class="section-intro">Bläddra när du vill se hela urvalet. Använd quizet om du hellre vill att vi sorterar åt dig.</p></div><span id="productCount"></span></div>
+  <div class="section-head"><div><span class="eyebrow">BLÄDDRA</span><h2>Alla maskiner</h2><p class="section-intro">Bläddra när du vill se hela urvalet. Använd quizet om du hellre vill att vi sorterar åt dig.</p></div><span id="productCount"></span></div>
   <div class="filters">
     <input id="search" placeholder="Sök modell eller varumärke…">
     <select id="typeFilter"><option value="">Alla typer</option></select>
@@ -104,7 +104,7 @@
 </section>
 
 <section id="guides" class="section guides-section">
-  <div class="section-head"><div><span class="eyebrow">LÄR DIG MER</span><h2>Förstå innan du väljer</h2><p class="section-intro">Korta guider när du vill veta varför olika maskiner passar olika människor.</p></div></div>
+  <div class="section-head"><div><span class="eyebrow">KAFFEKUNSKAP</span><h2>Förstå innan du väljer</h2><p class="section-intro">Korta guider när du vill veta varför olika maskiner passar olika människor.</p></div></div>
   <div class="guide-grid">
     <a class="guide-card" href="helautomatisk-kaffemaskin.html"><strong>Helautomatisk kaffemaskin</strong><span>För dig som vill ha färska bönor utan mycket manuellt arbete.</span>→</a>
     <a class="guide-card" href="espressomaskin.html"><strong>Espressomaskin</strong><span>Kontroll, extraktion och hur mycket du vill göra själv.</span>→</a>
@@ -117,7 +117,7 @@
 </section>
 
 <section id="faq" class="section faq-section">
-  <div class="section-head"><div><span class="eyebrow">VANLIGA FRÅGOR</span><h2>Så fungerar Gott Jävla Kaffe</h2></div></div>
+  <div class="section-head"><div><span class="eyebrow">FRÅGOR</span><h2>Så fungerar Gott Jävla Kaffe</h2></div></div>
   <div class="faq-grid">
     <details><summary>Hur väljer ni vilken kaffemaskin som passar?</summary><p>Vi väger bland annat dryck, budget, automation, kontroll, rengöring och maskinens användningsområde. Matchningen är vår redaktionella bedömning – inte ett laboratorietest.</p></details>
     <details><summary>Måste jag göra quizet?</summary><p>Nej. Du kan välja en snabb väg direkt eller bläddra bland alla maskiner. Quizet är till för dig som vill ha en mer personlig matchning.</p></details>
@@ -127,7 +127,7 @@
 </section>
 
 <section id="compare" class="section compare-section">
-  <div class="section-head"><div><span class="eyebrow">JÄMFÖR</span><h2>Din jämförelse</h2></div></div>
+  <div class="section-head"><div><span class="eyebrow">JÄMFÖR MASKINER</span><h2>Din jämförelse</h2></div></div>
   <div id="compareEmpty" class="empty">Välj upp till fyra maskiner genom att trycka <strong>Jämför</strong>.</div>
   <div id="compareTable"></div>
   <div id="tradeoffBox" class="tradeoff-box hidden"></div>
