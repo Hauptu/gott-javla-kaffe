@@ -113,7 +113,25 @@ function stars(n){n=Number(n)||0;return '★'.repeat(n)+'☆'.repeat(Math.max(0,
 function openModal(id){const p=products.find(x=>x.id===id);if(!p)return;track('product_detail',{id});$('productModal').innerHTML=`<div class="modal-backdrop" data-close-modal><div class="modal-card" role="dialog" aria-modal="true"><button class="modal-close" data-close-modal>×</button><span class="eyebrow">${priceVerified(p)?'PRIS VERIFIERAT':'PRIS EJ VERIFIERAT'}</span><div class="product-image large">${p.feed_image_url?`<img src="${escapeAttr(p.feed_image_url)}" alt="${escapeAttr(p.brand+' '+p.model)}">`:'☕'}</div><div class="brand">${escapeHtml(p.brand)}</div><h2>${escapeHtml(p.model)}</h2><div class="price">${priceText(p)}</div>${priceMeta(p)}<p>${escapeHtml(p.description||'')}</p><div class="tradeoff-box"><strong>Det här är maskinen för dig om…</strong><p>${escapeHtml(p.automation>=5?'du prioriterar enkelhet och vill göra så lite som möjligt själv.':p.control>=5?'du vill ha hög kontroll och tycker att själva kaffet är en del av hobbyn.':'du vill ha en balans mellan bekvämlighet och egen kontroll.')}</p></div><div class="modal-grid"><div><h4>Fördelar</h4><ul>${(p.pros||[]).map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul></div><div><h4>Nackdelar</h4><ul>${(p.cons||[]).map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul></div></div><p class="editorial-note">Matchningen är en redaktionell bedömning, inte ett laboratorietest.</p></div></div>`;$('productModal').classList.remove('hidden');document.querySelectorAll('[data-close-modal]').forEach(x=>x.onclick=()=>{$('productModal').classList.add('hidden')})}
 function wireQuickStarts(){document.querySelectorAll('[data-quick]').forEach(b=>b.onclick=()=>{const q=b.dataset.quick;const presets={easy:{coffee:'black',automation:'easy',budget:'mid',cleaning:'high'},milk:{coffee:'milk',automation:'easy',budget:'upper',cleaning:'high'},budget:{coffee:'black',automation:'easy',budget:'low',cleaning:'high'},manual:{coffee:'espresso',automation:'manual',budget:'upper',cleaning:'low'}};answers={...presets[q]};track('quick_start',{path:q});showResults()})}
 function wireSimulator(){ $('simBudget').oninput=updateSimulator }
-function updateSimulator(){if(!$('simBudget'))return;const value=Number($('simBudget').value);$('simBudgetLabel').textContent=value.toLocaleString('sv-SE')+' kr';const band=value<2000?'low':value<5000?'mid':value<10000?'upper':'premium';const p=rankedProducts(band)[0];if(!p)return;$('simulatorResult').innerHTML=`<strong>${escapeHtml(p.brand)} ${escapeHtml(p.model)}</strong><span>${matchLabel(p.match)} med budget ${value.toLocaleString('sv-SE')} kr.</span><small>${priceVerified(p)?(currentPrice(p)<=value?'Inom budget enligt verifierad prisdata.':'Över budget enligt verifierad prisdata.'):'Priset är ännu inte verifierat — budgeteffekten är därför försiktig.'}</small>`}
+function updateSimulator(){
+ if(!$('simBudget'))return;
+ const value=Number($('simBudget').value);
+ $('simBudgetLabel').textContent=value.toLocaleString('sv-SE')+' kr';
+ const band=value<2000?'low':value<5000?'mid':value<10000?'upper':'premium';
+ const ranked=rankedProducts(band);
+ const inBudget=ranked.filter(p=>priceVerified(p)&&currentPrice(p)<=value);
+ const nearBudget=ranked.filter(p=>priceVerified(p)&&currentPrice(p)>value&&currentPrice(p)<=value*1.2);
+ const candidates=[...inBudget,...nearBudget,...ranked.filter(p=>!priceVerified(p))];
+ const selected=[];
+ for(const p of candidates){if(!selected.some(x=>x.id===p.id))selected.push(p);if(selected.length===3)break}
+ const cards=selected.map((p,i)=>{
+   const price=priceVerified(p)?currentPrice(p):null;
+   const status=price?price<=value?'Inom budget':
+     price<=value*1.2?'Lite över budget':'Över budget':'Pris ej verifierat';
+   return `<div class="sim-option"><div><strong>${escapeHtml(p.brand)} ${escapeHtml(p.model)}</strong><span>${status}</span></div><b>${price?price.toLocaleString('sv-SE')+' kr':'Pris ej verifierat'}</b></div>`;
+ }).join('');
+ $('simulatorResult').innerHTML=cards||'<span>Inga tydliga alternativ med tillgänglig prisdata just nu.</span>';
+}
 function escapeHtml(s){return String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
 function escapeAttr(s){return escapeHtml(s)}
 window.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('productModal'))$('productModal').classList.add('hidden')});
