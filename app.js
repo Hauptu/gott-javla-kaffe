@@ -69,7 +69,24 @@ function showResults(){
 }
 function renderDNA(){const vals=[['Bekvämlighet',automationValue(),answers.automation==='easy'?90:answers.automation==='some'?65:35],['Kontroll',answers.automation==='manual'?90:answers.automation==='some'?60:30],['Enkel rengöring',answers.cleaning==='high'?90:answers.cleaning==='normal'?65:35]];$('dna').innerHTML=`<div class="dna-head"><div><span class="eyebrow">DINA PRIORITERINGAR</span><h3>Så här ser dina prioriteringar ut</h3></div></div><div class="dna-bars">${vals.map(v=>`<div class="dna-row"><span>${v[0]}</span><div><i style="width:${v[2]}%"></i></div><b>${v[2]}</b></div>`).join('')}</div>`}
 function automationValue(){return answers.automation==='easy'?'Bekvämlighet':answers.automation==='manual'?'Kontroll':'Balans'}
-function renderDecisionMap(ranked){$('decisionMap').innerHTML=`<div class="decision-axis x"><span>Mer kontroll</span><span>Mer bekvämlighet</span></div><div class="decision-axis y"><span>Mer espressofokus</span><span>Mer vardagskaffe</span></div>${ranked.slice(0,8).map((p,i)=>{const x=Math.round(((Number(p.automation)||3)/5)*100),y=100-Math.round(((Number(p.espresso)||3)/5)*100);return `<button class="decision-dot" style="left:${x}%;top:${y}%" data-detail="${p.id}" title="${escapeHtml(p.brand+' '+p.model)}"><span>${i+1}</span></button>`}).join('')}`;document.querySelectorAll('[data-detail]').forEach(b=>b.onclick=()=>openModal(b.dataset.detail))}
+function renderDecisionMap(ranked){
+ const groups=[
+  {key:'tl',label:'Mer kontroll · mer espresso'},
+  {key:'tr',label:'Mer bekvämlighet · mer espresso'},
+  {key:'bl',label:'Mer kontroll · mer vardagskaffe'},
+  {key:'br',label:'Mer bekvämlighet · mer vardagskaffe'}
+ ];
+ const grouped={tl:[],tr:[],bl:[],br:[]};
+ ranked.slice(0,8).forEach((p,i)=>{
+  const automation=Number(p.automation)||3;
+  const espresso=Number(p.espresso)||3;
+  const horizontal=automation>=4?'r':'l';
+  const vertical=espresso>=3?'t':'b';
+  grouped[vertical+horizontal].push({...p,rank:i+1});
+ });
+ $('decisionMap').innerHTML=groups.map(g=>`<div class="decision-quadrant ${g.key}"><span class="decision-quadrant-label">${g.label}</span><div class="decision-pills">${grouped[g.key].map(p=>`<button class="decision-pill" data-detail="${p.id}"><b>${p.rank}</b><span>${escapeHtml(p.brand+' '+p.model)}</span></button>`).join('')}</div></div>`).join('');
+ document.querySelectorAll('.decision-pill').forEach(b=>b.onclick=()=>openModal(b.dataset.detail));
+}
 function buildRecommendationCards(ranked){const top=ranked[0];const topPrice=priceVerified(top)?currentPrice(top):null;const cheaper=ranked.find(p=>{const a=priceVerified(p)?currentPrice(p):null;return a&&topPrice&&a<topPrice*.8});const premium=ranked.find(p=>{const a=priceVerified(p)?currentPrice(p):null;return a&&topPrice&&a>topPrice*1.25});const alt=ranked.find(p=>p.id!==top?.id&&!priceVerified(p));return [top,cheaper,premium||alt].filter((p,i,a)=>p&&a.findIndex(x=>x.id===p.id)===i).map((p,i)=>({...p,recommendationLabel:i===0?'FÖRSTA FÖRSLAGET':i===1?'SAMMA BEHOV · BILLIGARE':currentPrice(p)?'OM DU VILL GÅ UPP EN NIVÅ':'ALTERNATIV · PRIS EJ VERIFIERAT'}))}
 function matchLabel(n){n=Number(n)||0;return n>=90?'Mycket stark match':n>=80?'Stark match':n>=70?'Bra match':'Svagare match'}
 function card(p){const reason=p.recommendationLabel?(p.recommendationLabel==='FÖRSTA FÖRSLAGET'?(p.fitReasons?.length?`Framför allt för att den ${p.fitReasons.join(', ')}.`:'Matchar flest av dina prioriteringar.'):p.recommendationLabel.startsWith('SAMMA BEHOV')?'Ett billigare alternativ med liknande profil.':p.recommendationLabel.startsWith('ALTERNATIV')?'Ett relevant alternativ, men priset är ännu inte verifierat.':'Ett alternativ om du vill prioritera mer funktion.') : '';return `<article class="product-card"><div class="product-top"><span class="type">${escapeHtml(p.type||'Kaffemaskin')}</span>${p.recommendationLabel?`<span class="rec-label">${p.recommendationLabel}</span>`:''}</div><div class="product-image">${p.feed_image_url?`<img src="${escapeAttr(p.feed_image_url)}" alt="${escapeAttr(p.brand+' '+p.model)}">` :''}</div><div class="brand">${escapeHtml(p.brand)}</div><h3>${escapeHtml(p.model)}</h3>${p.match?`<div class="match">${matchLabel(p.match)}</div>`:''}${reason?`<p class="recommendation-reason">${reason}</p>`:''}<div class="price">${priceText(p)}</div>${priceMeta(p)}<div class="card-copy">${escapeHtml(p.description||'')}</div><div class="card-bottom">${(p.tags||[]).slice(0,3).map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join('')}</div><div class="card-actions"><button class="mini-button" data-detail="${p.id}">Se detaljer</button><button class="mini-button" data-compare="${p.id}">Jämför</button></div></article>`}
