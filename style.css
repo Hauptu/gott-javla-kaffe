@@ -578,3 +578,17 @@
   .cheatsheet-grid a:nth-child(even){padding-left:0;border-left:0}
   .drink-final h2{font-size:36px}
 }
+
+/* Guide overview — three core guides + two deep dives */
+.guide-grid{grid-template-columns:repeat(3,1fr)}
+.guide-depth{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.guide-card.guide-deep{background:var(--ink);border-color:var(--ink);color:#fff}
+.guide-card.guide-deep span{color:rgba(255,255,255,.72)}
+.guide-card.guide-deep:hover{background:#2f2119;border-color:#2f2119}
+@media(max-width:800px){
+  .guide-grid{grid-template-columns:1fr 1fr}
+  .guide-depth{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .guide-grid,.guide-depth{grid-template-columns:1fr}
+}
