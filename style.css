@@ -40,3 +40,13 @@
 .sim-option strong{font-size:13px}
 .sim-option span{font-size:11px;color:var(--muted);margin-top:2px}
 .sim-option>b{font-size:13px;white-space:nowrap}
+
+/* Guide pages: keep the same centered reading width as the rest of the site */
+.info-page{max-width:820px;margin:0 auto;padding:65px 5vw}
+.info-page h1{max-width:760px}
+.info-page .lead{font-size:20px;color:var(--muted);line-height:1.6;max-width:760px}
+.info-page h2{margin-top:42px}
+.info-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin:20px 0}
+.info-card p:last-child{margin-bottom:0}
+.info-page .related-guides{padding-left:0;padding-right:0}
+@media(max-width:560px){.info-page{padding-left:4vw;padding-right:4vw;padding-top:45px}}
