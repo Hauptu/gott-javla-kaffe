@@ -601,3 +601,11 @@
 .guide-depth .guide-card.guide-deep strong{color:#fff!important}
 .guide-depth .guide-card.guide-deep span{color:rgba(255,255,255,.74)!important}
 .guide-depth .guide-card.guide-deep:hover{background:var(--accent2)!important;border-color:var(--accent2)!important}
+
+/* Bönor — align page geometry with the main editorial guides */
+.bean-guide .bean-section.section{max-width:none;margin:0;padding-left:0;padding-right:0}
+.bean-guide .bean-hero{max-width:none}
+.bean-guide .bean-nav{max-width:none}
+.bean-guide .bean-heading{max-width:760px}
+.bean-guide .bean-split,.bean-guide .bean-grid-3,.bean-guide .bean-process,.bean-guide .roast-scale,.bean-guide .bean-fresh,.bean-guide .bean-choice,.bean-guide .bean-rules{max-width:760px}
+.bean-guide .bean-section{scroll-margin-top:58px}
