@@ -615,3 +615,11 @@
 .hero-guide-link:hover{color:var(--ink);border-color:var(--ink)}
 .hero-actions{margin-bottom:0}
 @media(max-width:800px){.hero-guide-link{margin-top:14px}}
+
+/* Primary site destinations */
+.hero-routes{display:grid;gap:10px;margin-top:24px;max-width:560px}
+.hero-route{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:15px 18px;border:1px solid var(--line);border-radius:16px;background:var(--paper);color:var(--ink);text-decoration:none;transition:.2s}
+.hero-route strong{font-size:16px;white-space:nowrap}
+.hero-route span{color:var(--muted);font-size:13px;text-align:right}
+.hero-route:hover{transform:translateY(-1px);border-color:var(--ink);box-shadow:var(--shadow)}
+@media(max-width:560px){.hero-route{display:block}.hero-route span{display:block;text-align:left;margin-top:4px}}
