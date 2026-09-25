@@ -609,3 +609,9 @@
 .bean-guide .bean-heading{max-width:760px}
 .bean-guide .bean-split,.bean-guide .bean-grid-3,.bean-guide .bean-process,.bean-guide .roast-scale,.bean-guide .bean-fresh,.bean-guide .bean-choice,.bean-guide .bean-rules{max-width:760px}
 .bean-guide .bean-section{scroll-margin-top:58px}
+
+/* Hero — secondary path to coffee knowledge */
+.hero-guide-link{display:inline-block;margin-top:17px;color:var(--muted);font-size:13px;font-weight:750;text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px;transition:.2s}
+.hero-guide-link:hover{color:var(--ink);border-color:var(--ink)}
+.hero-actions{margin-bottom:0}
+@media(max-width:800px){.hero-guide-link{margin-top:14px}}
