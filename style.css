@@ -301,3 +301,19 @@
     padding:27px 25px;
   }
 }
+
+
+/* Final guide spacing pass */
+.machine-guide .machine-type-grid{
+  column-gap:24px;
+  row-gap:32px;
+}
+.machine-guide .machine-type-card{
+  background:rgba(255,253,249,.92);
+  border-color:#d8cfc2;
+}
+@media(max-width:700px){
+  .machine-guide .machine-type-grid{
+    row-gap:28px;
+  }
+}
