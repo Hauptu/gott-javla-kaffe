@@ -623,3 +623,21 @@
 .hero-route span{color:var(--muted);font-size:13px;text-align:right}
 .hero-route:hover{transform:translateY(-1px);border-color:var(--ink);box-shadow:var(--shadow)}
 @media(max-width:560px){.hero-route{display:block}.hero-route span{display:block;text-align:left;margin-top:4px}}
+
+/* Homepage hero routes — editorial navigation */
+.hero-routes{display:flex;flex-direction:column;margin-top:30px;max-width:560px;border-top:1px solid var(--line)}
+.hero-route{display:grid;grid-template-columns:38px 1fr 30px;align-items:center;gap:14px;padding:15px 4px;border-bottom:1px solid var(--line);background:transparent;color:var(--ink);text-decoration:none;transition:padding .22s ease,background .22s ease}
+.hero-route:hover{padding-left:12px;padding-right:12px;background:rgba(255,253,249,.62)}
+.hero-route-no{font-size:10px;font-weight:800;letter-spacing:.12em;color:var(--accent2);align-self:start;padding-top:4px}
+.hero-route-copy{display:flex;align-items:baseline;gap:14px;min-width:0}
+.hero-route-copy strong{font-size:16px;line-height:1.2;white-space:nowrap}
+.hero-route-copy small{font-size:13px;color:var(--muted);line-height:1.45}
+.hero-route-arrow{font-size:20px;line-height:1;text-align:right;transition:transform .22s ease}
+.hero-route:hover .hero-route-arrow{transform:translate(3px,-3px)}
+@media(max-width:560px){
+.hero-routes{margin-top:24px}
+.hero-route{grid-template-columns:30px 1fr 24px;gap:10px}
+.hero-route-copy{display:block}
+.hero-route-copy small{display:block;margin-top:3px}
+.hero-route:hover{padding-left:8px;padding-right:8px}
+}
