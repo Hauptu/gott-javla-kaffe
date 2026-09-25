@@ -643,41 +643,43 @@
 }
 
 
-/* Compare count — coffee cup badge */
+
+/* Compare count — optically centered coffee cup badge */
 #compareCount{
   display:inline-flex;
   align-items:center;
   justify-content:center;
   position:relative;
-  width:26px;
-  height:22px;
-  margin-left:5px;
+  width:24px;
+  height:18px;
+  margin-left:6px;
+  margin-right:1px;
   background:var(--ink);
   color:#fff;
-  font-size:11px;
+  font-size:10px;
   font-weight:750;
   line-height:1;
-  border-radius:2px 2px 7px 7px;
-  vertical-align:-5px;
+  border-radius:2px 2px 6px 6px;
+  vertical-align:-3px;
 }
 #compareCount::before{
   content:"";
   position:absolute;
-  width:7px;
-  height:8px;
+  width:6px;
+  height:7px;
   right:-5px;
   top:4px;
   border:2px solid var(--ink);
   border-left:0;
-  border-radius:0 7px 7px 0;
+  border-radius:0 6px 6px 0;
 }
 #compareCount::after{
   content:"";
   position:absolute;
-  width:14px;
-  height:3px;
+  width:12px;
+  height:2px;
   left:6px;
   bottom:-3px;
   background:var(--ink);
-  border-radius:0 0 4px 4px;
+  border-radius:0 0 3px 3px;
 }
