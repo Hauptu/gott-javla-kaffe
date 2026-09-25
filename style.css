@@ -642,40 +642,42 @@
 .hero-route:hover{padding-left:8px;padding-right:8px}
 }
 
-/* Compare count — coffee cup */
+
+/* Compare count — coffee cup badge */
 #compareCount{
   display:inline-flex;
   align-items:center;
   justify-content:center;
   position:relative;
-  width:24px;
-  height:19px;
-  margin-left:4px;
-  border-radius:3px 3px 7px 7px;
+  width:26px;
+  height:22px;
+  margin-left:5px;
   background:var(--ink);
   color:#fff;
-  font-size:0;
-  vertical-align:-4px;
+  font-size:11px;
+  font-weight:750;
+  line-height:1;
+  border-radius:2px 2px 7px 7px;
+  vertical-align:-5px;
 }
 #compareCount::before{
   content:"";
   position:absolute;
-  width:13px;
-  height:7px;
+  width:7px;
+  height:8px;
+  right:-5px;
   top:4px;
-  left:5px;
-  border:1.5px solid #fff;
-  border-top:0;
-  border-radius:0 0 5px 5px;
+  border:2px solid var(--ink);
+  border-left:0;
+  border-radius:0 7px 7px 0;
 }
 #compareCount::after{
   content:"";
   position:absolute;
-  width:5px;
-  height:7px;
-  top:4px;
-  right:2px;
-  border:1.5px solid #fff;
-  border-left:0;
-  border-radius:0 5px 5px 0;
+  width:14px;
+  height:3px;
+  left:6px;
+  bottom:-3px;
+  background:var(--ink);
+  border-radius:0 0 4px 4px;
 }
