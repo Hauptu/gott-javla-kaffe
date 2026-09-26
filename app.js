@@ -48,7 +48,7 @@ const priceMeta=p=>{
 const priceBand=p=>{const v=currentPrice(p);if(!v)return null;if(v<2000)return'low';if(v<5000)return'mid';if(v<10000)return'upper';return'premium'};
 function primaryImage(p){return p?.images?.primary||''}
 function affiliateImage(p){return p?.images?.affiliate||primaryOffer(p)?.image_url||p?.feed_image_url||''}
-function displayImage(p){return primaryImage(p)||affiliateImage(p)||''}
+function displayImage(p){if(primaryImage(p))return primaryImage(p);if(p?.images?.status==='needs_review')return '';return affiliateImage(p)||''}
 function offerMarkup(p){
  const offers=getOffers(p).filter(o=>o?.url);
  if(!offers.length)return '<span class="affiliate-pending">Butikslänk läggs till när produkten är verifierad</span>';
