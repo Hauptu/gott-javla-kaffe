@@ -4,8 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <title>Bildgranskning – Gott Jävla Kaffe</title>
-<link rel="stylesheet" href="style.css?v=20260926a">
+<link rel="stylesheet" href="style.css?v=20260926b">
 <style>
 .review-page{max-width:1180px;margin:0 auto;padding:48px 5vw 80px}
 .review-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:28px}
@@ -64,6 +65,7 @@
     <div class="review-actions">
       <button id="export" class="review-button primary">Exportera products.json</button>
       <button id="copy" class="review-button">Kopiera JSON</button>
+      <button id="reset" class="review-button">Rensa lokala beslut</button>
     </div>
   </div>
   <div id="status" class="review-status">Laddar produkter…</div>
@@ -71,7 +73,40 @@
 </main>
 <script>
 let products=[];
+let reviewState={};
+let reviewTotal=0;
+const REVIEW_STORAGE_KEY='gottjavlakaffe.imageReview.v2';
 const $=id=>document.getElementById(id);
+function loadReviewState(){
+  try{
+    const raw=localStorage.getItem(REVIEW_STORAGE_KEY);
+    reviewState=raw?JSON.parse(raw):{};
+  }catch(e){reviewState={};}
+}
+function saveReview(p){
+  try{
+    reviewState[p.id]={
+      status:p.images?.status||'needs_review',
+      primary:p.images?.primary||'',
+      approved_at:p.images?.approved_at||null,
+      reviewed_at:p.images?.reviewed_at||null
+    };
+    localStorage.setItem(REVIEW_STORAGE_KEY,JSON.stringify(reviewState));
+    return true;
+  }catch(e){return false;}
+}
+function applyReviewState(){
+  products.forEach(p=>{
+    const saved=reviewState[p.id];
+    if(!saved||p.images?.status==='approved'||p.images?.status==='no_suitable_image')return;
+    p.images=p.images||{};
+    p.images.primary=saved.primary||'';
+    p.images.status=saved.status;
+    if(saved.approved_at)p.images.approved_at=saved.approved_at;
+    if(saved.reviewed_at)p.images.reviewed_at=saved.reviewed_at;
+  });
+}
+
 function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function candidates(p){
   const i=p.images||{}, out=[], seen=new Set();
@@ -89,7 +124,10 @@ function candidates(p){
 }
 function render(){
   const pending=products.filter(p=>p.images?.status==='needs_review');
-  $('status').textContent=pending.length?pending.length+' produkt'+(pending.length===1?'':'er')+' väntar på bildgranskning. Klicka på en kandidat och välj Godkänn som huvudbild.':'Inga produkter väntar på bildgranskning.';
+  const reviewed=Math.max(0,reviewTotal-pending.length);
+  $('status').textContent=pending.length
+    ? reviewed+' av '+reviewTotal+' granskade · '+pending.length+' kvar. Klicka på en kandidat och välj Godkänn som huvudbild.'
+    : (reviewTotal?'Alla '+reviewTotal+' produkter är granskade.':'Inga produkter väntar på bildgranskning.');
   $('reviews').innerHTML=pending.length?pending.map(p=>{
     const cs=candidates(p), current=p.images?.primary||'';
     return '<article class="review-card '+(current?'approved':'')+'" data-id="'+escapeHtml(p.id)+'">'+
@@ -112,8 +150,11 @@ function render(){
       const p=products.find(x=>x.id===card.dataset.id); if(!p||!selected)return;
       p.images=p.images||{}; p.images.primary=selected; p.images.status='approved';
       p.images.approved_at=new Date().toISOString();
+      const saved=saveReview(p);
       render();
-      updateStatus('Godkänd bild för '+p.brand+' '+p.model+'. Exportera products.json när du är klar.');
+      updateStatus(saved
+        ? 'Godkänd och sparad lokalt: '+p.brand+' '+p.model+'. Beslutet ligger kvar även efter omladdning.'
+        : 'Godkänd för '+p.brand+' '+p.model+', men webbläsaren kunde inte spara lokalt. Exportera direkt.');
     };
     card.querySelector('.no-image').onclick=()=>{
       const p=products.find(x=>x.id===card.dataset.id); if(!p)return;
@@ -133,7 +174,18 @@ function download(){
 }
 $('export').onclick=download;
 $('copy').onclick=async()=>{try{await navigator.clipboard.writeText(json());updateStatus('products.json är kopierad till urklipp.')}catch(e){updateStatus('Kunde inte kopiera automatiskt. Använd Exportera products.json istället.')}};
-fetch('data/products.json').then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(data=>{products=data;render()}).catch(e=>{console.error(e);$('status').textContent='Kunde inte läsa data/products.json.'});
+$('reset').onclick=()=>{
+  if(!confirm('Rensa alla lokalt sparade bildbeslut och börja om från repo-versionen?'))return;
+  localStorage.removeItem(REVIEW_STORAGE_KEY);
+  location.reload();
+};
+loadReviewState();
+fetch('data/products.json?review='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(data=>{
+  products=data;
+  reviewTotal=products.filter(p=>p.images?.status==='needs_review').length;
+  applyReviewState();
+  render();
+}).catch(e=>{console.error(e);$('status').textContent='Kunde inte läsa data/products.json.'});
 </script>
 </body>
 </html>
