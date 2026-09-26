@@ -168,7 +168,12 @@ function render(){
     };
   });
 }
-function updateStatus(msg){$('status').textContent=msg}
+function updateStatus(msg){
+  const pending=products.filter(p=>p.images?.status==='needs_review').length;
+  const reviewed=Math.max(0,reviewTotal-pending);
+  const progress=reviewTotal?reviewed+' av '+reviewTotal+' granskade · '+pending+' kvar. ':'';
+  $('status').textContent=progress+msg;
+}
 function json(){return JSON.stringify(products,null,2)+'\n'}
 function download(){
  const blob=new Blob([json()],{type:'application/json;charset=utf-8'});
