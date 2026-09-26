@@ -49,7 +49,7 @@ const priceBand=p=>{const v=currentPrice(p);if(!v)return null;if(v<2000)return'l
 function primaryImage(p){return p?.images?.primary||''}
 function imageResolutionScore(url){
  if(!url)return -1;
- const match=String(url).match(/[?&]mw=(\\d+)/i);
+ const match=String(url).match(/[?&]mw=(\d+)/i);
  if(!match)return 95; // Original/full-size URL without an mw parameter.
  const width=Number(match[1]);
  if(width>=1500)return 100;
