@@ -2,7 +2,7 @@
   {
     "id": "ean-4008146033643",
     "brand": "Severin",
-    "model": "Kaffebryggare med Kvarn Touch KA4813",
+    "model": "med Kvarn Touch KA4813",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -22,7 +22,7 @@
       "bryggkaffe",
       "kvarn"
     ],
-    "description": "Severin Kaffebryggare med Kvarn Touch KA4813 med fokus på färskmalet kaffe.",
+    "description": "Kaffebryggare med Kvarn Touch KA4813 med fokus på färskmalet kaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -111,7 +111,7 @@
   {
     "id": "ean-8713016094261",
     "brand": "Princess",
-    "model": "Espressomaskin med mjölkskumning",
+    "model": "med mjölkskumning",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -131,7 +131,7 @@
       "espresso",
       "mjölkdrycker"
     ],
-    "description": "Princess Espressomaskin med mjölkskumning med möjlighet till mjölkdrycker.",
+    "description": "Espressomaskin med mjölkskumning med möjlighet till mjölkdrycker.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -179,7 +179,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Dorre Kaffepanna - Silver.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -208,7 +208,7 @@
   {
     "id": "ean-4006508218721",
     "brand": "Melitta",
-    "model": "Kaffebryggare Easy 2.0 vit",
+    "model": "Easy 2.0 vit",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -227,7 +227,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Kaffebryggare Easy 2.0 vit.",
+    "description": "Kaffebryggare Easy 2.0 vit.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -256,7 +256,7 @@
   {
     "id": "ean-4006508207596",
     "brand": "Melitta",
-    "model": "Kaffebryggare Excellent Grande – svart",
+    "model": "Excellent Grande – svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -275,7 +275,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Kaffebryggare Excellent Grande – svart.",
+    "description": "Kaffebryggare Excellent Grande – svart.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -304,7 +304,7 @@
   {
     "id": "ean-4008146032196",
     "brand": "Severin",
-    "model": "Kaffebryggare KA5760 Caprice",
+    "model": "KA5760 Caprice",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -323,7 +323,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Severin Kaffebryggare KA5760 Caprice.",
+    "description": "Kaffebryggare KA5760 Caprice.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -376,9 +376,9 @@
       "nybörjare"
     ],
     "tags": [
+      "helautomatisk",
       "enkel",
-      "bönor",
-      "mjölkdrycker"
+      "bönor"
     ],
     "description": "Helautomatisk maskin för färska bönor med fokus på enkel vardagsanvändning.",
     "pros": [
@@ -416,7 +416,7 @@
   {
     "id": "ean-8004399021419",
     "brand": "Delonghi",
-    "model": "Espressomaskin – helautomatisk ECAM290.81.TB",
+    "model": "– helautomatisk ECAM290.81.TB",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -435,7 +435,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Delonghi Espressomaskin – helautomatisk ECAM290.81.TB för espresso.",
+    "description": "Espressomaskin – helautomatisk ECAM290.81.TB för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -484,7 +484,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Severin Dubbelbryggare Termos med termoslösning.",
+    "description": "Dubbelbryggare Termos med termoslösning.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -533,7 +533,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Severin Dubbelbryggare Termos med termoslösning.",
+    "description": "Dubbelbryggare Termos med termoslösning.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -562,7 +562,7 @@
   {
     "id": "ean-4006508218738",
     "brand": "Melitta",
-    "model": "Kaffebryggare Easy Top 2.0 Svart",
+    "model": "Easy Top 2.0 Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -581,7 +581,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Kaffebryggare Easy Top 2.0 Svart.",
+    "description": "Kaffebryggare Easy Top 2.0 Svart.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -610,7 +610,7 @@
   {
     "id": "ean-4006508218714",
     "brand": "Melitta",
-    "model": "Kaffebryggare Easy 2.0, Svart",
+    "model": "Easy 2.0, Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -629,7 +629,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Kaffebryggare Easy 2.0, Svart.",
+    "description": "Kaffebryggare Easy 2.0, Svart.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -677,7 +677,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Avanza Inmould Helautomatisk kaffemaskin.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -725,7 +725,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Purista Svart Helautomatisk kaffemaskin.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -754,7 +754,7 @@
   {
     "id": "ean-8710103673996",
     "brand": "Philips",
-    "model": "Kaffebryggare HD7462/20 Daily with Glass jug",
+    "model": "HD7462/20 Daily with Glass jug",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -773,7 +773,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Philips Kaffebryggare HD7462/20 Daily with Glass jug.",
+    "description": "Kaffebryggare HD7462/20 Daily with Glass jug.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -802,7 +802,7 @@
   {
     "id": "ean-4006508218806",
     "brand": "Melitta",
-    "model": "Kaffebryggare Easy 2.0 Therm 2 Kannor Svart",
+    "model": "Easy 2.0 Therm 2 Kannor Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -822,7 +822,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Melitta Kaffebryggare Easy 2.0 Therm 2 Kannor Svart med termoslösning.",
+    "description": "Kaffebryggare Easy 2.0 Therm 2 Kannor Svart med termoslösning.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -851,7 +851,7 @@
   {
     "id": "ean-5038061111248",
     "brand": "Russell Hobbs",
-    "model": "Kaffebryggare 27010-56 Honeycomb White",
+    "model": "27010-56 Honeycomb White",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -870,7 +870,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Russell Hobbs Kaffebryggare 27010-56 Honeycomb White.",
+    "description": "Kaffebryggare 27010-56 Honeycomb White.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -899,7 +899,7 @@
   {
     "id": "ean-5038061111279",
     "brand": "Russell Hobbs",
-    "model": "Kaffebryggare 27011-56 Honeycomb Black",
+    "model": "27011-56 Honeycomb Black",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -918,7 +918,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Russell Hobbs Kaffebryggare 27011-56 Honeycomb Black.",
+    "description": "Kaffebryggare 27011-56 Honeycomb Black.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -947,7 +947,7 @@
   {
     "id": "ean-5708642022965",
     "brand": "OBH Nordica",
-    "model": "Kaffebryggare 1,5 Daybreak 2296 1000 watt",
+    "model": "1,5 Daybreak 2296 1000 watt",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -966,7 +966,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "OBH Nordica Kaffebryggare 1,5 Daybreak 2296 1000 watt.",
+    "description": "Kaffebryggare 1,5 Daybreak 2296 1000 watt.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -995,7 +995,7 @@
   {
     "id": "ean-7331890505164",
     "brand": "C3",
-    "model": "Perkolator Svart 10kp",
+    "model": "Svart 10kp",
     "type": "Perkolatorbryggare",
     "automation": 3,
     "control": 3,
@@ -1014,7 +1014,7 @@
     "tags": [
       "perkolator"
     ],
-    "description": "C3 Perkolator Svart 10kp.",
+    "description": "Perkolator Svart 10kp.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1043,7 +1043,7 @@
   {
     "id": "ean-7331890505140",
     "brand": "C3",
-    "model": "Perkolator Borstat stål 10kp",
+    "model": "Borstat stål 10kp",
     "type": "Perkolatorbryggare",
     "automation": 3,
     "control": 3,
@@ -1062,7 +1062,7 @@
     "tags": [
       "perkolator"
     ],
-    "description": "C3 Perkolator Borstat stål 10kp.",
+    "description": "Perkolator Borstat stål 10kp.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1091,7 +1091,7 @@
   {
     "id": "ean-7331890505157",
     "brand": "C3",
-    "model": "Perkolator Svart stål 6kp",
+    "model": "Svart stål 6kp",
     "type": "Perkolatorbryggare",
     "automation": 3,
     "control": 3,
@@ -1110,7 +1110,7 @@
     "tags": [
       "perkolator"
     ],
-    "description": "C3 Perkolator Svart stål 6kp.",
+    "description": "Perkolator Svart stål 6kp.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1185,7 +1185,7 @@
   {
     "id": "ean-7391091861728",
     "brand": "Champion Nordic",
-    "model": "Kaffebryggare Creme White",
+    "model": "Creme White",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -1204,7 +1204,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Champion Nordic Kaffebryggare Creme White.",
+    "description": "Kaffebryggare Creme White.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1233,7 +1233,7 @@
   {
     "id": "ean-4008496820900",
     "brand": "Russell Hobbs",
-    "model": "Kaffebryggare Grind&Brew",
+    "model": "Grind&Brew",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -1253,7 +1253,7 @@
       "bryggkaffe",
       "kvarn"
     ],
-    "description": "Russell Hobbs Kaffebryggare Grind&Brew med fokus på färskmalet kaffe.",
+    "description": "Kaffebryggare Grind&Brew med fokus på färskmalet kaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1282,7 +1282,7 @@
   {
     "id": "ean-5038061141412",
     "brand": "Russell Hobbs",
-    "model": "Espressomaskin Distinctions Espresso Machine 26450-56",
+    "model": "Distinctions Espresso Machine 26450-56",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -1301,7 +1301,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Russell Hobbs Espressomaskin Distinctions Espresso Machine 26450-56 för espresso.",
+    "description": "Espressomaskin Distinctions Espresso Machine 26450-56 för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1330,7 +1330,7 @@
   {
     "id": "ean-4006508215270",
     "brand": "Melitta",
-    "model": "Excellent 4.0 Kaffebryggare",
+    "model": "Excellent 4.0",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -1349,7 +1349,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Excellent 4.0 Kaffebryggare.",
+    "description": "Excellent 4.0 Kaffebryggare.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1378,7 +1378,7 @@
   {
     "id": "ean-4006508215218",
     "brand": "Melitta",
-    "model": "Excellent Steel 4.0 Kaffebryggare",
+    "model": "Excellent Steel 4.0",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -1397,7 +1397,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Excellent Steel 4.0 Kaffebryggare.",
+    "description": "Excellent Steel 4.0 Kaffebryggare.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1426,7 +1426,7 @@
   {
     "id": "ean-4006508215201",
     "brand": "Melitta",
-    "model": "Excellent 4.0 Kaffebryggar",
+    "model": "Excellent 4.0",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -1445,7 +1445,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Excellent 4.0 Kaffebryggar.",
+    "description": "Excellent 4.0 Kaffebryggar.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1493,7 +1493,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Melitta Caffeo Barista för espresso.",
+    "description": "Caffeo Barista för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1541,7 +1541,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Melitta Caffeo Barista för espresso.",
+    "description": "Caffeo Barista för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1589,7 +1589,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Melitta Caffeo Solo & Perfect Milk (20812) för espresso.",
+    "description": "Caffeo Solo & Perfect Milk (20812) för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1637,7 +1637,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Single 5 svart Auto Off (21117).",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1666,7 +1666,7 @@
   {
     "id": "ean-4006508209521",
     "brand": "Melitta",
-    "model": "Melitta Aroma Boy Svart Auto Off",
+    "model": "Aroma Boy Svart Auto Off",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -1685,7 +1685,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Melitta Aroma Boy Svart Auto Off.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1714,7 +1714,7 @@
   {
     "id": "ean-5708642023733",
     "brand": "OBH Nordica",
-    "model": "Kaffebryggare Svart 2373",
+    "model": "Svart 2373",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -1733,7 +1733,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "OBH Nordica Kaffebryggare Svart 2373.",
+    "description": "Kaffebryggare Svart 2373.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1781,7 +1781,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Handpresso 3 Koppar.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1829,7 +1829,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Handpresso 9 Koppar.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1858,7 +1858,7 @@
   {
     "id": "ean-4006508214457",
     "brand": "Melitta",
-    "model": "Kaffebryggare Enjoy II Top Svart",
+    "model": "Enjoy II Top Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -1877,7 +1877,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Kaffebryggare Enjoy II Top Svart.",
+    "description": "Kaffebryggare Enjoy II Top Svart.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1906,7 +1906,7 @@
   {
     "id": "ean-4006508214471",
     "brand": "Melitta",
-    "model": "Kaffebryggare Enjoy II Top Svart",
+    "model": "Enjoy II Top Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -1925,7 +1925,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Kaffebryggare Enjoy II Top Svart.",
+    "description": "Kaffebryggare Enjoy II Top Svart.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1954,7 +1954,7 @@
   {
     "id": "ean-8021098320247",
     "brand": "Braun",
-    "model": "Kaffebryggare KF7020 Svart",
+    "model": "KF7020 Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -1973,7 +1973,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Braun Kaffebryggare KF7020 Svart.",
+    "description": "Kaffebryggare KF7020 Svart.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2021,7 +2021,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Dorre Pressobryggare Prexa - Silver.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2050,7 +2050,7 @@
   {
     "id": "ean-4006508227495",
     "brand": "Melitta",
-    "model": "Kaffebryggare Melitta ONE SST",
+    "model": "ONE SST",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -2069,7 +2069,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Kaffebryggare Melitta ONE SST.",
+    "description": "Kaffebryggare Melitta ONE SST.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2098,7 +2098,7 @@
   {
     "id": "ean-4006508227488",
     "brand": "Melitta",
-    "model": "Kaffebryggare Melitta ONE Pure",
+    "model": "ONE Pure",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -2117,7 +2117,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Kaffebryggare Melitta ONE Pure.",
+    "description": "Kaffebryggare Melitta ONE Pure.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2146,7 +2146,7 @@
   {
     "id": "ean-4006508224265",
     "brand": "Melitta",
-    "model": "Kaffebryggare EPOUR",
+    "model": "EPOUR",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -2165,7 +2165,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Kaffebryggare EPOUR.",
+    "description": "Kaffebryggare EPOUR.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2194,7 +2194,7 @@
   {
     "id": "ean-8021098003485",
     "brand": "Braun",
-    "model": "Kaffebryggare / termosbryggare KF1505BK PurShine 1,2 l",
+    "model": "/ termosbryggare KF1505BK PurShine 1,2 l",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -2214,7 +2214,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Braun Kaffebryggare / termosbryggare KF1505BK PurShine 1,2 l med termoslösning.",
+    "description": "Kaffebryggare / termosbryggare KF1505BK PurShine 1,2 l med termoslösning.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2243,7 +2243,7 @@
   {
     "id": "ean-8021098320124",
     "brand": "Braun",
-    "model": "Kaffebryggare Kf3100wh PurEase 1000 W",
+    "model": "Kf3100wh PurEase 1000 W",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -2262,7 +2262,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Braun Kaffebryggare Kf3100wh PurEase 1000 W.",
+    "description": "Kaffebryggare Kf3100wh PurEase 1000 W.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2291,7 +2291,7 @@
   {
     "id": "ean-8004399026667",
     "brand": "Delonghi",
-    "model": "Kapselmaskin Edg226.a Genio S Automatic Capsule Machine",
+    "model": "Edg226.a Genio S Automatic Capsule Machine",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -2310,7 +2310,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Delonghi Kapselmaskin Edg226.a Genio S Automatic Capsule Machine för espresso.",
+    "description": "Kapselmaskin Edg226.a Genio S Automatic Capsule Machine för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2339,7 +2339,7 @@
   {
     "id": "ean-8004399334588",
     "brand": "Delonghi",
-    "model": "Espressomaskin Manual Ec235.bk Stilosa",
+    "model": "Manual Ec235.bk Stilosa",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -2358,7 +2358,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Delonghi Espressomaskin Manual Ec235.bk Stilosa för espresso.",
+    "description": "Espressomaskin Manual Ec235.bk Stilosa för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2387,7 +2387,7 @@
   {
     "id": "ean-8004399334564",
     "brand": "Delonghi",
-    "model": "Kapselmaskin Edg426.gy Genio S Touch Automatic Anthracite",
+    "model": "Edg426.gy Genio S Touch Automatic Anthracite",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -2406,7 +2406,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Delonghi Kapselmaskin Edg426.gy Genio S Touch Automatic Anthracite för espresso.",
+    "description": "Kapselmaskin Edg426.gy Genio S Touch Automatic Anthracite för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2435,7 +2435,7 @@
   {
     "id": "ean-7333282012991",
     "brand": "Emerio",
-    "model": "Kaffebryggare - Svart",
+    "model": "- Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -2454,7 +2454,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Emerio Kaffebryggare - Svart.",
+    "description": "Kaffebryggare - Svart.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2483,7 +2483,7 @@
   {
     "id": "ean-4008146030734",
     "brand": "Severin",
-    "model": "Kaffebryggare Ka4817 10 koppars 1000W",
+    "model": "Ka4817 10 koppars 1000W",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -2502,7 +2502,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Severin Kaffebryggare Ka4817 10 koppars 1000W.",
+    "description": "Kaffebryggare Ka4817 10 koppars 1000W.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2531,7 +2531,7 @@
   {
     "id": "ean-4006508219414",
     "brand": "Melitta",
-    "model": "Kaffebryggare EPOS",
+    "model": "EPOS",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -2550,7 +2550,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Kaffebryggare EPOS.",
+    "description": "Kaffebryggare EPOS.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2579,7 +2579,7 @@
   {
     "id": "ean-8006363011617",
     "brand": "Bialetti",
-    "model": "Mokabryggare 1 kopp Moka - Silver - Kaffe & espressomaskiner",
+    "model": "1 kopp Moka - Silver",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -2598,7 +2598,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Bialetti Mokabryggare 1 kopp Moka - Silver - Kaffe & espressomaskiner för espresso.",
+    "description": "Mokabryggare 1 kopp Moka - Silver - Kaffe & espressomaskiner för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2627,7 +2627,7 @@
   {
     "id": "ean-8006363040556",
     "brand": "Bialetti",
-    "model": "Mokabryggare 2 kopp Brikka 4 - Silver - Kaffe & espressomaskiner",
+    "model": "2 kopp Brikka 4 - Silver",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -2646,7 +2646,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Bialetti Mokabryggare 2 kopp Brikka 4 - Silver - Kaffe & espressomaskiner för espresso.",
+    "description": "Mokabryggare 2 kopp Brikka 4 - Silver - Kaffe & espressomaskiner för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2675,7 +2675,7 @@
   {
     "id": "ean-8006363035996",
     "brand": "Bialetti",
-    "model": "Mokabryggare 4 koppar Brikka Induktion - Grå - Kaffe & espressomaskiner",
+    "model": "4 koppar Brikka Induktion - Grå",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -2694,7 +2694,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Bialetti Mokabryggare 4 koppar Brikka Induktion - Grå - Kaffe & espressomaskiner för espresso.",
+    "description": "Mokabryggare 4 koppar Brikka Induktion - Grå - Kaffe & espressomaskiner för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2723,7 +2723,7 @@
   {
     "id": "ean-8006363029087",
     "brand": "Bialetti",
-    "model": "Mokabryggare MokaInduction 4/k - Svart - Kaffe & espressomaskiner",
+    "model": "MokaInduction 4/k - Svart",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -2742,7 +2742,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Bialetti Mokabryggare MokaInduction 4/k - Svart - Kaffe & espressomaskiner för espresso.",
+    "description": "Mokabryggare MokaInduction 4/k - Svart - Kaffe & espressomaskiner för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2771,7 +2771,7 @@
   {
     "id": "ean-8006363018951",
     "brand": "Bialetti",
-    "model": "Mokabryggare 3 kopp Moka Italien - Grön - Kaffe & espressomaskiner",
+    "model": "3 kopp Moka Italien - Grön",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -2790,7 +2790,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Bialetti Mokabryggare 3 kopp Moka Italien - Grön - Kaffe & espressomaskiner för espresso.",
+    "description": "Mokabryggare 3 kopp Moka Italien - Grön - Kaffe & espressomaskiner för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2819,7 +2819,7 @@
   {
     "id": "ean-8006363036009",
     "brand": "Bialetti",
-    "model": "Mokabryggare Mini Express set Induktion - Svart - Kaffe & espressomaskiner",
+    "model": "Mini Express set Induktion - Svart",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -2838,7 +2838,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Bialetti Mokabryggare Mini Express set Induktion - Svart - Kaffe & espressomaskiner för espresso.",
+    "description": "Mokabryggare Mini Express set Induktion - Svart - Kaffe & espressomaskiner för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2867,7 +2867,7 @@
   {
     "id": "ean-4006508217380",
     "brand": "Melitta",
-    "model": "Kaffebryggare Excellent 5.0 Svart",
+    "model": "Excellent 5.0 Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -2886,7 +2886,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Kaffebryggare Excellent 5.0 Svart.",
+    "description": "Kaffebryggare Excellent 5.0 Svart.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2915,7 +2915,7 @@
   {
     "id": "ean-7333282004439",
     "brand": "Emerio",
-    "model": "Kaffebryggare med termos - Svart",
+    "model": "med termos - Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -2935,7 +2935,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Emerio Kaffebryggare med termos - Svart med termoslösning.",
+    "description": "Kaffebryggare med termos - Svart med termoslösning.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2964,7 +2964,7 @@
   {
     "id": "ean-7333282003128",
     "brand": "Emerio",
-    "model": "Kaffebryggare 1000Watt 1,25 l rostfri - Silver",
+    "model": "1000Watt 1,25 l rostfri - Silver",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -2983,7 +2983,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Emerio Kaffebryggare 1000Watt 1,25 l rostfri - Silver.",
+    "description": "Kaffebryggare 1000Watt 1,25 l rostfri - Silver.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3012,7 +3012,7 @@
   {
     "id": "ean-8712836985483",
     "brand": "Tristar",
-    "model": "Espressomaskin Cm-2278 med mjölkskummare",
+    "model": "Cm-2278 med mjölkskummare",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -3032,7 +3032,7 @@
       "espresso",
       "mjölkdrycker"
     ],
-    "description": "Tristar Espressomaskin Cm-2278 med mjölkskummare med möjlighet till mjölkdrycker.",
+    "description": "Espressomaskin Cm-2278 med mjölkskummare med möjlighet till mjölkdrycker.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3061,7 +3061,7 @@
   {
     "id": "ean-4242005396917",
     "brand": "Bosch",
-    "model": "Kaffebryggare My Moment Svart Tka3m133 1200 W",
+    "model": "My Moment Svart Tka3m133 1200 W",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3080,7 +3080,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Bosch Kaffebryggare My Moment Svart Tka3m133 1200 W.",
+    "description": "Kaffebryggare My Moment Svart Tka3m133 1200 W.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3131,9 +3131,9 @@
       "nybörjare"
     ],
     "tags": [
+      "helautomatisk",
       "prisvärd",
-      "enkel",
-      "bönor"
+      "enkel"
     ],
     "description": "Instegshelautomat för dig som vill gå från bönor till kaffe med få moment.",
     "pros": [
@@ -3171,7 +3171,7 @@
   {
     "id": "ean-4242005396955",
     "brand": "Bosch",
-    "model": "Kaffebryggare Tka2m111 Vit 1200watt Avtagbar Tank",
+    "model": "Tka2m111 Vit 1200watt Avtagbar Tank",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3190,7 +3190,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Bosch Kaffebryggare Tka2m111 Vit 1200watt Avtagbar Tank.",
+    "description": "Kaffebryggare Tka2m111 Vit 1200watt Avtagbar Tank.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3219,7 +3219,7 @@
   {
     "id": "ean-4006508222575",
     "brand": "Melitta",
-    "model": "Termosbryggare Look 5.0 Therm Timer",
+    "model": "Look 5.0 Therm Timer",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3239,7 +3239,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Melitta Termosbryggare Look 5.0 Therm Timer med termoslösning.",
+    "description": "Termosbryggare Look 5.0 Therm Timer med termoslösning.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3268,7 +3268,7 @@
   {
     "id": "homeroom-2167326",
     "brand": "Bialetti",
-    "model": "Fransk-press 3/k Preziosa - Silver - Kaffe & espressomaskiner",
+    "model": "Fransk-press 3/k Preziosa - Silver",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -3287,7 +3287,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Bialetti Fransk-press 3/k Preziosa - Silver - Kaffe & espressomaskiner för espresso.",
+    "description": "Fransk-press 3/k Preziosa - Silver - Kaffe & espressomaskiner för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3316,7 +3316,7 @@
   {
     "id": "ean-8720389024740",
     "brand": "Philips",
-    "model": "Kaffebryggare All-in-1 Brew HD7888/01 med kvarn",
+    "model": "All-in-1 Brew HD7888/01 med kvarn",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3336,7 +3336,7 @@
       "bryggkaffe",
       "kvarn"
     ],
-    "description": "Philips Kaffebryggare All-in-1 Brew HD7888/01 med kvarn med fokus på färskmalet kaffe.",
+    "description": "Kaffebryggare All-in-1 Brew HD7888/01 med kvarn med fokus på färskmalet kaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3365,7 +3365,7 @@
   {
     "id": "ean-8720389041228",
     "brand": "Philips",
-    "model": "Kaffebryggare Hd7411/00 3000-serien Arctic White",
+    "model": "Hd7411/00 3000-serien Arctic White",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3384,7 +3384,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Philips Kaffebryggare Hd7411/00 3000-serien Arctic White.",
+    "description": "Kaffebryggare Hd7411/00 3000-serien Arctic White.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3413,7 +3413,7 @@
   {
     "id": "ean-7333282015350",
     "brand": "Emerio",
-    "model": "Kaffebryggare - Svart",
+    "model": "- Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3432,7 +3432,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Emerio Kaffebryggare - Svart.",
+    "description": "Kaffebryggare - Svart.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3461,7 +3461,7 @@
   {
     "id": "ean-7333282020835",
     "brand": "Emerio",
-    "model": "Kaffebryggare - Svart",
+    "model": "- Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3480,7 +3480,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Emerio Kaffebryggare - Svart.",
+    "description": "Kaffebryggare - Svart.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3509,7 +3509,7 @@
   {
     "id": "ean-4006508228171",
     "brand": "Melitta",
-    "model": "Termosbryggare LOOK AromaSelector®",
+    "model": "LOOK AromaSelector®",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3529,7 +3529,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Melitta Termosbryggare LOOK AromaSelector® med termoslösning.",
+    "description": "Termosbryggare LOOK AromaSelector® med termoslösning.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3558,7 +3558,7 @@
   {
     "id": "homeroom-2267626",
     "brand": "Melitta",
-    "model": "Kaffebryggare LOOK AromaSelector®",
+    "model": "LOOK AromaSelector®",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3577,7 +3577,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Melitta Kaffebryggare LOOK AromaSelector®.",
+    "description": "Kaffebryggare LOOK AromaSelector®.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3698,7 +3698,7 @@
   {
     "id": "ean-8712836998087",
     "brand": "Tristar",
-    "model": "Termosbryggare CM-1283 900W",
+    "model": "CM-1283 900W",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3718,7 +3718,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Tristar Termosbryggare CM-1283 900W med termoslösning.",
+    "description": "Termosbryggare CM-1283 900W med termoslösning.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3747,7 +3747,7 @@
   {
     "id": "ean-8712836992962",
     "brand": "Tristar",
-    "model": "Kapselmaskin CM-2301 - Kaffe & espressomaskiner",
+    "model": "CM-2301",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -3766,7 +3766,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Tristar Kapselmaskin CM-2301 - Kaffe & espressomaskiner för espresso.",
+    "description": "Kapselmaskin CM-2301 - Kaffe & espressomaskiner för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3795,7 +3795,7 @@
   {
     "id": "ean-8712836995376",
     "brand": "Tristar",
-    "model": "Kaffebryggare CM-1282",
+    "model": "CM-1282",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3814,7 +3814,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Tristar Kaffebryggare CM-1282.",
+    "description": "Kaffebryggare CM-1282.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3843,7 +3843,7 @@
   {
     "id": "homeroom-2167276",
     "brand": "Bialetti",
-    "model": "Kaffepress 8/k Smart - Svart - Kaffe & espressomaskiner",
+    "model": "Kaffepress 8/k Smart - Svart",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -3862,7 +3862,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Bialetti Kaffepress 8/k Smart - Svart - Kaffe & espressomaskiner för espresso.",
+    "description": "Kaffepress 8/k Smart - Svart - Kaffe & espressomaskiner för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3891,7 +3891,7 @@
   {
     "id": "ean-3094570153539",
     "brand": "Terraillon",
-    "model": "Kaffebryggare Diamond 1,25 L",
+    "model": "Diamond 1,25 L",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3910,7 +3910,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Terraillon Kaffebryggare Diamond 1,25 L.",
+    "description": "Kaffebryggare Diamond 1,25 L.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3939,7 +3939,7 @@
   {
     "id": "ean-3094570153881",
     "brand": "Terraillon",
-    "model": "Kaffebryggare Diamond 1,25 L",
+    "model": "Diamond 1,25 L",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3958,7 +3958,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Terraillon Kaffebryggare Diamond 1,25 L.",
+    "description": "Kaffebryggare Diamond 1,25 L.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3987,7 +3987,7 @@
   {
     "id": "ean-3094570154215",
     "brand": "Terraillon",
-    "model": "Kaffebryggare Sunrise 1,5 L",
+    "model": "Sunrise 1,5 L",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -4006,7 +4006,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Terraillon Kaffebryggare Sunrise 1,5 L.",
+    "description": "Kaffebryggare Sunrise 1,5 L.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4035,7 +4035,7 @@
   {
     "id": "ean-8712836993273",
     "brand": "Princess",
-    "model": "Espressomaskin Manuell 249417",
+    "model": "Manuell 249417",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -4055,7 +4055,7 @@
       "espresso",
       "manuell"
     ],
-    "description": "Princess Espressomaskin Manuell 249417 för espresso.",
+    "description": "Espressomaskin Manuell 249417 för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4084,7 +4084,7 @@
   {
     "id": "ean-8712836993112",
     "brand": "Princess",
-    "model": "Kapselmaskin 4-in-1 249454 Automatic - Kaffe & espressomaskiner",
+    "model": "4-in-1 249454 Automatic",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -4103,7 +4103,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Princess Kapselmaskin 4-in-1 249454 Automatic - Kaffe & espressomaskiner för espresso.",
+    "description": "Kapselmaskin 4-in-1 249454 Automatic - Kaffe & espressomaskiner för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4132,7 +4132,7 @@
   {
     "id": "homeroom-2271434",
     "brand": "Melitta",
-    "model": "Termosbryggare Aromafresh Therm Pro Svart",
+    "model": "Aromafresh Therm Pro Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -4152,7 +4152,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Melitta Termosbryggare Aromafresh Therm Pro Svart med termoslösning.",
+    "description": "Termosbryggare Aromafresh Therm Pro Svart med termoslösning.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4319,7 +4319,7 @@
   {
     "id": "ean-8711658523064",
     "brand": "Tristar",
-    "model": "Kapselmaskin CM-2302 - Kaffe & espressomaskiner",
+    "model": "CM-2302",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -4338,7 +4338,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Tristar Kapselmaskin CM-2302 - Kaffe & espressomaskiner för espresso.",
+    "description": "Kapselmaskin CM-2302 - Kaffe & espressomaskiner för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4367,7 +4367,7 @@
   {
     "id": "ean-4006508220113",
     "brand": "Melitta",
-    "model": "Termosbryggare Easy Top 2.0 Therm 1,25 l",
+    "model": "Easy Top 2.0 Therm 1,25 l",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -4387,7 +4387,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Melitta Termosbryggare Easy Top 2.0 Therm 1,25 l med termoslösning.",
+    "description": "Termosbryggare Easy Top 2.0 Therm 1,25 l med termoslösning.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4416,7 +4416,7 @@
   {
     "id": "ean-7391091867287",
     "brand": "Champion Nordic",
-    "model": "Kaffebryggare Digital 12-koppar KB400",
+    "model": "Digital 12-koppar KB400",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -4435,7 +4435,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Champion Nordic Kaffebryggare Digital 12-koppar KB400.",
+    "description": "Kaffebryggare Digital 12-koppar KB400.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4556,7 +4556,7 @@
   {
     "id": "ean-7333282024000",
     "brand": "Emerio",
-    "model": "Kaffebryggare - Svart",
+    "model": "- Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -4575,7 +4575,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Emerio Kaffebryggare - Svart.",
+    "description": "Kaffebryggare - Svart.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4604,7 +4604,7 @@
   {
     "id": "ean-7333282026073",
     "brand": "Emerio",
-    "model": "Kaffebryggare - Grå",
+    "model": "- Grå",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -4623,7 +4623,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Emerio Kaffebryggare - Grå.",
+    "description": "Kaffebryggare - Grå.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4652,7 +4652,7 @@
   {
     "id": "ean-4008146049132",
     "brand": "Severin",
-    "model": "Kaffebryggare med kaffekvarn KA 4830 - Svart",
+    "model": "med kaffekvarn KA 4830 - Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -4672,7 +4672,7 @@
       "bryggkaffe",
       "kvarn"
     ],
-    "description": "Severin Kaffebryggare med kaffekvarn KA 4830 - Svart med fokus på färskmalet kaffe.",
+    "description": "Kaffebryggare med kaffekvarn KA 4830 - Svart med fokus på färskmalet kaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4701,7 +4701,7 @@
   {
     "id": "ean-4008146049156",
     "brand": "Severin",
-    "model": "Termosbryggare med kaffekvarn - Svart",
+    "model": "med kaffekvarn - Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -4722,7 +4722,7 @@
       "kvarn",
       "termos"
     ],
-    "description": "Severin Termosbryggare med kaffekvarn - Svart med fokus på färskmalet kaffe.",
+    "description": "Termosbryggare med kaffekvarn - Svart med fokus på färskmalet kaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4751,7 +4751,7 @@
   {
     "id": "ean-4008146047572",
     "brand": "Severin",
-    "model": "Termosbryggare KA9343",
+    "model": "KA9343",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -4771,7 +4771,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Severin Termosbryggare KA9343 med termoslösning.",
+    "description": "Termosbryggare KA9343 med termoslösning.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4800,7 +4800,7 @@
   {
     "id": "ean-7391091867812",
     "brand": "Champion Nordic",
-    "model": "Kaffebryggare 1,5L Kb300",
+    "model": "1,5L Kb300",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -4819,7 +4819,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Champion Nordic Kaffebryggare 1,5L Kb300.",
+    "description": "Kaffebryggare 1,5L Kb300.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4867,7 +4867,7 @@
     "tags": [
       "moka"
     ],
-    "description": "Bialetti 3-koppars mokabryggare Bridgerton Blå - Blå.",
+    "description": "Mokabryggare för kaffe på spisen.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4915,7 +4915,7 @@
     "tags": [
       "moka"
     ],
-    "description": "Bialetti 6-koppars mokabryggare Bridgerton Blå - Blå.",
+    "description": "Mokabryggare för kaffe på spisen.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -5036,7 +5036,7 @@
   {
     "id": "ean-6410416130798",
     "brand": "Maku Kitchen Life",
-    "model": "Kaffepress 1 L - Kaffe & espressomaskiner",
+    "model": "Kaffepress 1 L",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -5055,7 +5055,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Maku Kitchen Life Kaffepress 1 L - Kaffe & espressomaskiner för espresso.",
+    "description": "Kaffepress 1 L - Kaffe & espressomaskiner för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -5084,7 +5084,7 @@
   {
     "id": "ean-6410412704634",
     "brand": "Maku Kitchen Life",
-    "model": "Mokabryggare 300 ml",
+    "model": "300 ml",
     "type": "Mokabryggare",
     "automation": 3,
     "control": 3,
@@ -5103,7 +5103,7 @@
     "tags": [
       "moka"
     ],
-    "description": "Maku Kitchen Life Mokabryggare 300 ml.",
+    "description": "Mokabryggare 300 ml.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -5132,7 +5132,7 @@
   {
     "id": "ean-3045387294090",
     "brand": "OBH Nordica",
-    "model": "Kaffebryggare Pro Aroma - Svart",
+    "model": "Pro Aroma - Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -5151,7 +5151,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "OBH Nordica Kaffebryggare Pro Aroma - Svart.",
+    "description": "Kaffebryggare Pro Aroma - Svart.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -5180,7 +5180,7 @@
   {
     "id": "ean-7333282021191",
     "brand": "Emerio",
-    "model": "Kaffebryggare - Beige",
+    "model": "- Beige",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -5199,7 +5199,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Emerio Kaffebryggare - Beige.",
+    "description": "Kaffebryggare - Beige.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -5228,7 +5228,7 @@
   {
     "id": "ean-7333282021177",
     "brand": "Emerio",
-    "model": "Kaffebryggare - Grön",
+    "model": "- Grön",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -5247,7 +5247,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Emerio Kaffebryggare - Grön.",
+    "description": "Kaffebryggare - Grön.",
     "pros": [],
     "cons": [],
     "needs_review": false,
