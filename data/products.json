@@ -46,7 +46,18 @@
         "ean": "4008146033643",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1.25",
+      "grinder": "Konisk kvarn i rostfritt stål",
+      "coffee_strength": "Justerbar",
+      "coffee_amount": "Justerbar",
+      "timer": "Ja",
+      "keep_warm": "Ja",
+      "filter": "Avtagbart och diskmaskinssäkert filter",
+      "power_w": "1000"
+    },
+    "detail_source": "https://severin.com/en-en/nutrition-preparation/coffee-breakfast/filter-coffee-makers-glass/ka-4813-filter-coffee-maker-with-stainless-steel-grinder/"
   },
   {
     "id": "ean-4006508222483",
@@ -2601,18 +2612,18 @@
       }
     ],
     "details": {
-      "max_cups": "8",
-      "filter": "1x4",
-      "brew_temperature": "92–96 °C",
-      "brew_time": "4–6 minuter",
-      "special": "Aroma Premium Technology, förbryggning, olika bryggprofiler",
-      "water_outlet": "Roterande 360°",
-      "ecbc": "Ja",
       "water_tank_l": "1.0",
-      "auto_off": "Ja",
-      "descaling": "LED-kalkindikering"
+      "bean_capacity_g": "160",
+      "max_cups": "8",
+      "grinder": "Integrerad",
+      "grinder_settings": "3",
+      "power_w": "1515",
+      "jug": "Glaskanna",
+      "auto_off": "40 minuter",
+      "ecbc": "Ja",
+      "special": "360° vattenutlopp, förbryggning, olika bryggprofiler"
     },
-    "detail_source": "https://www.melitta.se/kaffebryggare/epour"
+    "detail_source": "https://www.melitta.se/kaffebryggare/epos"
   },
   {
     "id": "ean-8006363011617",
@@ -4227,7 +4238,18 @@
         "ean": "",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1.0",
+      "max_cups": "8",
+      "grinder": "Integrerad keramisk kvarn",
+      "jug": "Dubbelväggig termoskanna i rostfritt stål",
+      "timer": "2 integrerade timerfunktioner",
+      "power_w": "1080",
+      "display": "Färg-TFT",
+      "descaling": "Avkalkningsprogram och indikator"
+    },
+    "detail_source": "https://www.melitta.se/kaffebryggare/melitta-aromafresh-therm-pro"
   },
   {
     "id": "ean-7393822005630",
