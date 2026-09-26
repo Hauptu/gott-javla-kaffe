@@ -75,6 +75,7 @@
 let products=[];
 let reviewState={};
 let reviewTotal=0;
+let reviewedIds=new Set();
 const REVIEW_STORAGE_KEY='gottjavlakaffe.imageReview.v2';
 const $=id=>document.getElementById(id);
 function loadReviewState(){
@@ -126,8 +127,11 @@ function candidates(p){
   add(offer?.image_url,'Offer image','affiliate_offer');
   return out;
 }
+function isPending(p){
+  return p.images?.status==='needs_review' && !reviewedIds.has(p.id);
+}
 function render(){
-  const pending=products.filter(p=>p.images?.status==='needs_review');
+  const pending=products.filter(isPending);
   const reviewed=Math.max(0,reviewTotal-pending.length);
   $('status').textContent=pending.length
     ? reviewed+' av '+reviewTotal+' granskade · '+pending.length+' kvar. Klicka på en kandidat och välj Godkänn som huvudbild.'
@@ -157,6 +161,7 @@ function render(){
       p.images.primary='';
       p.images.reviewed_at=new Date().toISOString();
       p.needs_review=false;
+      reviewedIds.add(p.id);
       const saved=saveReview(p);
       render();
       updateStatus(saved
@@ -188,7 +193,7 @@ function render(){
   });
 }
 function updateStatus(msg){
-  const pending=products.filter(p=>p.images?.status==='needs_review').length;
+  const pending=products.filter(isPending).length;
   const reviewed=Math.max(0,reviewTotal-pending);
   const progress=reviewTotal?reviewed+' av '+reviewTotal+' granskade · '+pending+' kvar. ':'';
   $('status').textContent=progress+msg;
@@ -233,6 +238,10 @@ fetch('data/products.json?review='+Date.now(),{cache:'no-store'}).then(r=>{if(!r
   const savedForProducts=products.filter(p=>savedIds.has(p.id)).length;
   reviewTotal=pendingCount+savedForProducts;
   applyReviewState();
+  reviewedIds=new Set(products.filter(p=>p.images?.status!=='needs_review').map(p=>p.id));
+  Object.entries(reviewState||{}).forEach(([id,saved])=>{
+    if(saved?.status && saved.status!=='needs_review') reviewedIds.add(id);
+  });
   render();
 }).catch(e=>{console.error(e);$('status').textContent='Kunde inte läsa data/products.json.'});
 </script>
