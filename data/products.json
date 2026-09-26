@@ -684,7 +684,21 @@
     "feed_source": "Awin · Homeroom SE",
     "lifecycle_status": "active",
     "affiliate_product_id": "1737016",
-    "affiliate_ean": "8004399021365"
+    "affiliate_ean": "8004399021365",
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=43845325907&a=3104617&m=12846",
+        "price": 4995,
+        "currency": "SEK",
+        "in_stock": null,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_Fs&mw=1080",
+        "product_id": "1737016",
+        "ean": "8004399021365",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "delonghi-eletta-explore",
@@ -1061,7 +1075,21 @@
     "feed_source": "Awin · Homeroom SE",
     "lifecycle_status": "active",
     "affiliate_product_id": "1776017",
-    "affiliate_ean": "8710103894735"
+    "affiliate_ean": "8710103894735",
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=45943746943&a=3104617&m=12846",
+        "price": 5495,
+        "currency": "SEK",
+        "in_stock": null,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1776017_Fs&mw=1080",
+        "product_id": "1776017",
+        "ean": "8710103894735",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "philips-series-5400",
@@ -1220,7 +1248,21 @@
     "feed_source": "Awin · Homeroom SE",
     "lifecycle_status": "active",
     "affiliate_product_id": "1669933",
-    "affiliate_ean": "4006508222483"
+    "affiliate_ean": "4006508222483",
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=45565755751&a=3104617&m=12846",
+        "price": 1199,
+        "currency": "SEK",
+        "in_stock": null,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1669933_Fs&mw=1080",
+        "product_id": "1669933",
+        "ean": "4006508222483",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "melitta-easytop",
