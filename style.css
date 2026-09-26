@@ -699,3 +699,16 @@
 /* Product imagery — portrait product frame, matching the editorial image review */
 .product-image{height:auto;aspect-ratio:4/5}
 .product-image.large{height:auto;aspect-ratio:4/5}
+
+.detail-lead{font-size:18px;line-height:1.45;margin:24px 0 12px}
+.detail-tags{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 26px}
+.detail-section{border-top:1px solid var(--line);padding-top:22px;margin-top:22px}
+.detail-section h3{font-size:22px;letter-spacing:-.03em;margin-bottom:14px}
+.detail-facts{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.detail-fact{padding:14px 15px;background:var(--paper)}
+.detail-fact:nth-child(odd){border-right:1px solid var(--line)}
+.detail-fact:nth-child(n+3){border-top:1px solid var(--line)}
+.detail-fact span{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.detail-fact strong{font-size:14px}
+.detail-section .modal-grid{margin-top:0}
+.detail-section h4{font-size:18px;margin:0 0 10px}
