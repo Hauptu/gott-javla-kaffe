@@ -89,7 +89,9 @@ function saveReview(p){
       status:p.images?.status||'needs_review',
       primary:p.images?.primary||'',
       approved_at:p.images?.approved_at||null,
-      reviewed_at:p.images?.reviewed_at||null
+      reviewed_at:p.images?.reviewed_at||null,
+      lifecycle_status:p.lifecycle_status||'active',
+      needs_review:p.needs_review===false?false:true
     };
     localStorage.setItem(REVIEW_STORAGE_KEY,JSON.stringify(reviewState));
     return true;
@@ -104,6 +106,8 @@ function applyReviewState(){
     p.images.status=saved.status;
     if(saved.approved_at)p.images.approved_at=saved.approved_at;
     if(saved.reviewed_at)p.images.reviewed_at=saved.reviewed_at;
+    if(saved.lifecycle_status)p.lifecycle_status=saved.lifecycle_status;
+    if(saved.needs_review===false)p.needs_review=false;
   });
 }
 
@@ -152,6 +156,7 @@ function render(){
       p.images=p.images||{}; p.images.status='excluded';
       p.images.primary='';
       p.images.reviewed_at=new Date().toISOString();
+      p.needs_review=false;
       const saved=saveReview(p);
       render();
       updateStatus(saved
@@ -162,6 +167,7 @@ function render(){
       const p=products.find(x=>x.id===card.dataset.id); if(!p||!selected)return;
       p.images=p.images||{}; p.images.primary=selected; p.images.status='approved';
       p.images.approved_at=new Date().toISOString();
+      p.needs_review=false;
       const saved=saveReview(p);
       render();
       updateStatus(saved
@@ -172,6 +178,7 @@ function render(){
       const p=products.find(x=>x.id===card.dataset.id); if(!p)return;
       p.images=p.images||{}; p.images.primary=''; p.images.status='no_suitable_image';
       p.images.reviewed_at=new Date().toISOString();
+      p.needs_review=false;
       const saved=saveReview(p);
       render();
       updateStatus(saved
@@ -186,11 +193,28 @@ function updateStatus(msg){
   const progress=reviewTotal?reviewed+' av '+reviewTotal+' granskade · '+pending+' kvar. ':'';
   $('status').textContent=progress+msg;
 }
-function json(){return JSON.stringify(products,null,2)+'\n'}
+function applyAllSavedForExport(){
+  Object.entries(reviewState||{}).forEach(([id,saved])=>{
+    const p=products.find(x=>x.id===id);
+    if(!p||!saved)return;
+    p.images=p.images||{};
+    if(saved.primary!==undefined)p.images.primary=saved.primary||'';
+    if(saved.status)p.images.status=saved.status;
+    if(saved.approved_at)p.images.approved_at=saved.approved_at;
+    if(saved.reviewed_at)p.images.reviewed_at=saved.reviewed_at;
+    if(saved.lifecycle_status)p.lifecycle_status=saved.lifecycle_status;
+    if(saved.needs_review===false)p.needs_review=false;
+  });
+}
+function json(){
+  applyAllSavedForExport();
+  return JSON.stringify(products,null,2)+'\n';
+}
 function download(){
  const blob=new Blob([json()],{type:'application/json;charset=utf-8'});
  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='products.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
- updateStatus('Ny products.json exporterad. Ersätt data/products.json i repot och committa ändringen.');
+ const savedCount=Object.keys(reviewState||{}).length;
+ updateStatus('Ny products.json exporterad med '+savedCount+' lokalt sparade granskningsbeslut. Ersätt data/products.json i repot och committa ändringen.');
 }
 $('export').onclick=download;
 $('copy').onclick=async()=>{try{await navigator.clipboard.writeText(json());updateStatus('products.json är kopierad till urklipp.')}catch(e){updateStatus('Kunde inte kopiera automatiskt. Använd Exportera products.json istället.')}};
