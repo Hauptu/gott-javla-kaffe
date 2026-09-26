@@ -50,7 +50,12 @@
     "feed_image_url": "",
     "feed_updated_at": null,
     "feed_source": "",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "philips-3300-lattego",
@@ -104,7 +109,12 @@
     "feed_image_url": "",
     "feed_updated_at": null,
     "feed_source": "",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "delonghi-rivelia",
@@ -158,7 +168,12 @@
     "feed_image_url": "",
     "feed_updated_at": null,
     "feed_source": "",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "siemens-eq6",
@@ -210,7 +225,12 @@
     "feed_image_url": "",
     "feed_updated_at": null,
     "feed_source": "",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "jura-e4",
@@ -261,7 +281,12 @@
     "feed_image_url": "",
     "feed_updated_at": null,
     "feed_source": "",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "sage-barista-express",
@@ -314,7 +339,12 @@
     "feed_image_url": "",
     "feed_updated_at": null,
     "feed_source": "",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "sage-barista-pro",
@@ -367,7 +397,12 @@
     "feed_image_url": "",
     "feed_updated_at": null,
     "feed_source": "",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "sage-barista-express-impress",
@@ -420,7 +455,12 @@
     "feed_image_url": "",
     "feed_updated_at": null,
     "feed_source": "",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "moccamaster-kbg-select",
@@ -471,7 +511,12 @@
     "feed_image_url": "",
     "feed_updated_at": null,
     "feed_source": "",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "nespresso-vertuo-pop",
@@ -522,7 +567,12 @@
     "feed_image_url": "",
     "feed_updated_at": null,
     "feed_source": "",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "jura-z10",
@@ -576,7 +626,12 @@
     "feed_image_url": "",
     "feed_updated_at": null,
     "feed_source": "",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "gaggia-classic-evo",
@@ -628,7 +683,12 @@
     "feed_image_url": "",
     "feed_updated_at": null,
     "feed_source": "",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "delonghi-magnifica-evo",
@@ -698,7 +758,12 @@
         "ean": "8004399021365",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "images": {
+      "primary": "",
+      "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_Fs&mw=1080",
+      "gallery": []
+    }
   },
   {
     "id": "delonghi-eletta-explore",
@@ -753,7 +818,12 @@
     "feed_image_url": "",
     "feed_updated_at": "2026-09-23",
     "feed_source": "De'Longhi Sverige",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "delonghi-magnifica-plus",
@@ -806,7 +876,12 @@
     "feed_image_url": "",
     "feed_updated_at": "2026-09-23",
     "feed_source": "De'Longhi Sverige",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "delonghi-dinamica-plus-ecam382-70-b",
@@ -860,7 +935,12 @@
     "feed_image_url": "",
     "feed_updated_at": "2026-09-23",
     "feed_source": "De'Longhi Sverige",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "delonghi-dinamica-plus-ecam380-95-tb",
@@ -914,7 +994,12 @@
     "feed_image_url": "",
     "feed_updated_at": "2026-09-23",
     "feed_source": "De'Longhi Sverige",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "delonghi-primadonna-soul",
@@ -968,7 +1053,12 @@
     "feed_image_url": "",
     "feed_updated_at": "2026-09-23",
     "feed_source": "De'Longhi Sverige",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "sage-bambino-plus",
@@ -1021,7 +1111,12 @@
     "feed_image_url": "",
     "feed_updated_at": "2026-09-23",
     "feed_source": "Sage Sverige",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "philips-series-2200",
@@ -1089,7 +1184,12 @@
         "ean": "8710103894735",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "images": {
+      "primary": "",
+      "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1776017_Fs&mw=1080",
+      "gallery": []
+    }
   },
   {
     "id": "philips-series-5400",
@@ -1143,7 +1243,12 @@
     "feed_image_url": "",
     "feed_updated_at": null,
     "feed_source": "",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "philips-cafe-aromis-8000",
@@ -1196,7 +1301,12 @@
     "feed_image_url": "",
     "feed_updated_at": null,
     "feed_source": "",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   },
   {
     "id": "melitta-look-therm-perfection",
@@ -1262,7 +1372,12 @@
         "ean": "4006508222483",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "images": {
+      "primary": "",
+      "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1669933_Fs&mw=1080",
+      "gallery": []
+    }
   },
   {
     "id": "melitta-easytop",
@@ -1313,6 +1428,11 @@
     "feed_image_url": "",
     "feed_updated_at": null,
     "feed_source": "",
-    "lifecycle_status": "active"
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "",
+      "affiliate": "",
+      "gallery": []
+    }
   }
 ]
