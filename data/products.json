@@ -760,10 +760,10 @@
       }
     ],
     "images": {
-      "primary": "",
+      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_Fs&mw=1500",
       "affiliate": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.ellosgroup.com%2Fi%2Fellos%2Fb%3F%24hg%24%26%24hm%24%26%24hp%24%26%24hd%24%26n%3Dell_1737016_Fs%26mw%3D1080&feedId=91087&k=7753b23a1fc52b5a20e8fc8af4191103385669d7",
       "gallery": [],
-      "status": "needs_review",
+      "status": "approved",
       "source": "Awin · Homeroom SE",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_Fs&mw=1080",
       "large": "",
@@ -773,7 +773,8 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_Fs&mw=1500",
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_Fs",
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_De_01&mw=1080"
-      ]
+      ],
+      "approved_at": "2026-09-26T13:55:04.406Z"
     }
   },
   {
@@ -1197,7 +1198,7 @@
       }
     ],
     "images": {
-      "primary": "",
+      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1776017_Fs&mw=1500",
       "gallery": [],
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1776017_Fs&mw=1080",
       "large": "",
@@ -1208,8 +1209,9 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1776017_Fs",
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1776017_De_01&mw=1080"
       ],
-      "status": "needs_review",
-      "source": "Awin · Homeroom SE"
+      "status": "approved",
+      "source": "Awin · Homeroom SE",
+      "approved_at": "2026-09-26T13:55:01.158Z"
     }
   },
   {
@@ -1395,7 +1397,7 @@
       }
     ],
     "images": {
-      "primary": "",
+      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1669933_Fs&mw=1500",
       "gallery": [],
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1669933_Fs&mw=1080",
       "large": "",
@@ -1405,8 +1407,9 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1669933_Fs&mw=1500",
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1669933_Fs&mw=1080"
       ],
-      "status": "needs_review",
-      "source": "Awin · Homeroom SE"
+      "status": "approved",
+      "source": "Awin · Homeroom SE",
+      "approved_at": "2026-09-26T13:54:55.690Z"
     }
   },
   {
