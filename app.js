@@ -182,23 +182,40 @@ function renderCompare(){if(!compare.length){$('compareEmpty').style.display='bl
 function stars(n){n=Number(n)||0;return '★'.repeat(n)+'☆'.repeat(Math.max(0,5-n))}
 function detailFact(label,value){return value?\`<div class="detail-fact"><span>\${escapeHtml(label)}</span><strong>\${escapeHtml(value)}</strong></div>\`:''}
 function detailList(items){return Array.isArray(items)&&items.length?\`<ul>\${items.map(x=>\`<li>\${escapeHtml(x)}</li>\`).join('')}</ul>\`:''}
+function detailScore(label,value){
+ const n=Math.max(0,Math.min(5,Number(value)||0));
+ return \`<div class="detail-score"><span>\${escapeHtml(label)}</span><div>\${'★'.repeat(n)}\${'☆'.repeat(5-n)}</div></div>\`;
+}
 function openModal(id){
  const p=products.find(x=>x.id===id);
  if(!p)return;
  track('product_detail',{id});
  const image=displayImage(p);
- const coffee=Array.isArray(p.coffee)&&p.coffee.length?p.coffee.join(', '):'';
- const milk=p.milk_system||'';
+ const d=p.details||{};
  const facts=[
   detailFact('Typ',p.type),
-  detailFact('Kaffetyp',coffee),
+  detailFact('Kaffetyp',Array.isArray(p.coffee)&&p.coffee.length?p.coffee.join(', '):''),
   detailFact('Inbyggd kvarn',p.grinder===true?'Ja':p.grinder===false?'Nej':''),
-  detailFact('Mjölksystem',milk)
+  detailFact('Mjölksystem',p.milk_system||d.milk_system||''),
+  detailFact('Vattentank',d.water_tank_l?d.water_tank_l+' l':''),
+  detailFact('Effekt',d.power_w?d.power_w+' W':''),
+  detailFact('Pumptryck',d.pump_bar?d.pump_bar+' bar':''),
+  detailFact('Kapacitet bönor',d.bean_capacity_g?d.bean_capacity_g+' g':''),
+  detailFact('Antal koppar',d.max_cups||'')
  ].filter(Boolean).join('');
+ const scores=[
+  detailScore('Enkelhet',p.ease),
+  detailScore('Automation',p.automation),
+  detailScore('Kontroll',p.control),
+  detailScore('Espresso',p.espresso),
+  detailScore('Mjölkdrycker',p.milk),
+  detailScore('Rengöring',p.cleaning)
+ ].join('');
  const hasPros=Array.isArray(p.pros)&&p.pros.length;
  const hasCons=Array.isArray(p.cons)&&p.cons.length;
  const tags=(p.tags||[]).map(t=>\`<span class="tag">\${escapeHtml(t)}</span>\`).join('');
  const tradeoff=p.automation>=5?'du prioriterar enkelhet och vill göra så lite som möjligt själv.':p.control>=5?'du vill ha hög kontroll och tycker att själva kaffet är en del av hobbyn.':'du vill ha en balans mellan bekvämlighet och egen kontroll.';
+ const source=p.detail_source?\`<p class="detail-source">Tekniska uppgifter verifierade mot <a href="\${escapeAttr(p.detail_source)}" target="_blank" rel="noopener">tillverkarens produktinformation</a>.</p>\`:'';
  $('productModal').innerHTML=\`<div class="modal-backdrop" data-close-modal><div class="modal-card" role="dialog" aria-modal="true">
  <button class="modal-close" data-close-modal>×</button>
  <span class="eyebrow">\${priceVerified(p)?'PRIS VERIFIERAT':'PRIS EJ VERIFIERAT'}</span>
@@ -210,8 +227,10 @@ function openModal(id){
  <p class="detail-lead">\${escapeHtml(p.description||'')}</p>
  \${tags?\`<div class="detail-tags">\${tags}</div>\`:''}
  \${facts?\`<section class="detail-section"><h3>Snabbfakta</h3><div class="detail-facts">\${facts}</div></section>\`:''}
+ \${scores?\`<section class="detail-section"><h3>Vår bedömning</h3><div class="detail-scores">\${scores}</div></section>\`:''}
  <section class="tradeoff-box"><strong>Det här är maskinen för dig om…</strong><p>\${escapeHtml(tradeoff)}</p></section>
  \${hasPros||hasCons?\`<section class="detail-section"><div class="modal-grid">\${hasPros?\`<div><h4>Fördelar</h4>\${detailList(p.pros)}</div>\`:''}\${hasCons?\`<div><h4>Nackdelar</h4>\${detailList(p.cons)}</div>\`:''}</div></section>\`:''}
+ \${source}
  <p class="editorial-note">Matchningen är en redaktionell bedömning, inte ett laboratorietest.</p>
  </div></div>\`;
  $('productModal').classList.remove('hidden');
