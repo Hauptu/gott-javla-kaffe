@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Bildgranskning – Gott Jävla Kaffe</title>
+<link rel="stylesheet" href="style.css?v=20260926a">
+<style>
+.review-page{max-width:1180px;margin:0 auto;padding:48px 5vw 80px}
+.review-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:28px}
+.review-head h1{font-size:46px;margin:8px 0 10px}
+.review-head p{color:var(--muted);max-width:680px}
+.review-actions{display:flex;gap:8px;flex-wrap:wrap}
+.review-button{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:11px 15px;font-weight:800}
+.review-button.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+.review-status{background:var(--soft);border-radius:14px;padding:12px 15px;font-size:13px;margin-bottom:22px}
+.review-list{display:grid;gap:22px}
+.review-card{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:22px}
+.review-card.approved{border-color:var(--accent2)}
+.review-card-head{display:flex;justify-content:space-between;gap:16px;align-items:start;margin-bottom:16px}
+.review-card h2{font-size:25px;margin:3px 0}
+.review-card-meta{font-size:12px;color:var(--muted)}
+.review-badge{font-size:10px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;border-radius:999px;padding:7px 9px;background:var(--soft);white-space:nowrap}
+.review-badge.approved{background:var(--ink);color:#fff}
+.review-candidates{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.review-candidate{border:1px solid var(--line);border-radius:16px;background:#fff;padding:9px;text-align:left}
+.review-candidate.selected{border:2px solid var(--ink);padding:8px;box-shadow:0 0 0 3px rgba(62,52,42,.08)}
+.review-candidate img{display:block;width:100%;height:190px;object-fit:contain;background:linear-gradient(135deg,#eee5da,#faf7f1);border-radius:11px}
+.review-candidate-info{padding:9px 3px 2px}
+.review-candidate-info strong{display:block;font-size:12px}
+.review-candidate-info span{display:block;font-size:10px;color:var(--muted);margin-top:2px;word-break:break-word}
+.review-card-actions{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:16px;padding-top:15px;border-top:1px solid var(--line)}
+.review-note{font-size:12px;color:var(--muted)}
+.review-empty{padding:30px;background:var(--paper);border:1px dashed var(--line);border-radius:18px;color:var(--muted)}
+@media(max-width:900px){.review-candidates{grid-template-columns:repeat(2,1fr)}.review-head{align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){.review-page{padding-left:4vw;padding-right:4vw}.review-candidates{grid-template-columns:1fr}.review-candidate img{height:230px}.review-card-head{flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">Gott Jävla Kaffe</div>
+  <nav><a href="index.html">Till sajten</a></nav>
+</header>
+<main class="review-page">
+  <div class="review-head">
+    <div>
+      <span class="eyebrow">REDAKTIONELLT VERKTYG</span>
+      <h1>Bildgranskning.</h1>
+      <p>Granska bildkandidater från affiliate-feeds och välj vilken som ska bli produktens godkända huvudbild. Ändringar sparas lokalt i verktyget tills du exporterar en ny <code>products.json</code>.</p>
+    </div>
+    <div class="review-actions">
+      <button id="export" class="review-button primary">Exportera products.json</button>
+      <button id="copy" class="review-button">Kopiera JSON</button>
+    </div>
+  </div>
+  <div id="status" class="review-status">Laddar produkter…</div>
+  <div id="reviews" class="review-list"></div>
+</main>
+<script>
+let products=[];
+const $=id=>document.getElementById(id);
+function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function candidates(p){
+  const i=p.images||{}, out=[], seen=new Set();
+  const add=(url,label,source)=>{if(!url||seen.has(url))return;seen.add(url);out.push({url,label,source})};
+  add(i.large,'Large image','large_image');
+  (Array.isArray(i.alternates)?i.alternates:[]).forEach((url,n)=>add(url,'Alternativ '+(n+1),'alternate_image'));
+  add(i.merchant,'Merchant image','merchant_image_url');
+  add(i.affiliate,'Affiliate image','affiliate_image');
+  add(i.aw_image,'Awin image','aw_image_url');
+  add(i.aw_thumb,'Awin thumbnail','aw_thumb_url');
+  add(p.feed_image_url,'Feed image','feed_image_url');
+  const offer=(Array.isArray(p.affiliate_offers)?p.affiliate_offers:[]).find(o=>o?.image_url);
+  add(offer?.image_url,'Offer image','affiliate_offer');
+  return out;
+}
+function render(){
+  const pending=products.filter(p=>p.images?.status==='needs_review');
+  $('status').textContent=pending.length?pending.length+' produkt'+(pending.length===1?'':'er')+' väntar på bildgranskning. Klicka på en kandidat och välj Godkänn som huvudbild.':'Inga produkter väntar på bildgranskning.';
+  $('reviews').innerHTML=pending.length?pending.map(p=>{
+    const cs=candidates(p), current=p.images?.primary||'';
+    return '<article class="review-card '+(current?'approved':'')+'" data-id="'+escapeHtml(p.id)+'">'+
+      '<div class="review-card-head"><div><span class="eyebrow">'+escapeHtml(p.type||'Produkt')+'</span><h2>'+escapeHtml(p.brand+' '+p.model)+'</h2><div class="review-card-meta">'+escapeHtml(p.images?.source||p.feed_source||'')+'</div></div><span class="review-badge '+(current?'approved':'')+'">'+(current?'Godkänd':'Needs review')+'</span></div>'+
+      '<div class="review-candidates">'+cs.map((c,n)=>'<button class="review-candidate '+(c.url===current?'selected':'')+'" data-url="'+encodeURIComponent(c.url)+'" title="'+escapeHtml(c.url)+'"><img src="'+escapeHtml(c.url)+'" alt="'+escapeHtml(p.brand+' '+p.model)+' – '+escapeHtml(c.label)+'" loading="lazy"><div class="review-candidate-info"><strong>'+escapeHtml(c.label)+'</strong><span>'+escapeHtml(c.source)+'</span></div></button>').join('')+'</div>'+
+      '<div class="review-card-actions"><span class="review-note">Välj bilden som faktiskt visar rätt produkt och variant. Vi sparar inte en kandidat som primary förrän du godkänner den.</span><button class="review-button primary approve" disabled>Godkänn vald bild</button></div>'+
+    '</article>';
+  }).join(''):'<div class="review-empty">Allt är granskat just nu.</div>';
+  document.querySelectorAll('.review-card').forEach(card=>{
+    let selected='';
+    card.querySelectorAll('.review-candidate').forEach(btn=>btn.onclick=()=>{
+      card.querySelectorAll('.review-candidate').forEach(x=>x.classList.remove('selected'));
+      btn.classList.add('selected'); selected=decodeURIComponent(btn.dataset.url);
+      card.querySelector('.approve').disabled=false;
+    });
+    card.querySelector('.approve').onclick=()=>{
+      const p=products.find(x=>x.id===card.dataset.id); if(!p||!selected)return;
+      p.images=p.images||{}; p.images.primary=selected; p.images.status='approved';
+      p.images.approved_at=new Date().toISOString();
+      render();
+      updateStatus('Godkänd bild för '+p.brand+' '+p.model+'. Exportera products.json när du är klar.');
+    };
+  });
+}
+function updateStatus(msg){$('status').textContent=msg}
+function json(){return JSON.stringify(products,null,2)+'\n'}
+function download(){
+ const blob=new Blob([json()],{type:'application/json;charset=utf-8'});
+ const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='products.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+ updateStatus('Ny products.json exporterad. Ersätt data/products.json i repot och committa ändringen.');
+}
+$('export').onclick=download;
+$('copy').onclick=async()=>{try{await navigator.clipboard.writeText(json());updateStatus('products.json är kopierad till urklipp.')}catch(e){updateStatus('Kunde inte kopiera automatiskt. Använd Exportera products.json istället.')}};
+fetch('data/products.json').then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(data=>{products=data;render()}).catch(e=>{console.error(e);$('status').textContent='Kunde inte läsa data/products.json.'});
+</script>
+</body>
+</html>
