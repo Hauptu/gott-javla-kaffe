@@ -160,8 +160,11 @@ function render(){
       const p=products.find(x=>x.id===card.dataset.id); if(!p)return;
       p.images=p.images||{}; p.images.primary=''; p.images.status='no_suitable_image';
       p.images.reviewed_at=new Date().toISOString();
+      const saved=saveReview(p);
       render();
-      updateStatus('Markerad som "ingen lämplig bild": '+p.brand+' '+p.model+'. Exportera products.json när du är klar.');
+      updateStatus(saved
+        ? 'Sparad lokalt som bildlös: '+p.brand+' '+p.model+'. Beslutet ligger kvar även efter omladdning.'
+        : 'Markerad som bildlös, men webbläsaren kunde inte spara lokalt. Exportera direkt.');
     };
   });
 }
