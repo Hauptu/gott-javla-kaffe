@@ -18,6 +18,11 @@
 .review-list{display:grid;gap:22px}
 .review-card{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:22px}
 .review-card.approved{border-color:var(--accent2)}
+.review-card.no-image{border-color:#c9bfb3}
+.review-badge.no-image{background:#e8e1d8;color:var(--ink)}
+.review-card-actions .secondary{background:transparent}
+.review-card-actions .danger{border-color:#c9bfb3}
+.review-card-actions .danger:hover{background:#f4efe9}
 .review-card-head{display:flex;justify-content:space-between;gap:16px;align-items:start;margin-bottom:16px}
 .review-card h2{font-size:25px;margin:3px 0}
 .review-card-meta{font-size:12px;color:var(--muted)}
@@ -54,7 +59,7 @@
     <div>
       <span class="eyebrow">REDAKTIONELLT VERKTYG</span>
       <h1>Bildgranskning.</h1>
-      <p>Granska bildkandidater från affiliate-feeds och välj vilken som ska bli produktens godkända huvudbild. Ändringar sparas lokalt i verktyget tills du exporterar en ny <code>products.json</code>.</p>
+      <p>Granska bildkandidater från affiliate-feeds och välj vilken som ska bli produktens godkända huvudbild. Du kan också markera att ingen kandidat håller måttet. Ändringar sparas lokalt i verktyget tills du exporterar en ny <code>products.json</code>.</p>
     </div>
     <div class="review-actions">
       <button id="export" class="review-button primary">Exportera products.json</button>
@@ -88,10 +93,10 @@ function render(){
   $('reviews').innerHTML=pending.length?pending.map(p=>{
     const cs=candidates(p), current=p.images?.primary||'';
     return '<article class="review-card '+(current?'approved':'')+'" data-id="'+escapeHtml(p.id)+'">'+
-      '<div class="review-card-head"><div><span class="eyebrow">'+escapeHtml(p.type||'Produkt')+'</span><h2>'+escapeHtml(p.brand+' '+p.model)+'</h2><div class="review-card-meta">'+escapeHtml(p.images?.source||p.feed_source||'')+'</div></div><span class="review-badge '+(current?'approved':'')+'">'+(current?'Godkänd':'Needs review')+'</span></div>'+
+      '<div class="review-card-head"><div><span class="eyebrow">'+escapeHtml(p.type||'Produkt')+'</span><h2>'+escapeHtml(p.brand+' '+p.model)+'</h2><div class="review-card-meta">'+escapeHtml(p.images?.source||p.feed_source||'')+'</div></div><span class="review-badge">Needs review</span></div>'+
       '<div class="review-candidates">'+cs.map((c,n)=>'<button class="review-candidate '+(c.url===current?'selected':'')+'" data-url="'+encodeURIComponent(c.url)+'" title="'+escapeHtml(c.url)+'"><img src="'+escapeHtml(c.url)+'" alt="'+escapeHtml(p.brand+' '+p.model)+' – '+escapeHtml(c.label)+'" loading="lazy"><div class="review-candidate-info"><strong>'+escapeHtml(c.label)+'</strong><span>'+escapeHtml(c.source)+'</span></div></button>').join('')+'</div>'+
       '<div class="review-preview"><div><div class="review-preview-label">Så visas bilden i Biblioteket</div><div class="review-preview-card"><div class="product-image"><div class="image-placeholder">Produktbild</div></div><div class="brand">'+escapeHtml(p.brand)+'</div><h3>'+escapeHtml(p.model)+'</h3></div></div><div class="review-preview-note">Välj en kandidat ovan. Förhandsvisningen använder samma 4:5-bildyta som produktkorten i Biblioteket, så du ser direkt om maskinen blir lagom stor och om bilden har för mycket tom yta.</div></div>'+
-      '<div class="review-card-actions"><span class="review-note">Välj bilden som faktiskt visar rätt produkt och variant. Vi sparar inte en kandidat som primary förrän du godkänner den.</span><button class="review-button primary approve" disabled>Godkänn vald bild</button></div>'+
+      '<div class="review-card-actions"><span class="review-note">Godkänn en kandidat om den håller måttet. Om ingen bild är tillräckligt bra kan du markera produkten som bildlös i stället.</span><div class="review-actions"><button class="review-button secondary no-image">Ingen bild är tillräckligt bra</button><button class="review-button primary approve" disabled>Godkänn vald bild</button></div></div>'+
     '</article>';
   }).join(''):'<div class="review-empty">Allt är granskat just nu.</div>';
   document.querySelectorAll('.review-card').forEach(card=>{
@@ -109,6 +114,13 @@ function render(){
       p.images.approved_at=new Date().toISOString();
       render();
       updateStatus('Godkänd bild för '+p.brand+' '+p.model+'. Exportera products.json när du är klar.');
+    };
+    card.querySelector('.no-image').onclick=()=>{
+      const p=products.find(x=>x.id===card.dataset.id); if(!p)return;
+      p.images=p.images||{}; p.images.primary=''; p.images.status='no_suitable_image';
+      p.images.reviewed_at=new Date().toISOString();
+      render();
+      updateStatus('Markerad som "ingen lämplig bild": '+p.brand+' '+p.model+'. Exportera products.json när du är klar.');
     };
   });
 }
