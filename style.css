@@ -694,3 +694,8 @@
 .offer-row .buy-button{grid-column:1 / -1;padding:9px 12px;font-size:11px}
 .modal-card .offer-list{margin:14px 0 20px;padding-top:2px}
 @media(min-width:700px){.product-card>.offer-list .offer-row{grid-template-columns:1fr auto auto}.product-card>.offer-list .offer-row .buy-button{grid-column:auto;min-width:92px}}
+
+
+/* Product imagery — portrait product frame, matching the editorial image review */
+.product-image{height:auto;aspect-ratio:4/5}
+.product-image.large{height:auto;aspect-ratio:4/5}
