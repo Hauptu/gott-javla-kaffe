@@ -111,7 +111,7 @@
   {
     "id": "ean-8713016094261",
     "brand": "Princess",
-    "model": "mjölkskumning",
+    "model": "Espressomaskin med mjölkskumning",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -658,7 +658,7 @@
   {
     "id": "ean-4006508222100",
     "brand": "Melitta",
-    "model": "Avanza Inmould Helautomatisk kaffemaskin",
+    "model": "Avanza Inmould",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -706,7 +706,7 @@
   {
     "id": "ean-4006508221615",
     "brand": "Melitta",
-    "model": "Purista Svart Helautomatisk kaffemaskin",
+    "model": "Purista Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -2194,7 +2194,7 @@
   {
     "id": "ean-8021098003485",
     "brand": "Braun",
-    "model": "/ termosbryggare KF1505BK PurShine 1,2 l",
+    "model": "KF1505BK PurShine 1,2 l",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -4848,7 +4848,7 @@
   {
     "id": "ean-8006363074339",
     "brand": "Bialetti",
-    "model": "3-koppars mokabryggare Bridgerton Blå - Blå",
+    "model": "Bridgerton Blå - Blå",
     "type": "Mokabryggare",
     "automation": 3,
     "control": 3,
@@ -4896,7 +4896,7 @@
   {
     "id": "ean-8006363074346",
     "brand": "Bialetti",
-    "model": "6-koppars mokabryggare Bridgerton Blå - Blå",
+    "model": "Bridgerton Blå - Blå",
     "type": "Mokabryggare",
     "automation": 3,
     "control": 3,
