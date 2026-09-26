@@ -1,7 +1,7 @@
 [
   {
     "id": "ean-4008146033643",
-    "brand": "Homeroom",
+    "brand": "Severin",
     "model": "Severin",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -18,7 +18,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -29,7 +31,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:07:59.395Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37117107905&a=3104617&m=12846",
+        "price": 2195,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1654211_Fs&mw=1080",
+        "product_id": "1654211",
+        "ean": "4008146033643",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508222483",
@@ -75,7 +91,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:08:04.078Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=45565755751&a=3104617&m=12846",
+        "price": 1199,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1669933_Fs&mw=1080",
+        "product_id": "1669933",
+        "ean": "4006508222483",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8713016094261",
@@ -96,7 +126,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -107,7 +139,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:08:11.960Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051243197&a=3104617&m=12846",
+        "price": 1299,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1596458_Fs&mw=1080",
+        "product_id": "1596458",
+        "ean": "8713016094261",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7392753371487",
@@ -128,7 +174,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -139,11 +187,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:08:18.043Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051247785&a=3104617&m=12846",
+        "price": 349,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=hom_1714514-01_Fs&mw=1080",
+        "product_id": "1714514-01-0",
+        "ean": "7392753371487",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508218721",
-    "brand": "Homeroom",
+    "brand": "Melitta",
     "model": "Melitta",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -160,7 +222,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -171,11 +235,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:08:22.077Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051247422&a=3104617&m=12846",
+        "price": 449,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1611712_Fs&mw=1080",
+        "product_id": "1611712",
+        "ean": "4006508218721",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508207596",
-    "brand": "Homeroom",
+    "brand": "Melitta",
     "model": "Melitta",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -192,7 +270,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -203,11 +283,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:08:26.444Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=45764810953&a=3104617&m=12846",
+        "price": 949,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1720986_Fs&mw=1080",
+        "product_id": "1720986",
+        "ean": "4006508207596",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4008146032196",
-    "brand": "Homeroom",
+    "brand": "Severin",
     "model": "Severin",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -224,7 +318,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -235,7 +331,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:08:30.377Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=41748660254&a=3104617&m=12846",
+        "price": 1599,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1584619_Fs&mw=1080",
+        "product_id": "1584619",
+        "ean": "4008146032196",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8004399021365",
@@ -285,7 +395,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:08:38.678Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=43845325907&a=3104617&m=12846",
+        "price": 4995,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_Fs&mw=1080",
+        "product_id": "1737016",
+        "ean": "8004399021365",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8004399021419",
@@ -306,7 +430,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -317,7 +443,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:08:42.393Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=42562509049&a=3104617&m=12846",
+        "price": 6495,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737017_Fs&mw=1080",
+        "product_id": "1737017",
+        "ean": "8004399021419",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4008146041525",
@@ -338,7 +478,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -349,7 +491,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:08:46.343Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=38284601219&a=3104617&m=12846",
+        "price": 1595,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737081_Fs&mw=1080",
+        "product_id": "1737081",
+        "ean": "4008146041525",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4008146041501",
@@ -370,7 +526,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -381,11 +539,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:08:50.159Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37138445886&a=3104617&m=12846",
+        "price": 1595,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737129_Fs&mw=1080",
+        "product_id": "1737129",
+        "ean": "4008146041501",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508218738",
-    "brand": "Homeroom",
+    "brand": "Melitta",
     "model": "Melitta",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -402,7 +574,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -413,11 +587,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:08:53.760Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051247314&a=3104617&m=12846",
+        "price": 549,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1546127_Fs&mw=1080",
+        "product_id": "1546127",
+        "ean": "4006508218738",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508218714",
-    "brand": "Homeroom",
+    "brand": "Melitta",
     "model": "Melitta",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -434,7 +622,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -445,7 +635,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:08:57.943Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051247315&a=3104617&m=12846",
+        "price": 449,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1546157_Fs&mw=1080",
+        "product_id": "1546157",
+        "ean": "4006508218714",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508222100",
@@ -466,7 +670,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -477,7 +683,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:09:03.862Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051240031&a=3104617&m=12846",
+        "price": 5995,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1624228_Fs&mw=1080",
+        "product_id": "1624228",
+        "ean": "4006508222100",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508221615",
@@ -498,7 +718,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -509,11 +731,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:09:07.410Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051240134&a=3104617&m=12846",
+        "price": 4495,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1624248_Fs&mw=1080",
+        "product_id": "1624248",
+        "ean": "4006508221615",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8710103673996",
-    "brand": "Homeroom",
+    "brand": "Philips",
     "model": "Philips",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -530,7 +766,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -541,11 +779,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:09:11.944Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=41887153939&a=3104617&m=12846",
+        "price": 799,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1624545_Fs&mw=1080",
+        "product_id": "1624545",
+        "ean": "8710103673996",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508218806",
-    "brand": "Homeroom",
+    "brand": "Melitta",
     "model": "Melitta",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -562,7 +814,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -573,11 +827,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:09:16.110Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051245989&a=3104617&m=12846",
+        "price": 849,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1624575_Fs&mw=1080",
+        "product_id": "1624575",
+        "ean": "4006508218806",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-5038061111248",
-    "brand": "Homeroom",
+    "brand": "Russell Hobbs",
     "model": "Russell Hobbs",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -594,7 +862,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -605,11 +875,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:09:23.077Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=45896405518&a=3104617&m=12846",
+        "price": 899,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1624964_Fs&mw=1080",
+        "product_id": "1624964",
+        "ean": "5038061111248",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-5038061111279",
-    "brand": "Homeroom",
+    "brand": "Russell Hobbs",
     "model": "Russell Hobbs",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -626,7 +910,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -637,11 +923,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:09:26.210Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051244015&a=3104617&m=12846",
+        "price": 849,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1624970_Fs&mw=1080",
+        "product_id": "1624970",
+        "ean": "5038061111279",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-5708642022965",
-    "brand": "Homeroom",
+    "brand": "OBH Nordica",
     "model": "OBH Nordica",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -658,7 +958,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -669,7 +971,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:09:30.760Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=38724581579&a=3104617&m=12846",
+        "price": 449,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1724954_Fs&mw=1080",
+        "product_id": "1724954",
+        "ean": "5708642022965",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7331890505164",
@@ -690,7 +1006,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "perkolator"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -701,7 +1019,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:09:34.777Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37209296891&a=3104617&m=12846",
+        "price": 934,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1015649_Fs&mw=1080",
+        "product_id": "1015649",
+        "ean": "7331890505164",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7331890505140",
@@ -722,7 +1054,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "perkolator"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -733,7 +1067,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:09:38.544Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051276429&a=3104617&m=12846",
+        "price": 934,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1019330_Fs&mw=1080",
+        "product_id": "1019330",
+        "ean": "7331890505140",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7331890505157",
@@ -754,7 +1102,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "perkolator"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -765,7 +1115,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:09:42.244Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051276544&a=3104617&m=12846",
+        "price": 849,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1020436_Fs&mw=1080",
+        "product_id": "1020436",
+        "ean": "7331890505157",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7391091863074",
@@ -797,11 +1161,25 @@
       "gallery": [],
       "status": "excluded",
       "reviewed_at": "2026-09-26T16:09:54.594Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=38803440480&a=3104617&m=12846",
+        "price": 1799,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1699039_Fs&mw=1080",
+        "product_id": "1699039",
+        "ean": "7391091863074",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7391091861728",
-    "brand": "Homeroom",
+    "brand": "Champion Nordic",
     "model": "Champion Nordic",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -818,7 +1196,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -829,11 +1209,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:09:59.543Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37487417620&a=3104617&m=12846",
+        "price": 749,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1699042_Fs&mw=1080",
+        "product_id": "1699042",
+        "ean": "7391091861728",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4008496820900",
-    "brand": "Homeroom",
+    "brand": "Russell Hobbs",
     "model": "Russell Hobbs",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -850,7 +1244,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -861,7 +1257,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:10:05.276Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051277874&a=3104617&m=12846",
+        "price": 1499,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1674623_Fs&mw=1080",
+        "product_id": "1674623",
+        "ean": "4008496820900",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-5038061141412",
@@ -882,7 +1292,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -893,7 +1305,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:10:10.677Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37122801851&a=3104617&m=12846",
+        "price": 2995,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1748933_Fs&mw=1080",
+        "product_id": "1748933",
+        "ean": "5038061141412",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508215270",
@@ -914,7 +1340,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -925,7 +1353,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:10:13.909Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051240404&a=3104617&m=12846",
+        "price": 895,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1520154_Fs&mw=1080",
+        "product_id": "1520154",
+        "ean": "4006508215270",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508215218",
@@ -946,7 +1388,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -957,7 +1401,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:10:15.844Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051240405&a=3104617&m=12846",
+        "price": 1099,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1520175_Fs&mw=1080",
+        "product_id": "1520175",
+        "ean": "4006508215218",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508215201",
@@ -978,7 +1436,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -989,7 +1449,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:10:18.042Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051240439&a=3104617&m=12846",
+        "price": 895,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1520176_Fs&mw=1080",
+        "product_id": "1520176",
+        "ean": "4006508215201",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508217847",
@@ -997,7 +1471,8 @@
     "model": "Caffeo Barista",
     "type": "Espressomaskin",
     "automation": 3,
-    "control": 3,    "ease": 3,
+    "control": 3,
+    "ease": 3,
     "espresso": 4,
     "milk": 3,
     "cleaning": 3,
@@ -1009,7 +1484,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1020,7 +1497,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:10:20.459Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37138445522&a=3104617&m=12846",
+        "price": 11995,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1526335_Fs&mw=1080",
+        "product_id": "1526335",
+        "ean": "4006508217847",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508217830",
@@ -1041,7 +1532,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1052,7 +1545,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:10:22.576Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051243096&a=3104617&m=12846",
+        "price": 11995,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1526345_Fs&mw=1080",
+        "product_id": "1526345",
+        "ean": "4006508217830",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508208128",
@@ -1073,7 +1580,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1084,7 +1593,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:10:24.710Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37858141667&a=3104617&m=12846",
+        "price": 5295,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1000311_Fs&mw=1080",
+        "product_id": "1000311",
+        "ean": "4006508208128",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508211173",
@@ -1105,7 +1628,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1116,7 +1641,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:10:27.926Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051283519&a=3104617&m=12846",
+        "price": 549,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1006313_Fs&mw=1080",
+        "product_id": "1006313",
+        "ean": "4006508211173",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508209521",
@@ -1137,7 +1676,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1148,11 +1689,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:10:30.876Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051283597&a=3104617&m=12846",
+        "price": 499,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1007857_Fs&mw=1080",
+        "product_id": "1007857",
+        "ean": "4006508209521",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-5708642023733",
-    "brand": "Homeroom",
+    "brand": "OBH Nordica",
     "model": "OBH Nordica",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -1169,7 +1724,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1180,7 +1737,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:10:33.476Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051283669&a=3104617&m=12846",
+        "price": 429,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1008368_Fs&mw=1080",
+        "product_id": "1008368",
+        "ean": "5708642023733",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508173082",
@@ -1201,7 +1772,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1212,7 +1785,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:10:36.492Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=43381406687&a=3104617&m=12846",
+        "price": 229,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1008520_Fs&mw=1080",
+        "product_id": "1008520",
+        "ean": "4006508173082",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508170401",
@@ -1233,7 +1820,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1244,11 +1833,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:10:39.693Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37858141668&a=3104617&m=12846",
+        "price": 289,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1008529_Fs&mw=1080",
+        "product_id": "1008529",
+        "ean": "4006508170401",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508214457",
-    "brand": "Homeroom",
+    "brand": "Melitta",
     "model": "Melitta",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -1265,7 +1868,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1276,11 +1881,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:10:42.059Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051283787&a=3104617&m=12846",
+        "price": 849,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1010525_Fs&mw=1080",
+        "product_id": "1010525",
+        "ean": "4006508214457",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508214471",
-    "brand": "Homeroom",
+    "brand": "Melitta",
     "model": "Melitta",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -1297,7 +1916,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1308,11 +1929,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:10:44.425Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051283788&a=3104617&m=12846",
+        "price": 699,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1010539_Fs&mw=1080",
+        "product_id": "1010539",
+        "ean": "4006508214471",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8021098320247",
-    "brand": "Homeroom",
+    "brand": "Braun",
     "model": "Braun",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -1329,7 +1964,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1340,7 +1977,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:10:51.110Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37951867119&a=3104617&m=12846",
+        "price": 1199,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1011145_Fs&mw=1080",
+        "product_id": "1011145",
+        "ean": "8021098320247",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7392753588762",
@@ -1361,7 +2012,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1372,11 +2025,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:10:54.343Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=42954042467&a=3104617&m=12846",
+        "price": 244,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=hom_1741613-01_Fs&mw=1080",
+        "product_id": "1741613-01-0",
+        "ean": "7392753588762",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508227495",
-    "brand": "Homeroom",
+    "brand": "Melitta",
     "model": "Melitta",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -1393,7 +2060,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1404,11 +2073,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:10:59.526Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=44988400996&a=3104617&m=12846",
+        "price": 1699,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1755600_Fs&mw=1080",
+        "product_id": "1755600",
+        "ean": "4006508227495",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508227488",
-    "brand": "Homeroom",
+    "brand": "Melitta",
     "model": "Melitta",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -1425,7 +2108,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1436,11 +2121,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:11:03.592Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=45812047239&a=3104617&m=12846",
+        "price": 1799,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1755615_Fs&mw=1080",
+        "product_id": "1755615",
+        "ean": "4006508227488",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508224265",
-    "brand": "Homeroom",
+    "brand": "Melitta",
     "model": "Melitta",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -1457,7 +2156,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1468,11 +2169,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:11:09.792Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37138445956&a=3104617&m=12846",
+        "price": 1995,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1755641_Fs&mw=1080",
+        "product_id": "1755641",
+        "ean": "4006508224265",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8021098003485",
-    "brand": "Homeroom",
+    "brand": "Braun",
     "model": "Braun",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -1489,7 +2204,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1500,11 +2217,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:11:13.192Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=39927926842&a=3104617&m=12846",
+        "price": 899,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1978520_Fs&mw=1080",
+        "product_id": "1978520",
+        "ean": "8021098003485",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8021098320124",
-    "brand": "Homeroom",
+    "brand": "Braun",
     "model": "Braun",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -1521,7 +2252,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1532,7 +2265,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:11:17.492Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=43202357260&a=3104617&m=12846",
+        "price": 799,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1978760_Fs&mw=1080",
+        "product_id": "1978760",
+        "ean": "8021098320124",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8004399026667",
@@ -1553,7 +2300,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1564,7 +2313,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:11:28.092Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=39927926863&a=3104617&m=12846",
+        "price": 1199,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1978923_Fs&mw=1080",
+        "product_id": "1978923",
+        "ean": "8004399026667",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8004399334588",
@@ -1585,7 +2348,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1596,7 +2361,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:11:31.309Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=40931017901&a=3104617&m=12846",
+        "price": 1499,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1979947_Fs&mw=1080",
+        "product_id": "1979947",
+        "ean": "8004399334588",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8004399334564",
@@ -1617,7 +2396,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1628,11 +2409,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:11:34.025Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=39927926865&a=3104617&m=12846",
+        "price": 1799,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1980025_Fs&mw=1080",
+        "product_id": "1980025",
+        "ean": "8004399334564",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7333282012991",
-    "brand": "Homeroom",
+    "brand": "Emerio",
     "model": "Emerio",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -1649,7 +2444,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1660,11 +2457,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:11:37.092Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37833321899&a=3104617&m=12846",
+        "price": 367,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2049028-01_Fs&mw=1080",
+        "product_id": "2049028-01-0",
+        "ean": "7333282012991",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4008146030734",
-    "brand": "Homeroom",
+    "brand": "Severin",
     "model": "Severin",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -1681,7 +2492,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1692,11 +2505,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:11:39.843Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=44058575855&a=3104617&m=12846",
+        "price": 699,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2083515_Fs&mw=1080",
+        "product_id": "2083515",
+        "ean": "4008146030734",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508219414",
-    "brand": "Homeroom",
+    "brand": "Melitta",
     "model": "Melitta",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -1713,7 +2540,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1724,7 +2553,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:11:42.942Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37138446006&a=3104617&m=12846",
+        "price": 2995,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1759306_Fs&mw=1080",
+        "product_id": "1759306",
+        "ean": "4006508219414",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8006363011617",
@@ -1745,7 +2588,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1756,7 +2601,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:11:45.942Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=46102496539&a=3104617&m=12846",
+        "price": 529,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1908109-01_Fs&mw=1080",
+        "product_id": "1908109-01-0",
+        "ean": "8006363011617",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8006363040556",
@@ -1777,7 +2636,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1788,7 +2649,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:11:47.909Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=46102496540&a=3104617&m=12846",
+        "price": 1399,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1910033-01_Fs&mw=1080",
+        "product_id": "1910033-01-0",
+        "ean": "8006363040556",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8006363035996",
@@ -1809,7 +2684,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1820,7 +2697,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:11:50.709Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=46102496541&a=3104617&m=12846",
+        "price": 1679,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1910038-01_Fs&mw=1080",
+        "product_id": "1910038-01-0",
+        "ean": "8006363035996",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8006363029087",
@@ -1841,7 +2732,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1852,7 +2745,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:11:55.892Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=46102496694&a=3104617&m=12846",
+        "price": 1099,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1910113_Fs&mw=1080",
+        "product_id": "1910113",
+        "ean": "8006363029087",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8006363018951",
@@ -1873,7 +2780,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1884,7 +2793,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:11:58.208Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=46102496695&a=3104617&m=12846",
+        "price": 799,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1910125-01_Fs&mw=1080",
+        "product_id": "1910125-01-0",
+        "ean": "8006363018951",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8006363036009",
@@ -1905,7 +2828,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1916,11 +2841,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:12:00.492Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=46102496696&a=3104617&m=12846",
+        "price": 1549,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1910183-01_Fs&mw=1080",
+        "product_id": "1910183-01-0",
+        "ean": "8006363036009",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508217380",
-    "brand": "Homeroom",
+    "brand": "Melitta",
     "model": "Melitta",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -1937,7 +2876,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1948,11 +2889,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:12:03.525Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=45812047222&a=3104617&m=12846",
+        "price": 1099,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1575196_Fs&mw=1080",
+        "product_id": "1575196",
+        "ean": "4006508217380",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7333282004439",
-    "brand": "Homeroom",
+    "brand": "Emerio",
     "model": "Emerio",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -1969,7 +2924,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -1980,11 +2937,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:12:06.409Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37833322178&a=3104617&m=12846",
+        "price": 647,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2024368-01_Fs&mw=1080",
+        "product_id": "2024368-01-0",
+        "ean": "7333282004439",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7333282003128",
-    "brand": "Homeroom",
+    "brand": "Emerio",
     "model": "Emerio",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -1996,11 +2967,14 @@
     "noise": 3,
     "enthusiast": 3,
     "grinder": false,
-    "milk_system": "",    "coffee": [
+    "milk_system": "",
+    "coffee": [
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2011,7 +2985,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:12:08.892Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37833322202&a=3104617&m=12846",
+        "price": 359,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2024679-01_Fs&mw=1080",
+        "product_id": "2024679-01-0",
+        "ean": "7333282003128",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8712836985483",
@@ -2032,7 +3020,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2043,11 +3033,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:12:13.626Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=39927926880&a=3104617&m=12846",
+        "price": 1099,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2026321_Fs&mw=1080",
+        "product_id": "2026321",
+        "ean": "8712836985483",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4242005396917",
-    "brand": "Homeroom",
+    "brand": "Bosch",
     "model": "Bosch",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -2064,7 +3068,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2075,7 +3081,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:12:17.592Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=40081711905&a=3104617&m=12846",
+        "price": 999,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2033317_Fs&mw=1080",
+        "product_id": "2033317",
+        "ean": "4242005396917",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8710103894735",
@@ -2123,11 +3143,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:12:20.443Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=45943746943&a=3104617&m=12846",
+        "price": 5495,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1776017_Fs&mw=1080",
+        "product_id": "1776017",
+        "ean": "8710103894735",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4242005396955",
-    "brand": "Homeroom",
+    "brand": "Bosch",
     "model": "Bosch",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -2144,7 +3178,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2155,7 +3191,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:12:22.393Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=41509375663&a=3104617&m=12846",
+        "price": 799,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2159916_Fs&mw=1080",
+        "product_id": "2159916",
+        "ean": "4242005396955",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508222575",
@@ -2176,7 +3226,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2187,7 +3239,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:12:26.243Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=45804135637&a=3104617&m=12846",
+        "price": 1399,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2083433_Fs&mw=1080",
+        "product_id": "2083433",
+        "ean": "4006508222575",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "homeroom-2167326",
@@ -2208,7 +3274,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2219,11 +3287,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:12:30.741Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=41509375920&a=3104617&m=12846",
+        "price": 649,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2167326_Fs&mw=1080",
+        "product_id": "2167326",
+        "ean": "",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8720389024740",
-    "brand": "Homeroom",
+    "brand": "Philips",
     "model": "Philips",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -2240,7 +3322,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2251,11 +3335,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:12:33.542Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=39927926802&a=3104617&m=12846",
+        "price": 2995,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2068410_Fs&mw=1080",
+        "product_id": "2068410",
+        "ean": "8720389024740",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8720389041228",
-    "brand": "Homeroom",
+    "brand": "Philips",
     "model": "Philips",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -2272,7 +3370,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2283,11 +3383,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:12:38.092Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=43751438770&a=3104617&m=12846",
+        "price": 495,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2156276_Fs&mw=1080",
+        "product_id": "2156276",
+        "ean": "8720389041228",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7333282015350",
-    "brand": "Homeroom",
+    "brand": "Emerio",
     "model": "Emerio",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -2304,7 +3418,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2315,11 +3431,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:12:40.175Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=38925603250&a=3104617&m=12846",
+        "price": 303,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2091599-01_Fs&mw=1080",
+        "product_id": "2091599-01-0",
+        "ean": "7333282015350",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7333282020835",
-    "brand": "Homeroom",
+    "brand": "Emerio",
     "model": "Emerio",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -2336,7 +3466,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2347,7 +3479,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:12:43.241Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=46104133664&a=3104617&m=12846",
+        "price": 339,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2220699_Fs&mw=1080",
+        "product_id": "2220699",
+        "ean": "7333282020835",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508228171",
@@ -2368,7 +3514,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2379,11 +3527,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:12:46.641Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=43646389629&a=3104617&m=12846",
+        "price": 995,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2267615_Fs&mw=1080",
+        "product_id": "2267615",
+        "ean": "4006508228171",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "homeroom-2267626",
-    "brand": "Homeroom",
+    "brand": "Melitta",
     "model": "Melitta",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -2400,7 +3562,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2411,7 +3575,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:12:48.958Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=43646389630&a=3104617&m=12846",
+        "price": 799,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2267626_Fs&mw=1080",
+        "product_id": "2267626",
+        "ean": "",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7333282019464",
@@ -2443,7 +3621,21 @@
       "gallery": [],
       "status": "excluded",
       "reviewed_at": "2026-09-26T16:12:51.560Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=41509375744&a=3104617&m=12846",
+        "price": 831,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2162282-01_Fs&mw=1080",
+        "product_id": "2162282-01-0",
+        "ean": "7333282019464",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7333282019440",
@@ -2475,7 +3667,21 @@
       "gallery": [],
       "status": "excluded",
       "reviewed_at": "2026-09-26T16:12:53.925Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=41509375745&a=3104617&m=12846",
+        "price": 1239,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2162284-01_Fs&mw=1080",
+        "product_id": "2162284-01-0",
+        "ean": "7333282019440",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8712836998087",
@@ -2496,7 +3702,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2507,7 +3715,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:12:58.045Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=40649122266&a=3104617&m=12846",
+        "price": 499,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2109580_Fs&mw=1080",
+        "product_id": "2109580",
+        "ean": "8712836998087",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8712836992962",
@@ -2528,7 +3750,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2539,11 +3763,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:13:00.791Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=39725514230&a=3104617&m=12846",
+        "price": 1399,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2109593_Fs&mw=1080",
+        "product_id": "2109593",
+        "ean": "8712836992962",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8712836995376",
-    "brand": "Homeroom",
+    "brand": "Tristar",
     "model": "Tristar",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -2560,7 +3798,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2571,7 +3811,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:13:03.208Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=39707877607&a=3104617&m=12846",
+        "price": 249,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2109597_Fs&mw=1080",
+        "product_id": "2109597",
+        "ean": "8712836995376",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "homeroom-2167276",
@@ -2592,7 +3846,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2603,11 +3859,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:13:04.908Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=45203230851&a=3104617&m=12846",
+        "price": 549,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2167276_Fs&mw=1080",
+        "product_id": "2167276",
+        "ean": "",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-3094570153539",
-    "brand": "Homeroom",
+    "brand": "Terraillon",
     "model": "Terraillon",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -2624,7 +3894,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2635,11 +3907,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:13:07.675Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=41520770540&a=3104617&m=12846",
+        "price": 499,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2184540_Fs&mw=1080",
+        "product_id": "2184540",
+        "ean": "3094570153539",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-3094570153881",
-    "brand": "Homeroom",
+    "brand": "Terraillon",
     "model": "Terraillon",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -2656,7 +3942,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2667,11 +3955,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:13:10.775Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=41520770486&a=3104617&m=12846",
+        "price": 499,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2184547_Fs&mw=1080",
+        "product_id": "2184547",
+        "ean": "3094570153881",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-3094570154215",
-    "brand": "Homeroom",
+    "brand": "Terraillon",
     "model": "Terraillon",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -2688,7 +3990,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2699,7 +4003,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:13:14.075Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=44423318893&a=3104617&m=12846",
+        "price": 499,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2184562_Fs&mw=1080",
+        "product_id": "2184562",
+        "ean": "3094570154215",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8712836993273",
@@ -2720,7 +4038,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2731,7 +4051,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:13:17.375Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=41509375342&a=3104617&m=12846",
+        "price": 1299,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2110999_Fs&mw=1080",
+        "product_id": "2110999",
+        "ean": "8712836993273",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8712836993112",
@@ -2752,7 +4086,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2763,7 +4099,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:13:25.774Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=41509375423&a=3104617&m=12846",
+        "price": 1599,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2111055_Fs&mw=1080",
+        "product_id": "2111055",
+        "ean": "8712836993112",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "homeroom-2271434",
@@ -2784,7 +4134,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2795,7 +4147,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:13:29.375Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=44048752149&a=3104617&m=12846",
+        "price": 2990,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2271434_Fs&mw=1080",
+        "product_id": "2271434",
+        "ean": "",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7393822005630",
@@ -2827,7 +4193,21 @@
       "gallery": [],
       "status": "excluded",
       "reviewed_at": "2026-09-26T16:13:32.058Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=42834362996&a=3104617&m=12846",
+        "price": 1299,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2239032_Fs&mw=1080",
+        "product_id": "2239032",
+        "ean": "7393822005630",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7393822005647",
@@ -2859,7 +4239,21 @@
       "gallery": [],
       "status": "excluded",
       "reviewed_at": "2026-09-26T16:13:33.526Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=42834362997&a=3104617&m=12846",
+        "price": 1799,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2239050_Fs&mw=1080",
+        "product_id": "2239050",
+        "ean": "7393822005647",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7393822005654",
@@ -2891,7 +4285,21 @@
       "gallery": [],
       "status": "excluded",
       "reviewed_at": "2026-09-26T16:13:34.476Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=44423318884&a=3104617&m=12846",
+        "price": 2499,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2239298_Fs&mw=1080",
+        "product_id": "2239298",
+        "ean": "7393822005654",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8711658523064",
@@ -2912,7 +4320,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2923,7 +4333,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:13:37.091Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=43809200073&a=3104617&m=12846",
+        "price": 995,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=_2237446_Fs&mw=1080",
+        "product_id": "2237446",
+        "ean": "8711658523064",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4006508220113",
@@ -2944,7 +4368,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2955,11 +4381,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:13:41.625Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=39927926840&a=3104617&m=12846",
+        "price": 799,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2099013_Fs&mw=1080",
+        "product_id": "2099013",
+        "ean": "4006508220113",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7391091867287",
-    "brand": "Homeroom",
+    "brand": "Champion Nordic",
     "model": "Champion Nordic",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -2976,7 +4416,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -2987,7 +4429,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:13:44.208Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=44700423417&a=3104617&m=12846",
+        "price": 499,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2100442_Fs&mw=1080",
+        "product_id": "2100442",
+        "ean": "7391091867287",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7391091868055",
@@ -2995,7 +4451,8 @@
     "model": "Paket Frukostserie Matte Black Series",
     "type": "Kaffebryggare",
     "automation": 3,
-    "control": 3,    "ease": 3,
+    "control": 3,
+    "ease": 3,
     "espresso": 1,
     "milk": 1,
     "cleaning": 3,
@@ -3018,7 +4475,21 @@
       "gallery": [],
       "status": "excluded",
       "reviewed_at": "2026-09-26T16:13:46.008Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=43942744988&a=3104617&m=12846",
+        "price": 999,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2185968_Fs&mw=1080",
+        "product_id": "2185968",
+        "ean": "7391091868055",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7333282025779",
@@ -3050,11 +4521,25 @@
       "gallery": [],
       "status": "excluded",
       "reviewed_at": "2026-09-26T16:13:46.875Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=44755700133&a=3104617&m=12846",
+        "price": 1551,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2253952_Fs&mw=1080",
+        "product_id": "2253952",
+        "ean": "7333282025779",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7333282024000",
-    "brand": "Homeroom",
+    "brand": "Emerio",
     "model": "Emerio",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -3071,7 +4556,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -3082,11 +4569,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:13:51.008Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=46104134355&a=3104617&m=12846",
+        "price": 664,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2290981-01_Fs&mw=1080",
+        "product_id": "2290981-01-0",
+        "ean": "7333282024000",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7333282026073",
-    "brand": "Homeroom",
+    "brand": "Emerio",
     "model": "Emerio",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -3103,7 +4604,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -3114,11 +4617,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:13:55.658Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=46104134357&a=3104617&m=12846",
+        "price": 403,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2291179-01_Fs&mw=1080",
+        "product_id": "2291179-01-0",
+        "ean": "7333282026073",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4008146049132",
-    "brand": "Homeroom",
+    "brand": "Severin",
     "model": "Severin",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -3135,7 +4652,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -3146,7 +4665,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:13:59.508Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=45115197097&a=3104617&m=12846",
+        "price": 2499,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2327269-01_Fs&mw=1080",
+        "product_id": "2327269-01-0",
+        "ean": "4008146049132",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4008146049156",
@@ -3167,7 +4700,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -3178,7 +4713,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:14:05.792Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=45115197098&a=3104617&m=12846",
+        "price": 2799,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2327272-01_Fs&mw=1080",
+        "product_id": "2327272-01-0",
+        "ean": "4008146049156",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-4008146047572",
@@ -3199,7 +4748,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -3210,11 +4761,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:14:08.908Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=43006993420&a=3104617&m=12846",
+        "price": 999,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2255040_Fs&mw=1080",
+        "product_id": "2255040",
+        "ean": "4008146047572",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7391091867812",
-    "brand": "Homeroom",
+    "brand": "Champion Nordic",
     "model": "Champion Nordic",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -3231,7 +4796,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -3242,7 +4809,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:14:11.308Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=41802735785&a=3104617&m=12846",
+        "price": 399,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2185072_Fs&mw=1080",
+        "product_id": "2185072",
+        "ean": "7391091867812",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8006363074339",
@@ -3263,7 +4844,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "moka"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -3274,7 +4857,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:14:14.758Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=45234345954&a=3104617&m=12846",
+        "price": 1129,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2331981-01_Fs&mw=1080",
+        "product_id": "2331981-01-0",
+        "ean": "8006363074339",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-8006363074346",
@@ -3295,7 +4892,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "moka"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -3306,7 +4905,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:14:16.441Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=45234345955&a=3104617&m=12846",
+        "price": 1399,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2331983-01_Fs&mw=1080",
+        "product_id": "2331983-01-0",
+        "ean": "8006363074346",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7333282030681",
@@ -3338,7 +4951,21 @@
       "gallery": [],
       "status": "excluded",
       "reviewed_at": "2026-09-26T16:14:18.192Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=45234345956&a=3104617&m=12846",
+        "price": 999,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2332284-01_Fs&mw=1080",
+        "product_id": "2332284-01-0",
+        "ean": "7333282030681",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7333282030698",
@@ -3370,7 +4997,21 @@
       "gallery": [],
       "status": "excluded",
       "reviewed_at": "2026-09-26T16:14:19.059Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=45234345957&a=3104617&m=12846",
+        "price": 1352,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2332288-01_Fs&mw=1080",
+        "product_id": "2332288-01-0",
+        "ean": "7333282030698",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-6410416130798",
@@ -3391,7 +5032,9 @@
       "espresso"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "espresso"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -3402,7 +5045,21 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:14:21.708Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=42519968955&a=3104617&m=12846",
+        "price": 549,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2236378_Fs&mw=1080",
+        "product_id": "2236378",
+        "ean": "6410416130798",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-6410412704634",
@@ -3423,7 +5080,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "moka"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -3434,11 +5093,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:14:23.809Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=42519968956&a=3104617&m=12846",
+        "price": 299,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2236381_Fs&mw=1080",
+        "product_id": "2236381",
+        "ean": "6410412704634",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-3045387294090",
-    "brand": "Homeroom",
+    "brand": "OBH Nordica",
     "model": "OBH Nordica",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -3455,7 +5128,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -3466,11 +5141,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:14:26.924Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=45234345273&a=3104617&m=12846",
+        "price": 799,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2341744-01_Fs&mw=1080",
+        "product_id": "2341744-01-0",
+        "ean": "3045387294090",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7333282021191",
-    "brand": "Homeroom",
+    "brand": "Emerio",
     "model": "Emerio",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -3487,7 +5176,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -3498,11 +5189,25 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:14:30.241Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=43935195262&a=3104617&m=12846",
+        "price": 638,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2246335_Fs&mw=1080",
+        "product_id": "2246335",
+        "ean": "7333282021191",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   },
   {
     "id": "ean-7333282021177",
-    "brand": "Homeroom",
+    "brand": "Emerio",
     "model": "Emerio",
     "type": "Kaffebryggare",
     "automation": 3,
@@ -3519,7 +5224,9 @@
       "svart"
     ],
     "audience": [],
-    "tags": [],
+    "tags": [
+      "bryggkaffe"
+    ],
     "description": "",
     "pros": [],
     "cons": [],
@@ -3530,6 +5237,20 @@
       "gallery": [],
       "status": "approved",
       "approved_at": "2026-09-26T16:14:31.925Z"
-    }
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=43479671579&a=3104617&m=12846",
+        "price": 638,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2246433_Fs&mw=1080",
+        "product_id": "2246433",
+        "ean": "7333282021177",
+        "source": "Awin · Homeroom SE"
+      }
+    ]
   }
 ]
