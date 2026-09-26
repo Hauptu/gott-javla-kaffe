@@ -683,3 +683,14 @@
   background:var(--ink);
   border-radius:0 0 3px 3px;
 }
+
+
+/* Affiliate offers — one product can have multiple merchant links */
+.offer-list{display:grid;gap:7px;margin-top:4px}
+.offer-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 10px;align-items:center;padding:9px 0;border-top:1px solid var(--line)}
+.offer-row:first-child{border-top:0}
+.offer-merchant{font-size:11px;font-weight:750;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.offer-price{font-size:12px;font-weight:850;white-space:nowrap}
+.offer-row .buy-button{grid-column:1 / -1;padding:9px 12px;font-size:11px}
+.modal-card .offer-list{margin:14px 0 20px;padding-top:2px}
+@media(min-width:700px){.product-card>.offer-list .offer-row{grid-template-columns:1fr auto auto}.product-card>.offer-list .offer-row .buy-button{grid-column:auto;min-width:92px}}
