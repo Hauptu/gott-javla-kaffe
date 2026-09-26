@@ -90,7 +90,7 @@ function offerMarkup(p){
 function track(event,params={}){const payload={event,...params,ts:new Date().toISOString()};window.dataLayer=window.dataLayer||[];window.dataLayer.push(payload);try{const k='gottjavlakaffe_events',e=JSON.parse(localStorage.getItem(k)||'[]');e.push(payload);localStorage.setItem(k,JSON.stringify(e.slice(-250)))}catch(_){} }
 
 async function init(){
- try{const r=await fetch('data/products.json');if(!r.ok)throw new Error('products.json '+r.status);products=await r.json();}
+ try{const r=await fetch('data/products.json');if(!r.ok)throw new Error('products.json '+r.status);products=(await r.json()).filter(p=>p.lifecycle_status==='active'&&p.images?.status==='approved');}
  catch(e){console.error(e);$('productGrid').innerHTML='<div class="empty">Produktdata kunde inte laddas.</div>';return}
  setupFilters();const initialQuery=new URLSearchParams(location.search).get('q');if(initialQuery){$('search').value=initialQuery;filterProducts()}else{renderProducts(products)}renderQuestion();wireQuickStarts();wireSimulator();track('page_view',{path:location.pathname,query:initialQuery||''});
 }
