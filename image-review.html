@@ -73,6 +73,7 @@
 </main>
 <script>
 let products=[];
+let feedProducts=[];
 let reviewState={};
 let reviewTotal=0;
 let reviewedIds=new Set();
@@ -114,7 +115,9 @@ function applyReviewState(){
 
 function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function candidates(p){
-  const i=p.images||{}, out=[], seen=new Set();
+  const feed=feedProducts.find(x=>x.id===p.id)||{};
+  const i=feed.images||{};
+  const out=[], seen=new Set();
   const add=(url,label,source)=>{if(!url||seen.has(url))return;seen.add(url);out.push({url,label,source})};
   add(i.large,'Large image','large_image');
   (Array.isArray(i.alternates)?i.alternates:[]).forEach((url,n)=>add(url,'Alternativ '+(n+1),'alternate_image'));
@@ -122,8 +125,8 @@ function candidates(p){
   add(i.affiliate,'Affiliate image','affiliate_image');
   add(i.aw_image,'Awin image','aw_image_url');
   add(i.aw_thumb,'Awin thumbnail','aw_thumb_url');
-  add(p.feed_image_url,'Feed image','feed_image_url');
-  const offer=(Array.isArray(p.affiliate_offers)?p.affiliate_offers:[]).find(o=>o?.image_url);
+  add(feed.feed_image_url,'Feed image','feed_image_url');
+  const offer=(Array.isArray(feed.affiliate_offers)?feed.affiliate_offers:[]).find(o=>o?.image_url);
   add(offer?.image_url,'Offer image','affiliate_offer');
   return out;
 }
@@ -139,7 +142,7 @@ function render(){
   $('reviews').innerHTML=pending.length?pending.map(p=>{
     const cs=candidates(p), current=p.images?.primary||'';
     return '<article class="review-card '+(current?'approved':'')+'" data-id="'+escapeHtml(p.id)+'">'+
-      '<div class="review-card-head"><div><span class="eyebrow">'+escapeHtml(p.type||'Produkt')+'</span><h2>'+escapeHtml(p.brand+' '+p.model)+'</h2><div class="review-card-meta">'+escapeHtml(p.images?.source||p.feed_source||'')+'</div></div><span class="review-badge">Needs review</span></div>'+
+      '<div class="review-card-head"><div><span class="eyebrow">'+escapeHtml(p.type||'Produkt')+'</span><h2>'+escapeHtml(p.brand+' '+p.model)+'</h2><div class="review-card-meta">'+escapeHtml((feedProducts.find(x=>x.id===p.id)||{}).feed_source||'')+'</div></div><span class="review-badge">Needs review</span></div>'+
       '<div class="review-candidates">'+cs.map((c,n)=>'<button class="review-candidate '+(c.url===current?'selected':'')+'" data-url="'+encodeURIComponent(c.url)+'" title="'+escapeHtml(c.url)+'"><img src="'+escapeHtml(c.url)+'" alt="'+escapeHtml(p.brand+' '+p.model)+' – '+escapeHtml(c.label)+'" loading="lazy"><div class="review-candidate-info"><strong>'+escapeHtml(c.label)+'</strong><span>'+escapeHtml(c.source)+'</span></div></button>').join('')+'</div>'+
       '<div class="review-preview"><div><div class="review-preview-label">Så visas bilden i Biblioteket</div><div class="review-preview-card"><div class="product-image"><div class="image-placeholder">Produktbild</div></div><div class="brand">'+escapeHtml(p.brand)+'</div><h3>'+escapeHtml(p.model)+'</h3></div></div><div class="review-preview-note">Välj en kandidat ovan. Förhandsvisningen använder samma 4:5-bildyta som produktkorten i Biblioteket, så du ser direkt om maskinen blir lagom stor och om bilden har för mycket tom yta.</div></div>'+
       '<div class="review-card-actions"><span class="review-note">Godkänn en kandidat om den håller måttet. Om ingen bild är tillräckligt bra kan du markera produkten som bildlös i stället.</span><div class="review-actions"><button class="review-button secondary exclude">Exkludera produkt från biblioteket</button><button class="review-button secondary no-image">Ingen bild är tillräckligt bra</button><button class="review-button primary approve" disabled>Godkänn vald bild</button></div></div>'+
@@ -231,20 +234,21 @@ $('reset').onclick=()=>{
   location.reload();
 };
 loadReviewState();
-fetch('data/products.json?review='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(data=>{
+Promise.all([
+  fetch('data/products.json?review='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}),
+  fetch('data/product-candidates.json?review='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})
+]).then(([data,feed])=>{
   products=data;
-  // Keep the review counter tied to the original review queue, even after an
-  // exported products.json is committed with already-reviewed products.
-  const pendingCount=products.filter(p=>p.images?.status==='needs_review').length;
-  const savedForQueue=products.filter(p=>p.images?.status==='needs_review' && Object.prototype.hasOwnProperty.call(reviewState,p.id)).length;
-  reviewTotal=pendingCount+savedForQueue;
+  feedProducts=Array.isArray(feed?.products)?feed.products:[];
+  // This is a fresh review batch: every clean-sheet product is in the queue.
+  reviewTotal=products.length;
   applyReviewState();
   reviewedIds=new Set(products.filter(p=>p.images?.status!=='needs_review').map(p=>p.id));
   Object.entries(reviewState||{}).forEach(([id,saved])=>{
     if(saved?.status && saved.status!=='needs_review') reviewedIds.add(id);
   });
   render();
-}).catch(e=>{console.error(e);$('status').textContent='Kunde inte läsa data/products.json.'});
+}).catch(e=>{console.error(e);$('status').textContent='Kunde inte läsa produktbiblioteket eller bildkällorna.'});
 </script>
 </body>
 </html>
