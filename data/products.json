@@ -1,6 +1,6 @@
 [
   {
-    "id": "severin",
+    "id": "ean-4008146033643",
     "brand": "Homeroom",
     "model": "Severin",
     "type": "Kaffebryggare",
@@ -49,7 +49,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1654211_Fs",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1654211_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1654211_Fs&mw=1080",
       "large": "",
@@ -60,14 +60,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1654211_De_01&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:31:22.272Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1654211_Fs&mw=1080"
   },
   {
-    "id": "melitta-look-therm-perfection",
+    "id": "ean-4006508222483",
     "brand": "Melitta",
     "model": "LOOK Therm Perfection",
     "type": "Kaffebryggare",
@@ -104,7 +103,7 @@
       "Ingen espresso",
       "Ingen mjölkfunktion"
     ],
-    "needs_review": false,
+    "needs_review": true,
     "affiliate_url": "https://www.awin1.com/pclick.php?p=45565755751&a=3104617&m=12846",
     "affiliate_status": "active",
     "merchant_name": "Homeroom SE",
@@ -132,7 +131,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1669933_Fs&mw=1500",
+      "primary": "",
       "gallery": [],
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1669933_Fs&mw=1080",
       "large": "",
@@ -143,14 +142,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1669933_Fs",
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1669933_Fs&mw=1080"
       ],
-      "status": "approved",
+      "status": "needs_review",
       "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T13:54:55.690Z",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1669933_Fs&mw=1080"
     }
   },
   {
-    "id": "princess-espressomaskin-med-mjölkskumning",
+    "id": "ean-8713016094261",
     "brand": "Princess",
     "model": "Espressomaskin med mjölkskumning",
     "type": "Espressomaskin",
@@ -199,7 +197,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1596458_Fs",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1596458_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1596458_Fs&mw=1080",
       "large": "",
@@ -210,14 +208,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1596458_Fs&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:31:36.621Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1596458_Fs&mw=1080"
   },
   {
-    "id": "dorre-kaffepanna-silver",
+    "id": "ean-7392753371487",
     "brand": "Dorre",
     "model": "Kaffepanna - Silver",
     "type": "Kaffebryggare",
@@ -266,7 +263,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=hom_1714514-01_Fs",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=hom_1714514-01_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=hom_1714514-01_Fs&mw=1080",
       "large": "",
@@ -277,14 +274,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=hom_1714514-01_Bs&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:31:48.321Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=hom_1714514-01_Fs&mw=1080"
   },
   {
-    "id": "melitta",
+    "id": "ean-4006508218721",
     "brand": "Homeroom",
     "model": "Melitta",
     "type": "Kaffebryggare",
@@ -333,7 +329,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1720986_Fs&mw=1500",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1611712_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1611712_Fs&mw=1080",
       "large": "",
@@ -344,14 +340,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1611712_Fs&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:32:02.671Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1611712_Fs&mw=1080"
   },
   {
-    "id": "melitta",
+    "id": "ean-4006508207596",
     "brand": "Homeroom",
     "model": "Melitta",
     "type": "Kaffebryggare",
@@ -400,7 +395,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1720986_Fs&mw=1500",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1720986_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1720986_Fs&mw=1080",
       "large": "",
@@ -411,14 +406,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1720986_Fs&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:32:02.671Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1720986_Fs&mw=1080"
   },
   {
-    "id": "severin",
+    "id": "ean-4008146032196",
     "brand": "Homeroom",
     "model": "Severin",
     "type": "Kaffebryggare",
@@ -467,7 +461,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1654211_Fs",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1584619_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1584619_Fs&mw=1080",
       "large": "",
@@ -478,14 +472,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1584619_De_01&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:31:22.272Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1584619_Fs&mw=1080"
   },
   {
-    "id": "delonghi-magnifica-evo",
+    "id": "ean-8004399021365",
     "brand": "De'Longhi",
     "model": "Magnifica Evo",
     "type": "Helautomatisk",
@@ -526,7 +519,7 @@
       "Begränsad manuell kontroll",
       "Variant påverkar mjölksystem"
     ],
-    "needs_review": false,
+    "needs_review": true,
     "affiliate_url": "https://www.awin1.com/pclick.php?p=43845325907&a=3104617&m=12846",
     "affiliate_status": "active",
     "merchant_name": "Homeroom SE",
@@ -554,10 +547,10 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_Fs&mw=1500",
+      "primary": "",
       "affiliate": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.ellosgroup.com%2Fi%2Fellos%2Fb%3F%24hg%24%26%24hm%24%26%24hp%24%26%24hd%24%26n%3Dell_1737016_Fs%26mw%3D1080&feedId=91087&k=7753b23a1fc52b5a20e8fc8af4191103385669d7",
       "gallery": [],
-      "status": "approved",
+      "status": "needs_review",
       "source": "Awin · Homeroom SE",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_Fs&mw=1080",
       "large": "",
@@ -567,12 +560,11 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_Fs&mw=1500",
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_Fs",
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_De_01&mw=1080"
-      ],
-      "approved_at": "2026-09-26T13:55:04.406Z"
+      ]
     }
   },
   {
-    "id": "delonghi-espressomaskin-helautomatisk-ecam290-81-tb",
+    "id": "ean-8004399021419",
     "brand": "Delonghi",
     "model": "Espressomaskin – helautomatisk ECAM290.81.TB",
     "type": "Espressomaskin",
@@ -621,7 +613,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737017_Fs&mw=1500",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737017_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737017_Fs&mw=1080",
       "large": "",
@@ -632,14 +624,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737017_De_01&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:36:18.457Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737017_Fs&mw=1080"
   },
   {
-    "id": "severin-dubbelbryggare-termos",
+    "id": "ean-4008146041525",
     "brand": "Severin",
     "model": "Dubbelbryggare Termos",
     "type": "Kaffebryggare",
@@ -688,7 +679,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737129_Fs&mw=1500",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737081_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737081_Fs&mw=1080",
       "large": "",
@@ -699,14 +690,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737081_De_01&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:36:25.988Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737081_Fs&mw=1080"
   },
   {
-    "id": "severin-dubbelbryggare-termos",
+    "id": "ean-4008146041501",
     "brand": "Severin",
     "model": "Dubbelbryggare Termos",
     "type": "Kaffebryggare",
@@ -772,7 +762,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737129_Fs&mw=1080"
   },
   {
-    "id": "melitta",
+    "id": "ean-4006508218738",
     "brand": "Homeroom",
     "model": "Melitta",
     "type": "Kaffebryggare",
@@ -821,7 +811,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1720986_Fs&mw=1500",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1546127_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1546127_Fs&mw=1080",
       "large": "",
@@ -832,14 +822,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1546127_Fs&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:32:02.671Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1546127_Fs&mw=1080"
   },
   {
-    "id": "melitta",
+    "id": "ean-4006508218714",
     "brand": "Homeroom",
     "model": "Melitta",
     "type": "Kaffebryggare",
@@ -888,7 +877,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1720986_Fs&mw=1500",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1546157_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1546157_Fs&mw=1080",
       "large": "",
@@ -899,14 +888,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1546157_Fs&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:32:02.671Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1546157_Fs&mw=1080"
   },
   {
-    "id": "melitta-avanza-inmould-helautomatisk-kaffemaskin",
+    "id": "ean-4006508222100",
     "brand": "Melitta",
     "model": "Avanza Inmould Helautomatisk kaffemaskin",
     "type": "Kaffebryggare",
@@ -972,7 +960,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1624228_Fs&mw=1080"
   },
   {
-    "id": "melitta-purista-svart-helautomatisk-kaffemaskin",
+    "id": "ean-4006508221615",
     "brand": "Melitta",
     "model": "Purista Svart Helautomatisk kaffemaskin",
     "type": "Kaffebryggare",
@@ -1038,7 +1026,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1624248_Fs&mw=1080"
   },
   {
-    "id": "philips",
+    "id": "ean-8710103673996",
     "brand": "Homeroom",
     "model": "Philips",
     "type": "Kaffebryggare",
@@ -1104,7 +1092,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1624545_Fs&mw=1080"
   },
   {
-    "id": "melitta",
+    "id": "ean-4006508218806",
     "brand": "Homeroom",
     "model": "Melitta",
     "type": "Kaffebryggare",
@@ -1153,7 +1141,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1720986_Fs&mw=1500",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1624575_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1624575_Fs&mw=1080",
       "large": "",
@@ -1164,14 +1152,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1624575_Fs&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:32:02.671Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1624575_Fs&mw=1080"
   },
   {
-    "id": "russell-hobbs",
+    "id": "ean-5038061111248",
     "brand": "Homeroom",
     "model": "Russell Hobbs",
     "type": "Kaffebryggare",
@@ -1237,7 +1224,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1624964_Fs&mw=1080"
   },
   {
-    "id": "russell-hobbs",
+    "id": "ean-5038061111279",
     "brand": "Homeroom",
     "model": "Russell Hobbs",
     "type": "Kaffebryggare",
@@ -1303,7 +1290,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1624970_Fs&mw=1080"
   },
   {
-    "id": "obh-nordica",
+    "id": "ean-5708642022965",
     "brand": "Homeroom",
     "model": "OBH Nordica",
     "type": "Kaffebryggare",
@@ -1369,7 +1356,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1724954_Fs&mw=1080"
   },
   {
-    "id": "c3-perkolator-svart-10kp",
+    "id": "ean-7331890505164",
     "brand": "C3",
     "model": "Perkolator Svart 10kp",
     "type": "Perkolatorbryggare",
@@ -1435,7 +1422,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1015649_Fs&mw=1080"
   },
   {
-    "id": "c3-perkolator-borstat-stål-10kp",
+    "id": "ean-7331890505140",
     "brand": "C3",
     "model": "Perkolator Borstat stål 10kp",
     "type": "Perkolatorbryggare",
@@ -1501,7 +1488,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1019330_Fs&mw=1080"
   },
   {
-    "id": "c3-perkolator-svart-stål-6kp",
+    "id": "ean-7331890505157",
     "brand": "C3",
     "model": "Perkolator Svart stål 6kp",
     "type": "Perkolatorbryggare",
@@ -1567,7 +1554,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1020436_Fs&mw=1080"
   },
   {
-    "id": "champion-nordic-frukostserie-paket-creme-white",
+    "id": "ean-7391091863074",
     "brand": "Champion Nordic",
     "model": "Frukostserie Paket Creme White",
     "type": "Kaffebryggare",
@@ -1633,7 +1620,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1699039_Fs&mw=1080"
   },
   {
-    "id": "champion-nordic",
+    "id": "ean-7391091861728",
     "brand": "Homeroom",
     "model": "Champion Nordic",
     "type": "Kaffebryggare",
@@ -1699,7 +1686,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1699042_Fs&mw=1080"
   },
   {
-    "id": "russell-hobbs",
+    "id": "ean-4008496820900",
     "brand": "Homeroom",
     "model": "Russell Hobbs",
     "type": "Kaffebryggare",
@@ -1765,7 +1752,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1674623_Fs&mw=1080"
   },
   {
-    "id": "russell-hobbs-espressomaskin-distinctions-espresso-machine-26450-56",
+    "id": "ean-5038061141412",
     "brand": "Russell Hobbs",
     "model": "Espressomaskin Distinctions Espresso Machine 26450-56",
     "type": "Espressomaskin",
@@ -1831,7 +1818,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1748933_Fs&mw=1080"
   },
   {
-    "id": "melitta-excellent-4-0-kaffebryggare",
+    "id": "ean-4006508215270",
     "brand": "Melitta",
     "model": "Excellent 4.0 Kaffebryggare",
     "type": "Kaffebryggare",
@@ -1897,7 +1884,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1520154_Fs&mw=1080"
   },
   {
-    "id": "melitta-excellent-steel-4-0-kaffebryggare",
+    "id": "ean-4006508215218",
     "brand": "Melitta",
     "model": "Excellent Steel 4.0 Kaffebryggare",
     "type": "Kaffebryggare",
@@ -1963,7 +1950,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1520175_Fs&mw=1080"
   },
   {
-    "id": "melitta-excellent-4-0-kaffebryggar",
+    "id": "ean-4006508215201",
     "brand": "Melitta",
     "model": "Excellent 4.0 Kaffebryggar",
     "type": "Kaffebryggare",
@@ -2029,7 +2016,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1520176_Fs&mw=1080"
   },
   {
-    "id": "melitta-caffeo-barista",
+    "id": "ean-4006508217847",
     "brand": "Melitta",
     "model": "Caffeo Barista",
     "type": "Espressomaskin",
@@ -2095,7 +2082,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1526335_Fs&mw=1080"
   },
   {
-    "id": "melitta-caffeo-barista",
+    "id": "ean-4006508217830",
     "brand": "Melitta",
     "model": "Caffeo Barista",
     "type": "Espressomaskin",
@@ -2161,7 +2148,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1526345_Fs&mw=1080"
   },
   {
-    "id": "melitta-caffeo-solo-och-perfect-milk-20812",
+    "id": "ean-4006508208128",
     "brand": "Melitta",
     "model": "Caffeo Solo & Perfect Milk (20812)",
     "type": "Espressomaskin",
@@ -2227,7 +2214,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1000311_Fs&mw=1080"
   },
   {
-    "id": "melitta-single-5-svart-auto-off-21117",
+    "id": "ean-4006508211173",
     "brand": "Melitta",
     "model": "Single 5 svart Auto Off (21117)",
     "type": "Kaffebryggare",
@@ -2293,7 +2280,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1006313_Fs&mw=1080"
   },
   {
-    "id": "melitta-melitta-aroma-boy-svart-auto-off",
+    "id": "ean-4006508209521",
     "brand": "Melitta",
     "model": "Melitta Aroma Boy Svart Auto Off",
     "type": "Kaffebryggare",
@@ -2359,7 +2346,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1007857_Fs&mw=1080"
   },
   {
-    "id": "obh-nordica",
+    "id": "ean-5708642023733",
     "brand": "Homeroom",
     "model": "OBH Nordica",
     "type": "Kaffebryggare",
@@ -2425,7 +2412,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1008368_Fs&mw=1080"
   },
   {
-    "id": "melitta-handpresso-3-koppar",
+    "id": "ean-4006508173082",
     "brand": "Melitta",
     "model": "Handpresso 3 Koppar",
     "type": "Kaffebryggare",
@@ -2491,7 +2478,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1008520_Fs&mw=1080"
   },
   {
-    "id": "melitta-handpresso-9-koppar",
+    "id": "ean-4006508170401",
     "brand": "Melitta",
     "model": "Handpresso 9 Koppar",
     "type": "Kaffebryggare",
@@ -2557,7 +2544,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1008529_Fs&mw=1080"
   },
   {
-    "id": "melitta",
+    "id": "ean-4006508214457",
     "brand": "Homeroom",
     "model": "Melitta",
     "type": "Kaffebryggare",
@@ -2606,7 +2593,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1720986_Fs&mw=1500",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1010525_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1010525_Fs&mw=1080",
       "large": "",
@@ -2617,14 +2604,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1010525_Fs&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:32:02.671Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1010525_Fs&mw=1080"
   },
   {
-    "id": "melitta",
+    "id": "ean-4006508214471",
     "brand": "Homeroom",
     "model": "Melitta",
     "type": "Kaffebryggare",
@@ -2673,7 +2659,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1720986_Fs&mw=1500",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1010539_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1010539_Fs&mw=1080",
       "large": "",
@@ -2684,14 +2670,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1010539_Fs&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:32:02.671Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1010539_Fs&mw=1080"
   },
   {
-    "id": "braun",
+    "id": "ean-8021098320247",
     "brand": "Homeroom",
     "model": "Braun",
     "type": "Kaffebryggare",
@@ -2757,7 +2742,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1011145_Fs&mw=1080"
   },
   {
-    "id": "dorre-pressobryggare-prexa-silver",
+    "id": "ean-7392753588762",
     "brand": "Dorre",
     "model": "Pressobryggare Prexa - Silver",
     "type": "Kaffebryggare",
@@ -2823,7 +2808,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=hom_1741613-01_Fs&mw=1080"
   },
   {
-    "id": "melitta",
+    "id": "ean-4006508227495",
     "brand": "Homeroom",
     "model": "Melitta",
     "type": "Kaffebryggare",
@@ -2872,7 +2857,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1720986_Fs&mw=1500",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1755600_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1755600_Fs&mw=1080",
       "large": "",
@@ -2883,14 +2868,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1755600_De_01&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:32:02.671Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1755600_Fs&mw=1080"
   },
   {
-    "id": "melitta",
+    "id": "ean-4006508227488",
     "brand": "Homeroom",
     "model": "Melitta",
     "type": "Kaffebryggare",
@@ -2939,7 +2923,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1720986_Fs&mw=1500",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1755615_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1755615_Fs&mw=1080",
       "large": "",
@@ -2950,14 +2934,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1755615_De_01&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:32:02.671Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1755615_Fs&mw=1080"
   },
   {
-    "id": "melitta",
+    "id": "ean-4006508224265",
     "brand": "Homeroom",
     "model": "Melitta",
     "type": "Kaffebryggare",
@@ -3006,7 +2989,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1720986_Fs&mw=1500",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1755641_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1755641_Fs&mw=1080",
       "large": "",
@@ -3017,14 +3000,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1755641_De_01&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:32:02.671Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1755641_Fs&mw=1080"
   },
   {
-    "id": "braun",
+    "id": "ean-8021098003485",
     "brand": "Homeroom",
     "model": "Braun",
     "type": "Kaffebryggare",
@@ -3090,7 +3072,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1978520_Fs&mw=1080"
   },
   {
-    "id": "braun",
+    "id": "ean-8021098320124",
     "brand": "Homeroom",
     "model": "Braun",
     "type": "Kaffebryggare",
@@ -3156,7 +3138,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1978760_Fs&mw=1080"
   },
   {
-    "id": "delonghi-kapselmaskin-edg226-a-genio-s-automatic-capsule-machine",
+    "id": "ean-8004399026667",
     "brand": "Delonghi",
     "model": "Kapselmaskin Edg226.a Genio S Automatic Capsule Machine",
     "type": "Espressomaskin",
@@ -3222,7 +3204,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1978923_Fs&mw=1080"
   },
   {
-    "id": "delonghi-espressomaskin-manual-ec235-bk-stilosa",
+    "id": "ean-8004399334588",
     "brand": "Delonghi",
     "model": "Espressomaskin Manual Ec235.bk Stilosa",
     "type": "Espressomaskin",
@@ -3288,7 +3270,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1979947_Fs&mw=1080"
   },
   {
-    "id": "delonghi-kapselmaskin-edg426-gy-genio-s-touch-automatic-anthracite",
+    "id": "ean-8004399334564",
     "brand": "Delonghi",
     "model": "Kapselmaskin Edg426.gy Genio S Touch Automatic Anthracite",
     "type": "Espressomaskin",
@@ -3354,7 +3336,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1980025_Fs&mw=1080"
   },
   {
-    "id": "emerio",
+    "id": "ean-7333282012991",
     "brand": "Homeroom",
     "model": "Emerio",
     "type": "Kaffebryggare",
@@ -3420,7 +3402,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2049028-01_Fs&mw=1080"
   },
   {
-    "id": "severin",
+    "id": "ean-4008146030734",
     "brand": "Homeroom",
     "model": "Severin",
     "type": "Kaffebryggare",
@@ -3469,7 +3451,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1654211_Fs",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2083515_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2083515_Fs&mw=1080",
       "large": "",
@@ -3480,14 +3462,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2083515_De_01&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:31:22.272Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2083515_Fs&mw=1080"
   },
   {
-    "id": "melitta",
+    "id": "ean-4006508219414",
     "brand": "Homeroom",
     "model": "Melitta",
     "type": "Kaffebryggare",
@@ -3536,7 +3517,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1720986_Fs&mw=1500",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1759306_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1759306_Fs&mw=1080",
       "large": "",
@@ -3547,14 +3528,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1759306_De_01&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:32:02.671Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1759306_Fs&mw=1080"
   },
   {
-    "id": "bialetti-mokabryggare-1-kopp-moka-silver-kaffe-och-espressomaskiner",
+    "id": "ean-8006363011617",
     "brand": "Bialetti",
     "model": "Mokabryggare 1 kopp Moka - Silver - Kaffe & espressomaskiner",
     "type": "Espressomaskin",
@@ -3620,7 +3600,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1908109-01_Fs&mw=1080"
   },
   {
-    "id": "bialetti-mokabryggare-2-kopp-brikka-4-silver-kaffe-och-espressomaskiner",
+    "id": "ean-8006363040556",
     "brand": "Bialetti",
     "model": "Mokabryggare 2 kopp Brikka 4 - Silver - Kaffe & espressomaskiner",
     "type": "Espressomaskin",
@@ -3686,7 +3666,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1910033-01_Fs&mw=1080"
   },
   {
-    "id": "bialetti-mokabryggare-4-koppar-brikka-induktion-grå-kaffe-och-espressomaskiner",
+    "id": "ean-8006363035996",
     "brand": "Bialetti",
     "model": "Mokabryggare 4 koppar Brikka Induktion - Grå - Kaffe & espressomaskiner",
     "type": "Espressomaskin",
@@ -3752,7 +3732,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1910038-01_Fs&mw=1080"
   },
   {
-    "id": "bialetti-mokabryggare-mokainduction-4-k-svart-kaffe-och-espressomaskiner",
+    "id": "ean-8006363029087",
     "brand": "Bialetti",
     "model": "Mokabryggare MokaInduction 4/k - Svart - Kaffe & espressomaskiner",
     "type": "Espressomaskin",
@@ -3818,7 +3798,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1910113_Fs&mw=1080"
   },
   {
-    "id": "bialetti-mokabryggare-3-kopp-moka-italien-grön-kaffe-och-espressomaskiner",
+    "id": "ean-8006363018951",
     "brand": "Bialetti",
     "model": "Mokabryggare 3 kopp Moka Italien - Grön - Kaffe & espressomaskiner",
     "type": "Espressomaskin",
@@ -3884,7 +3864,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1910125-01_Fs&mw=1080"
   },
   {
-    "id": "bialetti-mokabryggare-mini-express-set-induktion-svart-kaffe-och-espressomaskiner",
+    "id": "ean-8006363036009",
     "brand": "Bialetti",
     "model": "Mokabryggare Mini Express set Induktion - Svart - Kaffe & espressomaskiner",
     "type": "Espressomaskin",
@@ -3950,7 +3930,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1910183-01_Fs&mw=1080"
   },
   {
-    "id": "melitta",
+    "id": "ean-4006508217380",
     "brand": "Homeroom",
     "model": "Melitta",
     "type": "Kaffebryggare",
@@ -3999,7 +3979,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1720986_Fs&mw=1500",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1575196_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1575196_Fs&mw=1080",
       "large": "",
@@ -4010,14 +3990,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1575196_Fs&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:32:02.671Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1575196_Fs&mw=1080"
   },
   {
-    "id": "emerio",
+    "id": "ean-7333282004439",
     "brand": "Homeroom",
     "model": "Emerio",
     "type": "Kaffebryggare",
@@ -4083,7 +4062,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2024368-01_Fs&mw=1080"
   },
   {
-    "id": "emerio",
+    "id": "ean-7333282003128",
     "brand": "Homeroom",
     "model": "Emerio",
     "type": "Kaffebryggare",
@@ -4149,7 +4128,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2024679-01_Fs&mw=1080"
   },
   {
-    "id": "tristar-espressomaskin-cm-2278-med-mjölkskummare",
+    "id": "ean-8712836985483",
     "brand": "Tristar",
     "model": "Espressomaskin Cm-2278 med mjölkskummare",
     "type": "Espressomaskin",
@@ -4215,7 +4194,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2026321_Fs&mw=1080"
   },
   {
-    "id": "bosch",
+    "id": "ean-4242005396917",
     "brand": "Homeroom",
     "model": "Bosch",
     "type": "Kaffebryggare",
@@ -4281,7 +4260,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2033317_Fs&mw=1080"
   },
   {
-    "id": "philips-series-2200",
+    "id": "ean-8710103894735",
     "brand": "Philips",
     "model": "Series 2200",
     "type": "Helautomatisk",
@@ -4320,7 +4299,7 @@
       "Mindre mjölkkomfort",
       "Begränsad kontroll"
     ],
-    "needs_review": false,
+    "needs_review": true,
     "affiliate_url": "https://www.awin1.com/pclick.php?p=45943746943&a=3104617&m=12846",
     "affiliate_status": "active",
     "merchant_name": "Homeroom SE",
@@ -4348,7 +4327,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1776017_Fs&mw=1500",
+      "primary": "",
       "gallery": [],
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1776017_Fs&mw=1080",
       "large": "",
@@ -4359,14 +4338,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1776017_Fs",
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1776017_De_01&mw=1080"
       ],
-      "status": "approved",
+      "status": "needs_review",
       "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T13:55:01.158Z",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1776017_Fs&mw=1080"
     }
   },
   {
-    "id": "bosch",
+    "id": "ean-4242005396955",
     "brand": "Homeroom",
     "model": "Bosch",
     "type": "Kaffebryggare",
@@ -4432,7 +4410,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2159916_Fs&mw=1080"
   },
   {
-    "id": "melitta-termosbryggare-look-5-0-therm-timer",
+    "id": "ean-4006508222575",
     "brand": "Melitta",
     "model": "Termosbryggare Look 5.0 Therm Timer",
     "type": "Kaffebryggare",
@@ -4498,7 +4476,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2083433_Fs&mw=1080"
   },
   {
-    "id": "bialetti-fransk-press-3-k-preziosa-silver-kaffe-och-espressomaskiner",
+    "id": "homeroom-2167326",
     "brand": "Bialetti",
     "model": "Fransk-press 3/k Preziosa - Silver - Kaffe & espressomaskiner",
     "type": "Espressomaskin",
@@ -4564,7 +4542,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2167326_Fs&mw=1080"
   },
   {
-    "id": "philips",
+    "id": "ean-8720389024740",
     "brand": "Homeroom",
     "model": "Philips",
     "type": "Kaffebryggare",
@@ -4630,7 +4608,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2068410_Fs&mw=1080"
   },
   {
-    "id": "philips",
+    "id": "ean-8720389041228",
     "brand": "Homeroom",
     "model": "Philips",
     "type": "Kaffebryggare",
@@ -4696,7 +4674,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2156276_Fs&mw=1080"
   },
   {
-    "id": "emerio",
+    "id": "ean-7333282015350",
     "brand": "Homeroom",
     "model": "Emerio",
     "type": "Kaffebryggare",
@@ -4762,7 +4740,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2091599-01_Fs&mw=1080"
   },
   {
-    "id": "emerio",
+    "id": "ean-7333282020835",
     "brand": "Homeroom",
     "model": "Emerio",
     "type": "Kaffebryggare",
@@ -4828,7 +4806,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2220699_Fs&mw=1080"
   },
   {
-    "id": "melitta-termosbryggare-look-aromaselector",
+    "id": "ean-4006508228171",
     "brand": "Melitta",
     "model": "Termosbryggare LOOK AromaSelector®",
     "type": "Kaffebryggare",
@@ -4894,7 +4872,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2267615_Fs&mw=1080"
   },
   {
-    "id": "melitta",
+    "id": "homeroom-2267626",
     "brand": "Homeroom",
     "model": "Melitta",
     "type": "Kaffebryggare",
@@ -4943,7 +4921,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1720986_Fs&mw=1500",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2267626_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2267626_Fs&mw=1080",
       "large": "",
@@ -4954,14 +4932,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2267626_De_01&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:32:02.671Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2267626_Fs&mw=1080"
   },
   {
-    "id": "emerio-frukostpaket-svart",
+    "id": "ean-7333282019464",
     "brand": "Emerio",
     "model": "Frukostpaket - Svart",
     "type": "Kaffebryggare",
@@ -5027,7 +5004,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2162282-01_Fs&mw=1080"
   },
   {
-    "id": "emerio-frukostpaket-silver",
+    "id": "ean-7333282019440",
     "brand": "Emerio",
     "model": "Frukostpaket - Silver",
     "type": "Kaffebryggare",
@@ -5093,7 +5070,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2162284-01_Fs&mw=1080"
   },
   {
-    "id": "tristar-termosbryggare-cm-1283-900w",
+    "id": "ean-8712836998087",
     "brand": "Tristar",
     "model": "Termosbryggare CM-1283 900W",
     "type": "Kaffebryggare",
@@ -5159,7 +5136,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2109580_Fs&mw=1080"
   },
   {
-    "id": "tristar-kapselmaskin-cm-2301-kaffe-och-espressomaskiner",
+    "id": "ean-8712836992962",
     "brand": "Tristar",
     "model": "Kapselmaskin CM-2301 - Kaffe & espressomaskiner",
     "type": "Espressomaskin",
@@ -5225,7 +5202,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2109593_Fs&mw=1080"
   },
   {
-    "id": "tristar",
+    "id": "ean-8712836995376",
     "brand": "Homeroom",
     "model": "Tristar",
     "type": "Kaffebryggare",
@@ -5291,7 +5268,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2109597_Fs&mw=1080"
   },
   {
-    "id": "bialetti-kaffepress-8-k-smart-svart-kaffe-och-espressomaskiner",
+    "id": "homeroom-2167276",
     "brand": "Bialetti",
     "model": "Kaffepress 8/k Smart - Svart - Kaffe & espressomaskiner",
     "type": "Espressomaskin",
@@ -5357,7 +5334,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2167276_Fs&mw=1080"
   },
   {
-    "id": "terraillon",
+    "id": "ean-3094570153539",
     "brand": "Homeroom",
     "model": "Terraillon",
     "type": "Kaffebryggare",
@@ -5423,7 +5400,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2184540_Fs&mw=1080"
   },
   {
-    "id": "terraillon",
+    "id": "ean-3094570153881",
     "brand": "Homeroom",
     "model": "Terraillon",
     "type": "Kaffebryggare",
@@ -5489,7 +5466,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2184547_Fs&mw=1080"
   },
   {
-    "id": "terraillon",
+    "id": "ean-3094570154215",
     "brand": "Homeroom",
     "model": "Terraillon",
     "type": "Kaffebryggare",
@@ -5555,7 +5532,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2184562_Fs&mw=1080"
   },
   {
-    "id": "princess-espressomaskin-manuell-249417",
+    "id": "ean-8712836993273",
     "brand": "Princess",
     "model": "Espressomaskin Manuell 249417",
     "type": "Espressomaskin",
@@ -5621,7 +5598,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2110999_Fs&mw=1080"
   },
   {
-    "id": "princess-kapselmaskin-4-in-1-249454-automatic-kaffe-och-espressomaskiner",
+    "id": "ean-8712836993112",
     "brand": "Princess",
     "model": "Kapselmaskin 4-in-1 249454 Automatic - Kaffe & espressomaskiner",
     "type": "Espressomaskin",
@@ -5687,7 +5664,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2111055_Fs&mw=1080"
   },
   {
-    "id": "melitta-termosbryggare-aromafresh-therm-pro-svart",
+    "id": "homeroom-2271434",
     "brand": "Melitta",
     "model": "Termosbryggare Aromafresh Therm Pro Svart",
     "type": "Kaffebryggare",
@@ -5753,7 +5730,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2271434_Fs&mw=1080"
   },
   {
-    "id": "terraillon-set-med-köksmaskiner-diamond",
+    "id": "ean-7393822005630",
     "brand": "Terraillon",
     "model": "Set med köksmaskiner Diamond",
     "type": "Kaffebryggare",
@@ -5819,7 +5796,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2239032_Fs&mw=1080"
   },
   {
-    "id": "terraillon-set-med-köksmaskiner-diamond",
+    "id": "ean-7393822005647",
     "brand": "Terraillon",
     "model": "Set med köksmaskiner Diamond",
     "type": "Kaffebryggare",
@@ -5885,7 +5862,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2239050_Fs&mw=1080"
   },
   {
-    "id": "terraillon-set-med-köksmaskiner-sunrise",
+    "id": "ean-7393822005654",
     "brand": "Terraillon",
     "model": "Set med köksmaskiner Sunrise",
     "type": "Kaffebryggare",
@@ -5951,7 +5928,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2239298_Fs&mw=1080"
   },
   {
-    "id": "tristar-kapselmaskin-cm-2302-kaffe-och-espressomaskiner",
+    "id": "ean-8711658523064",
     "brand": "Tristar",
     "model": "Kapselmaskin CM-2302 - Kaffe & espressomaskiner",
     "type": "Espressomaskin",
@@ -6017,7 +5994,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=_2237446_Fs&mw=1080"
   },
   {
-    "id": "melitta-termosbryggare-easy-top-2-0-therm-1-25-l",
+    "id": "ean-4006508220113",
     "brand": "Melitta",
     "model": "Termosbryggare Easy Top 2.0 Therm 1,25 l",
     "type": "Kaffebryggare",
@@ -6083,7 +6060,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2099013_Fs&mw=1080"
   },
   {
-    "id": "champion-nordic",
+    "id": "ean-7391091867287",
     "brand": "Homeroom",
     "model": "Champion Nordic",
     "type": "Kaffebryggare",
@@ -6149,7 +6126,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2100442_Fs&mw=1080"
   },
   {
-    "id": "champion-nordic-paket-frukostserie-matte-black-series",
+    "id": "ean-7391091868055",
     "brand": "Champion Nordic",
     "model": "Paket Frukostserie Matte Black Series",
     "type": "Kaffebryggare",
@@ -6215,7 +6192,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2185968_Fs&mw=1080"
   },
   {
-    "id": "emerio-frukostpaket-grön",
+    "id": "ean-7333282025779",
     "brand": "Emerio",
     "model": "Frukostpaket - Grön",
     "type": "Kaffebryggare",
@@ -6281,7 +6258,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2253952_Fs&mw=1080"
   },
   {
-    "id": "emerio",
+    "id": "ean-7333282024000",
     "brand": "Homeroom",
     "model": "Emerio",
     "type": "Kaffebryggare",
@@ -6347,7 +6324,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2290981-01_Fs&mw=1080"
   },
   {
-    "id": "emerio",
+    "id": "ean-7333282026073",
     "brand": "Homeroom",
     "model": "Emerio",
     "type": "Kaffebryggare",
@@ -6413,7 +6390,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2291179-01_Fs&mw=1080"
   },
   {
-    "id": "severin",
+    "id": "ean-4008146049132",
     "brand": "Homeroom",
     "model": "Severin",
     "type": "Kaffebryggare",
@@ -6462,7 +6439,7 @@
       }
     ],
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1654211_Fs",
+      "primary": "",
       "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2327269-01_Fs&mw=1080",
       "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2327269-01_Fs&mw=1080",
       "large": "",
@@ -6473,14 +6450,13 @@
         "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2327269-01_Fs&mw=1080"
       ],
       "gallery": [],
-      "status": "approved",
-      "source": "Awin · Homeroom SE",
-      "approved_at": "2026-09-26T15:31:22.272Z"
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     },
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2327269-01_Fs&mw=1080"
   },
   {
-    "id": "severin-termosbryggare-med-kaffekvarn-svart",
+    "id": "ean-4008146049156",
     "brand": "Severin",
     "model": "Termosbryggare med kaffekvarn - Svart",
     "type": "Kaffebryggare",
@@ -6546,7 +6522,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2327272-01_Fs&mw=1080"
   },
   {
-    "id": "severin-termosbryggare-ka9343",
+    "id": "ean-4008146047572",
     "brand": "Severin",
     "model": "Termosbryggare KA9343",
     "type": "Kaffebryggare",
@@ -6612,7 +6588,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2255040_Fs&mw=1080"
   },
   {
-    "id": "champion-nordic",
+    "id": "ean-7391091867812",
     "brand": "Homeroom",
     "model": "Champion Nordic",
     "type": "Kaffebryggare",
@@ -6678,7 +6654,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2185072_Fs&mw=1080"
   },
   {
-    "id": "bialetti-3-koppars-mokabryggare-bridgerton-blå-blå",
+    "id": "ean-8006363074339",
     "brand": "Bialetti",
     "model": "3-koppars mokabryggare Bridgerton Blå - Blå",
     "type": "Mokabryggare",
@@ -6744,7 +6720,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2331981-01_Fs&mw=1080"
   },
   {
-    "id": "bialetti-6-koppars-mokabryggare-bridgerton-blå-blå",
+    "id": "ean-8006363074346",
     "brand": "Bialetti",
     "model": "6-koppars mokabryggare Bridgerton Blå - Blå",
     "type": "Mokabryggare",
@@ -6810,7 +6786,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2331983-01_Fs&mw=1080"
   },
   {
-    "id": "emerio-frukostpaket-grå",
+    "id": "ean-7333282030681",
     "brand": "Emerio",
     "model": "Frukostpaket - Grå",
     "type": "Kaffebryggare",
@@ -6876,7 +6852,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2332284-01_Fs&mw=1080"
   },
   {
-    "id": "emerio-frukostpaket-koppar",
+    "id": "ean-7333282030698",
     "brand": "Emerio",
     "model": "Frukostpaket - Koppar",
     "type": "Kaffebryggare",
@@ -6942,7 +6918,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2332288-01_Fs&mw=1080"
   },
   {
-    "id": "maku-kitchen-life-kaffepress-1-l-kaffe-och-espressomaskiner",
+    "id": "ean-6410416130798",
     "brand": "Maku Kitchen Life",
     "model": "Kaffepress 1 L - Kaffe & espressomaskiner",
     "type": "Espressomaskin",
@@ -7008,7 +6984,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2236378_Fs&mw=1080"
   },
   {
-    "id": "maku-kitchen-life-mokabryggare-300-ml",
+    "id": "ean-6410412704634",
     "brand": "Maku Kitchen Life",
     "model": "Mokabryggare 300 ml",
     "type": "Mokabryggare",
@@ -7074,7 +7050,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2236381_Fs&mw=1080"
   },
   {
-    "id": "obh-nordica",
+    "id": "ean-3045387294090",
     "brand": "Homeroom",
     "model": "OBH Nordica",
     "type": "Kaffebryggare",
@@ -7140,7 +7116,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2341744-01_Fs&mw=1080"
   },
   {
-    "id": "emerio",
+    "id": "ean-7333282021191",
     "brand": "Homeroom",
     "model": "Emerio",
     "type": "Kaffebryggare",
@@ -7206,7 +7182,7 @@
     "feed_image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2246335_Fs&mw=1080"
   },
   {
-    "id": "emerio",
+    "id": "ean-7333282021177",
     "brand": "Homeroom",
     "model": "Emerio",
     "type": "Kaffebryggare",
