@@ -761,10 +761,19 @@
     ],
     "images": {
       "primary": "",
-      "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_Fs&mw=1080",
+      "affiliate": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.ellosgroup.com%2Fi%2Fellos%2Fb%3F%24hg%24%26%24hm%24%26%24hp%24%26%24hd%24%26n%3Dell_1737016_Fs%26mw%3D1080&feedId=91087&k=7753b23a1fc52b5a20e8fc8af4191103385669d7",
       "gallery": [],
       "status": "needs_review",
-      "source": "affiliate_feed"
+      "source": "Awin · Homeroom SE",
+      "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_Fs&mw=1080",
+      "large": "",
+      "aw_thumb": "https://images2.productserve.com/?w=70&h=70&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.ellosgroup.com%2Fi%2Fellos%2Fb%3F%24hg%24%26%24hm%24%26%24hp%24%26%24hd%24%26n%3Dell_1737016_Fs%26mw%3D1080&feedId=91087&k=7753b23a1fc52b5a20e8fc8af4191103385669d7",
+      "alternates": [
+        "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_Fs&mw=120",
+        "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_Fs&mw=1500",
+        "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_Fs",
+        "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1737016_De_01&mw=1080"
+      ]
     }
   },
   {
@@ -1189,8 +1198,18 @@
     ],
     "images": {
       "primary": "",
-      "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1776017_Fs&mw=1080",
-      "gallery": []
+      "gallery": [],
+      "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1776017_Fs&mw=1080",
+      "large": "",
+      "aw_thumb": "",
+      "alternates": [
+        "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1776017_Fs&mw=120",
+        "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1776017_Fs&mw=1500",
+        "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1776017_Fs",
+        "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1776017_De_01&mw=1080"
+      ],
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     }
   },
   {
@@ -1377,8 +1396,17 @@
     ],
     "images": {
       "primary": "",
-      "affiliate": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1669933_Fs&mw=1080",
-      "gallery": []
+      "gallery": [],
+      "merchant": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1669933_Fs&mw=1080",
+      "large": "",
+      "aw_thumb": "",
+      "alternates": [
+        "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1669933_Fs&mw=120",
+        "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1669933_Fs&mw=1500",
+        "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1669933_Fs&mw=1080"
+      ],
+      "status": "needs_review",
+      "source": "Awin · Homeroom SE"
     }
   },
   {
