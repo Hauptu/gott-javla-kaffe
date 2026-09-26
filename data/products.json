@@ -2,7 +2,7 @@
   {
     "id": "ean-4008146033643",
     "brand": "Severin",
-    "model": "med Kvarn Touch KA4813",
+    "model": "Kvarn Touch KA4813",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -22,7 +22,7 @@
       "bryggkaffe",
       "kvarn"
     ],
-    "description": "Kaffebryggare med Kvarn Touch KA4813 med fokus på färskmalet kaffe.",
+    "description": "Kaffebryggare med inbyggd kvarn.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -111,7 +111,7 @@
   {
     "id": "ean-8713016094261",
     "brand": "Princess",
-    "model": "med mjölkskumning",
+    "model": "mjölkskumning",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -131,7 +131,7 @@
       "espresso",
       "mjölkdrycker"
     ],
-    "description": "Espressomaskin med mjölkskumning med möjlighet till mjölkdrycker.",
+    "description": "Espressomaskin med mjölkskumning.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -227,7 +227,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Easy 2.0 vit.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -275,7 +275,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Excellent Grande – svart.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -323,7 +323,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare KA5760 Caprice.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -415,8 +415,8 @@
   },
   {
     "id": "ean-8004399021419",
-    "brand": "Delonghi",
-    "model": "– helautomatisk ECAM290.81.TB",
+    "brand": "De'Longhi",
+    "model": "ECAM290.81.TB",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -435,7 +435,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Espressomaskin – helautomatisk ECAM290.81.TB för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -484,7 +484,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Dubbelbryggare Termos med termoslösning.",
+    "description": "Kaffebryggare med termoskanna.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -533,7 +533,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Dubbelbryggare Termos med termoslösning.",
+    "description": "Kaffebryggare med termoskanna.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -581,7 +581,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Easy Top 2.0 Svart.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -629,7 +629,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Easy 2.0, Svart.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -773,7 +773,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare HD7462/20 Daily with Glass jug.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -822,7 +822,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Kaffebryggare Easy 2.0 Therm 2 Kannor Svart med termoslösning.",
+    "description": "Kaffebryggare med termoskanna.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -870,7 +870,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare 27010-56 Honeycomb White.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -918,7 +918,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare 27011-56 Honeycomb Black.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -966,7 +966,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare 1,5 Daybreak 2296 1000 watt.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1014,7 +1014,7 @@
     "tags": [
       "perkolator"
     ],
-    "description": "Perkolator Svart 10kp.",
+    "description": "Perkolator för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1062,7 +1062,7 @@
     "tags": [
       "perkolator"
     ],
-    "description": "Perkolator Borstat stål 10kp.",
+    "description": "Perkolator för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1110,7 +1110,7 @@
     "tags": [
       "perkolator"
     ],
-    "description": "Perkolator Svart stål 6kp.",
+    "description": "Perkolator för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1204,7 +1204,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Creme White.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1253,7 +1253,7 @@
       "bryggkaffe",
       "kvarn"
     ],
-    "description": "Kaffebryggare Grind&Brew med fokus på färskmalet kaffe.",
+    "description": "Kaffebryggare med inbyggd kvarn.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1301,7 +1301,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Espressomaskin Distinctions Espresso Machine 26450-56 för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1349,7 +1349,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Excellent 4.0 Kaffebryggare.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1397,7 +1397,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Excellent Steel 4.0 Kaffebryggare.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1445,7 +1445,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Excellent 4.0 Kaffebryggar.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1493,7 +1493,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Caffeo Barista för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1541,7 +1541,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Caffeo Barista för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1589,7 +1589,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Caffeo Solo & Perfect Milk (20812) för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1733,7 +1733,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Svart 2373.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1781,7 +1781,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
+    "description": "Pressbryggare för kaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1829,7 +1829,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
+    "description": "Pressbryggare för kaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1877,7 +1877,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Enjoy II Top Svart.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1925,7 +1925,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Enjoy II Top Svart.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -1973,7 +1973,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare KF7020 Svart.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2021,7 +2021,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
+    "description": "Pressbryggare för kaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2069,7 +2069,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Melitta ONE SST.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2117,7 +2117,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Melitta ONE Pure.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2165,7 +2165,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare EPOUR.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2214,7 +2214,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Kaffebryggare / termosbryggare KF1505BK PurShine 1,2 l med termoslösning.",
+    "description": "Kaffebryggare med termoskanna.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2262,7 +2262,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Kf3100wh PurEase 1000 W.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2290,7 +2290,7 @@
   },
   {
     "id": "ean-8004399026667",
-    "brand": "Delonghi",
+    "brand": "De'Longhi",
     "model": "Edg226.a Genio S Automatic Capsule Machine",
     "type": "Espressomaskin",
     "automation": 3,
@@ -2310,7 +2310,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Kapselmaskin Edg226.a Genio S Automatic Capsule Machine för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2338,7 +2338,7 @@
   },
   {
     "id": "ean-8004399334588",
-    "brand": "Delonghi",
+    "brand": "De'Longhi",
     "model": "Manual Ec235.bk Stilosa",
     "type": "Espressomaskin",
     "automation": 3,
@@ -2358,7 +2358,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Espressomaskin Manual Ec235.bk Stilosa för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2386,7 +2386,7 @@
   },
   {
     "id": "ean-8004399334564",
-    "brand": "Delonghi",
+    "brand": "De'Longhi",
     "model": "Edg426.gy Genio S Touch Automatic Anthracite",
     "type": "Espressomaskin",
     "automation": 3,
@@ -2406,7 +2406,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Kapselmaskin Edg426.gy Genio S Touch Automatic Anthracite för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2454,7 +2454,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare - Svart.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2502,7 +2502,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Ka4817 10 koppars 1000W.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2550,7 +2550,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare EPOS.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2598,7 +2598,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Mokabryggare 1 kopp Moka - Silver - Kaffe & espressomaskiner för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2646,7 +2646,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Mokabryggare 2 kopp Brikka 4 - Silver - Kaffe & espressomaskiner för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2694,7 +2694,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Mokabryggare 4 koppar Brikka Induktion - Grå - Kaffe & espressomaskiner för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2742,7 +2742,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Mokabryggare MokaInduction 4/k - Svart - Kaffe & espressomaskiner för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2790,7 +2790,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Mokabryggare 3 kopp Moka Italien - Grön - Kaffe & espressomaskiner för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2838,7 +2838,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Mokabryggare Mini Express set Induktion - Svart - Kaffe & espressomaskiner för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2886,7 +2886,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Excellent 5.0 Svart.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2915,7 +2915,7 @@
   {
     "id": "ean-7333282004439",
     "brand": "Emerio",
-    "model": "med termos - Svart",
+    "model": "termos - Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -2935,7 +2935,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Kaffebryggare med termos - Svart med termoslösning.",
+    "description": "Kaffebryggare med termoskanna.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2983,7 +2983,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare 1000Watt 1,25 l rostfri - Silver.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3032,7 +3032,7 @@
       "espresso",
       "mjölkdrycker"
     ],
-    "description": "Espressomaskin Cm-2278 med mjölkskummare med möjlighet till mjölkdrycker.",
+    "description": "Espressomaskin med mjölkskumning.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3080,7 +3080,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare My Moment Svart Tka3m133 1200 W.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3190,7 +3190,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Tka2m111 Vit 1200watt Avtagbar Tank.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3239,7 +3239,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Termosbryggare Look 5.0 Therm Timer med termoslösning.",
+    "description": "Kaffebryggare med termoskanna.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3287,7 +3287,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Fransk-press 3/k Preziosa - Silver - Kaffe & espressomaskiner för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3336,7 +3336,7 @@
       "bryggkaffe",
       "kvarn"
     ],
-    "description": "Kaffebryggare All-in-1 Brew HD7888/01 med kvarn med fokus på färskmalet kaffe.",
+    "description": "Kaffebryggare med inbyggd kvarn.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3384,7 +3384,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Hd7411/00 3000-serien Arctic White.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3432,7 +3432,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare - Svart.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3480,7 +3480,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare - Svart.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3529,7 +3529,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Termosbryggare LOOK AromaSelector® med termoslösning.",
+    "description": "Kaffebryggare med termoskanna.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3577,7 +3577,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare LOOK AromaSelector®.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3718,7 +3718,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Termosbryggare CM-1283 900W med termoslösning.",
+    "description": "Kaffebryggare med termoskanna.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3766,7 +3766,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Kapselmaskin CM-2301 - Kaffe & espressomaskiner för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3814,7 +3814,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare CM-1282.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3862,7 +3862,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Kaffepress 8/k Smart - Svart - Kaffe & espressomaskiner för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3910,7 +3910,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Diamond 1,25 L.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3958,7 +3958,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Diamond 1,25 L.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4006,7 +4006,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Sunrise 1,5 L.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4055,7 +4055,7 @@
       "espresso",
       "manuell"
     ],
-    "description": "Espressomaskin Manuell 249417 för espresso.",
+    "description": "Manuell espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4103,7 +4103,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Kapselmaskin 4-in-1 249454 Automatic - Kaffe & espressomaskiner för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4152,7 +4152,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Termosbryggare Aromafresh Therm Pro Svart med termoslösning.",
+    "description": "Kaffebryggare med termoskanna.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4338,7 +4338,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Kapselmaskin CM-2302 - Kaffe & espressomaskiner för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4387,7 +4387,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Termosbryggare Easy Top 2.0 Therm 1,25 l med termoslösning.",
+    "description": "Kaffebryggare med termoskanna.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4435,7 +4435,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Digital 12-koppar KB400.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4575,7 +4575,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare - Svart.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4623,7 +4623,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare - Grå.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4652,7 +4652,7 @@
   {
     "id": "ean-4008146049132",
     "brand": "Severin",
-    "model": "med kaffekvarn KA 4830 - Svart",
+    "model": "kaffekvarn KA 4830 - Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -4672,7 +4672,7 @@
       "bryggkaffe",
       "kvarn"
     ],
-    "description": "Kaffebryggare med kaffekvarn KA 4830 - Svart med fokus på färskmalet kaffe.",
+    "description": "Kaffebryggare med inbyggd kvarn.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4701,7 +4701,7 @@
   {
     "id": "ean-4008146049156",
     "brand": "Severin",
-    "model": "med kaffekvarn - Svart",
+    "model": "kaffekvarn - Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -4722,7 +4722,7 @@
       "kvarn",
       "termos"
     ],
-    "description": "Termosbryggare med kaffekvarn - Svart med fokus på färskmalet kaffe.",
+    "description": "Kaffebryggare med inbyggd kvarn.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4771,7 +4771,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Termosbryggare KA9343 med termoslösning.",
+    "description": "Kaffebryggare med termoskanna.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4819,7 +4819,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare 1,5L Kb300.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -5055,7 +5055,7 @@
     "tags": [
       "espresso"
     ],
-    "description": "Kaffepress 1 L - Kaffe & espressomaskiner för espresso.",
+    "description": "Espressomaskin för espresso.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -5103,7 +5103,7 @@
     "tags": [
       "moka"
     ],
-    "description": "Mokabryggare 300 ml.",
+    "description": "Mokabryggare för kaffe på spisen.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -5151,7 +5151,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare Pro Aroma - Svart.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -5199,7 +5199,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare - Beige.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -5247,7 +5247,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare - Grön.",
+    "description": "Kaffebryggare för bryggkaffe.",
     "pros": [],
     "cons": [],
     "needs_review": false,
