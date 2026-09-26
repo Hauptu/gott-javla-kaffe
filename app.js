@@ -47,7 +47,33 @@ const priceMeta=p=>{
 };
 const priceBand=p=>{const v=currentPrice(p);if(!v)return null;if(v<2000)return'low';if(v<5000)return'mid';if(v<10000)return'upper';return'premium'};
 function primaryImage(p){return p?.images?.primary||''}
-function affiliateImage(p){return p?.images?.affiliate||primaryOffer(p)?.image_url||p?.feed_image_url||''}
+function imageResolutionScore(url){
+ if(!url)return -1;
+ const match=String(url).match(/[?&]mw=(\\d+)/i);
+ if(!match)return 95; // Original/full-size URL without an mw parameter.
+ const width=Number(match[1]);
+ if(width>=1500)return 100;
+ if(width>=1080)return 90;
+ if(width>=500)return 70;
+ if(width>=200)return 40;
+ return 10;
+}
+function preferredAffiliateImage(p){
+ const images=p?.images||{};
+ const alternates=Array.isArray(images.alternates)?images.alternates:[];
+ const candidates=[
+   {url:images.large,score:110},
+   ...alternates.map(url=>({url,score:imageResolutionScore(url)})),
+   {url:images.merchant,score:80},
+   {url:images.affiliate,score:60},
+   {url:primaryOffer(p)?.image_url,score:50},
+   {url:p?.feed_image_url,score:40},
+   {url:images.aw_image,score:30},
+   {url:images.aw_thumb,score:10}
+ ].filter(x=>x.url);
+ return candidates.sort((a,b)=>b.score-a.score)[0]?.url||'';
+}
+function affiliateImage(p){return preferredAffiliateImage(p)}
 function displayImage(p){if(primaryImage(p))return primaryImage(p);if(p?.images?.status==='needs_review')return '';return affiliateImage(p)||''}
 function offerMarkup(p){
  const offers=getOffers(p).filter(o=>o?.url);
