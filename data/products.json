@@ -822,20 +822,7 @@
         "ean": "8710103673996",
         "source": "Awin · Homeroom SE"
       }
-    ],
-    "details": {
-      "water_tank_l": "1.8",
-      "bean_capacity_g": "275",
-      "grinder_settings": "12",
-      "aroma_strength_settings": "3",
-      "temperature_settings": "3",
-      "pump_bar": "15",
-      "milk_system": "Klassisk mjölkskummare",
-      "drinks": "Espresso, kaffe, varmt vatten",
-      "brew_group": "Avtagbar",
-      "filter": "AquaClean-kompatibel"
-    },
-    "detail_source": "https://www.documents.philips.com/assets/20211224/0be414069cc244cd918fae0800adbb76.pdf"
+    ]
   },
   {
     "id": "ean-4006508218806",
@@ -3217,7 +3204,20 @@
         "ean": "8710103894735",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1.8",
+      "bean_capacity_g": "275",
+      "grinder_settings": "12",
+      "aroma_strength_settings": "3",
+      "temperature_settings": "3",
+      "pump_bar": "15",
+      "milk_system": "Klassisk mjölkskummare",
+      "drinks": "Espresso, kaffe, varmt vatten",
+      "brew_group": "Avtagbar",
+      "filter": "AquaClean-kompatibel"
+    },
+    "detail_source": "https://www.documents.philips.com/assets/20211224/0be414069cc244cd918fae0800adbb76.pdf"
   },
   {
     "id": "ean-4242005396955",
