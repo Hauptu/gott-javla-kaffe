@@ -134,7 +134,7 @@ function render(){
       '<div class="review-card-head"><div><span class="eyebrow">'+escapeHtml(p.type||'Produkt')+'</span><h2>'+escapeHtml(p.brand+' '+p.model)+'</h2><div class="review-card-meta">'+escapeHtml(p.images?.source||p.feed_source||'')+'</div></div><span class="review-badge">Needs review</span></div>'+
       '<div class="review-candidates">'+cs.map((c,n)=>'<button class="review-candidate '+(c.url===current?'selected':'')+'" data-url="'+encodeURIComponent(c.url)+'" title="'+escapeHtml(c.url)+'"><img src="'+escapeHtml(c.url)+'" alt="'+escapeHtml(p.brand+' '+p.model)+' – '+escapeHtml(c.label)+'" loading="lazy"><div class="review-candidate-info"><strong>'+escapeHtml(c.label)+'</strong><span>'+escapeHtml(c.source)+'</span></div></button>').join('')+'</div>'+
       '<div class="review-preview"><div><div class="review-preview-label">Så visas bilden i Biblioteket</div><div class="review-preview-card"><div class="product-image"><div class="image-placeholder">Produktbild</div></div><div class="brand">'+escapeHtml(p.brand)+'</div><h3>'+escapeHtml(p.model)+'</h3></div></div><div class="review-preview-note">Välj en kandidat ovan. Förhandsvisningen använder samma 4:5-bildyta som produktkorten i Biblioteket, så du ser direkt om maskinen blir lagom stor och om bilden har för mycket tom yta.</div></div>'+
-      '<div class="review-card-actions"><span class="review-note">Godkänn en kandidat om den håller måttet. Om ingen bild är tillräckligt bra kan du markera produkten som bildlös i stället.</span><div class="review-actions"><button class="review-button secondary no-image">Ingen bild är tillräckligt bra</button><button class="review-button primary approve" disabled>Godkänn vald bild</button></div></div>'+
+      '<div class="review-card-actions"><span class="review-note">Godkänn en kandidat om den håller måttet. Om ingen bild är tillräckligt bra kan du markera produkten som bildlös i stället.</span><div class="review-actions"><button class="review-button secondary exclude">Exkludera produkt från biblioteket</button><button class="review-button secondary no-image">Ingen bild är tillräckligt bra</button><button class="review-button primary approve" disabled>Godkänn vald bild</button></div></div>'+
     '</article>';
   }).join(''):'<div class="review-empty">Allt är granskat just nu.</div>';
   document.querySelectorAll('.review-card').forEach(card=>{
@@ -146,6 +146,18 @@ function render(){
       preview.innerHTML='<img src="'+escapeHtml(selected)+'" alt="Förhandsvisning" style="width:100%;height:100%;object-fit:contain">';
       card.querySelector('.approve').disabled=false;
     });
+    card.querySelector('.exclude').onclick=()=>{
+      const p=products.find(x=>x.id===card.dataset.id); if(!p)return;
+      p.lifecycle_status='excluded';
+      p.images=p.images||{}; p.images.status='excluded';
+      p.images.primary='';
+      p.images.reviewed_at=new Date().toISOString();
+      const saved=saveReview(p);
+      render();
+      updateStatus(saved
+        ? 'Exkluderad och sparad lokalt: '+p.brand+' '+p.model+'. Produkten kommer inte att visas i biblioteket.'
+        : 'Exkluderad: '+p.brand+' '+p.model+', men webbläsaren kunde inte spara lokalt. Exportera direkt.');
+    };
     card.querySelector('.approve').onclick=()=>{
       const p=products.find(x=>x.id===card.dataset.id); if(!p||!selected)return;
       p.images=p.images||{}; p.images.primary=selected; p.images.status='approved';
