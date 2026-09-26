@@ -236,9 +236,8 @@ fetch('data/products.json?review='+Date.now(),{cache:'no-store'}).then(r=>{if(!r
   // Keep the review counter tied to the original review queue, even after an
   // exported products.json is committed with already-reviewed products.
   const pendingCount=products.filter(p=>p.images?.status==='needs_review').length;
-  const savedIds=new Set(Object.keys(reviewState||{}));
-  const savedForProducts=products.filter(p=>savedIds.has(p.id)).length;
-  reviewTotal=pendingCount+savedForProducts;
+  const savedForQueue=products.filter(p=>p.images?.status==='needs_review' && Object.prototype.hasOwnProperty.call(reviewState,p.id)).length;
+  reviewTotal=pendingCount+savedForQueue;
   applyReviewState();
   reviewedIds=new Set(products.filter(p=>p.images?.status!=='needs_review').map(p=>p.id));
   Object.entries(reviewState||{}).forEach(([id,saved])=>{
