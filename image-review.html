@@ -226,7 +226,12 @@ $('reset').onclick=()=>{
 loadReviewState();
 fetch('data/products.json?review='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(data=>{
   products=data;
-  reviewTotal=products.filter(p=>p.images?.status==='needs_review').length;
+  // Keep the review counter tied to the original review queue, even after an
+  // exported products.json is committed with already-reviewed products.
+  const pendingCount=products.filter(p=>p.images?.status==='needs_review').length;
+  const savedIds=new Set(Object.keys(reviewState||{}));
+  const savedForProducts=products.filter(p=>savedIds.has(p.id)).length;
+  reviewTotal=pendingCount+savedForProducts;
   applyReviewState();
   render();
 }).catch(e=>{console.error(e);$('status').textContent='Kunde inte läsa data/products.json.'});
