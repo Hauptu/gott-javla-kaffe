@@ -102,7 +102,31 @@ function track(event,params={}){
 async function init(){
  try{const r=await fetch('data/products.json');if(!r.ok)throw new Error('products.json '+r.status);products=(await r.json()).filter(p=>p.lifecycle_status==='active'&&p.images?.status==='approved');}
  catch(e){console.error(e);$('productGrid').innerHTML='<div class="empty">Produktdata kunde inte laddas.</div>';return}
- setupFilters();if($('clearCompare'))$('clearCompare').onclick=clearCompare;const initialQuery=new URLSearchParams(location.search).get('q');if(initialQuery){$('search').value=initialQuery;filterProducts()}else{renderProducts(products)}renderQuestion();wireQuickStarts();wireSimulator();track('page_view',{path:location.pathname,query:initialQuery||''});
+ setupFilters();setupMachineIntents();if($('clearCompare'))$('clearCompare').onclick=clearCompare;const initialQuery=new URLSearchParams(location.search).get('q');if(initialQuery){$('search').value=initialQuery;filterProducts()}else{renderProducts(products)}renderQuestion();wireQuickStarts();wireSimulator();track('page_view',{path:location.pathname,query:initialQuery||''});
+}
+function setupMachineIntents(){
+ document.querySelectorAll('[data-intent]').forEach(button=>{
+   button.onclick=()=>{
+     const intent=button.dataset.intent;
+     const presets={
+       everyday:{coffee:'black',automation:'easy'},
+       milk:{coffee:'milk'},
+       grinder:{feature:'grinder'},
+       manual:{sort:'control-desc'}
+     };
+     const preset=presets[intent]||{};
+     if(preset.coffee){$('coffeeFilter').value=preset.coffee}else if(intent==='everyday'){$('coffeeFilter').value='svart'}
+     if(preset.feature){$('featureFilter').value=preset.feature}else if(intent!=='grinder'){$('featureFilter').value=''}
+     if(preset.sort){$('sortFilter').value=preset.sort}else{$('sortFilter').value='default'}
+     $('search').value='';
+     $('typeFilter').value='';
+     $('priceFilter').value='';
+     filterProducts();
+     document.querySelectorAll('[data-intent]').forEach(x=>x.classList.toggle('is-active',x===button));
+     track('machine_intent',{intent});
+     $('productGrid').scrollIntoView({behavior:'smooth',block:'start'});
+   };
+ });
 }
 function setupFilters(){
  const types=[...new Set(products.map(p=>p.type).filter(Boolean))];
@@ -179,6 +203,7 @@ function updateFilterSummary(count,total){
  $('filterSummary').textContent=count===total?`${total} maskiner`:`${count} av ${total} maskiner`;
 }
 function clearFilters(){
+ document.querySelectorAll('[data-intent]').forEach(x=>x.classList.remove('is-active'));
  $('search').value='';
  $('typeFilter').value='';
  $('coffeeFilter').value='';
