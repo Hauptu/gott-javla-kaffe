@@ -545,7 +545,7 @@
   {
     "id": "ean-4008146041525",
     "brand": "Severin",
-    "model": "Dubbelbryggare Termos",
+    "model": "KA9315 Dubbelbryggare med termos",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -565,7 +565,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Kaffebryggare med termoskanna.",
+    "description": "Dubbelbryggare med två separata bryggelement och två termoskannor. Gjord för att kunna brygga stora mängder kaffe utan att låta det stå på en värmeplatta.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -589,12 +589,21 @@
         "ean": "4008146041525",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "power_w": "2 × 1000",
+      "max_cups": "2 × 8",
+      "filter": "1x4",
+      "jug": "2 termoskannor",
+      "auto_off": "Ja",
+      "drip_stop": "Ja"
+    },
+    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/severin-1000-watt-black/612229/"
   },
   {
     "id": "ean-4008146041501",
     "brand": "Severin",
-    "model": "Dubbelbryggare Termos",
+    "model": "KA9314 Dubbelbryggare med termos",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -614,7 +623,7 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Kaffebryggare med termoskanna.",
+    "description": "Dubbelbryggare med två separata bryggelement och två termoskannor. Praktisk när du vill kunna brygga två kannor samtidigt eller vid olika tidpunkter.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -638,7 +647,16 @@
         "ean": "4008146041501",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "power_w": "2 × 1000",
+      "max_cups": "2 × 8",
+      "filter": "1x4",
+      "jug": "2 termoskannor",
+      "auto_off": "Ja",
+      "drip_stop": "Ja"
+    },
+    "detail_source": "https://order.se/dubbel-termosbryggare-ka9314-1000w-vit-a10203/"
   },
   {
     "id": "ean-4006508218738",
@@ -2760,7 +2778,7 @@
   {
     "id": "ean-7333282012991",
     "brand": "Emerio",
-    "model": "- Svart",
+    "model": "CME-125129.4",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -2779,7 +2797,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
+    "description": "Rymlig filterbryggare med 1,5 liters glaskanna, avtagbart filter och automatisk avstängning.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -2803,7 +2821,15 @@
         "ean": "7333282012991",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,5 l",
+      "power_w": "750",
+      "jug": "Glaskanna",
+      "auto_off": "Ja",
+      "drip_stop": "Ja"
+    },
+    "detail_source": "https://emerio.eu/cme-125129-4"
   },
   {
     "id": "ean-4008146030734",
@@ -3845,7 +3871,7 @@
   {
     "id": "ean-7333282015350",
     "brand": "Emerio",
-    "model": "- Svart",
+    "model": "CME-116801",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3864,7 +3890,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
+    "description": "Kompakt filterbryggare med 0,6 liters glaskanna och 600 W effekt. Ett litet format för mindre hushåll eller enstaka koppar.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3888,12 +3914,20 @@
         "ean": "7333282015350",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "0,6 l",
+      "power_w": "600",
+      "jug": "Glaskanna",
+      "auto_off": "Ja",
+      "drip_stop": "Ja"
+    },
+    "detail_source": "https://emerio.eu/cme-116801"
   },
   {
     "id": "ean-7333282020835",
     "brand": "Emerio",
-    "model": "- Svart",
+    "model": "CME-125481",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3912,7 +3946,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
+    "description": "En enkel filterbryggare med 1,25 liters vattenbehållare, glaskanna och automatisk avstängning efter 40 minuter.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -3936,12 +3970,20 @@
         "ean": "7333282020835",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,25 l",
+      "power_w": "750",
+      "jug": "Glaskanna",
+      "auto_off": "40 minuter",
+      "filter": "1x4"
+    },
+    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/emerio-kaffebryggare-cme-125481-svart/1106547"
   },
   {
     "id": "ean-4006508228171",
     "brand": "Melitta",
-    "model": "LOOK AromaSelector®",
+    "model": "LOOK Therm",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3965,7 +4007,7 @@
       "enkel",
       "kontroll"
     ],
-    "description": "Filterbryggare med Melittas AromaSelector, avtagbar vattentank och programmerbar varmhållning. Du kan justera kaffets intensitet utan att ändra mängden kaffe eller vatten.",
+    "description": "Filterbryggare med termoskanna och AromaSelector. Den kombinerar enkel vardagsbryggning med justerbar kaffestyrka och programmerad automatisk avstängning.",
     "pros": [
       "Justerbar kaffestyrka via AromaSelector",
       "Avtagbar vattentank",
@@ -4000,19 +4042,14 @@
     "details": {
       "water_tank_l": "1,25 l",
       "max_cups": 10,
-      "power_w": 1080,
+      "power_w": "1080",
       "filter": "1x4",
-      "jug": "Glaskanna",
-      "aroma_strength_settings": "AromaSelector",
-      "keep_warm": "20 / 40 / 60 minuter",
-      "auto_off": "Ja",
-      "descaling": "3-i-1 kalkskydd",
-      "dishwasher_safe": "Kanna, filterinsats och utvalda delar",
-      "dimensions": "335 × 240 × 210 mm",
-      "display": "Ingen display",
-      "timer": "Nej"
+      "jug": "Termoskanna i rostfritt stål",
+      "auto_off": "15 minuter",
+      "drip_stop": "Ja",
+      "descaling": "3-i-1 kalkskydd med avkalkningsprogram"
     },
-    "detail_source": "https://www.melitta.se/kaffebryggare/look"
+    "detail_source": "https://www.costco.co.uk/Appliances/Coffee-Machines-Accessories/Melitta-LOOK-Therm-Filter-Coffee-Machine/p/613732"
   },
   {
     "id": "homeroom-2267626",
@@ -4036,7 +4073,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
+    "description": "Filterbryggare med Melittas AromaSelector, avtagbar vattentank och programmerbar varmhållning. Du kan justera kaffets intensitet utan att ändra mängden kaffe eller vatten.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -4060,7 +4097,19 @@
         "ean": "",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,25 l",
+      "max_cups": 10,
+      "power_w": "1080",
+      "filter": "1x4",
+      "jug": "Glaskanna",
+      "aroma_strength_settings": "AromaSelector",
+      "keep_warm": "20 / 40 / 60 minuter",
+      "auto_off": "Ja",
+      "dishwasher_safe": "Kanna, filterinsats och utvalda delar"
+    },
+    "detail_source": "https://www.homeroom.se/melitta/kaffebryggare-look-aromaselector/2267626"
   },
   {
     "id": "ean-7333282019464",
@@ -5035,7 +5084,7 @@
   {
     "id": "ean-7333282024000",
     "brand": "Emerio",
-    "model": "- Svart",
+    "model": "CME-131036.3 Satin Gold Line",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -5054,7 +5103,7 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
+    "description": "Kompakt filterbryggare med 1 liters termoskanna, droppstopp och automatisk avstängning. Ett mindre format för 6–8 koppar.",
     "pros": [],
     "cons": [],
     "needs_review": false,
@@ -5078,7 +5127,15 @@
         "ean": "7333282024000",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,0 l",
+      "max_cups": "6–8",
+      "jug": "Termoskanna",
+      "auto_off": "Ja",
+      "drip_stop": "Ja"
+    },
+    "detail_source": "https://www.kitchnsverige.se/matlagning/koksmaskiner/kaffebryggare/emerio-satin-gold-line-kaffebryggare-1-l-svart/"
   },
   {
     "id": "ean-7333282026073",
