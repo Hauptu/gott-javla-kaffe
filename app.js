@@ -87,7 +87,17 @@ function offerMarkup(p){
  }).join('')}</div>`;
 }
 
-function track(event,params={}){const payload={event,...params,ts:new Date().toISOString()};window.dataLayer=window.dataLayer||[];window.dataLayer.push(payload);try{const k='gottjavlakaffe_events',e=JSON.parse(localStorage.getItem(k)||'[]');e.push(payload);localStorage.setItem(k,JSON.stringify(e.slice(-250)))}catch(_){} }
+function track(event,params={}){
+ const payload={event,...params,ts:new Date().toISOString()};
+ window.dataLayer=window.dataLayer||[];
+ window.dataLayer.push(payload);
+ // Skicka riktiga GA4-event. page_view hoppas över eftersom Google-taggen
+ // redan skickar ett automatiskt page_view när sidan laddas.
+ if(event!=='page_view'&&typeof window.gtag==='function'){
+   try{window.gtag('event',event,params)}catch(_){}
+ }
+ try{const k='gottjavlakaffe_events',e=JSON.parse(localStorage.getItem(k)||'[]');e.push(payload);localStorage.setItem(k,JSON.stringify(e.slice(-250)))}catch(_){}
+}
 
 async function init(){
  try{const r=await fetch('data/products.json');if(!r.ok)throw new Error('products.json '+r.status);products=(await r.json()).filter(p=>p.lifecycle_status==='active'&&p.images?.status==='approved');}
