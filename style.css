@@ -872,3 +872,16 @@
   .product-quickfacts{grid-template-columns:1fr 1fr}
   .product-quickfacts span:last-child{grid-column:1 / -1}
 }
+
+/* Kaffeakademin — clearer learning path */
+.academy-group{margin-top:28px}
+.academy-group:first-of-type{margin-top:0}
+.academy-group-label{display:block;margin-bottom:11px;font-size:10px;font-weight:850;letter-spacing:.14em;color:var(--muted)}
+.academy-deep-group{margin-top:34px;padding-top:26px;border-top:1px solid var(--line)}
+.academy-deep-group .guide-depth{margin-top:0}
+.academy-deep-group .guide-deep{
+  background:linear-gradient(180deg,var(--paper),#f8f1e8);
+  border-color:#d6c9ba;
+}
+.academy-deep-group .guide-deep:first-child{border-top:2px solid var(--accent2)}
+@media(max-width:560px){.academy-group{margin-top:24px}.academy-deep-group{margin-top:28px;padding-top:22px}}
