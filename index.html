@@ -50,6 +50,15 @@
 <section id="results" class="section hidden"><div class="section-head"><div><span class="eyebrow">RESULTAT</span><h2>Din matchning</h2></div><button class="text-button" id="restart">Gör om testet</button></div><div id="profile"></div><div class="decision-head recommendation-heading"><div><span class="eyebrow">TRE FÖRSLAG</span><h3>Maskiner att titta på</h3></div></div><div id="resultsGrid" class="product-grid recommendation-grid"></div><div id="matchSummary" class="match-summary"></div><div id="dna" class="dna-panel"></div><div id="simulator" class="simulator-panel"><div class="simulator-copy"><span class="eyebrow">OM DU ÄNDRAR BUDGETEN</span><h3>Om du ändrar budgeten</h3></div><div class="simulator-control"><div class="simulator-label"><span>Budget</span><strong id="simBudgetLabel">5 000 kr</strong></div><input id="simBudget" type="range" min="1500" max="20000" step="500" value="5000" aria-label="Testa annan budget"><div class="range-labels"><span>1 500 kr</span><span>20 000 kr</span></div></div><div id="simulatorResult" class="simulator-result"></div></div></section>
 <section id="products" class="section"><div class="section-head"><div><span class="eyebrow">MASKINPARKEN</span><h2>Kaffemaskiner vi har koll på</h2></div><span id="productCount"></span></div><div class="filters">
 <div class="filter-search"><input id="search" placeholder="Sök modell eller varumärke…" aria-label="Sök modell eller varumärke"></div>
+<div class="filter-chips" aria-label="Snabbfilter">
+<button type="button" class="filter-chip is-active" data-quick-filter="all">Alla</button>
+<button type="button" class="filter-chip" data-quick-filter="coffee">Bryggkaffe</button>
+<button type="button" class="filter-chip" data-quick-filter="espresso">Espresso</button>
+<button type="button" class="filter-chip" data-quick-filter="automatic">Helautomatisk</button>
+<button type="button" class="filter-chip" data-quick-filter="moka">Mokabryggare</button>
+<button type="button" class="filter-chip" data-quick-filter="grinder">Med kvarn</button>
+<button type="button" class="filter-chip" data-quick-filter="under1000">Under 1 000 kr</button>
+</div>
 <div class="filter-controls">
 <select id="typeFilter" aria-label="Filtrera efter typ"><option value="">Alla typer</option></select>
 <select id="coffeeFilter" aria-label="Filtrera efter kaffe"><option value="">Allt kaffe</option></select>
