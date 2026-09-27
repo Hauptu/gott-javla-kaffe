@@ -370,13 +370,13 @@
     "model": "KA5760 Caprice",
     "type": "Kaffebryggare",
     "automation": 3,
-    "control": 3,
+    "control": 4,
     "ease": 3,
     "espresso": 1,
     "milk": 1,
     "cleaning": 3,
     "noise": 3,
-    "enthusiast": 3,
+    "enthusiast": 4,
     "grinder": false,
     "milk_system": "",
     "coffee": [
@@ -384,11 +384,21 @@
     ],
     "audience": [],
     "tags": [
-      "bryggkaffe"
+      "bryggkaffe",
+      "temperaturkontroll",
+      "timer",
+      "ECBC"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "En mer påkostad filterbryggare med Schwallbrühverfahren, temperaturstyrning och två bryggprofiler. Caprice är byggd för dig som vill ha mer kontroll över själva bryggningen utan att gå över till manuell pour-over.",
+    "pros": [
+      "92–96 °C bryggtemperatur med Thermotronic",
+      "Två bryggprofiler för mild eller kraftigare smak",
+      "Timer, avkalkningsfunktion och varmhållning"
+    ],
+    "cons": [
+      "Glaskanna i stället för termos",
+      "Vattentanken är inte löstagbar"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -410,7 +420,23 @@
         "ean": "4008146032196",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": 1,
+      "max_cups": 10,
+      "power_w": 1580,
+      "brew_temperature": "92–96 °C",
+      "timer": "Ja",
+      "keep_warm": "Ja",
+      "grinder": "Nej",
+      "auto_off": "Ja",
+      "profiles": 2,
+      "descaling": "Ja",
+      "display": "LED",
+      "jug": "Glaskanna",
+      "dimensions": "44,5 × 31,5 × 20 cm"
+    },
+    "detail_source": "https://severin.com/en-en/nutrition-preparation/coffee-breakfast/filter-coffee-makers-glass/ka-5760-filter-coffee-machine-caprice/"
   },
   {
     "id": "ean-8004399021365",
@@ -1750,26 +1776,42 @@
     "brand": "Melitta",
     "model": "Caffeo Barista TS Smart Silver",
     "type": "Espressomaskin",
-    "automation": 3,
-    "control": 3,
-    "ease": 3,
-    "espresso": 4,
-    "milk": 3,
+    "automation": 5,
+    "control": 4,
+    "ease": 4,
+    "espresso": 5,
+    "milk": 5,
     "cleaning": 3,
     "noise": 3,
-    "enthusiast": 3,
-    "grinder": false,
-    "milk_system": "",
+    "enthusiast": 4,
+    "grinder": true,
+    "milk_system": "Automatiskt mjölksystem",
     "coffee": [
-      "espresso"
+      "espresso",
+      "cappuccino",
+      "latte"
     ],
-    "audience": [],
+    "audience": [
+      "familj",
+      "många kaffedrycker",
+      "den som vill ha hög automation"
+    ],
     "tags": [
-      "espresso"
+      "helautomatisk",
+      "bönor",
+      "mjölkdrycker",
+      "smart"
     ],
-    "description": "Espressomaskin för espresso.",
-    "pros": [],
-    "cons": [],
+    "description": "Caffeo Barista TS Smart är en helautomatisk espressomaskin för dig som vill ha många kaffedrycker och ändå kunna finjustera malning, styrka, temperatur och recept. Den har TFT-skärm, automatisk mjölkberedning och stöd för Bluetooth.",
+    "pros": [
+      "Många automatiska kaffedrycker och recept",
+      "270 g bönkapacitet och 1,8 l vattentank",
+      "Åtta användarprofiler och appstyrning"
+    ],
+    "cons": [
+      "Stor och tung maskin",
+      "Mer underhåll än en enkel kaffebryggare"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -1791,33 +1833,68 @@
         "ean": "4006508217847",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": 1.8,
+      "bean_capacity_g": 270,
+      "pump_bar": 15,
+      "grinder": "Ja",
+      "grinder_settings": 5,
+      "power_w": 1450,
+      "display": "TFT-färgskärm",
+      "drinks": "21 programmerade kaffespecialiteter",
+      "milk_system": "Automatiskt mjölkslangssystem",
+      "brew_group": "Avtagbar",
+      "profiles": 8,
+      "temperature_settings": 3,
+      "auto_cleaning": "Ja",
+      "descaling": "Ja",
+      "dishwasher_safe_milk_carafe": "Ja",
+      "dimensions": "25,9 × 46,7 × 37,2 cm"
+    },
+    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/espressomaskin/barista-ts-smart-silver/265605/"
   },
   {
     "id": "ean-4006508217830",
     "brand": "Melitta",
     "model": "Caffeo Barista TS Smart Svart",
     "type": "Espressomaskin",
-    "automation": 3,
-    "control": 3,
-    "ease": 3,
-    "espresso": 4,
-    "milk": 3,
+    "automation": 5,
+    "control": 4,
+    "ease": 4,
+    "espresso": 5,
+    "milk": 5,
     "cleaning": 3,
     "noise": 3,
-    "enthusiast": 3,
-    "grinder": false,
-    "milk_system": "",
+    "enthusiast": 4,
+    "grinder": true,
+    "milk_system": "Automatiskt mjölksystem",
     "coffee": [
-      "espresso"
+      "espresso",
+      "cappuccino",
+      "latte"
     ],
-    "audience": [],
+    "audience": [
+      "familj",
+      "många kaffedrycker",
+      "den som vill ha hög automation"
+    ],
     "tags": [
-      "espresso"
+      "helautomatisk",
+      "bönor",
+      "mjölkdrycker",
+      "smart"
     ],
-    "description": "Espressomaskin för espresso.",
-    "pros": [],
-    "cons": [],
+    "description": "Caffeo Barista TS Smart är en helautomatisk espressomaskin för dig som vill ha många kaffedrycker och ändå kunna finjustera malning, styrka, temperatur och recept. Den svarta varianten har samma grundplattform med TFT-skärm, automatisk mjölkberedning och Bluetooth.",
+    "pros": [
+      "Många automatiska kaffedrycker och recept",
+      "270 g bönkapacitet och 1,8 l vattentank",
+      "Åtta användarprofiler och appstyrning"
+    ],
+    "cons": [
+      "Stor och tung maskin",
+      "Mer underhåll än en enkel kaffebryggare"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -1839,7 +1916,26 @@
         "ean": "4006508217830",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": 1.8,
+      "bean_capacity_g": 270,
+      "pump_bar": 15,
+      "grinder": "Ja",
+      "grinder_settings": 5,
+      "power_w": 1450,
+      "display": "TFT-färgskärm",
+      "drinks": "21 programmerade kaffespecialiteter",
+      "milk_system": "Automatiskt mjölkslangssystem",
+      "brew_group": "Avtagbar",
+      "profiles": 8,
+      "temperature_settings": 3,
+      "auto_cleaning": "Ja",
+      "descaling": "Ja",
+      "dishwasher_safe_milk_carafe": "Ja",
+      "dimensions": "25,9 × 46,7 × 37,2 cm"
+    },
+    "detail_source": "https://www.proshop.se/Kaffe-och-Espresso/Melitta-Barista-TS-Smart-Svart/2655240"
   },
   {
     "id": "ean-4006508208128",
@@ -1925,25 +2021,37 @@
     "model": "Single 5 svart Auto Off (21117)",
     "type": "Kaffebryggare",
     "automation": 3,
-    "control": 3,
-    "ease": 3,
+    "control": 2,
+    "ease": 5,
     "espresso": 1,
     "milk": 1,
-    "cleaning": 3,
+    "cleaning": 5,
     "noise": 3,
-    "enthusiast": 3,
+    "enthusiast": 2,
     "grinder": false,
     "milk_system": "",
     "coffee": [
       "svart"
     ],
-    "audience": [],
-    "tags": [
-      "bryggkaffe"
+    "audience": [
+      "litet kök",
+      "1–2 personer"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "tags": [
+      "bryggkaffe",
+      "kompakt",
+      "små mängder"
+    ],
+    "description": "Kompakt filterbryggare för små mängder kaffe. Single 5 är gjord för mindre kök och små kaffepauser, med en aromaventil som hjälper till att hålla bryggningen smakrik även när du bara gör lite kaffe.",
+    "pros": [
+      "Kompakt format för små kök",
+      "Aromaventil för små bryggvolymer",
+      "Avtagbara delar som kan diskas i maskin"
+    ],
+    "cons": [
+      "Bara upp till 5 koppar",
+      "Ingen timer"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -1965,33 +2073,57 @@
         "ean": "4006508211173",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": 0.65,
+      "max_cups": 5,
+      "power_w": 500,
+      "filter": "1x2",
+      "jug": "Glaskanna",
+      "auto_off": "Ja",
+      "keep_warm": "40 minuter",
+      "drip_stop": "Ja",
+      "special": "Aromaventil"
+    },
+    "detail_source": "https://www.melitta.se/kaffebryggare/single-5"
   },
   {
     "id": "ean-4006508209521",
     "brand": "Melitta",
     "model": "Aroma Boy Svart Auto Off",
     "type": "Kaffebryggare",
-    "automation": 3,
-    "control": 3,
-    "ease": 3,
+    "automation": 4,
+    "control": 1,
+    "ease": 5,
     "espresso": 1,
     "milk": 1,
-    "cleaning": 3,
+    "cleaning": 4,
     "noise": 3,
-    "enthusiast": 3,
+    "enthusiast": 1,
     "grinder": false,
     "milk_system": "",
     "coffee": [
       "svart"
     ],
-    "audience": [],
-    "tags": [
-      "bryggkaffe"
+    "audience": [
+      "1–2 personer",
+      "litet kök"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "tags": [
+      "bryggkaffe",
+      "kompakt",
+      "1–2 koppar"
+    ],
+    "description": "En mycket liten kaffebryggare för en eller två koppar. Aroma Boy fokuserar på enkelhet och liten storlek snarare än funktioner, med 93 °C bryggtemperatur och automatisk avstängning.",
+    "pros": [
+      "Mycket kompakt",
+      "93 °C bryggtemperatur",
+      "Bra för 1–2 koppar"
+    ],
+    "cons": [
+      "Liten kapacitet",
+      "Få inställningar och ingen timer"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -2013,7 +2145,17 @@
         "ean": "4006508209521",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "max_cups": 2,
+      "power_w": 500,
+      "brew_temperature": "93 °C",
+      "filter": "100 hFS / storlek 100",
+      "jug": "Glaskanna",
+      "auto_off": "Ja",
+      "special": "Belyst på/av-knapp"
+    },
+    "detail_source": "https://www.melitta.se/bruksanvisning"
   },
   {
     "id": "ean-5708642023733",
@@ -2182,14 +2324,14 @@
     "brand": "Melitta",
     "model": "Enjoy II Top Therm Svart",
     "type": "Kaffebryggare",
-    "automation": 3,
+    "automation": 4,
     "control": 3,
-    "ease": 3,
+    "ease": 4,
     "espresso": 1,
     "milk": 1,
-    "cleaning": 3,
+    "cleaning": 4,
     "noise": 3,
-    "enthusiast": 3,
+    "enthusiast": 2,
     "grinder": false,
     "milk_system": "",
     "coffee": [
@@ -2197,11 +2339,20 @@
     ],
     "audience": [],
     "tags": [
-      "bryggkaffe"
+      "bryggkaffe",
+      "termos",
+      "AromaSelector"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "En klassisk termosbryggare för upp till tio koppar. Enjoy II Top Therm kombinerar AromaSelector, droppstopp och automatisk avstängning med en rostfri termoskanna som håller kaffet varmt utan värmeplatta.",
+    "pros": [
+      "Rostfri termoskanna",
+      "AromaSelector för justerbar kaffestyrka",
+      "10 koppar och 1,25 liters kapacitet"
+    ],
+    "cons": [
+      "Ingen timer",
+      "Begränsad möjlighet att påverka själva bryggningen"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -2223,7 +2374,20 @@
         "ean": "4006508214457",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": 1.25,
+      "max_cups": 10,
+      "power_w": 1000,
+      "filter": "1x4",
+      "jug": "Rostfri termoskanna",
+      "timer": "Nej",
+      "auto_off": "Ja",
+      "drip_stop": "Ja",
+      "special": "AromaSelector",
+      "dimensions": "21 × 26,2 × 39,2 cm"
+    },
+    "detail_source": "https://www.netonnet.se/art/senastinkommet/melitta-enjoy-ii-therm/233875.8535/"
   },
   {
     "id": "ean-4006508214471",
@@ -2278,12 +2442,12 @@
     "brand": "Braun",
     "model": "KF7020 Svart",
     "type": "Kaffebryggare",
-    "automation": 3,
-    "control": 3,
-    "ease": 3,
+    "automation": 4,
+    "control": 4,
+    "ease": 4,
     "espresso": 1,
     "milk": 1,
-    "cleaning": 3,
+    "cleaning": 4,
     "noise": 3,
     "enthusiast": 3,
     "grinder": false,
@@ -2293,11 +2457,21 @@
     ],
     "audience": [],
     "tags": [
-      "bryggkaffe"
+      "bryggkaffe",
+      "timer",
+      "styrkeval",
+      "1–4 koppar"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "PurAroma 7 är en funktionsrik filterbryggare med 24-timmars timer, styrkeval och 1–4-koppsläge. OptiBrew-systemet är utformat för att balansera temperatur, bryggtid och extraktion.",
+    "pros": [
+      "24-timmars timer",
+      "Kaffestyrka och 1–4-koppsläge",
+      "OptiBrew-system och automatisk avstängning"
+    ],
+    "cons": [
+      "Ingen ECBC-certifiering enligt produktbladet",
+      "Glaskanna och värmeplatta i stället för termos"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -2319,7 +2493,17 @@
         "ean": "8021098320247",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "max_cups": 12,
+      "power_w": 1000,
+      "timer": "24 timmar",
+      "auto_off": "40 minuter",
+      "jug": "Glaskanna",
+      "special": "OptiBrewSystem, 1–4-koppsläge, kaffestyrka, avkalkningsvarning",
+      "dimensions": "20 × 20 × 36 cm"
+    },
+    "detail_source": "https://static.elongroup.se/Document/Article/121127/faktablad-kok--brygg-braun-0x13211014.pdf"
   },
   {
     "id": "ean-7392753588762",
