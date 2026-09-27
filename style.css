@@ -768,3 +768,25 @@
 .guide-distinction p{font-size:13px!important;line-height:1.55!important;margin:7px 0 0}
 .guide-distinction a{display:inline-block;margin-top:10px;font-size:12px;font-weight:800}
 @media(max-width:600px){.guide-distinction{grid-template-columns:1fr}}
+
+
+/* Maskinparken — richer filtering and sorting */
+.filters{display:block;margin-bottom:10px}
+.filter-search{margin-bottom:10px}
+.filter-search input{font-size:14px;padding:13px 15px}
+.filter-controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) 1.25fr auto;gap:8px;align-items:center}
+.filter-controls select{min-width:0}
+.filter-controls select,.filter-search input{width:100%;border:1px solid var(--line);background:var(--paper);border-radius:12px;padding:12px 13px;color:var(--ink)}
+.filter-clear{border:0;background:transparent;color:var(--muted);font-size:12px;font-weight:750;padding:10px 4px;white-space:nowrap;cursor:pointer}
+.filter-clear:hover{color:var(--ink)}
+.filter-status{min-height:24px;margin:-2px 0 16px;color:var(--muted);font-size:12px}
+@media(max-width:1000px){
+ .filter-controls{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:700px){
+ .filter-controls{grid-template-columns:1fr 1fr}
+ .filter-clear{justify-self:start;padding-left:2px}
+}
+@media(max-width:460px){
+ .filter-controls{grid-template-columns:1fr}
+}
