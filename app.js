@@ -106,15 +106,66 @@ async function init(){
 }
 function setupFilters(){
  const types=[...new Set(products.map(p=>p.type).filter(Boolean))];
+ const coffees=[...new Set(products.flatMap(p=>p.coffee||[]).filter(Boolean))];
  $('typeFilter').innerHTML='<option value="">Alla typer</option>'+types.map(t=>`<option value="${escapeHtml(t)}">${escapeHtml(t)}</option>`).join('');
- $('search').oninput=filterProducts;$('typeFilter').onchange=filterProducts;$('priceFilter').onchange=filterProducts;
+ const coffeeLabels={svart:'Bryggkaffe / svart kaffe',espresso:'Espresso',cappuccino:'Cappuccino',latte:'Latte'};
+ $('coffeeFilter').innerHTML='<option value="">Allt kaffe</option>'+coffees.map(v=>`<option value="${escapeAttr(v)}">${escapeHtml(coffeeLabels[v]||v)}</option>`).join('');
+ $('search').oninput=filterProducts;
+ $('typeFilter').onchange=filterProducts;
+ $('coffeeFilter').onchange=filterProducts;
+ $('priceFilter').onchange=filterProducts;
+ $('featureFilter').onchange=filterProducts;
+ $('sortFilter').onchange=filterProducts;
+ $('clearFilters').onclick=clearFilters;
  $('productCount').textContent=`${products.length} maskiner`;
+ updateFilterSummary(products.length,products.length);
 }
 function filterProducts(){
- const q=$('search').value.trim().toLowerCase(),type=$('typeFilter').value,range=$('priceFilter').value;
+ const q=$('search').value.trim().toLowerCase();
+ const type=$('typeFilter').value;
+ const coffee=$('coffeeFilter').value;
+ const range=$('priceFilter').value;
+ const feature=$('featureFilter').value;
+ const sort=$('sortFilter').value;
  let [a,b]=range?range.split('-').map(Number):[0,Infinity];
- const out=products.filter(p=>{const text=`${p.brand} ${p.model} ${p.description||''} ${(p.tags||[]).join(' ')}`.toLowerCase(),v=priceVerified(p)?currentPrice(p):null;return(!q||text.includes(q))&&(!type||p.type===type)&&(!range||(v!==null&&v>=a&&v<=b));});
- renderProducts(out);track('product_filter',{q,type,range,count:out.length});
+ const out=products.filter(p=>{
+   const text=`${p.brand} ${p.model} ${p.description||''} ${(p.tags||[]).join(' ')}`.toLowerCase();
+   const v=priceVerified(p)?currentPrice(p):null;
+   const milk=(p.milk_system&&p.milk_system!=='Ingen')||(p.coffee||[]).some(x=>['cappuccino','latte'].includes(String(x).toLowerCase()));
+   const featureMatch=feature==='grinder'?p.grinder===true:feature==='milk'?milk:feature==='automatic'&&Number(p.automation)>=5;
+   return (!q||text.includes(q))
+     &&(!type||p.type===type)
+     &&(!coffee||(p.coffee||[]).includes(coffee))
+     &&(!range||(v!==null&&v>=a&&v<=b))
+     &&(!feature||featureMatch);
+ });
+ sortProducts(out,sort);
+ renderProducts(out);
+ updateFilterSummary(out.length,products.length);
+ const hasFilter=!!(q||type||coffee||range||feature);
+ $('clearFilters').classList.toggle('hidden',!hasFilter);
+ track('product_filter',{q,type,coffee,range,feature,sort,count:out.length});
+}
+function sortProducts(list,sort){
+ const price=(p)=>{const v=currentPrice(p);return v===null?Infinity:v};
+ const score=(p,key)=>Number(p[key])||0;
+ if(sort==='price-asc')list.sort((a,b)=>price(a)-price(b));
+ if(sort==='price-desc')list.sort((a,b)=>price(b)-price(a));
+ if(sort==='ease-desc')list.sort((a,b)=>score(b,'ease')-score(a,'ease'));
+ if(sort==='control-desc')list.sort((a,b)=>score(b,'control')-score(a,'control'));
+ if(sort==='espresso-desc')list.sort((a,b)=>score(b,'espresso')-score(a,'espresso'));
+}
+function updateFilterSummary(count,total){
+ $('filterSummary').textContent=count===total?`${total} maskiner`:`${count} av ${total} maskiner`;
+}
+function clearFilters(){
+ $('search').value='';
+ $('typeFilter').value='';
+ $('coffeeFilter').value='';
+ $('priceFilter').value='';
+ $('featureFilter').value='';
+ $('sortFilter').value='default';
+ filterProducts();
 }
 function renderQuestion(){
  const q=questions[finderStep];$('stepLabel').textContent=`${finderStep+1} / ${questions.length}`;if($('stepProgress'))$('stepProgress').style.width=`${((finderStep+1)/questions.length)*100}%`;
