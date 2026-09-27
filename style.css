@@ -720,3 +720,43 @@
 .detail-source{font-size:11px;color:var(--muted);margin:18px 0 0}
 .detail-source a{font-weight:700}
 @media(max-width:560px){.detail-scores{grid-template-columns:1fr}.detail-facts{grid-template-columns:1fr}.detail-fact:nth-child(odd){border-right:0}.detail-fact:nth-child(n+2){border-top:1px solid var(--line)}}
+
+
+/* Deep nerd guides */
+.article-page{padding-bottom:90px}
+.article-page .lead{font-size:21px;line-height:1.7;max-width:760px}
+.article-page h2{font-size:30px;line-height:1.15;margin-top:58px;letter-spacing:-.035em}
+.article-page h3{font-size:19px;line-height:1.3;margin-top:32px;margin-bottom:10px}
+.article-page p,.article-page li{font-size:16px;line-height:1.82}
+.article-page ul{padding-left:22px;max-width:750px}
+.article-page li{margin:7px 0}
+.article-map{display:flex;flex-wrap:wrap;gap:7px;margin:34px 0 44px;padding:18px;border:1px solid var(--line);border-radius:18px;background:var(--soft)}
+.article-map strong{width:100%;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:3px}
+.article-map a{font-size:12px;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 10px}
+.article-map a:hover{border-color:var(--accent2)}
+.article-callout{margin:34px 0;padding:23px 24px;border:1px solid var(--line);border-radius:18px;background:var(--soft)}
+.article-callout strong{display:block;margin-bottom:6px}
+.article-callout p{margin:0}
+.article-formula{margin:28px 0;padding:22px 24px;border-left:3px solid var(--accent2);background:var(--soft)}
+.article-formula strong{font-size:14px}
+.article-formula p{margin:8px 0 0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:14px}
+.article-table-wrap{overflow-x:auto;margin:30px 0}
+.article-table{width:100%;border-collapse:collapse;font-size:13px;background:var(--paper)}
+.article-table th,.article-table td{padding:12px 13px;border:1px solid var(--line);text-align:left;vertical-align:top}
+.article-table th{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);background:var(--soft)}
+.article-recipe,.article-log{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:28px 0}
+.article-recipe div,.article-log div{padding:13px 12px;background:var(--soft);border-radius:13px}
+.article-recipe span,.article-log span{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:5px}
+.article-recipe strong,.article-log strong{font-size:14px}
+.source-list{margin-top:12px}
+.source-list a{overflow-wrap:anywhere}
+.article-end{padding-top:28px;margin-top:46px;border-top:1px solid var(--line)}
+@media(max-width:700px){
+ .article-page .lead{font-size:18px}
+ .article-page h2{font-size:26px;margin-top:46px}
+ .article-page p,.article-page li{font-size:15px;line-height:1.75}
+ .article-recipe,.article-log{grid-template-columns:1fr 1fr}
+}
+@media(max-width:420px){
+ .article-recipe,.article-log{grid-template-columns:1fr}
+}
