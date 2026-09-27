@@ -170,7 +170,7 @@ function wireFilterChips(){
    if(key==='automatic')$('typeFilter').value='Helautomatisk';
    if(key==='moka')$('typeFilter').value='Mokabryggare';
    if(key==='grinder')$('featureFilter').value='grinder';
-   if(key==='under1000')$('priceFilter').value='0-2000';
+   if(key==='under1000')$('priceFilter').value='0-1000';
    document.querySelectorAll('[data-quick-filter]').forEach(x=>x.classList.toggle('is-active',x===b));
    filterProducts();
  });
@@ -185,6 +185,7 @@ function clearFilters(){
  $('priceFilter').value='';
  $('featureFilter').value='';
  $('sortFilter').value='default';
+ document.querySelectorAll('[data-quick-filter]').forEach(x=>x.classList.toggle('is-active',x.dataset.quickFilter==='all'));
  filterProducts();
 }
 function renderQuestion(){
