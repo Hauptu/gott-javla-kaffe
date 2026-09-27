@@ -139,27 +139,36 @@
     "brand": "Princess",
     "model": "Espressomaskin med mjölkskumning",
     "type": "Espressomaskin",
-    "automation": 3,
-    "control": 3,
+    "automation": 2,
+    "control": 4,
     "ease": 3,
     "espresso": 4,
-    "milk": 3,
+    "milk": 4,
     "cleaning": 3,
     "noise": 3,
-    "enthusiast": 3,
+    "enthusiast": 4,
     "grinder": false,
     "milk_system": "",
     "coffee": [
-      "espresso"
+      "espresso",
+      "cappuccino"
     ],
     "audience": [],
     "tags": [
       "espresso",
+      "manuell",
       "mjölkdrycker"
     ],
-    "description": "Espressomaskin med mjölkskumning.",
-    "pros": [],
-    "cons": [],
+    "description": "Princess espressomaskin med mjölkskumning är en manuell maskin för espresso och mjölkdrycker, med portafilter och separat ångfunktion. Den passar bäst för dig som vill göra mer själv men ändå hålla maskinen relativt enkel.",
+    "pros": [
+      "Separat mjölkskumning",
+      "Manuell bryggning ger kontroll",
+      "Relativt kompakt format"
+    ],
+    "cons": [
+      "Ingen inbyggd kvarn",
+      "Mer handpåläggning än en helautomatisk maskin"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -182,7 +191,13 @@
         "source": "Awin · Homeroom SE"
       }
     ],
-    "editorial_rank": 30
+    "editorial_rank": 30,
+    "details": {
+      "milk_system": "Ångmunstycke",
+      "grinder": "Nej",
+      "special": "Manuell espresso och mjölkskumning"
+    },
+    "detail_source": "https://www.princesshome.eu/en-gb/princess-249417-espresso-machine-black-01.249417.01.001"
   },
   {
     "id": "ean-7392753371487",
@@ -3063,26 +3078,36 @@
     "brand": "De'Longhi",
     "model": "Edg426.gy Genio S Touch Automatic Anthracite",
     "type": "Espressomaskin",
-    "automation": 3,
-    "control": 3,
-    "ease": 3,
-    "espresso": 4,
+    "automation": 5,
+    "control": 2,
+    "ease": 5,
+    "espresso": 3,
     "milk": 3,
-    "cleaning": 3,
+    "cleaning": 4,
     "noise": 3,
-    "enthusiast": 3,
+    "enthusiast": 1,
     "grinder": false,
     "milk_system": "",
     "coffee": [
-      "espresso"
+      "espresso",
+      "cappuccino"
     ],
     "audience": [],
     "tags": [
-      "espresso"
+      "kapsel",
+      "Dolce Gusto",
+      "touch"
     ],
-    "description": "Espressomaskin för espresso.",
-    "pros": [],
-    "cons": [],
+    "description": "De'Longhi Genio S Touch är en kapselmaskin i Dolce Gusto-systemet med pekskärm och automatisk volymstyrning. Ett alternativ för den som vill ha kapselkaffe med mer digital kontroll än de enklaste kapselmaskinerna.",
+    "pros": [
+      "Pekskärm och digital styrning",
+      "Dolce Gusto-system med många kapselalternativ",
+      "Kompakt format"
+    ],
+    "cons": [
+      "Kapselberoende",
+      "Ingen kvarn och begränsad kontroll över själva extraktionen"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -3105,7 +3130,13 @@
         "source": "Awin · Homeroom SE"
       }
     ],
-    "editorial_rank": 450
+    "editorial_rank": 450,
+    "details": {
+      "special": "Nescafé Dolce Gusto-kapslar, pekskärm",
+      "display": "Touch",
+      "grinder": "Nej"
+    },
+    "detail_source": "https://www.delonghi.com/en-gb/p/nescafe-dolce-gusto-coffee-machines-edg426.gy-genio-s-touch-nescafe-dolce-gusto-coffee-machine/EDG426.GY"
   },
   {
     "id": "ean-7333282012991",
@@ -4677,11 +4708,11 @@
     "brand": "Tristar",
     "model": "CM-2301",
     "type": "Espressomaskin",
-    "automation": 3,
+    "automation": 4,
     "control": 3,
-    "ease": 3,
+    "ease": 4,
     "espresso": 4,
-    "milk": 3,
+    "milk": 1,
     "cleaning": 3,
     "noise": 3,
     "enthusiast": 3,
@@ -4692,11 +4723,21 @@
     ],
     "audience": [],
     "tags": [
-      "espresso"
+      "kapsel",
+      "Nespresso",
+      "Dolce Gusto",
+      "ESE"
     ],
-    "description": "Espressomaskin för espresso.",
-    "pros": [],
-    "cons": [],
+    "description": "Tristar CM-2301 är en multikapselmaskin som kan använda Nespresso-kompatibla kapslar, Dolce Gusto, ESE-pods eller malet kaffe. Du får tre temperaturinställningar, förbryggning och en löstagbar 1-liters vattentank.",
+    "pros": [
+      "Fungerar med flera kapsel- och kaffetyper",
+      "Tre bryggtemperaturer och förbryggning",
+      "19 bars pump och löstagbar vattentank"
+    ],
+    "cons": [
+      "Max en kopp åt gången",
+      "Ingen automatisk mjölkberedning"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -4719,7 +4760,19 @@
         "source": "Awin · Homeroom SE"
       }
     ],
-    "editorial_rank": 700
+    "editorial_rank": 700,
+    "details": {
+      "water_tank_l": 1,
+      "pump_bar": 19,
+      "power_w": 1400,
+      "temperature_settings": 3,
+      "preinfusion": "Ja",
+      "drinks": "Nespresso-kompatibla kapslar, Dolce Gusto, ESE-pods och malet kaffe",
+      "auto_off": "Ja",
+      "display": "Ingen LCD",
+      "dishwasher_safe": "Nej"
+    },
+    "detail_source": "https://www.tristar.eu/en-gb/tristar-cm-2301-multi-capsule-coffee-machine-3-1-cm--2301"
   },
   {
     "id": "ean-8712836995376",
@@ -4988,27 +5041,37 @@
     "brand": "Princess",
     "model": "Manuell 249417",
     "type": "Espressomaskin",
-    "automation": 3,
-    "control": 3,
+    "automation": 2,
+    "control": 4,
     "ease": 3,
     "espresso": 4,
-    "milk": 3,
-    "cleaning": 3,
+    "milk": 4,
+    "cleaning": 4,
     "noise": 3,
-    "enthusiast": 3,
+    "enthusiast": 4,
     "grinder": false,
     "milk_system": "",
     "coffee": [
-      "espresso"
+      "espresso",
+      "cappuccino"
     ],
     "audience": [],
     "tags": [
       "espresso",
-      "manuell"
+      "manuell",
+      "mjölkskum",
+      "kapsel"
     ],
-    "description": "Manuell espressomaskin för espresso.",
-    "pros": [],
-    "cons": [],
+    "description": "Princess 249417 är en manuell espressomaskin med ångmunstycke och stöd för malet kaffe, ESE-pods och Nespresso-kapslar. Den kan brygga en eller två koppar och har integrerad koppvärmare.",
+    "pros": [
+      "Stöd för malet kaffe, ESE och Nespresso-kapslar",
+      "Ångmunstycke för mjölkskum",
+      "20 bars pump och 1,2 liters löstagbar tank"
+    ],
+    "cons": [
+      "Manuell hantering kräver mer arbete",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -5031,18 +5094,29 @@
         "source": "Awin · Homeroom SE"
       }
     ],
-    "editorial_rank": 750
+    "editorial_rank": 750,
+    "details": {
+      "water_tank_l": 1.2,
+      "pump_bar": 20,
+      "power_w": 1100,
+      "max_cups": 2,
+      "milk_system": "Ångmunstycke",
+      "auto_off": "Ja",
+      "dishwasher_safe": "Ja",
+      "special": "Koppvärmare, stöd för ESE/Nespresso/malet kaffe"
+    },
+    "detail_source": "https://www.princesshome.eu/en-gb/princess-249417-espresso-machine-black-01.249417.01.001"
   },
   {
     "id": "ean-8712836993112",
     "brand": "Princess",
     "model": "4-in-1 249454 Automatic",
     "type": "Espressomaskin",
-    "automation": 3,
+    "automation": 4,
     "control": 3,
-    "ease": 3,
+    "ease": 4,
     "espresso": 4,
-    "milk": 3,
+    "milk": 1,
     "cleaning": 3,
     "noise": 3,
     "enthusiast": 3,
@@ -5053,11 +5127,21 @@
     ],
     "audience": [],
     "tags": [
-      "espresso"
+      "kapsel",
+      "Nespresso",
+      "Dolce Gusto",
+      "ESE"
     ],
-    "description": "Espressomaskin för espresso.",
-    "pros": [],
-    "cons": [],
+    "description": "Princess 249454 är en multikapselmaskin för Nespresso, Dolce Gusto, ESE-pods och malet kaffe. Den har volymval, 19 bars pump och en löstagbar vattentank på 800 ml.",
+    "pros": [
+      "Fyra sätt att använda kaffe: Nespresso, Dolce Gusto, ESE och malet",
+      "Volymval och 19 bars pump",
+      "Löstagbar 800 ml vattentank"
+    ],
+    "cons": [
+      "Ingen kvarn",
+      "Ingen automatisk mjölkberedning"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -5080,7 +5164,17 @@
         "source": "Awin · Homeroom SE"
       }
     ],
-    "editorial_rank": 760
+    "editorial_rank": 760,
+    "details": {
+      "water_tank_l": 0.8,
+      "pump_bar": 19,
+      "power_w": 1450,
+      "drinks": "Nespresso, Dolce Gusto, ESE-pods och malet kaffe",
+      "auto_off": "Ja",
+      "special": "Volymval",
+      "display": "Ingen LCD"
+    },
+    "detail_source": "https://www.princesshome.eu/en-gb/princess-249454-multi-capsule-coffee-machine-01.249454.01.001"
   },
   {
     "id": "homeroom-2271434",
@@ -5294,14 +5388,14 @@
     "brand": "Tristar",
     "model": "CM-2302",
     "type": "Espressomaskin",
-    "automation": 3,
-    "control": 3,
-    "ease": 3,
-    "espresso": 4,
-    "milk": 3,
-    "cleaning": 3,
+    "automation": 5,
+    "control": 1,
+    "ease": 5,
+    "espresso": 3,
+    "milk": 1,
+    "cleaning": 4,
     "noise": 3,
-    "enthusiast": 3,
+    "enthusiast": 1,
     "grinder": false,
     "milk_system": "",
     "coffee": [
@@ -5309,11 +5403,20 @@
     ],
     "audience": [],
     "tags": [
-      "espresso"
+      "kapsel",
+      "Nespresso",
+      "enkel"
     ],
-    "description": "Espressomaskin för espresso.",
-    "pros": [],
-    "cons": [],
+    "description": "Tristar CM-2302 är en kompakt kapselmaskin för Nespresso-kompatibla kapslar. Den har 20 bars pump, 1400 W effekt och en löstagbar 800 ml vattentank.",
+    "pros": [
+      "Kompakt och enkel kapselmaskin",
+      "20 bars pump",
+      "Löstagbar 800 ml vattentank"
+    ],
+    "cons": [
+      "Begränsad till kapselkaffe",
+      "Ingen inbyggd kvarn eller mjölkfunktion"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -5336,7 +5439,16 @@
         "source": "Awin · Homeroom SE"
       }
     ],
-    "editorial_rank": 780
+    "editorial_rank": 780,
+    "details": {
+      "water_tank_l": 0.8,
+      "pump_bar": 20,
+      "power_w": 1400,
+      "auto_off": "Ja",
+      "special": "Nespresso-kompatibla kapslar",
+      "display": "Ingen LCD"
+    },
+    "detail_source": "https://www.tristar.eu/en-gb/tristar-cm-2302-capsule-coffee-machine-cm--2302"
   },
   {
     "id": "ean-4006508220113",
