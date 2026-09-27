@@ -75,7 +75,7 @@ function preferredAffiliateImage(p){
 }
 function affiliateImage(p){return preferredAffiliateImage(p)}
 function displayImage(p){if(primaryImage(p))return primaryImage(p);if(p?.images?.status==='needs_review')return '';return affiliateImage(p)||''}
-function offerMarkup(p){
+function offerMarkup(p,placement='card'){
  const offers=getOffers(p).filter(o=>o?.url);
  if(!offers.length)return '<span class="affiliate-pending">Butikslänk läggs till när produkten är verifierad</span>';
  const priced=offers.filter(o=>Number(o.price)>0).sort((a,b)=>Number(a.price)-Number(b.price));
@@ -83,7 +83,7 @@ function offerMarkup(p){
  return `<div class="offer-list">${ordered.map((o,i)=>{
    const price=Number(o.price)>0?Number(o.price).toLocaleString('sv-SE')+' kr':'Se butik';
    const label=o.merchant||'Återförsäljare';
-   return `<div class="offer-row"><span class="offer-merchant">${escapeHtml(label)}</span><span class="offer-price">${price}</span><a class="buy-button" href="${escapeAttr(o.url)}" target="_blank" rel="sponsored nofollow noopener" data-affiliate="${escapeAttr(p.id)}" data-merchant="${escapeAttr(label)}" data-network="${escapeAttr(o.network||'')}">Se pris →</a></div>`;
+   return `<div class="offer-row"><span class="offer-merchant">${escapeHtml(label)}</span><span class="offer-price">${price}</span><a class="buy-button" href="${escapeAttr(o.url)}" target="_blank" rel="sponsored nofollow noopener" data-affiliate="${escapeAttr(p.id)}" data-merchant="${escapeAttr(label)}" data-network="${escapeAttr(o.network||'')}" data-placement="${escapeAttr(placement)}" data-price="${Number(o.price)>0?Number(o.price):''}">Se pris →</a></div>`;
  }).join('')}</div>`;
 }
 
@@ -255,7 +255,20 @@ function card(p){
  return \`<article class="product-card"><div class="product-top"><span class="type">\${escapeHtml(p.type||'Kaffemaskin')}</span>\${p.recommendationLabel?\`<span class="rec-label">\${escapeHtml(p.recommendationLabel)}</span>\`:''}</div><div class="product-image">\${image?\`<img src="\${escapeAttr(image)}" alt="\${escapeAttr(p.brand+' '+p.model)}">\`:'<span class="image-placeholder">Produktbild<br><small>läggs till när produktkällan är verifierad</small></span>'}</div><div class="brand">\${escapeHtml(p.brand)}</div><h3>\${escapeHtml(p.model)}</h3>\${p.match?\`<div class="match">\${matchLabel(p.match)}</div>\`:''}\${reason?\`<p class="recommendation-reason">\${reason}</p>\`:''}<div class="price">\${priceText(p)}</div>\${priceMeta(p)}<div class="product-quickfacts">\${productQuickFacts(p)}</div><div class="card-copy">\${escapeHtml(p.description||'')}</div><div class="card-bottom">\${(p.tags||[]).slice(0,3).map(t=>\`<span class="tag">\${escapeHtml(t)}</span>\`).join('')}</div><div class="card-actions"><button class="mini-button detail-button" data-detail="\${escapeAttr(p.id)}">Se detaljer</button>\${compareButton(p)}</div>\${offerMarkup(p)}</article>\`;
 }
 function renderProducts(list){$('productGrid').innerHTML=list.length?list.map(card).join(''):'<div class="empty">Inga maskiner matchade filtret.</div>';wireCards()}
-function wireAffiliateLinks(){document.querySelectorAll('[data-affiliate]').forEach(a=>a.onclick=()=>track('affiliate_click',{id:a.dataset.affiliate,merchant:a.dataset.merchant||a.textContent.trim(),network:a.dataset.network||''}))}
+function wireAffiliateLinks(){
+ document.querySelectorAll('[data-affiliate]').forEach(a=>a.onclick=()=>{
+   const p=products.find(x=>x.id===a.dataset.affiliate);
+   track('affiliate_click',{
+     id:a.dataset.affiliate,
+     product_name:p?(`${p.brand} ${p.model}`):'',
+     merchant:a.dataset.merchant||a.textContent.trim(),
+     network:a.dataset.network||'',
+     placement:a.dataset.placement||'card',
+     price:a.dataset.price?Number(a.dataset.price):undefined,
+     type:p?.type||''
+   });
+ })
+}
 function wireCards(){
  wireAffiliateLinks();
  document.querySelectorAll('[data-compare]').forEach(b=>b.onclick=e=>{e.stopPropagation();toggleCompare(b.dataset.compare)});
@@ -364,7 +377,7 @@ function openModal(id){
  <div class="brand">${escapeHtml(p.brand)}</div>
  <h2>${escapeHtml(p.model)}</h2>
  <div class="price">${priceText(p)}</div>
- ${priceMeta(p)}${offerMarkup(p)}
+ ${priceMeta(p)}${offerMarkup(p,'modal')}
  <p class="detail-lead">${escapeHtml(p.description||'')}</p>
  ${tags?`<div class="detail-tags">${tags}</div>`:''}
  ${facts?`<section class="detail-section"><h3>Snabbfakta</h3><div class="detail-facts">${facts}</div></section>`:''}
