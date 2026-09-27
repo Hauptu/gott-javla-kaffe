@@ -903,3 +903,84 @@
  .compare-product-name{min-width:125px}
  .compare-table td{min-width:125px}
 }
+
+/* Maskinparken — visual polish */
+#products .section-head{margin-bottom:18px}
+#products .filters{
+  padding:12px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:rgba(255,253,249,.62);
+  box-shadow:0 8px 28px rgba(48,38,28,.035);
+}
+#products .filters input:focus,#products .filters select:focus{
+  outline:none;
+  border-color:var(--accent2);
+  box-shadow:0 0 0 3px rgba(139,94,60,.10);
+}
+.product-card{
+  position:relative;
+  overflow:hidden;
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+}
+.product-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 16px 36px rgba(48,38,28,.08);
+  border-color:#cfc3b5;
+}
+.product-card .product-image{
+  margin:13px 0 15px;
+  aspect-ratio:4/5;
+  height:auto;
+  min-height:210px;
+  background:linear-gradient(145deg,#eee5da 0%,#faf7f1 72%);
+}
+.product-card .product-image img{transition:transform .3s ease}
+.product-card:hover .product-image img{transform:scale(1.025)}
+.product-card h3{line-height:1.12;margin:4px 0 2px}
+.product-card .brand{text-transform:none;font-weight:650}
+.product-card .match{margin:7px 0 2px;color:var(--accent2)}
+.product-card .price{font-size:20px;letter-spacing:-.02em}
+.product-card .card-copy{line-height:1.55;min-height:60px}
+.product-quickfacts{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:6px;
+  margin:14px 0 11px;
+}
+.product-quickfacts span{
+  min-width:0;
+  padding:9px 9px 8px;
+  border-radius:12px;
+  background:var(--soft);
+}
+.product-quickfacts small{
+  display:block;
+  color:var(--muted);
+  font-size:9px;
+  line-height:1.1;
+  text-transform:uppercase;
+  letter-spacing:.07em;
+}
+.product-quickfacts strong{
+  display:block;
+  margin-top:3px;
+  font-size:11px;
+  line-height:1.25;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.product-card .card-bottom{min-height:25px}
+.product-card .mini-button{transition:.16s ease}
+.product-card .mini-button:hover{border-color:#bcae9f;background:var(--soft)}
+.product-card .compare-button.is-active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.product-card .offer-list{margin-top:11px}
+@media(max-width:900px){
+  .product-card .product-image{min-height:190px}
+}
+@media(max-width:560px){
+  .product-card .product-image{min-height:240px}
+  .product-quickfacts span{padding:8px 7px}
+  .product-quickfacts strong{font-size:10px}
+}
