@@ -299,9 +299,16 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "Klassisk filterbryggare med hög bryggtemperatur, glaskanna och fokus på enkel vardagsbryggning.",
+    "pros": [
+      "92–96 °C bryggtemperatur",
+      "ECBC-certifierad",
+      "Enkel att rengöra"
+    ],
+    "cons": [
+      "Ingen timer",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -323,7 +330,21 @@
         "ean": "4006508207596",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1.25",
+      "max_cups": "10",
+      "power_w": "1400",
+      "keep_warm_w": "55",
+      "keep_warm": "40 minuter",
+      "filter": "1x4",
+      "jug": "Glaskanna",
+      "brew_temperature": "92–96 °C",
+      "ecbc": "Ja",
+      "auto_off": "Ja",
+      "dishwasher_safe": "Flera delar"
+    },
+    "detail_source": "https://www.melitta.se/kaffebryggare/excellent-4.0"
   },
   {
     "id": "ean-4008146032196",
@@ -2201,9 +2222,16 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "Bryggare för dig som vill lägga mer fokus på själva filterbryggningen, med roterande vattenutlopp, förbryggning och flera bryggprofiler.",
+    "pros": [
+      "360° roterande vattenutlopp",
+      "Förbryggningsfunktion",
+      "Fyra bryggprofiler"
+    ],
+    "cons": [
+      "Ingen inbyggd kvarn",
+      "Mer specialiserad än en enkel standardbryggare"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -2225,7 +2253,21 @@
         "ean": "4006508224265",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "brew_temperature": "92–96 °C",
+      "brew_time": "4–6 minuter",
+      "max_cups": "8",
+      "filter": "1x4",
+      "water_outlet": "360° roterande",
+      "preinfusion": "Ja",
+      "profiles": "4",
+      "ecbc": "Ja",
+      "auto_off": "Ja",
+      "dishwasher_safe": "Ja",
+      "dimensions": "357 × 167 × 359 mm"
+    },
+    "detail_source": "https://www.melitta.se/kaffebryggare/epour"
   },
   {
     "id": "ean-8021098003485",
@@ -2577,7 +2619,7 @@
     "cleaning": 3,
     "noise": 3,
     "enthusiast": 3,
-    "grinder": false,
+    "grinder": true,
     "milk_system": "",
     "coffee": [
       "svart"
@@ -2586,9 +2628,16 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "Filterkaffemaskin med integrerad kvarn och pour-over-inspirerad vattenfördelning för dig som vill ha nymalet kaffe utan att mala och hälla manuellt.",
+    "pros": [
+      "Integrerad kvarn",
+      "360° roterande vattenutlopp",
+      "Förbryggning och bryggprofiler"
+    ],
+    "cons": [
+      "Större och dyrare än en vanlig bryggare",
+      "Mindre manuell kontroll än vid handbryggning"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -4204,7 +4253,7 @@
     "cleaning": 3,
     "noise": 3,
     "enthusiast": 3,
-    "grinder": false,
+    "grinder": true,
     "milk_system": "",
     "coffee": [
       "svart"
@@ -4214,9 +4263,16 @@
       "bryggkaffe",
       "termos"
     ],
-    "description": "Kaffebryggare med termoskanna.",
-    "pros": [],
-    "cons": [],
+    "description": "Filterkaffemaskin med keramisk kvarn, termoskanna, färgskärm och programmerbara tider för dig som vill ha nymalet kaffe med hög vardagsbekvämlighet.",
+    "pros": [
+      "Keramisk kvarn",
+      "Dubbelväggig termoskanna",
+      "Två timerfunktioner och färgskärm"
+    ],
+    "cons": [
+      "Större än en enkel bryggare",
+      "Fler funktioner att rengöra och underhålla"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -4247,7 +4303,8 @@
       "timer": "2 integrerade timerfunktioner",
       "power_w": "1080",
       "display": "Färg-TFT",
-      "descaling": "Avkalkningsprogram och indikator"
+      "descaling": "Avkalkningsprogram och indikator",
+      "repairability": "Reparerbar och reservdelar finns"
     },
     "detail_source": "https://www.melitta.se/kaffebryggare/melitta-aromafresh-therm-pro"
   },
