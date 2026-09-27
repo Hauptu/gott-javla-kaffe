@@ -1119,3 +1119,44 @@
   .detail-fact:nth-child(n+2){border-top:1px solid var(--line)}
   .detail-scores{grid-template-columns:1fr}
 }
+
+
+/* Maskinparken — quick filter chips */
+.filter-chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin:0 0 10px;
+}
+.filter-chip{
+  border:1px solid var(--line);
+  background:var(--paper);
+  color:var(--muted);
+  border-radius:999px;
+  padding:7px 11px;
+  font-size:11px;
+  font-weight:750;
+  line-height:1;
+  cursor:pointer;
+  transition:background .16s ease,border-color .16s ease,color .16s ease,transform .16s ease;
+}
+.filter-chip:hover{
+  border-color:#bcae9f;
+  color:var(--ink);
+  transform:translateY(-1px);
+}
+.filter-chip.is-active{
+  background:var(--ink);
+  border-color:var(--ink);
+  color:#fff;
+}
+@media(max-width:560px){
+  .filter-chips{
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    padding-bottom:3px;
+    scrollbar-width:none;
+  }
+  .filter-chips::-webkit-scrollbar{display:none}
+  .filter-chip{flex:0 0 auto}
+}
