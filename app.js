@@ -117,6 +117,7 @@ function setupFilters(){
  $('featureFilter').onchange=filterProducts;
  $('sortFilter').onchange=filterProducts;
  $('clearFilters').onclick=clearFilters;
+ wireFilterChips();
  $('productCount').textContent=`${products.length} maskiner`;
  updateFilterSummary(products.length,products.length);
 }
@@ -149,11 +150,30 @@ function filterProducts(){
 function sortProducts(list,sort){
  const price=(p)=>{const v=currentPrice(p);return v===null?Infinity:v};
  const score=(p,key)=>Number(p[key])||0;
+ if(sort==='default')list.sort((a,b)=>(Number(a.editorial_rank)||999999)-(Number(b.editorial_rank)||999999));
  if(sort==='price-asc')list.sort((a,b)=>price(a)-price(b));
  if(sort==='price-desc')list.sort((a,b)=>price(b)-price(a));
  if(sort==='ease-desc')list.sort((a,b)=>score(b,'ease')-score(a,'ease'));
  if(sort==='control-desc')list.sort((a,b)=>score(b,'control')-score(a,'control'));
  if(sort==='espresso-desc')list.sort((a,b)=>score(b,'espresso')-score(a,'espresso'));
+}
+function wireFilterChips(){
+ document.querySelectorAll('[data-quick-filter]').forEach(b=>b.onclick=()=>{
+   const key=b.dataset.quickFilter;
+   $('search').value='';
+   $('typeFilter').value='';
+   $('coffeeFilter').value='';
+   $('priceFilter').value='';
+   $('featureFilter').value='';
+   if(key==='coffee')$('coffeeFilter').value='svart';
+   if(key==='espresso')$('coffeeFilter').value='espresso';
+   if(key==='automatic')$('typeFilter').value='Helautomatisk';
+   if(key==='moka')$('typeFilter').value='Mokabryggare';
+   if(key==='grinder')$('featureFilter').value='grinder';
+   if(key==='under1000')$('priceFilter').value='0-2000';
+   document.querySelectorAll('[data-quick-filter]').forEach(x=>x.classList.toggle('is-active',x===b));
+   filterProducts();
+ });
 }
 function updateFilterSummary(count,total){
  $('filterSummary').textContent=count===total?`${total} maskiner`:`${count} av ${total} maskiner`;
