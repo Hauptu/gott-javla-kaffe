@@ -207,7 +207,7 @@
     "pros": [],
     "cons": [],
     "needs_review": false,
-    "lifecycle_status": "active",
+    "lifecycle_status": "excluded",
     "images": {
       "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=hom_1714514-01_Fs",
       "gallery": [],
@@ -227,7 +227,8 @@
         "ean": "7392753371487",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "exclude_reason": "Kaffepanna – inte kaffemaskin"
   },
   {
     "id": "ean-4006508218721",
@@ -472,7 +473,7 @@
     "id": "ean-8004399021419",
     "brand": "De'Longhi",
     "model": "ECAM290.81.TB",
-    "type": "Espressomaskin",
+    "type": "Helautomatisk",
     "automation": 3,
     "control": 3,
     "ease": 3,
@@ -787,7 +788,7 @@
     "id": "ean-4006508221615",
     "brand": "Melitta",
     "model": "Purista Svart",
-    "type": "Kaffebryggare",
+    "type": "Helautomatisk",
     "automation": 3,
     "control": 3,
     "ease": 3,
@@ -1551,7 +1552,7 @@
   {
     "id": "ean-4006508215270",
     "brand": "Melitta",
-    "model": "Excellent 4.0",
+    "model": "Excellent 4.0 Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -1647,7 +1648,7 @@
   {
     "id": "ean-4006508215201",
     "brand": "Melitta",
-    "model": "Excellent 4.0",
+    "model": "Excellent 4.0 Vit",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -1695,7 +1696,7 @@
   {
     "id": "ean-4006508217847",
     "brand": "Melitta",
-    "model": "Caffeo Barista",
+    "model": "Caffeo Barista TS Smart Silver",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -1743,7 +1744,7 @@
   {
     "id": "ean-4006508217830",
     "brand": "Melitta",
-    "model": "Caffeo Barista",
+    "model": "Caffeo Barista TS Smart Svart",
     "type": "Espressomaskin",
     "automation": 3,
     "control": 3,
@@ -1792,7 +1793,7 @@
     "id": "ean-4006508208128",
     "brand": "Melitta",
     "model": "Caffeo Solo & Perfect Milk (20812)",
-    "type": "Espressomaskin",
+    "type": "Helautomatisk",
     "automation": 3,
     "control": 3,
     "ease": 3,
@@ -2111,7 +2112,7 @@
   {
     "id": "ean-4006508214457",
     "brand": "Melitta",
-    "model": "Enjoy II Top Svart",
+    "model": "Enjoy II Top Therm Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -2278,7 +2279,7 @@
     "pros": [],
     "cons": [],
     "needs_review": false,
-    "lifecycle_status": "active",
+    "lifecycle_status": "excluded",
     "images": {
       "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=hom_1741613-01_Fs",
       "gallery": [],
@@ -2298,7 +2299,8 @@
         "ean": "7392753588762",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "exclude_reason": "Pressbryggare – inte kaffemaskin"
   },
   {
     "id": "ean-4006508227495",
@@ -3720,7 +3722,7 @@
     "pros": [],
     "cons": [],
     "needs_review": false,
-    "lifecycle_status": "active",
+    "lifecycle_status": "excluded",
     "images": {
       "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2167326_Fs&mw=1500",
       "gallery": [],
@@ -3740,7 +3742,8 @@
         "ean": "",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "exclude_reason": "Fransk press – inte kaffemaskin"
   },
   {
     "id": "ean-8720389024740",
@@ -4322,7 +4325,7 @@
     "pros": [],
     "cons": [],
     "needs_review": false,
-    "lifecycle_status": "active",
+    "lifecycle_status": "excluded",
     "images": {
       "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2167276_Fs&mw=1500",
       "gallery": [],
@@ -4342,12 +4345,13 @@
         "ean": "",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "exclude_reason": "Kaffepress – inte kaffemaskin"
   },
   {
     "id": "ean-3094570153539",
     "brand": "Terraillon",
-    "model": "Diamond 1,25 L",
+    "model": "Diamond 1,25 L Vit",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -4395,7 +4399,7 @@
   {
     "id": "ean-3094570153881",
     "brand": "Terraillon",
-    "model": "Diamond 1,25 L",
+    "model": "Diamond 1,25 L Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -5325,7 +5329,7 @@
   {
     "id": "ean-8006363074339",
     "brand": "Bialetti",
-    "model": "Bridgerton Blå - Blå",
+    "model": "Moka Express Bridgerton 3 koppar Blå",
     "type": "Mokabryggare",
     "automation": 3,
     "control": 3,
@@ -5373,7 +5377,7 @@
   {
     "id": "ean-8006363074346",
     "brand": "Bialetti",
-    "model": "Bridgerton Blå - Blå",
+    "model": "Moka Express Bridgerton 6 koppar Blå",
     "type": "Mokabryggare",
     "automation": 3,
     "control": 3,
@@ -5536,7 +5540,7 @@
     "pros": [],
     "cons": [],
     "needs_review": false,
-    "lifecycle_status": "active",
+    "lifecycle_status": "excluded",
     "images": {
       "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2236378_Fs&mw=1500",
       "gallery": [],
@@ -5556,7 +5560,8 @@
         "ean": "6410416130798",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "exclude_reason": "Kaffepress – inte kaffemaskin"
   },
   {
     "id": "ean-6410412704634",
