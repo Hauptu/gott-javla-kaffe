@@ -796,18 +796,31 @@
     "cleaning": 3,
     "noise": 3,
     "enthusiast": 3,
-    "grinder": false,
-    "milk_system": "",
+    "grinder": true,
+    "milk_system": "Ingen automatisk mjölkkanna",
     "coffee": [
+      "espresso",
       "svart"
     ],
-    "audience": [],
-    "tags": [
-      "bryggkaffe"
+    "audience": [
+      "vardagsdrickare",
+      "nybörjare"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "tags": [
+      "helautomatisk",
+      "bönor",
+      "enkel"
+    ],
+    "description": "Smal helautomatisk kaffemaskin som fokuserar på espresso och café crème. Den inbyggda kvarnen, förbryggningen och möjligheten att spara en favorit gör den mer flexibel än den enkla ytan antyder.",
+    "pros": [
+      "Mycket smal – cirka 20 cm bred",
+      "Tystgående kvarn enligt Melitta",
+      "Enkel åtkomst till rengöring och avkalkning"
+    ],
+    "cons": [
+      "Ingen automatisk mjölkfunktion",
+      "Begränsad dryckesbredd jämfört med mer avancerade helautomater"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -829,7 +842,24 @@
         "ean": "4006508221615",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,2 l",
+      "pump_bar": "15 bar",
+      "power_w": 1450,
+      "grinder": "Inbyggd",
+      "grinder_settings": "5",
+      "aroma_strength_settings": "3",
+      "preinfusion": "Ja",
+      "profiles": "Favoritkaffe",
+      "brew_group": "Uttagbar",
+      "auto_cleaning": "Rengöringsprogram",
+      "descaling": "Ja",
+      "auto_off": "Ja",
+      "dimensions": "200 × 460 × 334 mm",
+      "display": "Display"
+    },
+    "detail_source": "https://www.melitta.se/espressomaskiner/purista"
   },
   {
     "id": "ean-8710103673996",
@@ -1343,19 +1373,30 @@
     "cleaning": 3,
     "noise": 3,
     "enthusiast": 3,
-    "grinder": false,
+    "grinder": true,
     "milk_system": "",
     "coffee": [
       "svart"
     ],
-    "audience": [],
+    "audience": [
+      "vardagsdrickare",
+      "familj"
+    ],
     "tags": [
       "bryggkaffe",
-      "kvarn"
+      "kvarn",
+      "timer"
     ],
-    "description": "Kaffebryggare med inbyggd kvarn.",
-    "pros": [],
-    "cons": [],
+    "description": "Filterbryggare med inbyggd digital kvarn för färskmalet kaffe. Du väljer malningsgrad, styrka och antal koppar, och kan programmera bryggningen upp till 24 timmar i förväg.",
+    "pros": [
+      "Inbyggd kvarn och färska bönor direkt i bryggaren",
+      "24-timmars timer",
+      "12-kopps kapacitet"
+    ],
+    "cons": [
+      "Större och mer komplex än en vanlig filterbryggare",
+      "Kvarnen tillför ytterligare en del att rengöra"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -1377,7 +1418,21 @@
         "ean": "4008496820900",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "max_cups": 12,
+      "power_w": 1025,
+      "grinder": "Digital inbyggd kvarn",
+      "grinder_settings": "Grov till fin",
+      "filter": "Permanent filter",
+      "jug": "Glaskanna",
+      "timer": "24 timmar",
+      "keep_warm": "40 minuter",
+      "auto_off": "Ja",
+      "special": "4–12 koppar; pausa och häll",
+      "dimensions": "350 × 278 × 385 mm"
+    },
+    "detail_source": "https://se.russellhobbs.com/product/victory-grind-brew-kaffebryggare"
   },
   {
     "id": "ean-5038061141412",
@@ -1680,18 +1735,34 @@
     "cleaning": 3,
     "noise": 3,
     "enthusiast": 3,
-    "grinder": false,
-    "milk_system": "",
+    "grinder": true,
+    "milk_system": "Automatisk mjölkfunktion",
     "coffee": [
-      "espresso"
+      "espresso",
+      "svart",
+      "cappuccino",
+      "latte"
     ],
-    "audience": [],
+    "audience": [
+      "vardagsdrickare",
+      "familj",
+      "nybörjare"
+    ],
     "tags": [
-      "espresso"
+      "helautomatisk",
+      "bönor",
+      "mjölkdrycker"
     ],
-    "description": "Espressomaskin för espresso.",
-    "pros": [],
-    "cons": [],
+    "description": "Helautomatisk espressomaskin med inbyggd kvarn och automatisk mjölkfunktion. Fokus ligger på espresso och kaffe med så lite handpåläggning som möjligt.",
+    "pros": [
+      "Inbyggd kvarn",
+      "Automatisk mjölkfunktion",
+      "Rengöringsprogram och rengöringsindikator"
+    ],
+    "cons": [
+      "Mindre manuell kontroll än en traditionell espressomaskin",
+      "Relativt liten vattentank"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -1713,7 +1784,21 @@
         "ean": "4006508208128",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,2 l",
+      "pump_bar": "15 bar",
+      "power_w": 1400,
+      "grinder": "Inbyggd",
+      "grinder_settings": "5",
+      "milk_system": "Automatisk mjölkfunktion",
+      "drinks": "Espresso, kaffe och mjölkdrycker",
+      "auto_cleaning": "Rengöringsprogram",
+      "descaling": "Ja",
+      "water_outlet": "Varmvatten",
+      "display": "Ja"
+    },
+    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/espressomaskin/melitta-caffeo-solo-perfect-milk-kaffemaskin-20812/MEL20812"
   },
   {
     "id": "ean-4006508211173",
@@ -2471,17 +2556,31 @@
     "noise": 3,
     "enthusiast": 3,
     "grinder": false,
-    "milk_system": "",
+    "milk_system": "Klassisk mjölkskummare",
     "coffee": [
-      "espresso"
+      "espresso",
+      "cappuccino",
+      "latte"
     ],
-    "audience": [],
+    "audience": [
+      "nybörjare",
+      "entusiast"
+    ],
     "tags": [
-      "espresso"
+      "espresso",
+      "manuell",
+      "mjölkdrycker"
     ],
-    "description": "Espressomaskin för espresso.",
-    "pros": [],
-    "cons": [],
+    "description": "Manuell espressomaskin med 15 bars pump, stålkokare och klassisk mjölkskummare. En kompakt maskin där du själv styr dosering, extraktion och mjölkskumning.",
+    "pros": [
+      "15 bars pump och stålkokare",
+      "Kompakt format",
+      "Klassisk ångarm för mjölkskumning"
+    ],
+    "cons": [
+      "Mer handpåläggning än en helautomatisk maskin",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -2503,7 +2602,20 @@
         "ean": "8004399334588",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,0 l",
+      "pump_bar": "15 bar",
+      "power_w": 1100,
+      "milk_system": "Klassisk mjölkskummare",
+      "water_outlet": "Varmvatten/ånga via ångarm",
+      "auto_off": "Ja",
+      "dimensions": "205 × 343 × 285 mm",
+      "display": "Ingen display",
+      "brew_group": "Manuell",
+      "special": "Tvåhöjds droppbricka; plats för koppar upp till 110 mm"
+    },
+    "detail_source": "https://www.delonghi.com/en/p/stilosa-ec235.bk-stilosa-manual-espresso-maker/EC235.BK.html"
   },
   {
     "id": "ean-8004399334564",
@@ -3023,13 +3135,26 @@
     "coffee": [
       "svart"
     ],
-    "audience": [],
-    "tags": [
-      "bryggkaffe"
+    "audience": [
+      "vardagsdrickare",
+      "familj"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "tags": [
+      "bryggkaffe",
+      "prisvärd",
+      "enkel"
+    ],
+    "description": "Klassisk filterbryggare med ECBC-certifierad bryggteknik, Aroma Control för mindre mängder och 1,25 liters vattenkapacitet. En renodlad bryggare för den som vill ha kontroll på själva bryggningen utan inbyggd kvarn.",
+    "pros": [
+      "ECBC-certifierad bryggteknik",
+      "Aroma Control för mindre mängder",
+      "1,25 liters kapacitet och 10 koppar"
+    ],
+    "cons": [
+      "Ingen timer",
+      "Ingen termoskanna",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -3051,7 +3176,22 @@
         "ean": "4006508217380",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,25 l",
+      "max_cups": 10,
+      "power_w": 1525,
+      "filter": "1x4",
+      "jug": "Glaskanna",
+      "brew_temperature": "92–96 °C",
+      "keep_warm_w": "Separat värmeelement",
+      "auto_off": "Ja",
+      "ecbc": "Ja",
+      "dishwasher_safe": "Filterhållare/kanna enligt modellens specifikation",
+      "special": "Aroma Control för 2–5 koppar; belyst vattenbehållare",
+      "dimensions": "278 × 162 × 350 mm"
+    },
+    "detail_source": "https://www.melitta.se/kaffebryggare/excellent-5.0"
   },
   {
     "id": "ean-7333282004439",
@@ -3217,13 +3357,25 @@
     "coffee": [
       "svart"
     ],
-    "audience": [],
-    "tags": [
-      "bryggkaffe"
+    "audience": [
+      "vardagsdrickare",
+      "familj"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "tags": [
+      "bryggkaffe",
+      "enkel",
+      "prisvärd"
+    ],
+    "description": "En enkel filterbryggare med 1,4 liters vattentank och upp till 10/15 koppar beroende på koppstorlek. Fokus ligger på rak och lättskött vardagsbryggning.",
+    "pros": [
+      "Stor 1,4 liters vattentank",
+      "Enkel konstruktion",
+      "Klar och tydlig koppkapacitet"
+    ],
+    "cons": [
+      "Färre specialfunktioner än mer avancerade bryggare",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -3245,7 +3397,15 @@
         "ean": "4242005396917",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,4 l",
+      "max_cups": "10 / 15",
+      "jug": "Glaskanna",
+      "auto_off": "Ja",
+      "dimensions": "347 × 231 × 295 mm"
+    },
+    "detail_source": "https://www.bosch-home.se/sv/product/espresso-och-kaffemaskiner/kaffebryggare/TKA3M133"
   },
   {
     "id": "ean-8710103894735",
@@ -3388,14 +3548,25 @@
     "coffee": [
       "svart"
     ],
-    "audience": [],
+    "audience": [
+      "vardagsdrickare",
+      "familj"
+    ],
     "tags": [
       "bryggkaffe",
-      "termos"
+      "termos",
+      "timer"
     ],
-    "description": "Kaffebryggare med termoskanna.",
-    "pros": [],
-    "cons": [],
+    "description": "Termosbryggare med AromaSelector, avtagbar vattentank och isolerad stålkanna. Timer gör att kaffet kan vara klart vid en bestämd tid, medan termoskannan minskar behovet av varmhållning på platta.",
+    "pros": [
+      "Termoskanna istället för varmhållningsplatta",
+      "Timer",
+      "AromaSelector för kaffestyrka"
+    ],
+    "cons": [
+      "Relativt stor bänkyta",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -3417,7 +3588,21 @@
         "ean": "4006508222575",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,25 l",
+      "max_cups": 10,
+      "power_w": 1080,
+      "filter": "1x4",
+      "jug": "Isolerad kanna i rostfritt stål",
+      "aroma_strength_settings": "AromaSelector",
+      "auto_off": "Ja",
+      "timer": "Ja",
+      "descaling": "3-i-1 kalkskydd",
+      "dimensions": "264 × 404 × 256 mm",
+      "display": "Ja"
+    },
+    "detail_source": "https://www.melitta.se/kaffebryggare/look-therm-perfection"
   },
   {
     "id": "homeroom-2167326",
@@ -3678,14 +3863,25 @@
     "coffee": [
       "svart"
     ],
-    "audience": [],
+    "audience": [
+      "vardagsdrickare",
+      "familj"
+    ],
     "tags": [
       "bryggkaffe",
-      "termos"
+      "enkel",
+      "kontroll"
     ],
-    "description": "Kaffebryggare med termoskanna.",
-    "pros": [],
-    "cons": [],
+    "description": "Filterbryggare med Melittas AromaSelector, avtagbar vattentank och programmerbar varmhållning. Du kan justera kaffets intensitet utan att ändra mängden kaffe eller vatten.",
+    "pros": [
+      "Justerbar kaffestyrka via AromaSelector",
+      "Avtagbar vattentank",
+      "Programmerbar varmhållning"
+    ],
+    "cons": [
+      "Ingen timer",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -3707,7 +3903,23 @@
         "ean": "4006508228171",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,25 l",
+      "max_cups": 10,
+      "power_w": 1080,
+      "filter": "1x4",
+      "jug": "Glaskanna",
+      "aroma_strength_settings": "AromaSelector",
+      "keep_warm": "20 / 40 / 60 minuter",
+      "auto_off": "Ja",
+      "descaling": "3-i-1 kalkskydd",
+      "dishwasher_safe": "Kanna, filterinsats och utvalda delar",
+      "dimensions": "335 × 240 × 210 mm",
+      "display": "Ingen display",
+      "timer": "Nej"
+    },
+    "detail_source": "https://www.melitta.se/kaffebryggare/look"
   },
   {
     "id": "homeroom-2267626",
