@@ -425,7 +425,7 @@
       "enkel",
       "bönor"
     ],
-    "description": "Helautomatisk maskin för färska bönor med fokus på enkel vardagsanvändning.",
+    "description": "Helautomatisk De'Longhi för färska bönor med enkel pekpanel och automatiserade kaffe- och mjölkdrycker.",
     "pros": [
       "Enkel att använda",
       "Inbyggd kvarn",
@@ -458,15 +458,13 @@
       }
     ],
     "details": {
-      "water_tank_l": "1.8",
-      "coffee_container": "14 portioner",
-      "pump_bar": "15",
       "drinks": "Kaffe, espresso, long, cappuccino, latte macchiato, MyLatte",
-      "milk_system": "LatteCrema / MyLatte",
+      "milk_system": "LatteCrema Hot / MyLatte",
       "control": "Pekpanel med färgikoner",
       "power_w": "1450",
       "auto_cleaning": "Ja",
-      "dishwasher_safe_milk_carafe": "Ja"
+      "dishwasher_safe_milk_carafe": "Ja",
+      "water_tank_l": "1.8"
     },
     "detail_source": "https://www.delonghi.com/en/p/magnifica-evo-ecam290.81.tb-magnifica-evo-automatic-espresso-machine/ECAM290.81.TB.html"
   },
@@ -483,18 +481,34 @@
     "cleaning": 3,
     "noise": 3,
     "enthusiast": 3,
-    "grinder": false,
-    "milk_system": "",
+    "grinder": true,
+    "milk_system": "LatteCrema Hot",
     "coffee": [
-      "espresso"
+      "espresso",
+      "svart",
+      "cappuccino",
+      "latte"
     ],
-    "audience": [],
+    "audience": [
+      "vardagsdrickare",
+      "familj",
+      "nybörjare"
+    ],
     "tags": [
-      "espresso"
+      "helautomatisk",
+      "bönor",
+      "mjölkdrycker"
     ],
-    "description": "Espressomaskin för espresso.",
-    "pros": [],
-    "cons": [],
+    "description": "De'Longhi Magnifica Evo-variant med fokus på automatiserade espresso- och mjölkdrycker.",
+    "pros": [
+      "7 drycker med ett tryck",
+      "LatteCrema Hot och MyLatte",
+      "Automatisk rengöring av mjölksystemet"
+    ],
+    "cons": [
+      "Begränsad manuell kontroll",
+      "Mer avancerad än en enkel kapsel- eller bryggmaskin"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -516,7 +530,16 @@
         "ean": "8004399021419",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "drinks": "MyLatte, Cappuccino, Espresso, Coffee, Long, Latte Macchiato, Hot Water",
+      "milk_system": "LatteCrema Hot",
+      "control": "Färgikoner med 7 one-touch-drycker",
+      "auto_cleaning": "Ja",
+      "dishwasher_safe_milk_carafe": "Ja",
+      "grinder": "Integrerad"
+    },
+    "detail_source": "https://www.delonghi.com/en/p/magnifica-evo-ecam290.81.tb-magnifica-evo-automatic-espresso-machine/ECAM290.81.TB.html"
   },
   {
     "id": "ean-4008146041525",
@@ -821,7 +844,7 @@
     "cleaning": 3,
     "noise": 3,
     "enthusiast": 3,
-    "grinder": false,
+    "grinder": true,
     "milk_system": "",
     "coffee": [
       "svart"
@@ -830,9 +853,16 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "Filterbryggare med integrerad konisk kvarn för dig som vill ha nymalet kaffe utan separat kvarn.",
+    "pros": [
+      "Integrerad konisk kvarn",
+      "Justerbar malningsgrad och kaffestyrka",
+      "Kan även använda färdigmalet kaffe"
+    ],
+    "cons": [
+      "Tar mer plats än en enkel bryggare",
+      "Kvarnen innebär mer rengöring"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -854,7 +884,20 @@
         "ean": "8710103673996",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "max_cups": "10",
+      "grinder": "Integrerad konisk kvarn",
+      "grinder_settings": "Justerbar",
+      "strength_settings": "3",
+      "water_tank": "Upp till 10 koppar",
+      "bean_hopper": "Avtagbar",
+      "smart_dosing": "Ja",
+      "display": "LED",
+      "pre_ground": "Ja",
+      "cleaning": "Avtagbar bönbehållare och rengöringsborste"
+    },
+    "detail_source": "https://www.documents.philips.com/assets/20230712/07f27d1756f44ccab9e4b03d016a17cf.pdf"
   },
   {
     "id": "ean-4006508218806",
@@ -3233,15 +3276,15 @@
       "prisvärd",
       "enkel"
     ],
-    "description": "Instegshelautomat för dig som vill gå från bönor till kaffe med få moment.",
+    "description": "Instegshelautomat för färska bönor med inbyggd kvarn, avtagbar bryggenhet och klassisk mjölkskummare.",
     "pros": [
-      "Enkel",
-      "Inbyggd kvarn",
-      "Bra som första helautomat"
+      "Inbyggd kvarn med 12 malningslägen",
+      "Avtagbar bryggenhet",
+      "AquaClean-kompatibel"
     ],
     "cons": [
-      "Mindre mjölkkomfort",
-      "Begränsad kontroll"
+      "Klassisk mjölkskummare kräver mer handpåläggning",
+      "Mindre kontroll än en manuell espressomaskin"
     ],
     "needs_review": false,
     "lifecycle_status": "active",
