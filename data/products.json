@@ -716,12 +716,12 @@
     "brand": "Melitta",
     "model": "Easy Top 2.0 Svart",
     "type": "Kaffebryggare",
-    "automation": 3,
-    "control": 3,
-    "ease": 3,
+    "automation": 4,
+    "control": 2,
+    "ease": 5,
     "espresso": 1,
     "milk": 1,
-    "cleaning": 3,
+    "cleaning": 4,
     "noise": 3,
     "enthusiast": 3,
     "grinder": false,
@@ -731,11 +731,20 @@
     ],
     "audience": [],
     "tags": [
-      "bryggkaffe"
+      "bryggkaffe",
+      "enkel",
+      "vardag"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "En enkel filterbryggare för vardagskaffe, med avtagbar filterhållare, droppstopp och automatisk avstängning. Ett okomplicerat val när det viktigaste är att kaffet bara blir bryggt.",
+    "pros": [
+      "Enkel och lätt att använda",
+      "Droppstopp och automatisk avstängning",
+      "Kompakt vardagsformat"
+    ],
+    "cons": [
+      "Få inställningar",
+      "Ingen termoskanna"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -758,7 +767,17 @@
         "source": "Awin · Homeroom SE"
       }
     ],
-    "editorial_rank": 110
+    "editorial_rank": 110,
+    "details": {
+      "water_tank_l": 1.25,
+      "max_cups": 10,
+      "power_w": 1050,
+      "filter": "1x4",
+      "jug": "Glaskanna",
+      "auto_off": "Ja",
+      "drip_stop": "Ja"
+    },
+    "detail_source": "https://www.melitta.se/kaffebryggare/easy-top-2.0"
   },
   {
     "id": "ean-4006508218714",
@@ -2429,12 +2448,12 @@
     "brand": "Melitta",
     "model": "Enjoy II Top Svart",
     "type": "Kaffebryggare",
-    "automation": 3,
+    "automation": 4,
     "control": 3,
-    "ease": 3,
+    "ease": 5,
     "espresso": 1,
     "milk": 1,
-    "cleaning": 3,
+    "cleaning": 4,
     "noise": 3,
     "enthusiast": 3,
     "grinder": false,
@@ -2444,11 +2463,20 @@
     ],
     "audience": [],
     "tags": [
-      "bryggkaffe"
+      "bryggkaffe",
+      "AromaSelector",
+      "vardag"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "Enjoy II Top är en enkel bryggare för upp till tio koppar med AromaSelector, droppstopp och automatisk avstängning. Här får du lite mer möjlighet att påverka styrkan än i de allra enklaste modellerna.",
+    "pros": [
+      "AromaSelector för justerbar smakstyrka",
+      "10 koppar och 1,25 liters kapacitet",
+      "Droppstopp och automatisk avstängning"
+    ],
+    "cons": [
+      "Ingen timer",
+      "Glaskanna i stället för termos"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -2471,7 +2499,18 @@
         "source": "Awin · Homeroom SE"
       }
     ],
-    "editorial_rank": 360
+    "editorial_rank": 360,
+    "details": {
+      "water_tank_l": 1.25,
+      "max_cups": 10,
+      "power_w": 1000,
+      "filter": "1x4",
+      "jug": "Glaskanna",
+      "auto_off": "Ja",
+      "drip_stop": "Ja",
+      "special": "AromaSelector"
+    },
+    "detail_source": "https://www.melitta.se/kaffebryggare/enjoy-top"
   },
   {
     "id": "ean-8021098320247",
@@ -4116,15 +4155,15 @@
     "brand": "Philips",
     "model": "All-in-1 Brew HD7888/01 med kvarn",
     "type": "Kaffebryggare",
-    "automation": 3,
-    "control": 3,
-    "ease": 3,
+    "automation": 4,
+    "control": 4,
+    "ease": 4,
     "espresso": 1,
     "milk": 1,
     "cleaning": 3,
     "noise": 3,
-    "enthusiast": 3,
-    "grinder": false,
+    "enthusiast": 4,
+    "grinder": true,
     "milk_system": "",
     "coffee": [
       "svart"
@@ -4132,11 +4171,19 @@
     "audience": [],
     "tags": [
       "bryggkaffe",
-      "kvarn"
+      "inbyggd kvarn",
+      "färska bönor"
     ],
-    "description": "Kaffebryggare med inbyggd kvarn.",
-    "pros": [],
-    "cons": [],
+    "description": "Philips All-in-1 Brew kombinerar filterbryggning med en integrerad konisk kvarn. Du kan mala bönorna precis före bryggning, justera malningsgraden och även använda färdigmalet kaffe.",
+    "pros": [
+      "Integrerad konisk kvarn med justerbar grovlek",
+      "Kan brygga direkt i kopp, mugg eller kanna",
+      "Löstagbar vattentank"
+    ],
+    "cons": [
+      "Mer att rengöra än en vanlig bryggare",
+      "Bönbehållaren är relativt liten"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -4159,7 +4206,16 @@
         "source": "Awin · Homeroom SE"
       }
     ],
-    "editorial_rank": 630
+    "editorial_rank": 630,
+    "details": {
+      "grinder": "Ja",
+      "grinder_settings": "Justerbar malningsgrad",
+      "display": "LED",
+      "special": "Smart dosering, bryggning i kopp/mugg/kanna, stöd för färdigmalet kaffe",
+      "water_tank_l": "Löstagbar",
+      "jug": "Glaskanna"
+    },
+    "detail_source": "https://www.philips.se/c-p/HD7888_90/all-in-1-brew-drip-coffee-maker-with-grinder"
   },
   {
     "id": "ean-8720389041228",
@@ -6090,12 +6146,12 @@
     "brand": "OBH Nordica",
     "model": "Pro Aroma - Svart",
     "type": "Kaffebryggare",
-    "automation": 3,
-    "control": 3,
-    "ease": 3,
+    "automation": 4,
+    "control": 2,
+    "ease": 5,
     "espresso": 1,
     "milk": 1,
-    "cleaning": 3,
+    "cleaning": 4,
     "noise": 3,
     "enthusiast": 3,
     "grinder": false,
@@ -6105,11 +6161,20 @@
     ],
     "audience": [],
     "tags": [
-      "bryggkaffe"
+      "bryggkaffe",
+      "termos",
+      "reparerbar"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "Pro Aroma med termoskanna är byggd kring en enkel vardagsrutin: brygg, häll upp och låt termosen hålla kaffet varmt. Den rymmer upp till tio koppar och har droppstopp.",
+    "pros": [
+      "Termoskanna som håller kaffet varmt",
+      "Upp till 10 koppar",
+      "Reparerbar i upp till 15 år"
+    ],
+    "cons": [
+      "Ingen timer",
+      "Få möjligheter att styra bryggningen"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -6132,7 +6197,18 @@
         "source": "Awin · Homeroom SE"
       }
     ],
-    "editorial_rank": 880
+    "editorial_rank": 880,
+    "details": {
+      "water_tank_l": 1,
+      "max_cups": 10,
+      "power_w": 800,
+      "jug": "Rostfri termoskanna",
+      "keep_warm": "Termoskanna håller varmt upp till 4 timmar",
+      "drip_stop": "Ja",
+      "repairability": "Upp till 15 år",
+      "special": "Svängbar filterhållare"
+    },
+    "detail_source": "https://www.obhnordica.se/kaffemaskiner/kaffebryggare/pro-aroma-thermal-coffee-maker-black"
   },
   {
     "id": "ean-7333282021191",
