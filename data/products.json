@@ -57,7 +57,8 @@
       "filter": "Avtagbart och diskmaskinssäkert filter",
       "power_w": "1000"
     },
-    "detail_source": "https://severin.com/en-en/nutrition-preparation/coffee-breakfast/filter-coffee-makers-glass/ka-4813-filter-coffee-maker-with-stainless-steel-grinder/"
+    "detail_source": "https://severin.com/en-en/nutrition-preparation/coffee-breakfast/filter-coffee-makers-glass/ka-4813-filter-coffee-maker-with-stainless-steel-grinder/",
+    "editorial_rank": 10
   },
   {
     "id": "ean-4006508222483",
@@ -130,7 +131,8 @@
       "removable_water_tank": "Ja",
       "power_w": "1080"
     },
-    "detail_source": "https://www.melitta.se/kaffebryggare/look-therm-perfection"
+    "detail_source": "https://www.melitta.se/kaffebryggare/look-therm-perfection",
+    "editorial_rank": 20
   },
   {
     "id": "ean-8713016094261",
@@ -179,7 +181,8 @@
         "ean": "8713016094261",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 30
   },
   {
     "id": "ean-7392753371487",
@@ -293,7 +296,8 @@
       "auto_off": "Ja",
       "dishwasher_safe": "Filterhållare och kanna"
     },
-    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/kaffebryggare-easy-20-vit/265599"
+    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/kaffebryggare-easy-20-vit/265599",
+    "editorial_rank": 40
   },
   {
     "id": "ean-4006508207596",
@@ -362,7 +366,8 @@
       "auto_off": "Ja",
       "dishwasher_safe": "Flera delar"
     },
-    "detail_source": "https://www.melitta.se/kaffebryggare/excellent-4.0"
+    "detail_source": "https://www.melitta.se/kaffebryggare/excellent-4.0",
+    "editorial_rank": 50
   },
   {
     "id": "ean-4008146032196",
@@ -436,7 +441,8 @@
       "jug": "Glaskanna",
       "dimensions": "44,5 × 31,5 × 20 cm"
     },
-    "detail_source": "https://severin.com/en-en/nutrition-preparation/coffee-breakfast/filter-coffee-makers-glass/ka-5760-filter-coffee-machine-caprice/"
+    "detail_source": "https://severin.com/en-en/nutrition-preparation/coffee-breakfast/filter-coffee-makers-glass/ka-5760-filter-coffee-machine-caprice/",
+    "editorial_rank": 60
   },
   {
     "id": "ean-8004399021365",
@@ -510,7 +516,8 @@
       "dishwasher_safe_milk_carafe": "Ja",
       "water_tank_l": "1.8"
     },
-    "detail_source": "https://www.delonghi.com/en/p/magnifica-evo-ecam290.81.tb-magnifica-evo-automatic-espresso-machine/ECAM290.81.TB.html"
+    "detail_source": "https://www.delonghi.com/en/p/magnifica-evo-ecam290.81.tb-magnifica-evo-automatic-espresso-machine/ECAM290.81.TB.html",
+    "editorial_rank": 70
   },
   {
     "id": "ean-8004399021419",
@@ -583,7 +590,8 @@
       "dishwasher_safe_milk_carafe": "Ja",
       "grinder": "Integrerad"
     },
-    "detail_source": "https://www.delonghi.com/en/p/magnifica-evo-ecam290.81.tb-magnifica-evo-automatic-espresso-machine/ECAM290.81.TB.html"
+    "detail_source": "https://www.delonghi.com/en/p/magnifica-evo-ecam290.81.tb-magnifica-evo-automatic-espresso-machine/ECAM290.81.TB.html",
+    "editorial_rank": 80
   },
   {
     "id": "ean-4008146041525",
@@ -641,7 +649,8 @@
       "auto_off": "Ja",
       "drip_stop": "Ja"
     },
-    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/severin-1000-watt-black/612229/"
+    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/severin-1000-watt-black/612229/",
+    "editorial_rank": 90
   },
   {
     "id": "ean-4008146041501",
@@ -699,7 +708,8 @@
       "auto_off": "Ja",
       "drip_stop": "Ja"
     },
-    "detail_source": "https://order.se/dubbel-termosbryggare-ka9314-1000w-vit-a10203/"
+    "detail_source": "https://order.se/dubbel-termosbryggare-ka9314-1000w-vit-a10203/",
+    "editorial_rank": 100
   },
   {
     "id": "ean-4006508218738",
@@ -747,7 +757,8 @@
         "ean": "4006508218738",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 110
   },
   {
     "id": "ean-4006508218714",
@@ -812,7 +823,8 @@
       "auto_off": "Ja",
       "dishwasher_safe": "Filterhållare och kanna"
     },
-    "detail_source": "https://www.melitta.se/kaffebryggare/easy"
+    "detail_source": "https://www.melitta.se/kaffebryggare/easy",
+    "editorial_rank": 120
   },
   {
     "id": "ean-4006508222100",
@@ -860,7 +872,8 @@
         "ean": "4006508222100",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 130
   },
   {
     "id": "ean-4006508221615",
@@ -938,7 +951,8 @@
       "dimensions": "200 × 460 × 334 mm",
       "display": "Display"
     },
-    "detail_source": "https://www.melitta.se/espressomaskiner/purista"
+    "detail_source": "https://www.melitta.se/espressomaskiner/purista",
+    "editorial_rank": 140
   },
   {
     "id": "ean-8710103673996",
@@ -1006,7 +1020,8 @@
       "pre_ground": "Ja",
       "cleaning": "Avtagbar bönbehållare och rengöringsborste"
     },
-    "detail_source": "https://www.documents.philips.com/assets/20230712/07f27d1756f44ccab9e4b03d016a17cf.pdf"
+    "detail_source": "https://www.documents.philips.com/assets/20230712/07f27d1756f44ccab9e4b03d016a17cf.pdf",
+    "editorial_rank": 150
   },
   {
     "id": "ean-4006508218806",
@@ -1055,7 +1070,8 @@
         "ean": "4006508218806",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 160
   },
   {
     "id": "ean-5038061111248",
@@ -1123,7 +1139,8 @@
       "jug": "Glaskanna",
       "auto_off": "Ja"
     },
-    "detail_source": "https://cdn-img.russellhobbs.com/manager/russellhobbs_com/Catalogue/RH-Catalogue-Q223_old2.pdf"
+    "detail_source": "https://cdn-img.russellhobbs.com/manager/russellhobbs_com/Catalogue/RH-Catalogue-Q223_old2.pdf",
+    "editorial_rank": 170
   },
   {
     "id": "ean-5038061111279",
@@ -1191,7 +1208,8 @@
       "jug": "Glaskanna",
       "auto_off": "Ja"
     },
-    "detail_source": "https://cdn-img.russellhobbs.com/manager/russellhobbs_com/Catalogue/RH-Catalogue-Q223_old2.pdf"
+    "detail_source": "https://cdn-img.russellhobbs.com/manager/russellhobbs_com/Catalogue/RH-Catalogue-Q223_old2.pdf",
+    "editorial_rank": 180
   },
   {
     "id": "ean-5708642022965",
@@ -1239,7 +1257,8 @@
         "ean": "5708642022965",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 190
   },
   {
     "id": "ean-7331890505164",
@@ -1287,7 +1306,8 @@
         "ean": "7331890505164",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 200
   },
   {
     "id": "ean-7331890505140",
@@ -1335,7 +1355,8 @@
         "ean": "7331890505140",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 210
   },
   {
     "id": "ean-7331890505157",
@@ -1383,7 +1404,8 @@
         "ean": "7331890505157",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 220
   },
   {
     "id": "ean-7391091863074",
@@ -1477,7 +1499,8 @@
         "ean": "7391091861728",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 230
   },
   {
     "id": "ean-4008496820900",
@@ -1551,7 +1574,8 @@
       "special": "4–12 koppar; pausa och häll",
       "dimensions": "350 × 278 × 385 mm"
     },
-    "detail_source": "https://se.russellhobbs.com/product/victory-grind-brew-kaffebryggare"
+    "detail_source": "https://se.russellhobbs.com/product/victory-grind-brew-kaffebryggare",
+    "editorial_rank": 240
   },
   {
     "id": "ean-5038061141412",
@@ -1625,7 +1649,8 @@
       "special": "Thermoblock; koppvärmare; automatisk och manuell dosering",
       "display": "Belyst statuspanel"
     },
-    "detail_source": "https://en.russellhobbs.com/product/distinctions-espresso-machine-black-26450-56"
+    "detail_source": "https://en.russellhobbs.com/product/distinctions-espresso-machine-black-26450-56",
+    "editorial_rank": 250
   },
   {
     "id": "ean-4006508215270",
@@ -1673,7 +1698,8 @@
         "ean": "4006508215270",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 260
   },
   {
     "id": "ean-4006508215218",
@@ -1721,7 +1747,8 @@
         "ean": "4006508215218",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 270
   },
   {
     "id": "ean-4006508215201",
@@ -1769,7 +1796,8 @@
         "ean": "4006508215201",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 280
   },
   {
     "id": "ean-4006508217847",
@@ -1852,7 +1880,8 @@
       "dishwasher_safe_milk_carafe": "Ja",
       "dimensions": "25,9 × 46,7 × 37,2 cm"
     },
-    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/espressomaskin/barista-ts-smart-silver/265605/"
+    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/espressomaskin/barista-ts-smart-silver/265605/",
+    "editorial_rank": 290
   },
   {
     "id": "ean-4006508217830",
@@ -1935,7 +1964,8 @@
       "dishwasher_safe_milk_carafe": "Ja",
       "dimensions": "25,9 × 46,7 × 37,2 cm"
     },
-    "detail_source": "https://www.proshop.se/Kaffe-och-Espresso/Melitta-Barista-TS-Smart-Svart/2655240"
+    "detail_source": "https://www.proshop.se/Kaffe-och-Espresso/Melitta-Barista-TS-Smart-Svart/2655240",
+    "editorial_rank": 300
   },
   {
     "id": "ean-4006508208128",
@@ -2013,7 +2043,8 @@
       "water_outlet": "Varmvatten",
       "display": "Ja"
     },
-    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/espressomaskin/melitta-caffeo-solo-perfect-milk-kaffemaskin-20812/MEL20812"
+    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/espressomaskin/melitta-caffeo-solo-perfect-milk-kaffemaskin-20812/MEL20812",
+    "editorial_rank": 310
   },
   {
     "id": "ean-4006508211173",
@@ -2085,7 +2116,8 @@
       "drip_stop": "Ja",
       "special": "Aromaventil"
     },
-    "detail_source": "https://www.melitta.se/kaffebryggare/single-5"
+    "detail_source": "https://www.melitta.se/kaffebryggare/single-5",
+    "editorial_rank": 320
   },
   {
     "id": "ean-4006508209521",
@@ -2155,7 +2187,8 @@
       "auto_off": "Ja",
       "special": "Belyst på/av-knapp"
     },
-    "detail_source": "https://www.melitta.se/bruksanvisning"
+    "detail_source": "https://www.melitta.se/bruksanvisning",
+    "editorial_rank": 330
   },
   {
     "id": "ean-5708642023733",
@@ -2219,7 +2252,8 @@
       "auto_off": "2 timmar",
       "drip_stop": "Ja"
     },
-    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/obh-nordica-kaffebryggare-svart-2373-51012373/OBH2373"
+    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/obh-nordica-kaffebryggare-svart-2373-51012373/OBH2373",
+    "editorial_rank": 340
   },
   {
     "id": "ean-4006508173082",
@@ -2387,7 +2421,8 @@
       "special": "AromaSelector",
       "dimensions": "21 × 26,2 × 39,2 cm"
     },
-    "detail_source": "https://www.netonnet.se/art/senastinkommet/melitta-enjoy-ii-therm/233875.8535/"
+    "detail_source": "https://www.netonnet.se/art/senastinkommet/melitta-enjoy-ii-therm/233875.8535/",
+    "editorial_rank": 350
   },
   {
     "id": "ean-4006508214471",
@@ -2435,7 +2470,8 @@
         "ean": "4006508214471",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 360
   },
   {
     "id": "ean-8021098320247",
@@ -2503,7 +2539,8 @@
       "special": "OptiBrewSystem, 1–4-koppsläge, kaffestyrka, avkalkningsvarning",
       "dimensions": "20 × 20 × 36 cm"
     },
-    "detail_source": "https://static.elongroup.se/Document/Article/121127/faktablad-kok--brygg-braun-0x13211014.pdf"
+    "detail_source": "https://static.elongroup.se/Document/Article/121127/faktablad-kok--brygg-braun-0x13211014.pdf",
+    "editorial_rank": 370
   },
   {
     "id": "ean-7392753588762",
@@ -2600,7 +2637,8 @@
         "ean": "4006508227495",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 380
   },
   {
     "id": "ean-4006508227488",
@@ -2648,7 +2686,8 @@
         "ean": "4006508227488",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 390
   },
   {
     "id": "ean-4006508224265",
@@ -2717,7 +2756,8 @@
       "dishwasher_safe": "Ja",
       "dimensions": "357 × 167 × 359 mm"
     },
-    "detail_source": "https://www.melitta.se/kaffebryggare/epour"
+    "detail_source": "https://www.melitta.se/kaffebryggare/epour",
+    "editorial_rank": 400
   },
   {
     "id": "ean-8021098003485",
@@ -2766,7 +2806,8 @@
         "ean": "8021098003485",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 410
   },
   {
     "id": "ean-8021098320124",
@@ -2828,7 +2869,8 @@
       "drip_stop": "Ja",
       "dimensions": "250 × 200 × 400 mm"
     },
-    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/braun-purease-kaffemaskin-kf3100wh/224486"
+    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/braun-purease-kaffemaskin-kf3100wh/224486",
+    "editorial_rank": 420
   },
   {
     "id": "ean-8004399026667",
@@ -2898,7 +2940,8 @@
       "special": "XL-funktion för större koppar; kapselsystem",
       "dimensions": "Kompakt format"
     },
-    "detail_source": "https://www.delonghi.com/en-gb/p/nescafe-dolce-gusto-coffee-machines-genio-s-nescafe-dolce-gusto-coffee-maker-edg226.a/EDG226.A.html"
+    "detail_source": "https://www.delonghi.com/en-gb/p/nescafe-dolce-gusto-coffee-machines-genio-s-nescafe-dolce-gusto-coffee-maker-edg226.a/EDG226.A.html",
+    "editorial_rank": 430
   },
   {
     "id": "ean-8004399334588",
@@ -2973,7 +3016,8 @@
       "brew_group": "Manuell",
       "special": "Tvåhöjds droppbricka; plats för koppar upp till 110 mm"
     },
-    "detail_source": "https://www.delonghi.com/en/p/stilosa-ec235.bk-stilosa-manual-espresso-maker/EC235.BK.html"
+    "detail_source": "https://www.delonghi.com/en/p/stilosa-ec235.bk-stilosa-manual-espresso-maker/EC235.BK.html",
+    "editorial_rank": 440
   },
   {
     "id": "ean-8004399334564",
@@ -3021,7 +3065,8 @@
         "ean": "8004399334564",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 450
   },
   {
     "id": "ean-7333282012991",
@@ -3077,7 +3122,8 @@
       "auto_off": "Ja",
       "drip_stop": "Ja"
     },
-    "detail_source": "https://emerio.eu/cme-125129-4"
+    "detail_source": "https://emerio.eu/cme-125129-4",
+    "editorial_rank": 460
   },
   {
     "id": "ean-4008146030734",
@@ -3125,7 +3171,8 @@
         "ean": "4008146030734",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 470
   },
   {
     "id": "ean-4006508219414",
@@ -3193,7 +3240,8 @@
       "ecbc": "Ja",
       "special": "360° vattenutlopp, förbryggning, olika bryggprofiler"
     },
-    "detail_source": "https://www.melitta.se/kaffebryggare/epos"
+    "detail_source": "https://www.melitta.se/kaffebryggare/epos",
+    "editorial_rank": 480
   },
   {
     "id": "ean-8006363011617",
@@ -3241,7 +3289,8 @@
         "ean": "8006363011617",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 490
   },
   {
     "id": "ean-8006363040556",
@@ -3289,7 +3338,8 @@
         "ean": "8006363040556",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 500
   },
   {
     "id": "ean-8006363035996",
@@ -3337,7 +3387,8 @@
         "ean": "8006363035996",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 510
   },
   {
     "id": "ean-8006363029087",
@@ -3385,7 +3436,8 @@
         "ean": "8006363029087",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 520
   },
   {
     "id": "ean-8006363018951",
@@ -3433,7 +3485,8 @@
         "ean": "8006363018951",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 530
   },
   {
     "id": "ean-8006363036009",
@@ -3481,7 +3534,8 @@
         "ean": "8006363036009",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 540
   },
   {
     "id": "ean-4006508217380",
@@ -3557,7 +3611,8 @@
       "special": "Aroma Control för 2–5 koppar; belyst vattenbehållare",
       "dimensions": "278 × 162 × 350 mm"
     },
-    "detail_source": "https://www.melitta.se/kaffebryggare/excellent-5.0"
+    "detail_source": "https://www.melitta.se/kaffebryggare/excellent-5.0",
+    "editorial_rank": 550
   },
   {
     "id": "ean-7333282004439",
@@ -3606,7 +3661,8 @@
         "ean": "7333282004439",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 560
   },
   {
     "id": "ean-7333282003128",
@@ -3669,7 +3725,8 @@
       "auto_off": "Ja",
       "jug": "Glaskanna"
     },
-    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/kaffebryggare-1000watt-125l-rostfri/374792"
+    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/kaffebryggare-1000watt-125l-rostfri/374792",
+    "editorial_rank": 570
   },
   {
     "id": "ean-8712836985483",
@@ -3718,7 +3775,8 @@
         "ean": "8712836985483",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 580
   },
   {
     "id": "ean-4242005396917",
@@ -3786,7 +3844,8 @@
       "auto_off": "Ja",
       "dimensions": "347 × 231 × 295 mm"
     },
-    "detail_source": "https://www.bosch-home.se/sv/product/espresso-och-kaffemaskiner/kaffebryggare/TKA3M133"
+    "detail_source": "https://www.bosch-home.se/sv/product/espresso-och-kaffemaskiner/kaffebryggare/TKA3M133",
+    "editorial_rank": 590
   },
   {
     "id": "ean-8710103894735",
@@ -3861,7 +3920,8 @@
       "brew_group": "Avtagbar",
       "filter": "AquaClean-kompatibel"
     },
-    "detail_source": "https://www.documents.philips.com/assets/20211224/0be414069cc244cd918fae0800adbb76.pdf"
+    "detail_source": "https://www.documents.philips.com/assets/20211224/0be414069cc244cd918fae0800adbb76.pdf",
+    "editorial_rank": 600
   },
   {
     "id": "ean-4242005396955",
@@ -3924,7 +3984,8 @@
       "dimensions": "347 × 232 × 295 mm",
       "jug": "Glaskanna"
     },
-    "detail_source": "https://media3.bsh-group.com/Documents/specsheet/sv-SE/TKA2M111.pdf"
+    "detail_source": "https://media3.bsh-group.com/Documents/specsheet/sv-SE/TKA2M111.pdf",
+    "editorial_rank": 610
   },
   {
     "id": "ean-4006508222575",
@@ -3998,7 +4059,8 @@
       "dimensions": "264 × 404 × 256 mm",
       "display": "Ja"
     },
-    "detail_source": "https://www.melitta.se/kaffebryggare/look-therm-perfection"
+    "detail_source": "https://www.melitta.se/kaffebryggare/look-therm-perfection",
+    "editorial_rank": 620
   },
   {
     "id": "homeroom-2167326",
@@ -4096,7 +4158,8 @@
         "ean": "8720389024740",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 630
   },
   {
     "id": "ean-8720389041228",
@@ -4161,7 +4224,8 @@
       "auto_off": "Ja",
       "brew_time": "<11 minuter"
     },
-    "detail_source": "https://www.procie.com/mediaprovider/index/index/media_type/notice/filename/HD7411-00.pdf"
+    "detail_source": "https://www.procie.com/mediaprovider/index/index/media_type/notice/filename/HD7411-00.pdf",
+    "editorial_rank": 640
   },
   {
     "id": "ean-7333282015350",
@@ -4217,7 +4281,8 @@
       "auto_off": "Ja",
       "drip_stop": "Ja"
     },
-    "detail_source": "https://emerio.eu/cme-116801"
+    "detail_source": "https://emerio.eu/cme-116801",
+    "editorial_rank": 650
   },
   {
     "id": "ean-7333282020835",
@@ -4273,7 +4338,8 @@
       "auto_off": "40 minuter",
       "filter": "1x4"
     },
-    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/emerio-kaffebryggare-cme-125481-svart/1106547"
+    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/emerio-kaffebryggare-cme-125481-svart/1106547",
+    "editorial_rank": 660
   },
   {
     "id": "ean-4006508228171",
@@ -4344,7 +4410,8 @@
       "drip_stop": "Ja",
       "descaling": "3-i-1 kalkskydd med avkalkningsprogram"
     },
-    "detail_source": "https://www.costco.co.uk/Appliances/Coffee-Machines-Accessories/Melitta-LOOK-Therm-Filter-Coffee-Machine/p/613732"
+    "detail_source": "https://www.costco.co.uk/Appliances/Coffee-Machines-Accessories/Melitta-LOOK-Therm-Filter-Coffee-Machine/p/613732",
+    "editorial_rank": 670
   },
   {
     "id": "homeroom-2267626",
@@ -4404,7 +4471,8 @@
       "auto_off": "Ja",
       "dishwasher_safe": "Kanna, filterinsats och utvalda delar"
     },
-    "detail_source": "https://www.homeroom.se/melitta/kaffebryggare-look-aromaselector/2267626"
+    "detail_source": "https://www.homeroom.se/melitta/kaffebryggare-look-aromaselector/2267626",
+    "editorial_rank": 680
   },
   {
     "id": "ean-7333282019464",
@@ -4545,7 +4613,8 @@
         "ean": "8712836998087",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 690
   },
   {
     "id": "ean-8712836992962",
@@ -4593,7 +4662,8 @@
         "ean": "8712836992962",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 700
   },
   {
     "id": "ean-8712836995376",
@@ -4658,7 +4728,8 @@
       "auto_off": "40 minuter",
       "filter": "Flergångsfilter"
     },
-    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/tristar-kaffebryggare-cm-1282-750w-125l-10-12-koppars/1079554"
+    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/tristar-kaffebryggare-cm-1282-750w-125l-10-12-koppars/1079554",
+    "editorial_rank": 710
   },
   {
     "id": "homeroom-2167276",
@@ -4755,7 +4826,8 @@
         "ean": "3094570153539",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 720
   },
   {
     "id": "ean-3094570153881",
@@ -4803,7 +4875,8 @@
         "ean": "3094570153881",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 730
   },
   {
     "id": "ean-3094570154215",
@@ -4851,7 +4924,8 @@
         "ean": "3094570154215",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 740
   },
   {
     "id": "ean-8712836993273",
@@ -4900,7 +4974,8 @@
         "ean": "8712836993273",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 750
   },
   {
     "id": "ean-8712836993112",
@@ -4948,7 +5023,8 @@
         "ean": "8712836993112",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 760
   },
   {
     "id": "homeroom-2271434",
@@ -5016,7 +5092,8 @@
       "descaling": "Avkalkningsprogram och indikator",
       "repairability": "Reparerbar och reservdelar finns"
     },
-    "detail_source": "https://www.melitta.se/kaffebryggare/melitta-aromafresh-therm-pro"
+    "detail_source": "https://www.melitta.se/kaffebryggare/melitta-aromafresh-therm-pro",
+    "editorial_rank": 770
   },
   {
     "id": "ean-7393822005630",
@@ -5202,7 +5279,8 @@
         "ean": "8711658523064",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 780
   },
   {
     "id": "ean-4006508220113",
@@ -5251,7 +5329,8 @@
         "ean": "4006508220113",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 790
   },
   {
     "id": "ean-7391091867287",
@@ -5299,7 +5378,8 @@
         "ean": "7391091867287",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 800
   },
   {
     "id": "ean-7391091868055",
@@ -5447,7 +5527,8 @@
       "auto_off": "Ja",
       "drip_stop": "Ja"
     },
-    "detail_source": "https://www.kitchnsverige.se/matlagning/koksmaskiner/kaffebryggare/emerio-satin-gold-line-kaffebryggare-1-l-svart/"
+    "detail_source": "https://www.kitchnsverige.se/matlagning/koksmaskiner/kaffebryggare/emerio-satin-gold-line-kaffebryggare-1-l-svart/",
+    "editorial_rank": 810
   },
   {
     "id": "ean-7333282026073",
@@ -5495,7 +5576,8 @@
         "ean": "7333282026073",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 820
   },
   {
     "id": "ean-4008146049132",
@@ -5645,7 +5727,8 @@
         "ean": "4008146047572",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 830
   },
   {
     "id": "ean-7391091867812",
@@ -5711,7 +5794,8 @@
       "auto_off": "Ja",
       "dishwasher_safe": "Kanna och filterhållare"
     },
-    "detail_source": "https://elteamsvensson.se/wp-content/uploads/2025/06/CHKB300_Produktblad.pdf"
+    "detail_source": "https://elteamsvensson.se/wp-content/uploads/2025/06/CHKB300_Produktblad.pdf",
+    "editorial_rank": 840
   },
   {
     "id": "ean-8006363074339",
@@ -5759,7 +5843,8 @@
         "ean": "8006363074339",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 850
   },
   {
     "id": "ean-8006363074346",
@@ -5807,7 +5892,8 @@
         "ean": "8006363074346",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 860
   },
   {
     "id": "ean-7333282030681",
@@ -5996,7 +6082,8 @@
         "ean": "6410412704634",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 870
   },
   {
     "id": "ean-3045387294090",
@@ -6044,7 +6131,8 @@
         "ean": "3045387294090",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 880
   },
   {
     "id": "ean-7333282021191",
@@ -6092,7 +6180,8 @@
         "ean": "7333282021191",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 890
   },
   {
     "id": "ean-7333282021177",
@@ -6140,6 +6229,7 @@
         "ean": "7333282021177",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "editorial_rank": 900
   }
 ]
