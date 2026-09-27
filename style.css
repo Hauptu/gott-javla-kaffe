@@ -760,3 +760,11 @@
 @media(max-width:420px){
  .article-recipe,.article-log{grid-template-columns:1fr}
 }
+
+.guide-distinction{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:32px 0 42px}
+.guide-distinction>div{padding:18px 19px;border:1px solid var(--line);border-radius:16px;background:var(--soft)}
+.guide-distinction span{display:block;font-size:10px;letter-spacing:.1em;font-weight:800;color:var(--muted);margin-bottom:7px}
+.guide-distinction strong{display:block;font-size:20px;letter-spacing:-.02em}
+.guide-distinction p{font-size:13px!important;line-height:1.55!important;margin:7px 0 0}
+.guide-distinction a{display:inline-block;margin-top:10px;font-size:12px;font-weight:800}
+@media(max-width:600px){.guide-distinction{grid-template-columns:1fr}}
