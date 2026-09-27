@@ -234,11 +234,46 @@ function buildRecommendationCards(ranked){
  return selected;
 }
 function matchLabel(n){n=Number(n)||0;return n>=90?'Mycket stark match':n>=80?'Stark match':n>=70?'Bra match':'Svagare match'}
-function card(p){const reason=p.recommendationLabel?(p.recommendationLabel==='FÖRSTA FÖRSLAGET'?(p.fitReasons?.length?`Framför allt för att den ${p.fitReasons.join(', ')}.`:'Matchar flest av dina prioriteringar.'):p.recommendationLabel.startsWith('SAMMA BEHOV')?'Ett billigare alternativ med liknande profil.':p.recommendationLabel.startsWith('ALTERNATIV')?'Ett relevant alternativ, men priset är ännu inte verifierat.':p.recommendationLabel.startsWith('ETT STEG UPP')?'Om du vill lägga lite mer får du här ett alternativ med mer funktion.':'Ett alternativ om du vill prioritera mer funktion.') : '';const image=displayImage(p);return `<article class="product-card"><div class="product-top"><span class="type">${escapeHtml(p.type||'Kaffemaskin')}</span>${p.recommendationLabel?`<span class="rec-label">${p.recommendationLabel}</span>`:''}</div><div class="product-image">${image?`<img src="${escapeAttr(image)}" alt="${escapeAttr(p.brand+' '+p.model)}">`:'<span class="image-placeholder">Produktbild<br><small>läggs till när produktkällan är verifierad</small></span>'}</div><div class="brand">${escapeHtml(p.brand)}</div><h3>${escapeHtml(p.model)}</h3>${p.match?`<div class="match">${matchLabel(p.match)}</div>`:''}${reason?`<p class="recommendation-reason">${reason}</p>`:''}<div class="price">${priceText(p)}</div>${priceMeta(p)}<div class="card-copy">${escapeHtml(p.description||'')}</div><div class="card-bottom">${(p.tags||[]).slice(0,3).map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join('')}</div><div class="card-actions"><button class="mini-button" data-detail="${p.id}">Se detaljer</button><button class="mini-button" data-compare="${p.id}">Jämför</button></div>${offerMarkup(p)}</article>`}
+function productQuickFacts(p){
+ const coffeeLabels={svart:'Bryggkaffe',espresso:'Espresso',cappuccino:'Cappuccino',latte:'Latte'};
+ const coffee=(p.coffee||[]).map(v=>coffeeLabels[String(v).toLowerCase()]||v).slice(0,2).join(' · ');
+ const grinder=p.grinder===true?'Inbyggd kvarn':p.grinder===false?'Ingen kvarn':'';
+ const automation=Number(p.automation)>=5?'Hög automation':Number(p.automation)>=3?'Viss handpåläggning':'';
+ return [coffee,grinder,automation].filter(Boolean).map((v,i)=>\`<span><small>\${['Kaffe','Kvarn','Arbete'][i]}</small><strong>\${escapeHtml(v)}</strong></span>\`).join('');
+}
+function compareButton(p){
+ const active=compare.includes(p.id);
+ return \`<button class="mini-button compare-button\${active?' is-active':''}" data-compare="\${escapeAttr(p.id)}" aria-pressed="\${active}">\${active?'✓ Jämförd':'Jämför'}</button>\`;
+}
+function card(p){
+ const reason=p.recommendationLabel?(p.recommendationLabel==='FÖRSTA FÖRSLAGET'?(p.fitReasons?.length?\`Framför allt för att den \${p.fitReasons.join(', ')}.\`:'Matchar flest av dina prioriteringar.'):p.recommendationLabel.startsWith('SAMMA BEHOV')?'Ett billigare alternativ med liknande profil.':p.recommendationLabel.startsWith('ALTERNATIV')?'Ett relevant alternativ, men priset är ännu inte verifierat.':p.recommendationLabel.startsWith('ETT STEG UPP')?'Om du vill lägga lite mer får du här ett alternativ med mer funktion.':'Ett alternativ om du vill prioritera mer funktion.') : '';
+ const image=displayImage(p);
+ return \`<article class="product-card"><div class="product-top"><span class="type">\${escapeHtml(p.type||'Kaffemaskin')}</span>\${p.recommendationLabel?\`<span class="rec-label">\${escapeHtml(p.recommendationLabel)}</span>\`:''}</div><div class="product-image">\${image?\`<img src="\${escapeAttr(image)}" alt="\${escapeAttr(p.brand+' '+p.model)}">\`:'<span class="image-placeholder">Produktbild<br><small>läggs till när produktkällan är verifierad</small></span>'}</div><div class="brand">\${escapeHtml(p.brand)}</div><h3>\${escapeHtml(p.model)}</h3>\${p.match?\`<div class="match">\${matchLabel(p.match)}</div>\`:''}\${reason?\`<p class="recommendation-reason">\${reason}</p>\`:''}<div class="price">\${priceText(p)}</div>\${priceMeta(p)}<div class="product-quickfacts">\${productQuickFacts(p)}</div><div class="card-copy">\${escapeHtml(p.description||'')}</div><div class="card-bottom">\${(p.tags||[]).slice(0,3).map(t=>\`<span class="tag">\${escapeHtml(t)}</span>\`).join('')}</div><div class="card-actions"><button class="mini-button detail-button" data-detail="\${escapeAttr(p.id)}">Se detaljer</button>\${compareButton(p)}</div>\${offerMarkup(p)}</article>\`;
+}
 function renderProducts(list){$('productGrid').innerHTML=list.length?list.map(card).join(''):'<div class="empty">Inga maskiner matchade filtret.</div>';wireCards()}
 function wireAffiliateLinks(){document.querySelectorAll('[data-affiliate]').forEach(a=>a.onclick=()=>track('affiliate_click',{id:a.dataset.affiliate,merchant:a.dataset.merchant||a.textContent.trim(),network:a.dataset.network||''}))}
-function wireCards(){wireAffiliateLinks();document.querySelectorAll('[data-compare]').forEach(b=>b.onclick=e=>{e.stopPropagation();toggleCompare(b.dataset.compare)});document.querySelectorAll('[data-detail]').forEach(b=>b.onclick=e=>{e.stopPropagation();openModal(b.dataset.detail)})}
-function toggleCompare(id){if(compare.includes(id))compare=compare.filter(x=>x!==id);else if(compare.length<4)compare.push(id);else return alert('Du kan jämföra högst fyra maskiner.');$('compareCount').textContent=compare.length;track('compare_toggle',{id,active:compare.includes(id)});renderCompare()}
+function wireCards(){
+ wireAffiliateLinks();
+ document.querySelectorAll('[data-compare]').forEach(b=>b.onclick=e=>{e.stopPropagation();toggleCompare(b.dataset.compare)});
+ document.querySelectorAll('[data-detail]').forEach(b=>b.onclick=e=>{e.stopPropagation();openModal(b.dataset.detail)});
+}
+function refreshCompareButtons(){
+ document.querySelectorAll('[data-compare]').forEach(b=>{
+   const active=compare.includes(b.dataset.compare);
+   b.classList.toggle('is-active',active);
+   b.setAttribute('aria-pressed',String(active));
+   b.textContent=active?'✓ Jämförd':'Jämför';
+ });
+}
+function toggleCompare(id){
+ if(compare.includes(id))compare=compare.filter(x=>x!==id);
+ else if(compare.length<4)compare.push(id);
+ else return alert('Du kan jämföra högst fyra maskiner.');
+ $('compareCount').textContent=compare.length;
+ track('compare_toggle',{id,active:compare.includes(id)});
+ renderCompare();
+ refreshCompareButtons();
+}
 function renderCompare(){if(!compare.length){$('compareEmpty').style.display='block';$('compareTable').innerHTML='';$('tradeoffBox').classList.add('hidden');return}$('compareEmpty').style.display='none';const ps=compare.map(id=>products.find(p=>p.id===id)).filter(Boolean);const row=(label,fn)=>`<tr><td>${label}</td>${ps.map(p=>`<td>${fn(p)}</td>`).join('')}</tr>`;$('compareTable').innerHTML=`<div class="compare-wrap"><table class="compare-table"><thead><tr><th></th>${ps.map(p=>`<th>${escapeHtml(p.brand)}<br><strong>${escapeHtml(p.model)}</strong></th>`).join('')}</tr></thead><tbody>${row('Pris',priceText)}${row('Typ',p=>escapeHtml(p.type))}${row('Automation',p=>stars(p.automation))}${row('Kontroll',p=>stars(p.control))}${row('Espresso',p=>stars(p.espresso))}${row('Mjölkdrycker',p=>stars(p.milk))}${row('Rengöring',p=>stars(p.cleaning))}${row('Inbyggd kvarn',p=>p.grinder?'Ja':'Nej')}</tbody></table></div>`;$('tradeoffBox').classList.remove('hidden');$('tradeoffBox').innerHTML='<strong>Jämför kompromisserna.</strong> Automation minskar normalt handpåläggningen. Högre kontroll ger fler möjligheter att påverka resultatet, men innebär också mer arbete. Inget av det är bättre i sig — det beror på hur du vill använda maskinen.'}
 function stars(n){n=Number(n)||0;return '★'.repeat(n)+'☆'.repeat(Math.max(0,5-n))}
 function detailFact(label,value){return value?`<div class="detail-fact"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`:''}
