@@ -1250,9 +1250,9 @@
     "brand": "OBH Nordica",
     "model": "1,5 Daybreak 2296 1000 watt",
     "type": "Kaffebryggare",
-    "automation": 3,
-    "control": 3,
-    "ease": 3,
+    "automation": 4,
+    "control": 2,
+    "ease": 5,
     "espresso": 1,
     "milk": 1,
     "cleaning": 3,
@@ -1265,11 +1265,20 @@
     ],
     "audience": [],
     "tags": [
-      "bryggkaffe"
+      "bryggkaffe",
+      "enkel",
+      "budget"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "OBH Nordica Daybreak 2296 är en enkel 1,5-liters bryggare för vardagskaffe. Den fokuserar på grundfunktionerna snarare än avancerade inställningar.",
+    "pros": [
+      "1,5 liters kapacitet",
+      "Enkel vardagsbryggare",
+      "1000 W effekt"
+    ],
+    "cons": [
+      "Få inställningar",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -1292,7 +1301,14 @@
         "source": "Awin · Homeroom SE"
       }
     ],
-    "editorial_rank": 190
+    "editorial_rank": 190,
+    "details": {
+      "water_tank_l": 1.5,
+      "power_w": 1000,
+      "grinder": "Nej",
+      "special": "Enkel filterbryggning"
+    },
+    "detail_source": "https://www.obhnordica.se/kaffemaskiner/kaffebryggare"
   },
   {
     "id": "ean-7331890505164",
@@ -1691,12 +1707,12 @@
     "brand": "Melitta",
     "model": "Excellent 4.0 Svart",
     "type": "Kaffebryggare",
-    "automation": 3,
+    "automation": 4,
     "control": 3,
-    "ease": 3,
+    "ease": 5,
     "espresso": 1,
     "milk": 1,
-    "cleaning": 3,
+    "cleaning": 5,
     "noise": 3,
     "enthusiast": 3,
     "grinder": false,
@@ -1706,11 +1722,20 @@
     ],
     "audience": [],
     "tags": [
-      "bryggkaffe"
+      "bryggkaffe",
+      "ECBC",
+      "92–96 °C"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "Excellent 4.0 är Melittas klassiska filterbryggare med 92–96 °C bryggtemperatur, ECBC-certifiering och 1,25 liters kapacitet. En modell där bryggtemperatur och enkel konstruktion står i centrum.",
+    "pros": [
+      "92–96 °C bryggtemperatur",
+      "ECBC-certifierad",
+      "Droppstopp och diskmaskinssäkra delar"
+    ],
+    "cons": [
+      "Ingen timer",
+      "Glaskanna och värmeplatta"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -1733,7 +1758,22 @@
         "source": "Awin · Homeroom SE"
       }
     ],
-    "editorial_rank": 260
+    "editorial_rank": 260,
+    "details": {
+      "water_tank_l": 1.25,
+      "max_cups": 10,
+      "power_w": 1400,
+      "brew_temperature": "92–96 °C",
+      "filter": "1x4",
+      "jug": "Glaskanna",
+      "keep_warm": "40 minuter",
+      "keep_warm_w": 55,
+      "auto_off": "Ja",
+      "drip_stop": "Ja",
+      "ecbc": "Ja",
+      "dishwasher_safe": "Ja"
+    },
+    "detail_source": "https://www.melitta.se/kaffebryggare/excellent-4.0"
   },
   {
     "id": "ean-4006508215218",
@@ -1789,12 +1829,12 @@
     "brand": "Melitta",
     "model": "Excellent 4.0 Vit",
     "type": "Kaffebryggare",
-    "automation": 3,
+    "automation": 4,
     "control": 3,
-    "ease": 3,
+    "ease": 5,
     "espresso": 1,
     "milk": 1,
-    "cleaning": 3,
+    "cleaning": 5,
     "noise": 3,
     "enthusiast": 3,
     "grinder": false,
@@ -1804,11 +1844,20 @@
     ],
     "audience": [],
     "tags": [
-      "bryggkaffe"
+      "bryggkaffe",
+      "ECBC",
+      "92–96 °C"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "Excellent 4.0 i vitt är samma bryggplattform som övriga Excellent 4.0-varianter: hög bryggtemperatur, ECBC-certifiering och en enkel filterbryggning upp till tio koppar.",
+    "pros": [
+      "92–96 °C bryggtemperatur",
+      "ECBC-certifierad",
+      "Diskmaskinssäkra delar"
+    ],
+    "cons": [
+      "Ingen timer",
+      "Glaskanna och värmeplatta"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -1831,7 +1880,21 @@
         "source": "Awin · Homeroom SE"
       }
     ],
-    "editorial_rank": 280
+    "editorial_rank": 280,
+    "details": {
+      "water_tank_l": 1.25,
+      "max_cups": 10,
+      "power_w": 1400,
+      "brew_temperature": "92–96 °C",
+      "filter": "1x4",
+      "jug": "Glaskanna",
+      "keep_warm": "40 minuter",
+      "auto_off": "Ja",
+      "drip_stop": "Ja",
+      "ecbc": "Ja",
+      "dishwasher_safe": "Ja"
+    },
+    "detail_source": "https://www.melitta.se/kaffebryggare/excellent-4.0/faerg-vit"
   },
   {
     "id": "ean-4006508217847",
@@ -2818,9 +2881,9 @@
     "brand": "Braun",
     "model": "KF1505BK PurShine 1,2 l",
     "type": "Kaffebryggare",
-    "automation": 3,
-    "control": 3,
-    "ease": 3,
+    "automation": 4,
+    "control": 2,
+    "ease": 5,
     "espresso": 1,
     "milk": 1,
     "cleaning": 3,
@@ -2834,11 +2897,19 @@
     "audience": [],
     "tags": [
       "bryggkaffe",
-      "termos"
+      "enkel",
+      "budget"
     ],
-    "description": "Kaffebryggare med termoskanna.",
-    "pros": [],
-    "cons": [],
+    "description": "Braun PurShine KF1505BK är en enkel 1,2-liters filterbryggare för vardagsbruk. Den passar dig som vill ha en okomplicerad maskin snarare än avancerade brygginställningar.",
+    "pros": [
+      "1,2 liters kapacitet",
+      "Enkel vardagsbryggning",
+      "Kompakt format"
+    ],
+    "cons": [
+      "Få avancerade funktioner",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -2861,7 +2932,13 @@
         "source": "Awin · Homeroom SE"
       }
     ],
-    "editorial_rank": 410
+    "editorial_rank": 410,
+    "details": {
+      "water_tank_l": 1.2,
+      "grinder": "Nej",
+      "special": "PurShine-serien"
+    },
+    "detail_source": "https://www.braunhousehold.com/"
   },
   {
     "id": "ean-8021098320124",
@@ -4658,12 +4735,12 @@
     "brand": "Tristar",
     "model": "CM-1283 900W",
     "type": "Kaffebryggare",
-    "automation": 3,
-    "control": 3,
-    "ease": 3,
+    "automation": 4,
+    "control": 2,
+    "ease": 5,
     "espresso": 1,
     "milk": 1,
-    "cleaning": 3,
+    "cleaning": 4,
     "noise": 3,
     "enthusiast": 3,
     "grinder": false,
@@ -4674,11 +4751,19 @@
     "audience": [],
     "tags": [
       "bryggkaffe",
-      "termos"
+      "termos",
+      "budget"
     ],
-    "description": "Kaffebryggare med termoskanna.",
-    "pros": [],
-    "cons": [],
+    "description": "Tristar CM-1283 är en enkel filterbryggare med termoskanna. Den är gjord för vardagskaffe där låg komplexitet och varm förvaring väger tyngre än många inställningar.",
+    "pros": [
+      "Termoskanna",
+      "900 W effekt",
+      "Enkel användning"
+    ],
+    "cons": [
+      "Få möjligheter att påverka bryggningen",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -4701,7 +4786,13 @@
         "source": "Awin · Homeroom SE"
       }
     ],
-    "editorial_rank": 690
+    "editorial_rank": 690,
+    "details": {
+      "power_w": 900,
+      "jug": "Termoskanna",
+      "grinder": "Nej"
+    },
+    "detail_source": "https://www.tristar.eu/en-gb/tristar-cm-1283-coffee-maker-cm--1283"
   },
   {
     "id": "ean-8712836992962",
