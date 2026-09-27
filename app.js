@@ -102,7 +102,7 @@ function track(event,params={}){
 async function init(){
  try{const r=await fetch('data/products.json');if(!r.ok)throw new Error('products.json '+r.status);products=(await r.json()).filter(p=>p.lifecycle_status==='active'&&p.images?.status==='approved');}
  catch(e){console.error(e);$('productGrid').innerHTML='<div class="empty">Produktdata kunde inte laddas.</div>';return}
- setupFilters();const initialQuery=new URLSearchParams(location.search).get('q');if(initialQuery){$('search').value=initialQuery;filterProducts()}else{renderProducts(products)}renderQuestion();wireQuickStarts();wireSimulator();track('page_view',{path:location.pathname,query:initialQuery||''});
+ setupFilters();if($('clearCompare'))$('clearCompare').onclick=clearCompare;const initialQuery=new URLSearchParams(location.search).get('q');if(initialQuery){$('search').value=initialQuery;filterProducts()}else{renderProducts(products)}renderQuestion();wireQuickStarts();wireSimulator();track('page_view',{path:location.pathname,query:initialQuery||''});
 }
 function setupFilters(){
  const types=[...new Set(products.map(p=>p.type).filter(Boolean))];
@@ -278,7 +278,49 @@ function toggleCompare(id){
  renderCompare();
  refreshCompareButtons();
 }
-function renderCompare(){if(!compare.length){$('compareEmpty').style.display='block';$('compareTable').innerHTML='';$('tradeoffBox').classList.add('hidden');return}$('compareEmpty').style.display='none';const ps=compare.map(id=>products.find(p=>p.id===id)).filter(Boolean);const row=(label,fn)=>`<tr><td>${label}</td>${ps.map(p=>`<td>${fn(p)}</td>`).join('')}</tr>`;$('compareTable').innerHTML=`<div class="compare-wrap"><table class="compare-table"><thead><tr><th></th>${ps.map(p=>`<th>${escapeHtml(p.brand)}<br><strong>${escapeHtml(p.model)}</strong></th>`).join('')}</tr></thead><tbody>${row('Pris',priceText)}${row('Typ',p=>escapeHtml(p.type))}${row('Automation',p=>stars(p.automation))}${row('Kontroll',p=>stars(p.control))}${row('Espresso',p=>stars(p.espresso))}${row('Mjölkdrycker',p=>stars(p.milk))}${row('Rengöring',p=>stars(p.cleaning))}${row('Inbyggd kvarn',p=>p.grinder?'Ja':'Nej')}</tbody></table></div>`;$('tradeoffBox').classList.remove('hidden');$('tradeoffBox').innerHTML='<strong>Jämför kompromisserna.</strong> Automation minskar normalt handpåläggningen. Högre kontroll ger fler möjligheter att påverka resultatet, men innebär också mer arbete. Inget av det är bättre i sig — det beror på hur du vill använda maskinen.'}
+function compareDetail(p,key,fallback=''){
+ const d=p.details||{};
+ const v=d[key];
+ return v!==undefined&&v!==null&&v!==''?String(v):fallback;
+}
+function renderCompare(){
+ if(!compare.length){
+   $('compareEmpty').style.display='block';
+   $('compareTable').innerHTML='';
+   $('tradeoffBox').classList.add('hidden');
+   if($('clearCompare'))$('clearCompare').classList.add('hidden');
+   return;
+ }
+ $('compareEmpty').style.display='none';
+ if($('clearCompare'))$('clearCompare').classList.remove('hidden');
+ const ps=compare.map(id=>products.find(p=>p.id===id)).filter(Boolean);
+ const row=(label,fn)=>`<tr><th scope="row">${label}</th>${ps.map(p=>`<td>${fn(p)}</td>`).join('')}</tr>`;
+ const head=ps.map(p=>`<th><div class="compare-product-name">${escapeHtml(p.brand)}<strong>${escapeHtml(p.model)}</strong><button class="compare-remove" data-remove-compare="${escapeAttr(p.id)}" type="button">Ta bort</button></div></th>`).join('');
+ $('compareTable').innerHTML=`<div class="compare-wrap"><table class="compare-table"><thead><tr><th></th>${head}</tr></thead><tbody>
+ ${row('Pris',priceText)}
+ ${row('Typ',p=>escapeHtml(p.type))}
+ ${row('Kaffetyp',p=>escapeHtml((p.coffee||[]).join(', ')))}
+ ${row('Automation',p=>stars(p.automation))}
+ ${row('Kontroll',p=>stars(p.control))}
+ ${row('Espresso',p=>stars(p.espresso))}
+ ${row('Mjölkdrycker',p=>stars(p.milk))}
+ ${row('Rengöring',p=>stars(p.cleaning))}
+ ${row('Inbyggd kvarn',p=>p.grinder?'Ja':'Nej')}
+ ${row('Mjölksystem',p=>escapeHtml(p.milk_system||compareDetail(p,'milk_system','–')))}
+ ${row('Vattentank',p=>escapeHtml(compareDetail(p,'water_tank_l','–')))}
+ ${row('Bönkapacitet',p=>escapeHtml(compareDetail(p,'bean_capacity_g','–')))}
+ </tbody></table></div>`;
+ $('tradeoffBox').classList.remove('hidden');
+ $('tradeoffBox').innerHTML='<strong>Jämför kompromisserna.</strong> Automation minskar normalt handpåläggningen. Högre kontroll ger fler möjligheter att påverka resultatet, men innebär också mer arbete. Inget av det är bättre i sig — det beror på hur du vill använda maskinen.';
+ document.querySelectorAll('[data-remove-compare]').forEach(b=>b.onclick=()=>toggleCompare(b.dataset.removeCompare));
+}
+function clearCompare(){
+ compare=[];
+ $('compareCount').textContent='0';
+ track('compare_clear');
+ renderCompare();
+ refreshCompareButtons();
+}
 function stars(n){n=Number(n)||0;return '★'.repeat(n)+'☆'.repeat(Math.max(0,5-n))}
 function detailFact(label,value){return value?`<div class="detail-fact"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`:''}
 function detailList(items){return Array.isArray(items)&&items.length?`<ul>${items.map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul>`:''}
