@@ -1062,12 +1062,12 @@
     "brand": "Melitta",
     "model": "Easy 2.0 Therm 2 Kannor Svart",
     "type": "Kaffebryggare",
-    "automation": 3,
-    "control": 3,
-    "ease": 3,
+    "automation": 4,
+    "control": 2,
+    "ease": 5,
     "espresso": 1,
     "milk": 1,
-    "cleaning": 3,
+    "cleaning": 4,
     "noise": 3,
     "enthusiast": 3,
     "grinder": false,
@@ -1078,11 +1078,19 @@
     "audience": [],
     "tags": [
       "bryggkaffe",
-      "termos"
+      "termos",
+      "två kannor"
     ],
-    "description": "Kaffebryggare med termoskanna.",
-    "pros": [],
-    "cons": [],
+    "description": "Melitta Easy 2.0 Therm med två termoskannor är gjord för situationer där du vill brygga mycket kaffe och kunna ta med eller servera från två kannor. Grundfunktionerna är enkla och lättbegripliga.",
+    "pros": [
+      "Två termoskannor",
+      "1,25 liters kapacitet",
+      "Enkel användning"
+    ],
+    "cons": [
+      "Få inställningar",
+      "Ingen timer"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -1105,7 +1113,15 @@
         "source": "Awin · Homeroom SE"
       }
     ],
-    "editorial_rank": 160
+    "editorial_rank": 160,
+    "details": {
+      "water_tank_l": 1.25,
+      "max_cups": 10,
+      "jug": "2 termoskannor",
+      "grinder": "Nej",
+      "auto_off": "Ja"
+    },
+    "detail_source": "https://www.melitta.se/kaffebryggare/easy-top-therm"
   },
   {
     "id": "ean-5038061111248",
@@ -5596,9 +5612,9 @@
     "brand": "Champion Nordic",
     "model": "Digital 12-koppar KB400",
     "type": "Kaffebryggare",
-    "automation": 3,
+    "automation": 4,
     "control": 3,
-    "ease": 3,
+    "ease": 5,
     "espresso": 1,
     "milk": 1,
     "cleaning": 3,
@@ -5611,11 +5627,20 @@
     ],
     "audience": [],
     "tags": [
-      "bryggkaffe"
+      "bryggkaffe",
+      "timer",
+      "budget"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "Champion KB400 är en digital filterbryggare för upp till tolv koppar. Den passar dig som vill ha en enkel vardagsmaskin men uppskattar timer och digital styrning.",
+    "pros": [
+      "12 koppar",
+      "Digital styrning",
+      "Timer"
+    ],
+    "cons": [
+      "Ingen inbyggd kvarn",
+      "Begränsad bryggkontroll"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -5638,7 +5663,14 @@
         "source": "Awin · Homeroom SE"
       }
     ],
-    "editorial_rank": 800
+    "editorial_rank": 800,
+    "details": {
+      "max_cups": 12,
+      "display": "Digital",
+      "timer": "Ja",
+      "grinder": "Nej"
+    },
+    "detail_source": "https://championnordic.com/"
   },
   {
     "id": "ean-7391091868055",
@@ -5794,9 +5826,9 @@
     "brand": "Emerio",
     "model": "- Grå",
     "type": "Kaffebryggare",
-    "automation": 3,
-    "control": 3,
-    "ease": 3,
+    "automation": 4,
+    "control": 1,
+    "ease": 5,
     "espresso": 1,
     "milk": 1,
     "cleaning": 3,
@@ -5809,11 +5841,20 @@
     ],
     "audience": [],
     "tags": [
-      "bryggkaffe"
+      "bryggkaffe",
+      "budget",
+      "enkel"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "Emerio-modellen i grått är en enkel filterbryggare för vardagskaffe. Den riktar sig mot dig som vill ha en billig och okomplicerad bryggare utan avancerade inställningar.",
+    "pros": [
+      "Låg inköpsnivå",
+      "Enkel användning",
+      "Kompakt vardagsformat"
+    ],
+    "cons": [
+      "Få funktioner",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -5836,7 +5877,12 @@
         "source": "Awin · Homeroom SE"
       }
     ],
-    "editorial_rank": 820
+    "editorial_rank": 820,
+    "details": {
+      "grinder": "Nej",
+      "special": "Enkel filterbryggning"
+    },
+    "detail_source": "https://www.emerio.eu/"
   },
   {
     "id": "ean-4008146049132",
