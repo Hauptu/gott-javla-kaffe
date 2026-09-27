@@ -1970,7 +1970,7 @@
     "pros": [],
     "cons": [],
     "needs_review": false,
-    "lifecycle_status": "active",
+    "lifecycle_status": "excluded",
     "images": {
       "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1008520_Fs",
       "gallery": [],
@@ -1990,7 +1990,8 @@
         "ean": "4006508173082",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "exclude_reason": "Kaffekvarn – inte kaffebryggare"
   },
   {
     "id": "ean-4006508170401",
@@ -2018,7 +2019,7 @@
     "pros": [],
     "cons": [],
     "needs_review": false,
-    "lifecycle_status": "active",
+    "lifecycle_status": "excluded",
     "images": {
       "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1008529_Fs&mw=1500",
       "gallery": [],
@@ -2038,7 +2039,8 @@
         "ean": "4006508170401",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "exclude_reason": "Kaffekvarn – inte kaffebryggare"
   },
   {
     "id": "ean-4006508214457",
@@ -2833,7 +2835,7 @@
     "id": "ean-8006363011617",
     "brand": "Bialetti",
     "model": "1 kopp Moka - Silver",
-    "type": "Espressomaskin",
+    "type": "Mokabryggare",
     "automation": 3,
     "control": 3,
     "ease": 3,
@@ -2881,7 +2883,7 @@
     "id": "ean-8006363040556",
     "brand": "Bialetti",
     "model": "2 kopp Brikka 4 - Silver",
-    "type": "Espressomaskin",
+    "type": "Mokabryggare",
     "automation": 3,
     "control": 3,
     "ease": 3,
@@ -2929,7 +2931,7 @@
     "id": "ean-8006363035996",
     "brand": "Bialetti",
     "model": "4 koppar Brikka Induktion - Grå",
-    "type": "Espressomaskin",
+    "type": "Mokabryggare",
     "automation": 3,
     "control": 3,
     "ease": 3,
@@ -2977,7 +2979,7 @@
     "id": "ean-8006363029087",
     "brand": "Bialetti",
     "model": "MokaInduction 4/k - Svart",
-    "type": "Espressomaskin",
+    "type": "Mokabryggare",
     "automation": 3,
     "control": 3,
     "ease": 3,
@@ -3025,7 +3027,7 @@
     "id": "ean-8006363018951",
     "brand": "Bialetti",
     "model": "3 kopp Moka Italien - Grön",
-    "type": "Espressomaskin",
+    "type": "Mokabryggare",
     "automation": 3,
     "control": 3,
     "ease": 3,
@@ -3073,7 +3075,7 @@
     "id": "ean-8006363036009",
     "brand": "Bialetti",
     "model": "Mini Express set Induktion - Svart",
-    "type": "Espressomaskin",
+    "type": "Mokabryggare",
     "automation": 3,
     "control": 3,
     "ease": 3,
@@ -5061,7 +5063,7 @@
     "pros": [],
     "cons": [],
     "needs_review": false,
-    "lifecycle_status": "active",
+    "lifecycle_status": "excluded",
     "images": {
       "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2327269-01_Fs",
       "gallery": [],
@@ -5081,7 +5083,8 @@
         "ean": "4008146049132",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "exclude_reason": "Kaffekvarn – inte kaffebryggare"
   },
   {
     "id": "ean-4008146049156",
@@ -5111,7 +5114,7 @@
     "pros": [],
     "cons": [],
     "needs_review": false,
-    "lifecycle_status": "active",
+    "lifecycle_status": "excluded",
     "images": {
       "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2327272-01_Fs",
       "gallery": [],
@@ -5131,7 +5134,8 @@
         "ean": "4008146049156",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "exclude_reason": "Kaffekvarn – inte kaffebryggare"
   },
   {
     "id": "ean-4008146047572",
