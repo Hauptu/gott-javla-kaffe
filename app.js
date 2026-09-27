@@ -123,6 +123,7 @@ function setupMachineIntents(){
      $('priceFilter').value='';
      filterProducts();
      document.querySelectorAll('[data-intent]').forEach(x=>x.classList.toggle('is-active',x===button));
+     document.querySelectorAll('[data-quick-filter]').forEach(x=>x.classList.toggle('is-active',x.dataset.quickFilter==='all'));
      track('machine_intent',{intent});
      $('productGrid').scrollIntoView({behavior:'smooth',block:'start'});
    };
@@ -189,6 +190,7 @@ function wireFilterChips(){
    $('coffeeFilter').value='';
    $('priceFilter').value='';
    $('featureFilter').value='';
+   document.querySelectorAll('[data-intent]').forEach(x=>x.classList.remove('is-active'));
    if(key==='coffee')$('coffeeFilter').value='svart';
    if(key==='espresso')$('coffeeFilter').value='espresso';
    if(key==='automatic')$('typeFilter').value='Helautomatisk';
