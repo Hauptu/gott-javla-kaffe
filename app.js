@@ -282,6 +282,8 @@ function detailScore(label,value){
  const n=Math.max(0,Math.min(5,Number(value)||0));
  return `<div class="detail-score"><span>${escapeHtml(label)}</span><div>${'★'.repeat(n)}${'☆'.repeat(5-n)}</div></div>`;
 }
+const detailLabels={water_tank_l:'Vattentank',bean_capacity_g:'Bönkapacitet',max_cups:'Max antal koppar',power_w:'Effekt',pump_bar:'Pumptryck',grinder:'Kvarn',grinder_settings:'Kvarninställningar',brew_temperature:'Bryggtemperatur',brew_time:'Bryggtid',filter:'Filter',jug:'Kanna',keep_warm:'Varmhållning',keep_warm_w:'Varmhållningseffekt',auto_off:'Automatisk avstängning',timer:'Timer',profiles:'Bryggprofiler',preinfusion:'Förbryggning',water_outlet:'Vattenutlopp',ecbc:'ECBC',dimensions:'Mått',display:'Display',drinks:'Drycker',milk_system:'Mjölksystem',brew_group:'Bryggenhet',aroma_strength_settings:'Aromainställningar',temperature_settings:'Temperaturinställningar',auto_cleaning:'Automatisk rengöring',dishwasher_safe:'Diskmaskinssäkra delar',dishwasher_safe_milk_carafe:'Diskmaskinssäker mjölkkanna',descaling:'Avkalkning',repairability:'Reparerbarhet',special:'Särskilda funktioner',coffee_container:'Kaffebehållare'};
+function detailFactsFromData(d){return Object.entries(d||{}).map(([key,value])=>{if(value===null||value===undefined||value==='')return '';const label=detailLabels[key]||key.replace(/_/g,' ');return detailFact(label,String(value))}).filter(Boolean).join('')}
 function openModal(id){
  const p=products.find(x=>x.id===id);
  if(!p)return;
@@ -293,11 +295,8 @@ function openModal(id){
   detailFact('Kaffetyp',Array.isArray(p.coffee)&&p.coffee.length?p.coffee.join(', '):''),
   detailFact('Inbyggd kvarn',p.grinder===true?'Ja':p.grinder===false?'Nej':''),
   detailFact('Mjölksystem',p.milk_system||d.milk_system||''),
-  detailFact('Vattentank',d.water_tank_l?d.water_tank_l+' l':''),
-  detailFact('Effekt',d.power_w?d.power_w+' W':''),
-  detailFact('Pumptryck',d.pump_bar?d.pump_bar+' bar':''),
-  detailFact('Kapacitet bönor',d.bean_capacity_g?d.bean_capacity_g+' g':''),
-  detailFact('Antal koppar',d.max_cups||'')
+  detailFact('Passar särskilt',Array.isArray(p.audience)&&p.audience.length?p.audience.join(', '):''),
+  detailFactsFromData(d)
  ].filter(Boolean).join('');
  const scores=[
   detailScore('Enkelhet',p.ease),
