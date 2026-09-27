@@ -235,11 +235,15 @@ function buildRecommendationCards(ranked){
 }
 function matchLabel(n){n=Number(n)||0;return n>=90?'Mycket stark match':n>=80?'Stark match':n>=70?'Bra match':'Svagare match'}
 function productQuickFacts(p){
+ const items=[];
  const coffeeLabels={svart:'Bryggkaffe',espresso:'Espresso',cappuccino:'Cappuccino',latte:'Latte'};
  const coffee=(p.coffee||[]).map(v=>coffeeLabels[String(v).toLowerCase()]||v).slice(0,2).join(' · ');
- const grinder=p.grinder===true?'Inbyggd kvarn':p.grinder===false?'Ingen kvarn':'';
+ if(coffee)items.push(['Kaffe',coffee]);
+ if(p.grinder===true)items.push(['Kvarn','Inbyggd']);
+ else if(p.grinder===false)items.push(['Kvarn','Ingen']);
  const automation=Number(p.automation)>=5?'Hög automation':Number(p.automation)>=3?'Viss handpåläggning':'';
- return [coffee,grinder,automation].filter(Boolean).map((v,i)=>\`<span><small>\${['Kaffe','Kvarn','Arbete'][i]}</small><strong>\${escapeHtml(v)}</strong></span>\`).join('');
+ if(automation)items.push(['Arbete',automation]);
+ return items.map(([label,value])=>`<span><small>${label}</small><strong>${escapeHtml(value)}</strong></span>`).join('');
 }
 function compareButton(p){
  const active=compare.includes(p.id);
