@@ -233,7 +233,7 @@
   {
     "id": "ean-4006508218721",
     "brand": "Melitta",
-    "model": "Easy 2.0 vit",
+    "model": "Easy 2.0 Vit",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -252,9 +252,16 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "Kompakt filterbryggare för upp till 10 stora koppar med glaskanna, droppstopp och avtagbart svängfilter.",
+    "pros": [
+      "Kompakt format",
+      "Enkel att rengöra",
+      "10 stora koppar"
+    ],
+    "cons": [
+      "Ingen timer",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -276,7 +283,17 @@
         "ean": "4006508218721",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,25 l",
+      "max_cups": "10 stora / 15 små",
+      "power_w": "1050",
+      "filter": "1x4",
+      "jug": "Glaskanna",
+      "auto_off": "Ja",
+      "dishwasher_safe": "Filterhållare och kanna"
+    },
+    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/kaffebryggare-easy-20-vit/265599"
   },
   {
     "id": "ean-4006508207596",
@@ -709,7 +726,7 @@
   {
     "id": "ean-4006508218714",
     "brand": "Melitta",
-    "model": "Easy 2.0, Svart",
+    "model": "Easy 2.0 Svart",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -728,9 +745,16 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "Kompakt filterbryggare för upp till 10 stora koppar med glaskanna, droppstopp och avtagbart svängfilter.",
+    "pros": [
+      "Kompakt format",
+      "Enkel att rengöra",
+      "10 stora koppar"
+    ],
+    "cons": [
+      "Ingen timer",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -752,7 +776,17 @@
         "ean": "4006508218714",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,25 l",
+      "max_cups": "10 stora / 15 små",
+      "power_w": "1050",
+      "filter": "1x4",
+      "jug": "Glaskanna",
+      "auto_off": "Ja",
+      "dishwasher_safe": "Filterhållare och kanna"
+    },
+    "detail_source": "https://www.melitta.se/kaffebryggare/easy"
   },
   {
     "id": "ean-4006508222100",
@@ -1984,7 +2018,7 @@
   {
     "id": "ean-5708642023733",
     "brand": "OBH Nordica",
-    "model": "Svart 2373",
+    "model": "2373",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -2003,9 +2037,16 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "Kompakt bryggare med 0,75 liters kapacitet och 680 W effekt. Ett litet format för upp till sex koppar.",
+    "pros": [
+      "Kompakt",
+      "0,75 l / 6 koppar",
+      "Löstagbar filterhållare"
+    ],
+    "cons": [
+      "Liten kapacitet",
+      "Lång auto-off på 2 timmar"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -2027,7 +2068,16 @@
         "ean": "5708642023733",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "0,75 l",
+      "max_cups": 6,
+      "power_w": "680",
+      "filter": "102",
+      "auto_off": "2 timmar",
+      "drip_stop": "Ja"
+    },
+    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/obh-nordica-kaffebryggare-svart-2373-51012373/OBH2373"
   },
   {
     "id": "ean-4006508173082",
@@ -2537,7 +2587,7 @@
   {
     "id": "ean-8021098320124",
     "brand": "Braun",
-    "model": "Kf3100wh PurEase 1000 W",
+    "model": "KF3100WH PurEase",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -2556,9 +2606,16 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "En enkel och kompakt filterbryggare i Braun PurEase-serien med 1000 W effekt och automatisk avstängning efter 40 minuter.",
+    "pros": [
+      "1000 W",
+      "40 min auto-off",
+      "Droppstopp"
+    ],
+    "cons": [
+      "Ingen timer",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -2580,7 +2637,14 @@
         "ean": "8021098320124",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "power_w": "1000",
+      "auto_off": "40 minuter",
+      "drip_stop": "Ja",
+      "dimensions": "250 × 200 × 400 mm"
+    },
+    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/braun-purease-kaffemaskin-kf3100wh/224486"
   },
   {
     "id": "ean-8004399026667",
@@ -3363,7 +3427,7 @@
   {
     "id": "ean-7333282003128",
     "brand": "Emerio",
-    "model": "1000Watt 1,25 l rostfri - Silver",
+    "model": "1000W 1,25 l rostfri",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3382,9 +3446,16 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "Filterbryggare med 1,25 liters kapacitet och 1000 W effekt, med automatisk avstängning och rostfria detaljer.",
+    "pros": [
+      "1,25 l kapacitet",
+      "1000 W",
+      "Automatisk avstängning"
+    ],
+    "cons": [
+      "Ingen timer",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -3406,7 +3477,15 @@
         "ean": "7333282003128",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,25 l",
+      "max_cups": 10,
+      "power_w": "1000",
+      "auto_off": "Ja",
+      "jug": "Glaskanna"
+    },
+    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/kaffebryggare-1000watt-125l-rostfri/374792"
   },
   {
     "id": "ean-8712836985483",
@@ -3603,7 +3682,7 @@
   {
     "id": "ean-4242005396955",
     "brand": "Bosch",
-    "model": "Tka2m111 Vit 1200watt Avtagbar Tank",
+    "model": "MyMoment TKA2M111",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3622,9 +3701,16 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "En renodlad filterbryggare med avtagbar vattentank, droppstopp och automatisk avstängning efter 40 minuter.",
+    "pros": [
+      "Avtagbar vattentank",
+      "40 min auto-off",
+      "Droppstopp"
+    ],
+    "cons": [
+      "Ingen timer",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -3646,7 +3732,15 @@
         "ean": "4242005396955",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "power_w": "1200",
+      "auto_off": "40 minuter",
+      "drip_stop": "Ja",
+      "dimensions": "347 × 232 × 295 mm",
+      "jug": "Glaskanna"
+    },
+    "detail_source": "https://media3.bsh-group.com/Documents/specsheet/sv-SE/TKA2M111.pdf"
   },
   {
     "id": "ean-4006508222575",
@@ -3823,7 +3917,7 @@
   {
     "id": "ean-8720389041228",
     "brand": "Philips",
-    "model": "Hd7411/00 3000-serien Arctic White",
+    "model": "HD7411/00 3000-serien",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -3842,9 +3936,16 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "Philips filterbryggare med 1,25 liters glaskanna, 30 minuters varmhållning och automatisk avstängning.",
+    "pros": [
+      "1,25 l / upp till 10 koppar",
+      "30 min varmhållning",
+      "Droppstopp"
+    ],
+    "cons": [
+      "Ingen timer",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -3866,7 +3967,17 @@
         "ean": "8720389041228",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,38 l",
+      "max_cups": 10,
+      "power_w": "915–1080",
+      "jug": "Glaskanna 1,25 l",
+      "keep_warm": "30 minuter",
+      "auto_off": "Ja",
+      "brew_time": "<11 minuter"
+    },
+    "detail_source": "https://www.procie.com/mediaprovider/index/index/media_type/notice/filename/HD7411-00.pdf"
   },
   {
     "id": "ean-7333282015350",
@@ -4322,9 +4433,16 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "En enkel filterbryggare med 1,25 liters glaskanna för 10–12 koppar, varmhållning och automatisk avstängning.",
+    "pros": [
+      "1,25 l glaskanna",
+      "Varmhållning och 40 min auto-off",
+      "Flergångsfilter"
+    ],
+    "cons": [
+      "Ingen timer",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -4346,7 +4464,17 @@
         "ean": "8712836995376",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,25 l",
+      "max_cups": "10–12",
+      "power_w": "750",
+      "jug": "Glaskanna",
+      "keep_warm": "Ja",
+      "auto_off": "40 minuter",
+      "filter": "Flergångsfilter"
+    },
+    "detail_source": "https://www.elgiganten.se/product/hem-hushall-tradgard/kaffemaskiner-te/kaffebryggare/tristar-kaffebryggare-cm-1282-750w-125l-10-12-koppars/1079554"
   },
   {
     "id": "homeroom-2167276",
@@ -5338,7 +5466,7 @@
   {
     "id": "ean-7391091867812",
     "brand": "Champion Nordic",
-    "model": "1,5L Kb300",
+    "model": "KB300",
     "type": "Kaffebryggare",
     "automation": 3,
     "control": 3,
@@ -5357,9 +5485,16 @@
     "tags": [
       "bryggkaffe"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "description": "Mattsvart filterbryggare med 1,5 liters glaskanna, automatisk varmhållning och avstängning. Ett enkelt upplägg utan onödiga inställningar.",
+    "pros": [
+      "1,5 l / 12 koppar",
+      "Automatisk varmhållning",
+      "Diskmaskinssäker kanna och filterhållare"
+    ],
+    "cons": [
+      "Ingen timer",
+      "Ingen inbyggd kvarn"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -5381,7 +5516,18 @@
         "ean": "7391091867812",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,5 l",
+      "max_cups": 12,
+      "power_w": "900",
+      "filter": "1x4",
+      "jug": "Glaskanna",
+      "keep_warm": "Automatisk",
+      "auto_off": "Ja",
+      "dishwasher_safe": "Kanna och filterhållare"
+    },
+    "detail_source": "https://elteamsvensson.se/wp-content/uploads/2025/06/CHKB300_Produktblad.pdf"
   },
   {
     "id": "ean-8006363074339",
