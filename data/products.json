@@ -996,13 +996,25 @@
     "coffee": [
       "svart"
     ],
-    "audience": [],
-    "tags": [
-      "bryggkaffe"
+    "audience": [
+      "vardagsdrickare",
+      "familj"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "tags": [
+      "bryggkaffe",
+      "enkel"
+    ],
+    "description": "Klassisk filterbryggare med 1,25 liters glaskanna och plats för upp till 10 koppar. En enkel modell för vanlig vardagsbryggning.",
+    "pros": [
+      "Enkel konstruktion",
+      "10 koppar / 1,25 liter",
+      "Lätt att förstå och använda"
+    ],
+    "cons": [
+      "Få specialfunktioner",
+      "Ingen inbyggd kvarn",
+      "Ingen dokumenterad timer i underlaget"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -1024,7 +1036,15 @@
         "ean": "5038061111248",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,25 l",
+      "max_cups": 10,
+      "power_w": 1000,
+      "jug": "Glaskanna",
+      "auto_off": "Ja"
+    },
+    "detail_source": "https://cdn-img.russellhobbs.com/manager/russellhobbs_com/Catalogue/RH-Catalogue-Q223_old2.pdf"
   },
   {
     "id": "ean-5038061111279",
@@ -1044,13 +1064,25 @@
     "coffee": [
       "svart"
     ],
-    "audience": [],
-    "tags": [
-      "bryggkaffe"
+    "audience": [
+      "vardagsdrickare",
+      "familj"
     ],
-    "description": "Kaffebryggare för bryggkaffe.",
-    "pros": [],
-    "cons": [],
+    "tags": [
+      "bryggkaffe",
+      "enkel"
+    ],
+    "description": "Svart variant av Russell Hobbs Honeycomb, en enkel filterbryggare med 1,25 liters kapacitet och glaskanna.",
+    "pros": [
+      "Enkel konstruktion",
+      "10 koppar / 1,25 liter",
+      "Kompakt vardagsformat"
+    ],
+    "cons": [
+      "Få specialfunktioner",
+      "Ingen inbyggd kvarn",
+      "Ingen dokumenterad timer i underlaget"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -1072,7 +1104,15 @@
         "ean": "5038061111279",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "water_tank_l": "1,25 l",
+      "max_cups": 10,
+      "power_w": 1000,
+      "jug": "Glaskanna",
+      "auto_off": "Ja"
+    },
+    "detail_source": "https://cdn-img.russellhobbs.com/manager/russellhobbs_com/Catalogue/RH-Catalogue-Q223_old2.pdf"
   },
   {
     "id": "ean-5708642022965",
@@ -1448,17 +1488,32 @@
     "noise": 3,
     "enthusiast": 3,
     "grinder": false,
-    "milk_system": "",
+    "milk_system": "Ångarm",
     "coffee": [
-      "espresso"
+      "espresso",
+      "cappuccino",
+      "latte"
     ],
-    "audience": [],
+    "audience": [
+      "entusiast",
+      "nybörjare"
+    ],
     "tags": [
-      "espresso"
+      "espresso",
+      "manuell",
+      "mjölkdrycker"
     ],
-    "description": "Espressomaskin för espresso.",
-    "pros": [],
-    "cons": [],
+    "description": "Manuell espressomaskin med 15 bars pump, thermoblock och ångarm. Den kan dosera en eller två shots automatiskt men ger också möjlighet att själv styra kaffemängden.",
+    "pros": [
+      "15 bars pump och thermoblock",
+      "Ångarm för mjölkdrycker",
+      "Både automatisk och manuell dosering"
+    ],
+    "cons": [
+      "Ingen inbyggd kvarn",
+      "Kräver malning, dosering och tampning",
+      "Mer handpåläggning än helautomat"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -1480,7 +1535,18 @@
         "ean": "5038061141412",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "pump_bar": "15 bar",
+      "power_w": 1350,
+      "milk_system": "Ångarm",
+      "brew_group": "Portafilter för enkel/dubbel shot och ESE-pods",
+      "water_outlet": "Varmvatten via ångarm",
+      "auto_off": "Ja",
+      "special": "Thermoblock; koppvärmare; automatisk och manuell dosering",
+      "display": "Belyst statuspanel"
+    },
+    "detail_source": "https://en.russellhobbs.com/product/distinctions-espresso-machine-black-26450-56"
   },
   {
     "id": "ean-4006508215270",
@@ -2512,15 +2578,29 @@
     "grinder": false,
     "milk_system": "",
     "coffee": [
-      "espresso"
+      "espresso",
+      "cappuccino",
+      "latte"
     ],
-    "audience": [],
+    "audience": [
+      "nybörjare",
+      "vardagsdrickare"
+    ],
     "tags": [
-      "espresso"
+      "espresso",
+      "enkel"
     ],
-    "description": "Espressomaskin för espresso.",
-    "pros": [],
-    "cons": [],
+    "description": "Kapselmaskin för Nescafé Dolce Gusto med kompakt format, 15 bars pump och automatisk avstängning. Ett enkelt alternativ för många olika kapseldrycker utan kvarn eller manuell espressohantering.",
+    "pros": [
+      "Mycket enkel användning",
+      "Kompakt",
+      "Automatisk avstängning"
+    ],
+    "cons": [
+      "Kapselbundet system",
+      "Ingen kontroll över malning och dosering",
+      "Inte samma manuella kontroll som en espressomaskin"
+    ],
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
@@ -2542,7 +2622,15 @@
         "ean": "8004399026667",
         "source": "Awin · Homeroom SE"
       }
-    ]
+    ],
+    "details": {
+      "pump_bar": "15 bar",
+      "auto_off": "5 minuter",
+      "display": "Ingen avancerad display",
+      "special": "XL-funktion för större koppar; kapselsystem",
+      "dimensions": "Kompakt format"
+    },
+    "detail_source": "https://www.delonghi.com/en-gb/p/nescafe-dolce-gusto-coffee-machines-genio-s-nescafe-dolce-gusto-coffee-maker-edg226.a/EDG226.A.html"
   },
   {
     "id": "ean-8004399334588",
