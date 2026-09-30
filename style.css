@@ -644,24 +644,21 @@
 
 
 
-/* Compare count — coffee cup badge centered on the number */
+/* Compare count — the number stays on the same baseline as “Jämför”, with the cup built around it */
 #compareCount{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
+  display:inline-block;
   position:relative;
-  width:23px;
-  height:16px;
   margin-left:6px;
   margin-right:1px;
+  padding:1px 5px;
   background:var(--ink);
   color:#fff;
   font-size:10px;
   font-weight:750;
   line-height:1;
-  border-radius:2px 2px 5px 5px;
+  border-radius:3px 3px 5px 5px;
   vertical-align:baseline;
-  transform:translateY(-1px);
+  transform:none;
 }
 #compareCount::before{
   content:"";
