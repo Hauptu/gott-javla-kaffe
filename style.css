@@ -1237,7 +1237,7 @@
 #productGrid{align-items:stretch}
 #productGrid .product-card{display:flex;flex-direction:column;height:100%}
 #productGrid .product-top{min-height:18px}
-#productGrid .product-image{flex:0 0 auto;height:250px;min-height:250px;aspect-ratio:auto}
+#productGrid .product-image{flex:0 0 auto;height:150px;min-height:150px;aspect-ratio:auto}
 #productGrid .brand{min-height:18px}
 #productGrid .product-card h3{min-height:50px;max-height:50px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 #productGrid .product-card .match{min-height:20px}
@@ -1251,5 +1251,5 @@
 #productGrid .product-card .offer-list{flex:0 0 48px;min-height:48px;margin-top:11px}
 #productGrid .product-card .offer-row{min-height:43px}
 #productGrid .product-card .offer-row .buy-button{white-space:nowrap}
-@media(max-width:900px){#productGrid .product-image{height:230px;min-height:230px}}
-@media(max-width:560px){#productGrid .product-image{height:270px;min-height:270px}#productGrid .product-card h3{min-height:48px;max-height:48px}}
+@media(max-width:900px){}
+@media(max-width:560px){#productGrid .product-card h3{min-height:48px;max-height:48px}}
