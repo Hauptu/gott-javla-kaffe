@@ -195,6 +195,7 @@ function wireFilterChips(){
    if(key==='espresso')$('coffeeFilter').value='espresso';
    if(key==='automatic')$('typeFilter').value='Helautomatisk';
    if(key==='moka')$('typeFilter').value='Mokabryggare';
+   if(key==='coffee-grinders')$('typeFilter').value='Kaffekvarn';
    if(key==='grinder')$('featureFilter').value='grinder';
    if(key==='under1000')$('priceFilter').value='0-1000';
    document.querySelectorAll('[data-quick-filter]').forEach(x=>x.classList.toggle('is-active',x===b));
