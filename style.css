@@ -1253,3 +1253,7 @@
 #productGrid .product-card .offer-row .buy-button{white-space:nowrap}
 @media(max-width:900px){}
 @media(max-width:560px){#productGrid .product-image{width:82%;height:auto;min-height:0;aspect-ratio:4/5}#productGrid .product-card h3{min-height:48px;max-height:48px}}
+
+/* Product images — show the complete product without visual cropping */
+#productGrid .product-image img{width:100%;height:100%;object-fit:contain;object-position:center;transform:none}
+#productGrid .product-card:hover .product-image img{transform:none}
