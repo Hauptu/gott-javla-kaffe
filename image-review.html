@@ -126,6 +126,9 @@ function candidates(p){
   add(p.images?.primary,'Produktbild','product_image');
   const primaryOffer=(Array.isArray(p.affiliate_offers)?p.affiliate_offers:[]).find(o=>o?.image_url);
   add(primaryOffer?.image_url,'Affiliate-bild','affiliate_offer');
+  // Also expose any gallery/alternate images stored on the product itself.
+  (Array.isArray(p.images?.gallery)?p.images.gallery:[]).forEach((url,n)=>add(url,'Alternativ '+(n+1),'product_gallery'));
+  (Array.isArray(p.images?.alternates)?p.images.alternates:[]).forEach((url,n)=>add(url,'Alternativ '+(n+1),'product_alternate'));
   add(i.large,'Large image','large_image');
   (Array.isArray(i.alternates)?i.alternates:[]).forEach((url,n)=>add(url,'Alternativ '+(n+1),'alternate_image'));
   add(i.merchant,'Merchant image','merchant_image_url');
