@@ -73,6 +73,7 @@
 </main>
 <script>
 let products=[];
+let grinderProducts=[];
 let feedProducts=[];
 let reviewState={};
 let reviewTotal=0;
@@ -236,9 +237,12 @@ $('reset').onclick=()=>{
 loadReviewState();
 Promise.all([
   fetch('data/products.json?review='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}),
+  fetch('data/grinders.json?review='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}),
   fetch('data/product-candidates.json?review='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})
-]).then(([data,feed])=>{
+]).then(([data,grinders,feed])=>{
   products=data;
+  grinderProducts=Array.isArray(grinders)?grinders:[];
+  products=[...products,...grinderProducts];
   feedProducts=Array.isArray(feed?.products)?feed.products:[];
   // This is a fresh review batch: every clean-sheet product is in the queue.
   reviewTotal=products.length;
