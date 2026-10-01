@@ -120,6 +120,12 @@ function candidates(p){
   const i=feed.images||{};
   const out=[], seen=new Set();
   const add=(url,label,source)=>{if(!url||seen.has(url))return;seen.add(url);out.push({url,label,source})};
+  // Products in separate source files (e.g. grinders) may not have a
+  // corresponding entry in product-candidates.json. Their stored feed
+  // image must still be available as a selectable review candidate.
+  add(p.images?.primary,'Produktbild','product_image');
+  const primaryOffer=(Array.isArray(p.affiliate_offers)?p.affiliate_offers:[]).find(o=>o?.image_url);
+  add(primaryOffer?.image_url,'Affiliate-bild','affiliate_offer');
   add(i.large,'Large image','large_image');
   (Array.isArray(i.alternates)?i.alternates:[]).forEach((url,n)=>add(url,'Alternativ '+(n+1),'alternate_image'));
   add(i.merchant,'Merchant image','merchant_image_url');
