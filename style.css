@@ -1358,7 +1358,8 @@
   background:var(--paper);
 }
 .home-door-grid{
-  width:min(1200px,100%);
+  width:1200px;
+  max-width:calc(100% - 10vw);
   margin:0 auto;
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
