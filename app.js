@@ -100,7 +100,7 @@ function track(event,params={}){
 }
 
 async function init(){
- try{const r=await fetch('data/products.json');if(!r.ok)throw new Error('products.json '+r.status);products=(await r.json()).filter(p=>p.lifecycle_status==='active'&&p.images?.status==='approved');}
+ try{const [r,g]=await Promise.all([fetch('data/products.json'),fetch('data/grinders.json')]);if(!r.ok)throw new Error('products.json '+r.status);if(!g.ok)throw new Error('grinders.json '+g.status);const base=await r.json(),grinders=await g.json();products=[...base,...grinders].filter(p=>p.lifecycle_status==='active'&&p.images?.status==='approved');}
  catch(e){console.error(e);$('productGrid').innerHTML='<div class="empty">Produktdata kunde inte laddas.</div>';return}
  setupFilters();setupMachineIntents();if($('clearCompare'))$('clearCompare').onclick=clearCompare;const initialQuery=new URLSearchParams(location.search).get('q');if(initialQuery){$('search').value=initialQuery;filterProducts()}else{renderProducts(products)}renderQuestion();wireQuickStarts();wireSimulator();track('page_view',{path:location.pathname,query:initialQuery||''});
 }
@@ -143,7 +143,7 @@ function setupFilters(){
  $('sortFilter').onchange=filterProducts;
  $('clearFilters').onclick=clearFilters;
  wireFilterChips();
- $('productCount').textContent=`${products.length} maskiner`;
+ $('productCount').textContent=`${products.length} produkter`;
  updateFilterSummary(products.length,products.length);
 }
 function filterProducts(){
@@ -202,7 +202,7 @@ function wireFilterChips(){
  });
 }
 function updateFilterSummary(count,total){
- $('filterSummary').textContent=count===total?`${total} maskiner`:`${count} av ${total} maskiner`;
+ $('filterSummary').textContent=count===total?`${total} produkter`:`${count} av ${total} produkter`;
 }
 function clearFilters(){
  document.querySelectorAll('[data-intent]').forEach(x=>x.classList.remove('is-active'));
@@ -284,6 +284,14 @@ function buildRecommendationCards(ranked){
 function matchLabel(n){n=Number(n)||0;return n>=90?'Mycket stark match':n>=80?'Stark match':n>=70?'Bra match':'Svagare match'}
 function productQuickFacts(p){
  const items=[];
+ if(p.type==='Kaffekvarn'){
+   const d=p.details||{};
+   if(d.grind_settings)items.push(['Malning',String(d.grind_settings)+' lägen']);
+   else if(d.grinder_type)items.push(['Kvarntyp',d.grinder_type]);
+   if(d.capacity_g)items.push(['Kapacitet',String(d.capacity_g)+' g']);
+   if(d.power_w)items.push(['Effekt',String(d.power_w)+' W']);
+   return items.slice(0,3).map(([label,value])=>`<span><small>${label}</small><strong>${escapeHtml(value)}</strong></span>`).join('');
+ }
  const coffeeLabels={svart:'Bryggkaffe',espresso:'Espresso',cappuccino:'Cappuccino',latte:'Latte'};
  const coffee=(p.coffee||[]).map(v=>coffeeLabels[String(v).toLowerCase()]||v).slice(0,2).join(' · ');
  if(coffee)items.push(['Kaffe',coffee]);
@@ -366,7 +374,10 @@ function renderCompare(){
  ${row('Espresso',p=>stars(p.espresso))}
  ${row('Mjölkdrycker',p=>stars(p.milk))}
  ${row('Rengöring',p=>stars(p.cleaning))}
- ${row('Inbyggd kvarn',p=>p.grinder?'Ja':'Nej')}
+ ${row('Inbyggd kvarn',p=>p.type==='Kaffekvarn'?'—':p.grinder?'Ja':'Nej')}
+ ${row('Kvarntyp',p=>p.type==='Kaffekvarn'?escapeHtml(compareDetail(p,'grinder_type','–')):'—')}
+ ${row('Malningslägen',p=>p.type==='Kaffekvarn'?escapeHtml(compareDetail(p,'grind_settings','–')):'—')}
+ ${row('Kvarnkapacitet',p=>p.type==='Kaffekvarn'?escapeHtml(compareDetail(p,'capacity_g','–')+(compareDetail(p,'capacity_g','')?' g':'')):'—')}
  ${row('Mjölksystem',p=>escapeHtml(p.milk_system||compareDetail(p,'milk_system','–')))}
  ${row('Vattentank',p=>escapeHtml(compareDetail(p,'water_tank_l','–')))}
  ${row('Bönkapacitet',p=>escapeHtml(compareDetail(p,'bean_capacity_g','–')))}
@@ -389,7 +400,7 @@ function detailScore(label,value){
  const n=Math.max(0,Math.min(5,Number(value)||0));
  return `<div class="detail-score"><span>${escapeHtml(label)}</span><div>${'★'.repeat(n)}${'☆'.repeat(5-n)}</div></div>`;
 }
-const detailLabels={water_tank_l:'Vattentank',bean_capacity_g:'Bönkapacitet',max_cups:'Max antal koppar',power_w:'Effekt',pump_bar:'Pumptryck',grinder:'Kvarn',grinder_settings:'Kvarninställningar',brew_temperature:'Bryggtemperatur',brew_time:'Bryggtid',filter:'Filter',jug:'Kanna',keep_warm:'Varmhållning',keep_warm_w:'Varmhållningseffekt',auto_off:'Automatisk avstängning',timer:'Timer',profiles:'Bryggprofiler',preinfusion:'Förbryggning',water_outlet:'Vattenutlopp',ecbc:'ECBC',dimensions:'Mått',display:'Display',drinks:'Drycker',drip_stop:'Droppstopp',milk_system:'Mjölksystem',brew_group:'Bryggenhet',aroma_strength_settings:'Aromainställningar',temperature_settings:'Temperaturinställningar',auto_cleaning:'Automatisk rengöring',dishwasher_safe:'Diskmaskinssäkra delar',dishwasher_safe_milk_carafe:'Diskmaskinssäker mjölkkanna',descaling:'Avkalkning',repairability:'Reparerbarhet',special:'Särskilda funktioner',coffee_container:'Kaffebehållare'};
+const detailLabels={grinder_type:'Kvarntyp',burr_material:'Kvarnmaterial',capacity_g:'Kapacitet',grind_settings:'Malningslägen',grind_adjustment:'Malningsjustering',brew_methods:'Bryggmetoder',dose_control:'Dosering',cup_measure:'Koppmätning',pulse_function:'Pulsfunktion',water_tank_l:'Vattentank',bean_capacity_g:'Bönkapacitet',max_cups:'Max antal koppar',power_w:'Effekt',pump_bar:'Pumptryck',grinder:'Kvarn',grinder_settings:'Kvarninställningar',brew_temperature:'Bryggtemperatur',brew_time:'Bryggtid',filter:'Filter',jug:'Kanna',keep_warm:'Varmhållning',keep_warm_w:'Varmhållningseffekt',auto_off:'Automatisk avstängning',timer:'Timer',profiles:'Bryggprofiler',preinfusion:'Förbryggning',water_outlet:'Vattenutlopp',ecbc:'ECBC',dimensions:'Mått',display:'Display',drinks:'Drycker',drip_stop:'Droppstopp',milk_system:'Mjölksystem',brew_group:'Bryggenhet',aroma_strength_settings:'Aromainställningar',temperature_settings:'Temperaturinställningar',auto_cleaning:'Automatisk rengöring',dishwasher_safe:'Diskmaskinssäkra delar',dishwasher_safe_milk_carafe:'Diskmaskinssäker mjölkkanna',descaling:'Avkalkning',repairability:'Reparerbarhet',special:'Särskilda funktioner',coffee_container:'Kaffebehållare'};
 function detailFactsFromData(d){return Object.entries(d||{}).map(([key,value])=>{if(value===null||value===undefined||value==='')return '';const label=detailLabels[key]||key.replace(/_/g,' ');return detailFact(label,String(value))}).filter(Boolean).join('')}
 function openModal(id){
  const p=products.find(x=>x.id===id);
