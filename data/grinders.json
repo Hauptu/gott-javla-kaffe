@@ -1,0 +1,493 @@
+[
+  {
+    "id": "ean-8713016022707",
+    "brand": "Tristar",
+    "model": "Kaffekvarn Rostfritt stål",
+    "type": "Kaffekvarn",
+    "automation": 3,
+    "control": 2,
+    "ease": 4,
+    "espresso": 2,
+    "milk": 1,
+    "cleaning": 3,
+    "noise": 3,
+    "enthusiast": 2,
+    "grinder": true,
+    "milk_system": "",
+    "coffee": [
+      "espresso",
+      "svart"
+    ],
+    "audience": [
+      "nybörjare",
+      "vardagskaffe"
+    ],
+    "tags": [
+      "kaffekvarn",
+      "knivkvarn",
+      "budget"
+    ],
+    "description": "En enkel elektrisk kaffekvarn med rostfria knivar och upp till 70 grams kapacitet. Malningen styrs med hur länge du kör kvarnen.",
+    "pros": [
+      "70 g kapacitet",
+      "Rostfria knivar",
+      "Låg prislapp"
+    ],
+    "cons": [
+      "Knivkvarn ger mindre jämn malning än kvarnverk",
+      "Malningsgraden styrs manuellt med tiden"
+    ],
+    "needs_review": false,
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1549758_Fs&mw=1500",
+      "gallery": [],
+      "status": "needs_review"
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37077144735&a=3104617&m=12846",
+        "price": 299,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1549758_Fs&mw=1080",
+        "product_id": "1549758",
+        "ean": "8713016022707",
+        "source": "Awin · Homeroom SE"
+      }
+    ],
+    "details": {
+      "grinder_type": "Knivkvarn",
+      "burr_material": "Rostfritt stål",
+      "capacity_g": "70",
+      "power_w": "150"
+    },
+    "detail_source": "Awin · Homeroom SE",
+    "editorial_rank": 200
+  },
+  {
+    "id": "ean-7333282015374",
+    "brand": "Emerio",
+    "model": "Kaffekvarn",
+    "type": "Kaffekvarn",
+    "automation": 3,
+    "control": 2,
+    "ease": 4,
+    "espresso": 1,
+    "milk": 1,
+    "cleaning": 3,
+    "noise": 3,
+    "enthusiast": 2,
+    "grinder": true,
+    "milk_system": "",
+    "coffee": [
+      "svart"
+    ],
+    "audience": [
+      "nybörjare",
+      "vardagskaffe"
+    ],
+    "tags": [
+      "kaffekvarn",
+      "knivkvarn",
+      "budget"
+    ],
+    "description": "En kompakt kvarn med rostfria knivar och pulsfunktion. Kapaciteten är 60 gram och samma kvarn kan även användas för kryddor.",
+    "pros": [
+      "60 g kapacitet",
+      "Kompakt",
+      "Pulsfunktion"
+    ],
+    "cons": [
+      "Knivkvarn ger mindre jämn malning än kvarnverk",
+      "Ingen exakt malningsskala"
+    ],
+    "needs_review": false,
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2091605-01_Fs&mw=1500",
+      "gallery": [],
+      "status": "needs_review"
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=43705651954&a=3104617&m=12846",
+        "price": 263,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2091605-01_Fs&mw=1080",
+        "product_id": "2091605-01-0",
+        "ean": "7333282015374",
+        "source": "Awin · Homeroom SE"
+      }
+    ],
+    "details": {
+      "grinder_type": "Knivkvarn",
+      "burr_material": "Rostfritt stål",
+      "capacity_g": "60",
+      "power_w": "",
+      "pulse_function": "Ja"
+    },
+    "detail_source": "Awin · Homeroom SE",
+    "editorial_rank": 201
+  },
+  {
+    "id": "ean-4006508224210",
+    "brand": "Melitta",
+    "model": "Amigo 22421",
+    "type": "Kaffekvarn",
+    "automation": 3,
+    "control": 2,
+    "ease": 4,
+    "espresso": 2,
+    "milk": 1,
+    "cleaning": 3,
+    "noise": 3,
+    "enthusiast": 2,
+    "grinder": true,
+    "milk_system": "",
+    "coffee": [
+      "espresso",
+      "svart"
+    ],
+    "audience": [
+      "nybörjare",
+      "filterkaffe"
+    ],
+    "tags": [
+      "kaffekvarn",
+      "knivkvarn",
+      "filterkaffe",
+      "espresso"
+    ],
+    "description": "Kompakt elektrisk kvarn med 60 grams kapacitet och rostfria knivar. Malningstiden anpassas efter bryggmetod, från presskaffe och droppkaffe till espresso.",
+    "pros": [
+      "60 g kapacitet",
+      "Kompakt format",
+      "Rostfria knivar"
+    ],
+    "cons": [
+      "Knivkvarn ger mindre jämn malning än kvarnverk",
+      "Malningsgraden styrs med malningstid"
+    ],
+    "needs_review": false,
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1957285_Fs&mw=1500",
+      "gallery": [],
+      "status": "needs_review"
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=39921661687&a=3104617&m=12846",
+        "price": 499,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1957285_Fs&mw=1080",
+        "product_id": "1957285",
+        "ean": "4006508224210",
+        "source": "Awin · Homeroom SE"
+      }
+    ],
+    "details": {
+      "grinder_type": "Knivkvarn",
+      "burr_material": "Rostfritt stål",
+      "capacity_g": "60",
+      "brew_methods": "Presskaffe, droppkaffe, espresso"
+    },
+    "detail_source": "Awin · Homeroom SE",
+    "editorial_rank": 202
+  },
+  {
+    "id": "ean-7331890000010",
+    "brand": "C3",
+    "model": "CG700 85 g / 200 W",
+    "type": "Kaffekvarn",
+    "automation": 4,
+    "control": 3,
+    "ease": 4,
+    "espresso": 2,
+    "milk": 1,
+    "cleaning": 3,
+    "noise": 3,
+    "enthusiast": 2,
+    "grinder": true,
+    "milk_system": "",
+    "coffee": [
+      "espresso",
+      "svart"
+    ],
+    "audience": [
+      "nybörjare",
+      "vardagskaffe"
+    ],
+    "tags": [
+      "kaffekvarn",
+      "knivkvarn",
+      "budget"
+    ],
+    "description": "Elektrisk kaffekvarn med tre malningsnivåer, koppmätning och automatisk drift. Behållaren rymmer upp till 85 gram.",
+    "pros": [
+      "Tre malningsnivåer",
+      "Koppmätning",
+      "85 g kapacitet"
+    ],
+    "cons": [
+      "Bara tre malningsnivåer",
+      "Knivkvarn ger mindre jämn malning än kvarnverk"
+    ],
+    "needs_review": false,
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2237435_Fs&mw=1500",
+      "gallery": [],
+      "status": "needs_review"
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=42923705459&a=3104617&m=12846",
+        "price": 559,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2237435_Fs&mw=1080",
+        "product_id": "2237435",
+        "ean": "7331890000010",
+        "source": "Awin · Homeroom SE"
+      }
+    ],
+    "details": {
+      "grinder_type": "Knivkvarn",
+      "burr_material": "Rostfritt stål",
+      "capacity_g": "85",
+      "power_w": "200",
+      "grind_settings": "3",
+      "cup_measure": "Ja",
+      "dimensions": "11,7 × 11 × 21 cm"
+    },
+    "detail_source": "Awin · Homeroom SE",
+    "editorial_rank": 203
+  },
+  {
+    "id": "ean-3016661147449",
+    "brand": "OBH Nordica",
+    "model": "Grind Expert",
+    "type": "Kaffekvarn",
+    "automation": 4,
+    "control": 4,
+    "ease": 4,
+    "espresso": 4,
+    "milk": 1,
+    "cleaning": 4,
+    "noise": 3,
+    "enthusiast": 3,
+    "grinder": true,
+    "milk_system": "",
+    "coffee": [
+      "espresso",
+      "svart"
+    ],
+    "audience": [
+      "filterkaffe",
+      "espresso",
+      "presskaffe"
+    ],
+    "tags": [
+      "kaffekvarn",
+      "9 malningslägen",
+      "espresso",
+      "filterkaffe",
+      "presskaffe"
+    ],
+    "description": "Kaffekvarn med nio malningsinställningar från finare espresso till grovmalet presskaffe. Den maler för 2–12 koppar och stänger av automatiskt.",
+    "pros": [
+      "9 malningsinställningar",
+      "300 g kapacitet",
+      "Passar espresso, filter och presskaffe"
+    ],
+    "cons": [
+      "Äldre modell med enklare kvarnkonstruktion än modernare premiumkvarnar"
+    ],
+    "needs_review": false,
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1011267_Fs&mw=1500",
+      "gallery": [],
+      "status": "needs_review"
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=37051283830&a=3104617&m=12846",
+        "price": 699,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1011267_Fs&mw=1080",
+        "product_id": "1011267",
+        "ean": "3016661147449",
+        "source": "Awin · Homeroom SE"
+      }
+    ],
+    "details": {
+      "grinder_type": "Kvarnverk",
+      "burr_material": "Rostfritt stål",
+      "capacity_g": "300",
+      "power_w": "100",
+      "grind_settings": "9",
+      "dose_control": "2–12 koppar",
+      "auto_off": "Ja"
+    },
+    "detail_source": "Awin · Homeroom SE",
+    "editorial_rank": 204
+  },
+  {
+    "id": "ean-8004399324558",
+    "brand": "DeLonghi",
+    "model": "KG89 120 g",
+    "type": "Kaffekvarn",
+    "automation": 4,
+    "control": 4,
+    "ease": 4,
+    "espresso": 4,
+    "milk": 1,
+    "cleaning": 4,
+    "noise": 3,
+    "enthusiast": 3,
+    "grinder": true,
+    "milk_system": "",
+    "coffee": [
+      "espresso",
+      "svart"
+    ],
+    "audience": [
+      "espresso",
+      "filterkaffe",
+      "presskaffe"
+    ],
+    "tags": [
+      "kaffekvarn",
+      "espresso",
+      "filterkaffe",
+      "presskaffe",
+      "doseringsval"
+    ],
+    "description": "Kaffekvarn med 120 grams bönbehållare och justerbar malningsgrad. Du väljer mängd efter antal koppar och kvarnen stänger av automatiskt när mängden är klar.",
+    "pros": [
+      "120 g kapacitet",
+      "Malningsgrad för espresso, moka och filter",
+      "Val för 2–12 koppar"
+    ],
+    "cons": [
+      "Mer inställningar än en enkel knivkvarn innebär mer att hålla koll på"
+    ],
+    "needs_review": false,
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1009865_Fs&mw=1500",
+      "gallery": [],
+      "status": "needs_review"
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=45934730622&a=3104617&m=12846",
+        "price": 995,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1009865_Fs&mw=1080",
+        "product_id": "1009865",
+        "ean": "8004399324558",
+        "source": "Awin · Homeroom SE"
+      }
+    ],
+    "details": {
+      "grinder_type": "Kvarnverk",
+      "capacity_g": "120",
+      "dose_control": "2–12 koppar",
+      "auto_off": "Ja",
+      "brew_methods": "Espresso, moka, filterkaffe"
+    },
+    "detail_source": "https://www.delonghi.com/medias/KG89-313126?context=bWFzdGVyfGRhbV9tYW51YWxzfDM2NjIzM3xhcHBsaWNhdGlvbi9wZGZ8YURBekwyaGhNaTg0TkRBeE1UUTFORGs0T0RNeE9DOUxSemc1TFRNeE16RXlOZ3xmYWQ5NDJkMzgwZGNkMDU2YmVkYTIxNjgzZDU2Zjg0NjlhY2MzMTczZDAxNDg3NTZmNTBjYzg3OGMwNzk1NTM3",
+    "editorial_rank": 205
+  },
+  {
+    "id": "ean-8006363039857",
+    "brand": "Bialetti",
+    "model": "Moka",
+    "type": "Kaffekvarn",
+    "automation": 4,
+    "control": 4,
+    "ease": 4,
+    "espresso": 4,
+    "milk": 1,
+    "cleaning": 3,
+    "noise": 3,
+    "enthusiast": 3,
+    "grinder": true,
+    "milk_system": "",
+    "coffee": [
+      "espresso",
+      "svart"
+    ],
+    "audience": [
+      "espresso",
+      "moka",
+      "filterkaffe"
+    ],
+    "tags": [
+      "kaffekvarn",
+      "6 malningslägen",
+      "espresso",
+      "moka",
+      "filterkaffe"
+    ],
+    "description": "Bialetti Moka är en elektrisk kvarn med sex malningsnivåer och extern regulator. Den är byggd för att växla mellan espresso, moka och filterkaffe.",
+    "pros": [
+      "6 malningsnivåer",
+      "Extern malningsregulator",
+      "Espresso, moka och filterkaffe"
+    ],
+    "cons": [
+      "Färre malningssteg än mer avancerade kvarnar"
+    ],
+    "needs_review": false,
+    "lifecycle_status": "active",
+    "images": {
+      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2167281_Fs&mw=1500",
+      "gallery": [],
+      "status": "needs_review"
+    },
+    "affiliate_offers": [
+      {
+        "merchant": "Homeroom SE",
+        "network": "Awin",
+        "url": "https://www.awin1.com/pclick.php?p=43846611688&a=3104617&m=12846",
+        "price": 1529,
+        "currency": "SEK",
+        "in_stock": true,
+        "image_url": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2167281_Fs&mw=1080",
+        "product_id": "2167281",
+        "ean": "8006363039857",
+        "source": "Awin · Homeroom SE"
+      }
+    ],
+    "details": {
+      "grinder_type": "Kvarnverk",
+      "capacity_g": "",
+      "grind_settings": "6",
+      "brew_methods": "Espresso, moka, filterkaffe",
+      "grind_adjustment": "Extern regulator"
+    },
+    "detail_source": "Awin · Homeroom SE",
+    "editorial_rank": 206
+  }
+]

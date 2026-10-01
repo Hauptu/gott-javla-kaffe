@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="sv">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H0SRDZ43FY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H0SRDZ43FY');
+</script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Gott Jävla Kaffe – hitta rätt kaffemaskin för dig</title>
@@ -13,128 +23,65 @@
 <meta property="og:url" content="https://gottjavlakaffe.se/">
 <meta property="og:site_name" content="Gott Jävla Kaffe">
 <link rel="canonical" href="https://gottjavlakaffe.se/">
-<link rel="stylesheet" href="style.css">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Gott Jävla Kaffe","description":"Svensk guide för att hitta rätt kaffemaskin utifrån behov, budget och preferenser.","potentialAction":{"@type":"SearchAction","target":"https://gottjavlakaffe.se/?q={search_term_string}","query-input":"required name=search_term_string"}}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Hur väljer ni vilken kaffemaskin som passar?","acceptedAnswer":{"@type":"Answer","text":"Vi väger bland annat dryck, budget, automation, kontroll, rengöring och maskinens användningsområde. Matchningen är vår redaktionella bedömning – inte ett laboratorietest."}},{"@type":"Question","name":"Måste jag göra quizet?","acceptedAnswer":{"@type":"Answer","text":"Nej. Du kan välja en snabb väg direkt eller bläddra bland alla maskiner. Quizet är till för dig som vill ha en mer personlig matchning."}},{"@type":"Question","name":"Är priserna alltid aktuella?","acceptedAnswer":{"@type":"Answer","text":"Priser kan ändras hos återförsäljare. Därför visar vi källa och verifieringsdatum när priset är kontrollerat."}},{"@type":"Question","name":"Tjänar Gott Jävla Kaffe pengar på mina köp?","acceptedAnswer":{"@type":"Answer","text":"Ja, vissa länkar kan vara affiliate-länkar. Om du handlar via en sådan länk kan vi få provision, utan att ditt pris behöver bli högre. Det påverkar inte själva matchningspoängen."}}]}
-</script>
+<link rel="stylesheet" href="style.css?v=20260930d">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Gott Jävla Kaffe","description":"Svensk guide för att hitta rätt kaffemaskin utifrån behov, budget och preferenser.","potentialAction":{"@type":"SearchAction","target":"https://gottjavlakaffe.se/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Gott Jävla Kaffe","item":"https://gottjavlakaffe.se/"}]}</script>
 </head>
 <body>
 <header class="topbar">
-  <div class="brand"><span class="brand-mark">◒</span> Gott Jävla Kaffe</div>
-  <nav><a href="#finder">Hitta rätt</a><a href="#products">Maskiner</a><a href="#compare">Jämför <span id="compareCount">0</span></a></nav>
+  <div class="brand">Gott Jävla Kaffe</div>
+  <nav><a href="#finder">Matchmaker</a><a href="#products">Maskinparken</a><a href="#guides">Kaffeakademin</a><a href="#compare">Jämför <span id="compareCount">0</span></a></nav>
 </header>
-
 <main>
 <section class="hero">
-  <div>
-    <span class="eyebrow">KAFFEMASKINER · V1</span>
-    <h1>Hitta kaffemaskinen<br><em>som passar dig.</em></h1>
-    <p>Inte en topplista. Få förslag direkt — eller låt oss matcha dig på fyra snabba frågor. Du behöver inte kunna något om kaffemaskiner.</p>
-    <a class="button primary" href="#finder">Hitta min maskin →</a><span class="hero-note">4 snabba val · inga fritextsvar</span>
-  </div>
-  <div class="hero-card hero-visual-card">
-    <div class="hero-visual-copy"><span class="eyebrow">PERSONLIG MATCHNING</span><strong>Rätt maskin börjar med hur du faktiskt dricker kaffe.</strong></div>
-    <div class="hero-machine"><img src="https://dam.delonghi.com/902x902/assets/252896" alt="De'Longhi Magnifica S kaffemaskin"></div>
-    <div class="hero-match-row"><div><span>Exempel på match</span><strong>94%</strong></div><div class="chips"><span>Helautomatisk</span><span>Enkel</span></div></div>
-  </div>
+  <div><span class="eyebrow">MATCHMAKER</span><h1>Hitta kaffemaskinen<br><em>som passar dig.</em></h1><p class="hero-lead">Helautomat, espresso eller bryggare? Vi hjälper dig hitta rätt utan att göra kaffet mer komplicerat än det behöver vara.</p><div class="hero-routes">
+<a class="hero-route" href="#finder"><span class="hero-route-no">01</span><span class="hero-route-copy"><strong>Matchmaker</strong><small>Matcha mig med kaffemaskiner</small></span><span class="hero-route-arrow">↗</span></a>
+<a class="hero-route" href="#products"><span class="hero-route-no">02</span><span class="hero-route-copy"><strong>Maskinparken</strong><small>Spana fritt bland alla fräcka maskiner</small></span><span class="hero-route-arrow">↗</span></a>
+<a class="hero-route" href="#guides"><span class="hero-route-no">03</span><span class="hero-route-copy"><strong>Kaffeakademin</strong><small>Lär mig mer om kaffe</small></span><span class="hero-route-arrow">↗</span></a>
+</div></div>
+  <a class="hero-card hero-visual-card" href="#finder" aria-label="Gå till matchningen"><div class="hero-visual-copy"><span class="eyebrow">MATCHMAKER</span><strong>Rätt maskin börjar med hur du faktiskt dricker kaffe.</strong></div><div class="hero-machine"><img src="https://dam.delonghi.com/902x902/assets/252896" alt="De'Longhi Magnifica S kaffemaskin"></div><div class="hero-match-row"><div><span>Exempel på profil</span><strong>Enkel vardagskaffe</strong></div><div class="chips"><span>Helautomatisk</span><span>Enkel</span></div></div></a>
 </section>
-
-<section class="quick-start section">
-  <div class="quick-start-head">
-    <div><span class="eyebrow">BÖRJA HÄR</span><h2>Du behöver inte göra quizet.</h2><p>Om du redan vet ungefär vad du letar efter kan du hoppa direkt till ett urval.</p></div>
-    <a class="text-button" href="#products">Se alla maskiner →</a>
+<section id="guides" class="section guides-section"><div class="section-head"><div><span class="eyebrow">KAFFEAKADEMIN</span><h2>Förstå kaffet. Inte bara maskinen.</h2><p class="section-intro">Från vilken maskin som passar dig till vad som faktiskt händer i koppen. Börja enkelt eller gå rakt ner i nördträsket.</p></div></div><div class="academy-group"><span class="academy-group-label">BÖRJA HÄR</span><div class="guide-grid">
+<a class="guide-card" href="kaffemaskin.html"><strong>Kaffemaskiner.</strong><span>Kaffebryggare, kapsel, helautomat eller espresso – vad skiljer dem åt?</span>→</a>
+<a class="guide-card" href="kaffedrycker.html"><strong>Kaffedrycker.</strong><span>Espresso, cappuccino, latte, cold brew och allt däremellan.</span>→</a>
+<a class="guide-card" href="bonor.html"><strong>Bönor.</strong><span>Rostning, ursprung, smak och hur du väljer rätt kaffe.</span>→</a>
+</div></div><div class="academy-group academy-deep-group"><span class="academy-group-label">FÖR DIG SOM VILL NER I NÖRDTRÄSKET</span><div class="guide-depth"><a class="guide-card guide-deep" href="kaffemaskin-nordkunskap.html"><strong>Kaffekunskap.</strong><span>Extraktion, malning, vatten, ratio och vad som faktiskt händer i koppen.</span>→</a><a class="guide-card guide-deep" href="espressomaskin-nordning.html"><strong>Dial-in.</strong><span>Ratio, channeling, TDS och hur du felsöker en espresso systematiskt.</span>→</a></div></div></section>
+<section id="finder" class="finder section"><div class="section-head"><div><span class="eyebrow">MATCHA</span><h2>Vad passar dig?</h2></div><span id="stepLabel">1 / 4</span></div><div class="finder-progress" aria-hidden="true"><i id="stepProgress"></i></div><div id="questions"></div><div class="finder-actions"><button id="back" class="button secondary" disabled>← Tillbaka</button><button id="next" class="button primary">Nästa →</button></div></section>
+<section id="results" class="section hidden"><div class="section-head"><div><span class="eyebrow">RESULTAT</span><h2>Din matchning</h2></div><button class="text-button" id="restart">Gör om testet</button></div><div id="profile"></div><div class="decision-head recommendation-heading"><div><span class="eyebrow">TRE FÖRSLAG</span><h3>Maskiner att titta på</h3></div></div><div id="resultsGrid" class="product-grid recommendation-grid"></div><div id="matchSummary" class="match-summary"></div><div id="dna" class="dna-panel"></div><div id="simulator" class="simulator-panel"><div class="simulator-copy"><span class="eyebrow">OM DU ÄNDRAR BUDGETEN</span><h3>Om du ändrar budgeten</h3></div><div class="simulator-control"><div class="simulator-label"><span>Budget</span><strong id="simBudgetLabel">5 000 kr</strong></div><input id="simBudget" type="range" min="1500" max="20000" step="500" value="5000" aria-label="Testa annan budget"><div class="range-labels"><span>1 500 kr</span><span>20 000 kr</span></div></div><div id="simulatorResult" class="simulator-result"></div></div></section>
+<section id="products" class="section"><div class="section-head"><div><span class="eyebrow">MASKINPARKEN</span><h2>Kaffemaskiner & kvarnar vi har koll på</h2><p class="section-intro">Bläddra fritt bland kaffemaskiner och fristående kaffekvarnar, eller börja med hur du faktiskt vill använda dem.</p></div><span id="productCount"></span></div>
+<div class="machine-intents">
+  <span class="machine-intents-label">JAG LETAR EFTER…</span>
+  <div class="machine-intent-grid">
+    <button type="button" class="machine-intent" data-intent="everyday"><strong>Enkel vardagskaffe</strong><span>Smidigt, okomplicerat och utan onödigt pill.</span>→</button>
+    <button type="button" class="machine-intent" data-intent="milk"><strong>Kaffe med mjölk</strong><span>Cappuccino, latte och andra mjölkdrycker.</span>→</button>
+    <button type="button" class="machine-intent" data-intent="grinder"><strong>Mala bönorna själv</strong><span>Maskiner med inbyggd kvarn eller tydligt fokus på färska bönor.</span>→</button>
+    <button type="button" class="machine-intent" data-intent="manual"><strong>Göra mer själv</strong><span>Mer kontroll för dig som vill påverka resultatet.</span>→</button>
   </div>
-  <div class="quick-grid">
-    <button class="quick-card" data-quick="easy"><span class="quick-icon">☕</span><strong>Jag vill bara ha bra kaffe</strong><small>Enkelt, snabbt och utan onödigt pyssel.</small><span>Visa förslag →</span></button>
-    <button class="quick-card" data-quick="milk"><span class="quick-icon">🥛</span><strong>Jag dricker cappuccino & latte</strong><small>Fokus på mjölkdrycker och enkel vardag.</small><span>Visa förslag →</span></button>
-    <button class="quick-card" data-quick="budget"><span class="quick-icon">€</span><strong>Jag vill hålla nere priset</strong><small>Prisvärda alternativ, även under 2 000 kr.</small><span>Visa förslag →</span></button>
-    <button class="quick-card" data-quick="manual"><span class="quick-icon">◒</span><strong>Jag vill göra espresso själv</strong><small>Mer kontroll, mer hantverk och mer att lära sig.</small><span>Visa förslag →</span></button>
-  </div>
-</section>
-
-<section class="trust-strip"><span>✓ Verifierade produktkällor</span><span>✓ Matchning efter dina behov</span><span>✓ Tydliga kompromisser</span><span>✓ Ingen universell vinnare</span></section>
-
-<section id="finder" class="finder section">
-  <div class="section-head">
-    <div><span class="eyebrow">MATCHA</span><h2>Vad passar dig?</h2></div>
-    <span id="stepLabel">1 / 4</span>
-  </div>
-  <div id="questions"></div>
-  <div class="finder-actions"><button id="back" class="button secondary" disabled>← Tillbaka</button><button id="next" class="button primary">Nästa →</button></div>
-</section>
-
-<section id="results" class="section hidden">
-  <div class="section-head"><div><span class="eyebrow">DIN MATCHNING</span><h2>Maskiner som passar dig</h2></div><button class="text-button" id="restart">Gör om testet</button></div>
-  <div id="profile"></div>
-  <div id="dna" class="dna-panel"></div>
-  <div class="decision-head"><div><span class="eyebrow">BESLUTSKARTA</span><h3>Se skillnaden mellan alternativen</h3></div><span class="decision-note">Mer kontroll ↔ mer bekvämlighet</span></div>
-  <div id="decisionMap" class="decision-map"></div>
-  <div class="decision-head"><div><span class="eyebrow">MATCHNINGAR</span><h3>Inte bara “bäst” — bäst för vad?</h3></div></div>
-  <div id="resultsGrid" class="product-grid"></div>
-  <div id="simulator" class="simulator-panel">
-    <div class="simulator-copy">
-      <span class="eyebrow">TESTA ETT VAL</span>
-      <h3>Vad händer om du ändrar en sak?</h3>
-      <p>Flytta budgeten och se hur dina matcher förändras. Vi visar inte bara vad som klättrar — utan varför.</p>
-    </div>
-    <div class="simulator-control">
-      <div class="simulator-label"><span>Budget</span><strong id="simBudgetLabel">5 000 kr</strong></div>
-      <input id="simBudget" type="range" min="1500" max="20000" step="500" value="5000" aria-label="Testa annan budget">
-      <div class="range-labels"><span>1 500 kr</span><span>20 000 kr</span></div>
-    </div>
-    <div id="simulatorResult" class="simulator-result"></div>
-  </div>
-</section>
-
-<section id="products" class="section">
-<div class="affiliate-note"><strong>Transparens:</strong> vissa butikslänkar kan vara affiliate-länkar. Det kan innebära att Gott Jävla Kaffe får provision om du handlar via länken. Det påverkar inte vår matchningspoäng. <a href="affiliateinfo.html">Så fungerar det →</a></div>
-  <div class="section-head"><div><span class="eyebrow">UTFORSKA</span><h2>Alla maskiner</h2><p class="section-intro">Jämför efter kaffe, pris, automation och hur mycket kontroll du vill ha.</p></div><span id="productCount"></span></div>
-  <div class="filters">
-    <input id="search" placeholder="Sök modell eller varumärke…">
-    <select id="typeFilter"><option value="">Alla typer</option></select>
-    <select id="priceFilter"><option value="">Alla priser</option><option value="0-2000">Under 2 000 kr</option><option value="2000-5000">2–5 000 kr</option><option value="5000-10000">5–10 000 kr</option><option value="10000-20000">10–20 000 kr</option><option value="20000-999999">20 000+ kr</option></select>
-  </div>
-  <div id="productGrid" class="product-grid"></div>
-</section>
-
-<section id="guides" class="section guides-section">
-  <div class="section-head"><div><span class="eyebrow">GUIDER</span><h2>Lär dig välja rätt</h2></div></div>
-  <div class="guide-grid">
-    <a class="guide-card" href="kaffemaskin.html"><strong>Kaffemaskin</strong><span>Översikt över typer, budget och vad som faktiskt spelar roll.</span>→</a>
-    <a class="guide-card" href="helautomatisk-kaffemaskin.html"><strong>Helautomatisk kaffemaskin</strong><span>För dig som vill ha färska bönor utan mycket manuellt arbete.</span>→</a>
-    <a class="guide-card" href="espressomaskin.html"><strong>Espressomaskin</strong><span>Kontroll, extraktion och hur mycket du vill göra själv.</span>→</a>
-    <a class="guide-card" href="kaffebryggare.html"><strong>Kaffebryggare</strong><span>För klassiskt bryggkaffe och en enklare vardag.</span>→</a>
-    <a class="guide-card" href="kaffemaskin-under-3000.html"><strong>Kaffemaskin under 3 000 kr</strong><span>Vad får du för pengarna och vilka kompromisser är rimliga?</span>→</a>
-    <a class="guide-card" href="kaffemaskin-for-cappuccino.html"><strong>Cappuccino & latte</strong><span>Jämför mjölksystem, automation och hur mycket du vill göra själv.</span>→</a>
-    <a class="guide-card" href="espressomaskin-for-nyborjare.html"><strong>Espresso för nybörjare</strong><span>En enkel väg in i manuell espresso utan att köpa för dyrt direkt.</span>→</a>
-  </div>
-</section>
-
-<section id="faq" class="section faq-section">
-  <div class="section-head"><div><span class="eyebrow">VANLIGA FRÅGOR</span><h2>Så fungerar Gott Jävla Kaffe</h2></div></div>
-  <div class="faq-grid">
-    <details><summary>Hur väljer ni vilken kaffemaskin som passar?</summary><p>Vi väger bland annat dryck, budget, automation, kontroll, rengöring och maskinens användningsområde. Matchningen är vår redaktionella bedömning – inte ett laboratorietest.</p></details>
-    <details><summary>Måste jag göra quizet?</summary><p>Nej. Du kan välja en snabb väg direkt eller bläddra bland alla maskiner. Quizet är till för dig som vill ha en mer personlig matchning.</p></details>
-    <details><summary>Är priserna alltid aktuella?</summary><p>Priser kan ändras hos återförsäljare. Därför visar vi källa och verifieringsdatum när priset är kontrollerat. När vi kopplar på produktfeeds kan pris, bild och lagerstatus uppdateras automatiskt.</p></details>
-    <details><summary>Tjänar Gott Jävla Kaffe pengar på mina köp?</summary><p>Ja, vissa länkar kan vara affiliate-länkar. Om du handlar via en sådan länk kan vi få provision, utan att ditt pris behöver bli högre. Det påverkar inte själva matchningspoängen.</p></details>
-  </div>
-</section>
-
-<section id="compare" class="section compare-section">
-  <div class="section-head"><div><span class="eyebrow">JÄMFÖR</span><h2>Din jämförelse</h2></div></div>
-  <div id="compareEmpty" class="empty">Välj upp till fyra maskiner genom att trycka <strong>Jämför</strong>.</div>
-  <div id="compareTable"></div>
-  <div id="tradeoffBox" class="tradeoff-box hidden"></div>
-</section>
+</div><div class="filters">
+<div class="filter-search"><input id="search" placeholder="Sök modell eller varumärke…" aria-label="Sök modell eller varumärke"></div>
+<div class="filter-chips" aria-label="Snabbfilter">
+<button type="button" class="filter-chip is-active" data-quick-filter="all">Alla</button>
+<button type="button" class="filter-chip" data-quick-filter="coffee">Bryggkaffe</button>
+<button type="button" class="filter-chip" data-quick-filter="espresso">Espresso</button>
+<button type="button" class="filter-chip" data-quick-filter="automatic">Helautomatisk</button>
+<button type="button" class="filter-chip" data-quick-filter="moka">Mokabryggare</button>
+<button type="button" class="filter-chip" data-quick-filter="coffee-grinders">Kaffekvarnar</button>
+<button type="button" class="filter-chip" data-quick-filter="grinder">Med kvarn</button>
+<button type="button" class="filter-chip" data-quick-filter="under1000">Under 1 000 kr</button>
+</div>
+<div class="filter-controls">
+<select id="typeFilter" aria-label="Filtrera efter typ"><option value="">Alla typer</option></select>
+<select id="coffeeFilter" aria-label="Filtrera efter kaffe"><option value="">Allt kaffe</option></select>
+<select id="priceFilter" aria-label="Filtrera efter pris"><option value="">Alla priser</option><option value="0-1000">Under 1 000 kr</option><option value="1000-2000">1–2 000 kr</option><option value="2000-5000">2–5 000 kr</option><option value="5000-10000">5–10 000 kr</option><option value="10000-20000">10–20 000 kr</option><option value="20000-999999">20 000+ kr</option></select>
+<select id="featureFilter" aria-label="Filtrera efter funktion"><option value="">Alla funktioner</option><option value="grinder">Med kvarn</option><option value="milk">Mjölkdrycker</option><option value="automatic">Hög automation</option></select>
+<select id="sortFilter" aria-label="Sortera maskiner"><option value="default">Redaktionell ordning</option><option value="price-asc">Pris – lägst först</option><option value="price-desc">Pris – högst först</option><option value="ease-desc">Enkelhet – högst först</option><option value="control-desc">Kontroll – högst först</option><option value="espresso-desc">Espresso – högst först</option></select>
+<button id="clearFilters" class="filter-clear hidden" type="button">Rensa filter</button>
+</div>
+</div><div class="filter-status"><span id="filterSummary"></span></div><div id="productGrid" class="product-grid"></div></section>
+<section id="compare" class="section compare-section"><div class="section-head"><div><span class="eyebrow">JÄMFÖR MASKINER</span><h2>Din jämförelse</h2><p class="section-intro">Lägg upp till fyra maskiner bredvid varandra och se vad som faktiskt skiljer dem åt.</p></div><button id="clearCompare" class="text-button hidden" type="button">Rensa jämförelse</button></div><div id="compareEmpty" class="empty">Välj upp till fyra maskiner genom att trycka <strong>Jämför</strong>.</div><div id="compareTable"></div><div id="tradeoffBox" class="tradeoff-box hidden"></div></section>
 </main>
-
 <div id="productModal" class="product-modal hidden"></div>
-
-<footer><strong>Gott Jävla Kaffe</strong><span>Produktdata verifieras löpande. Pris kan ändras hos återförsäljare.</span><a href="affiliateinfo.html">Så fungerar det</a><a href="affiliateinfo.html">Affiliateinformation</a></footer>
-<script src="app.js"></script>
+<footer><strong>Gott Jävla Kaffe</strong><span>Priser kan ändras hos återförsäljare.</span><a href="om-gott-javla-kaffe.html">Om Gott Jävla Kaffe</a></footer>
+<script src="app.js?v=20261001a"></script>
 </body>
 </html>

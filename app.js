@@ -11,32 +11,213 @@ const questions=[
 ];
 
 const $=id=>document.getElementById(id);
-const currentPrice=p=>{const n=Number(p.feed_price);return Number.isFinite(n)&&n>0?n:(Number.isFinite(Number(p.price))&&Number(p.price)>0?Number(p.price):null)};
-const priceVerified=p=>p&&p.needs_review!==true&&currentPrice(p)>0;
+function getOffers(p){
+ const offers=Array.isArray(p?.affiliate_offers)?p.affiliate_offers:[];
+ if(offers.length)return offers;
+ if(p?.affiliate_url)return [{
+   merchant:p.merchant_name||'',
+   network:p.affiliate_network||'Awin',
+   url:p.affiliate_url,
+   price:Number(p.feed_price)>0?Number(p.feed_price):null,
+   currency:p.feed_currency||'SEK',
+   in_stock:p.feed_stock??null,
+   image_url:p.feed_image_url||'',
+   product_id:p.affiliate_product_id||'',
+   ean:p.affiliate_ean||'',
+   source:p.feed_source||''
+ }];
+ return [];
+}
+function pricedOffers(p){
+ return getOffers(p).filter(o=>Number(o.price)>0).sort((a,b)=>Number(a.price)-Number(b.price));
+}
+function primaryOffer(p){return pricedOffers(p)[0]||getOffers(p)[0]||null}
+const currentPrice=p=>{
+ const offer=primaryOffer(p);
+ if(offer&&Number(offer.price)>0)return Number(offer.price);
+ return Number.isFinite(Number(p?.price))&&Number(p.price)>0?Number(p.price):null;
+};
+const priceVerified=p=>{const o=primaryOffer(p);return !!(o&&Number(o.price)>0&&p?.needs_review!==true)};
 const priceText=p=>priceVerified(p)?currentPrice(p).toLocaleString('sv-SE')+' kr':'Pris ej verifierat';
-const priceBand=p=>{const v=currentPrice(p); if(!v)return null; if(v<2000)return'low';if(v<5000)return'mid';if(v<10000)return'upper';return'premium'};
+const priceMeta=p=>{
+ if(!priceVerified(p))return '';
+ const o=primaryOffer(p),source=o?.source||o?.merchant||p.feed_source||'Verifierad källa';
+ const date=p.feed_updated_at?new Date(p.feed_updated_at+'T00:00:00').toLocaleDateString('sv-SE',{day:'numeric',month:'short',year:'numeric'}):'';
+ return `<small class="price-meta">Källa: ${escapeHtml(source)}${date?' · '+date:''}</small>`;
+};
+const priceBand=p=>{const v=currentPrice(p);if(!v)return null;if(v<2000)return'low';if(v<5000)return'mid';if(v<10000)return'upper';return'premium'};
+function primaryImage(p){return p?.images?.primary||''}
+function imageResolutionScore(url){
+ if(!url)return -1;
+ const match=String(url).match(/[?&]mw=(\d+)/i);
+ if(!match)return 95; // Original/full-size URL without an mw parameter.
+ const width=Number(match[1]);
+ if(width>=1500)return 100;
+ if(width>=1080)return 90;
+ if(width>=500)return 70;
+ if(width>=200)return 40;
+ return 10;
+}
+function preferredAffiliateImage(p){
+ const images=p?.images||{};
+ const alternates=Array.isArray(images.alternates)?images.alternates:[];
+ const candidates=[
+   {url:images.large,score:110},
+   ...alternates.map(url=>({url,score:imageResolutionScore(url)})),
+   {url:images.merchant,score:80},
+   {url:images.affiliate,score:60},
+   {url:primaryOffer(p)?.image_url,score:50},
+   {url:p?.feed_image_url,score:40},
+   {url:images.aw_image,score:30},
+   {url:images.aw_thumb,score:10}
+ ].filter(x=>x.url);
+ return candidates.sort((a,b)=>b.score-a.score)[0]?.url||'';
+}
+function affiliateImage(p){return preferredAffiliateImage(p)}
+function displayImage(p){if(primaryImage(p))return primaryImage(p);if(p?.images?.status==='needs_review')return '';return affiliateImage(p)||''}
+function offerMarkup(p,placement='card'){
+ const offers=getOffers(p).filter(o=>o?.url);
+ if(!offers.length)return '<span class="affiliate-pending">Butikslänk läggs till när produkten är verifierad</span>';
+ const priced=offers.filter(o=>Number(o.price)>0).sort((a,b)=>Number(a.price)-Number(b.price));
+ const ordered=[...priced,...offers.filter(o=>!Number(o.price))].filter((o,i,a)=>a.indexOf(o)===i);
+ return `<div class="offer-list">${ordered.map((o,i)=>{
+   const price=Number(o.price)>0?Number(o.price).toLocaleString('sv-SE')+' kr':'Se butik';
+   const label=o.merchant||'Återförsäljare';
+   return `<div class="offer-row"><span class="offer-merchant">${escapeHtml(label)}</span><span class="offer-price">${price}</span><a class="buy-button" href="${escapeAttr(o.url)}" target="_blank" rel="sponsored nofollow noopener" data-affiliate="${escapeAttr(p.id)}" data-merchant="${escapeAttr(label)}" data-network="${escapeAttr(o.network||'')}" data-placement="${escapeAttr(placement)}" data-price="${Number(o.price)>0?Number(o.price):''}">Se pris →</a></div>`;
+ }).join('')}</div>`;
+}
 
-function track(event,params={}){const payload={event,...params,ts:new Date().toISOString()};window.dataLayer=window.dataLayer||[];window.dataLayer.push(payload);try{const k='gottjavlakaffe_events',e=JSON.parse(localStorage.getItem(k)||'[]');e.push(payload);localStorage.setItem(k,JSON.stringify(e.slice(-250)))}catch(_){} }
+function track(event,params={}){
+ const payload={event,...params,ts:new Date().toISOString()};
+ window.dataLayer=window.dataLayer||[];
+ window.dataLayer.push(payload);
+ // Skicka riktiga GA4-event. page_view hoppas över eftersom Google-taggen
+ // redan skickar ett automatiskt page_view när sidan laddas.
+ if(event!=='page_view'&&typeof window.gtag==='function'){
+   try{window.gtag('event',event,params)}catch(_){}
+ }
+ try{const k='gottjavlakaffe_events',e=JSON.parse(localStorage.getItem(k)||'[]');e.push(payload);localStorage.setItem(k,JSON.stringify(e.slice(-250)))}catch(_){}
+}
 
 async function init(){
- try{const r=await fetch('data/products.json');if(!r.ok)throw new Error('products.json '+r.status);products=await r.json();}
+ try{const [r,g]=await Promise.all([fetch('data/products.json'),fetch('data/grinders.json')]);if(!r.ok)throw new Error('products.json '+r.status);if(!g.ok)throw new Error('grinders.json '+g.status);const base=await r.json(),grinders=await g.json();products=[...base,...grinders].filter(p=>p.lifecycle_status==='active'&&p.images?.status==='approved');}
  catch(e){console.error(e);$('productGrid').innerHTML='<div class="empty">Produktdata kunde inte laddas.</div>';return}
- setupFilters();renderProducts(products);renderQuestion();wireQuickStarts();wireSimulator();track('page_view',{path:location.pathname});
+ setupFilters();setupMachineIntents();if($('clearCompare'))$('clearCompare').onclick=clearCompare;const initialQuery=new URLSearchParams(location.search).get('q');if(initialQuery){$('search').value=initialQuery;filterProducts()}else{renderProducts(products)}renderQuestion();wireQuickStarts();wireSimulator();track('page_view',{path:location.pathname,query:initialQuery||''});
+}
+function setupMachineIntents(){
+ document.querySelectorAll('[data-intent]').forEach(button=>{
+   button.onclick=()=>{
+     const intent=button.dataset.intent;
+     const presets={
+       everyday:{coffee:'black',automation:'easy'},
+       milk:{coffee:'milk'},
+       grinder:{feature:'grinder'},
+       manual:{sort:'control-desc'}
+     };
+     const preset=presets[intent]||{};
+     if(preset.coffee){$('coffeeFilter').value=preset.coffee}else if(intent==='everyday'){$('coffeeFilter').value='svart'}
+     if(preset.feature){$('featureFilter').value=preset.feature}else if(intent!=='grinder'){$('featureFilter').value=''}
+     if(preset.sort){$('sortFilter').value=preset.sort}else{$('sortFilter').value='default'}
+     $('search').value='';
+     $('typeFilter').value='';
+     $('priceFilter').value='';
+     filterProducts();
+     document.querySelectorAll('[data-intent]').forEach(x=>x.classList.toggle('is-active',x===button));
+     document.querySelectorAll('[data-quick-filter]').forEach(x=>x.classList.toggle('is-active',x.dataset.quickFilter==='all'));
+     track('machine_intent',{intent});
+     $('productGrid').scrollIntoView({behavior:'smooth',block:'start'});
+   };
+ });
 }
 function setupFilters(){
  const types=[...new Set(products.map(p=>p.type).filter(Boolean))];
+ const coffees=[...new Set(products.flatMap(p=>p.coffee||[]).filter(Boolean))];
  $('typeFilter').innerHTML='<option value="">Alla typer</option>'+types.map(t=>`<option value="${escapeHtml(t)}">${escapeHtml(t)}</option>`).join('');
- $('search').oninput=filterProducts;$('typeFilter').onchange=filterProducts;$('priceFilter').onchange=filterProducts;
- $('productCount').textContent=`${products.length} maskiner`;
+ const coffeeLabels={svart:'Bryggkaffe / svart kaffe',espresso:'Espresso',cappuccino:'Cappuccino',latte:'Latte'};
+ $('coffeeFilter').innerHTML='<option value="">Allt kaffe</option>'+coffees.map(v=>`<option value="${escapeAttr(v)}">${escapeHtml(coffeeLabels[v]||v)}</option>`).join('');
+ $('search').oninput=filterProducts;
+ $('typeFilter').onchange=filterProducts;
+ $('coffeeFilter').onchange=filterProducts;
+ $('priceFilter').onchange=filterProducts;
+ $('featureFilter').onchange=filterProducts;
+ $('sortFilter').onchange=filterProducts;
+ $('clearFilters').onclick=clearFilters;
+ wireFilterChips();
+ $('productCount').textContent=`${products.length} produkter`;
+ updateFilterSummary(products.length,products.length);
 }
 function filterProducts(){
- const q=$('search').value.trim().toLowerCase(),type=$('typeFilter').value,range=$('priceFilter').value;
+ const q=$('search').value.trim().toLowerCase();
+ const type=$('typeFilter').value;
+ const coffee=$('coffeeFilter').value;
+ const range=$('priceFilter').value;
+ const feature=$('featureFilter').value;
+ const sort=$('sortFilter').value;
  let [a,b]=range?range.split('-').map(Number):[0,Infinity];
- const out=products.filter(p=>{const text=`${p.brand} ${p.model} ${p.description||''}`.toLowerCase(),v=currentPrice(p);return(!q||text.includes(q))&&(!type||p.type===type)&&(!range||(v!==null&&v>=a&&v<=b));});
- renderProducts(out);track('product_filter',{q,type,range,count:out.length});
+ const out=products.filter(p=>{
+   const text=`${p.brand} ${p.model} ${p.description||''} ${(p.tags||[]).join(' ')}`.toLowerCase();
+   const v=priceVerified(p)?currentPrice(p):null;
+   const milk=(p.milk_system&&p.milk_system!=='Ingen')||(p.coffee||[]).some(x=>['cappuccino','latte'].includes(String(x).toLowerCase()));
+   const featureMatch=feature==='grinder'?p.grinder===true:feature==='milk'?milk:feature==='automatic'&&Number(p.automation)>=5;
+   return (!q||text.includes(q))
+     &&(!type||p.type===type)
+     &&(!coffee||(p.coffee||[]).includes(coffee))
+     &&(!range||(v!==null&&v>=a&&v<=b))
+     &&(!feature||featureMatch);
+ });
+ sortProducts(out,sort);
+ renderProducts(out);
+ updateFilterSummary(out.length,products.length);
+ const hasFilter=!!(q||type||coffee||range||feature);
+ $('clearFilters').classList.toggle('hidden',!hasFilter);
+ track('product_filter',{q,type,coffee,range,feature,sort,count:out.length});
+}
+function sortProducts(list,sort){
+ const price=(p)=>{const v=currentPrice(p);return v===null?Infinity:v};
+ const score=(p,key)=>Number(p[key])||0;
+ if(sort==='default')list.sort((a,b)=>(Number(a.editorial_rank)||999999)-(Number(b.editorial_rank)||999999));
+ if(sort==='price-asc')list.sort((a,b)=>price(a)-price(b));
+ if(sort==='price-desc')list.sort((a,b)=>price(b)-price(a));
+ if(sort==='ease-desc')list.sort((a,b)=>score(b,'ease')-score(a,'ease'));
+ if(sort==='control-desc')list.sort((a,b)=>score(b,'control')-score(a,'control'));
+ if(sort==='espresso-desc')list.sort((a,b)=>score(b,'espresso')-score(a,'espresso'));
+}
+function wireFilterChips(){
+ document.querySelectorAll('[data-quick-filter]').forEach(b=>b.onclick=()=>{
+   const key=b.dataset.quickFilter;
+   $('search').value='';
+   $('typeFilter').value='';
+   $('coffeeFilter').value='';
+   $('priceFilter').value='';
+   $('featureFilter').value='';
+   document.querySelectorAll('[data-intent]').forEach(x=>x.classList.remove('is-active'));
+   if(key==='coffee')$('coffeeFilter').value='svart';
+   if(key==='espresso')$('coffeeFilter').value='espresso';
+   if(key==='automatic')$('typeFilter').value='Helautomatisk';
+   if(key==='moka')$('typeFilter').value='Mokabryggare';
+   if(key==='coffee-grinders')$('typeFilter').value='Kaffekvarn';
+   if(key==='grinder')$('featureFilter').value='grinder';
+   if(key==='under1000')$('priceFilter').value='0-1000';
+   document.querySelectorAll('[data-quick-filter]').forEach(x=>x.classList.toggle('is-active',x===b));
+   filterProducts();
+ });
+}
+function updateFilterSummary(count,total){
+ $('filterSummary').textContent=count===total?`${total} produkter`:`${count} av ${total} produkter`;
+}
+function clearFilters(){
+ document.querySelectorAll('[data-intent]').forEach(x=>x.classList.remove('is-active'));
+ $('search').value='';
+ $('typeFilter').value='';
+ $('coffeeFilter').value='';
+ $('priceFilter').value='';
+ $('featureFilter').value='';
+ $('sortFilter').value='default';
+ document.querySelectorAll('[data-quick-filter]').forEach(x=>x.classList.toggle('is-active',x.dataset.quickFilter==='all'));
+ filterProducts();
 }
 function renderQuestion(){
- const q=questions[finderStep];$('stepLabel').textContent=`${finderStep+1} / ${questions.length}`;
+ const q=questions[finderStep];$('stepLabel').textContent=`${finderStep+1} / ${questions.length}`;if($('stepProgress'))$('stepProgress').style.width=`${((finderStep+1)/questions.length)*100}%`;
  $('questions').innerHTML=`<h3>${q.title}</h3><div class="finder-option-grid">${q.opts.map(o=>`<button class="finder-option ${answers[q.key]===o[0]?'selected':''}" data-value="${o[0]}"><strong>${o[1]}</strong><small>${o[2]}</small></button>`).join('')}</div>`;
  document.querySelectorAll('.finder-option').forEach(b=>b.onclick=()=>{answers[q.key]=b.dataset.value;track('finder_answer',{question:q.key,value:b.dataset.value});renderQuestion()});
  $('back').disabled=finderStep===0;$('next').textContent=finderStep===questions.length-1?'Visa resultat →':'Nästa →';
@@ -47,7 +228,7 @@ $('restart').onclick=()=>{finderStep=0;answers={coffee:null,automation:null,budg
 
 function priceFit(p,budget){
  if(!budget)return .5;
- const band=priceBand(p);if(!band)return .5;
+ const band=priceBand(p);if(!band)return budget==='low'?.45:.65;
  const order={low:0,mid:1,upper:2,premium:3},d=Math.abs(order[band]-order[budget]);return d===0?1:d===1?.65:.25;
 }
 function coffeeFit(p,coffee){const c=(p.coffee||[]).map(x=>String(x).toLowerCase());if(coffee==='black')return c.some(x=>['svart','bryggkaffe','americano'].includes(x))?1:.45;if(coffee==='espresso')return c.includes('espresso')?1:.4;if(coffee==='milk')return c.some(x=>['cappuccino','latte'].includes(x))?1:.45;if(coffee==='mixed')return Math.min(1,c.length/4);return .5}
@@ -56,29 +237,240 @@ function cleaningFit(p,c){const x=Number(p.cleaning)||0;if(c==='high')return x>=
 function espressoFit(p,a){const x=Number(p.espresso)||0;return a==='manual'?(x/5):a==='easy'?.5:(x/5)}
 function versatility(p){const c=(p.coffee||[]).length;return Math.min(1,(c/4)*.7+(Number(p.milk)||0)/5*.15+(Number(p.espresso)||0)/5*.15)}
 function weightedScore(p){
- const s=priceFit(p,answers.budget)*.30+coffeeFit(p,answers.coffee)*.22+automationFit(p,answers.automation)*.20+cleaningFit(p,answers.cleaning)*.12+espressoFit(p,answers.automation)*.10+versatility(p)*.06;
+ const s=priceFit(p,answers.budget)*.22+coffeeFit(p,answers.coffee)*.28+automationFit(p,answers.automation)*.22+cleaningFit(p,answers.cleaning)*.10+espressoFit(p,answers.automation)*.10+versatility(p)*.08;
  return Math.round(55+s*44);
 }
-function rankedProducts(budgetOverride=null){const a={...answers};if(budgetOverride)a.budget=budgetOverride;return products.map(p=>({...p,match:weightedScoreWith(p,a)})).sort((x,y)=>y.match-x.match)}
-function weightedScoreWith(p,a){const old=answers;answers=a;const s=priceFit(p,a.budget)*.30+coffeeFit(p,a.coffee)*.22+automationFit(p,a.automation)*.20+cleaningFit(p,a.cleaning)*.12+espressoFit(p,a.automation)*.10+versatility(p)*.06;answers=old;return Math.max(55,Math.min(99,Math.round(55+s*44)))}
+function rankedProducts(budgetOverride=null){const a={...answers};if(budgetOverride)a.budget=budgetOverride;return products.map(p=>({...p,match:weightedScoreWith(p,a),fitReasons:fitReasons(p,a)})).sort((x,y)=>y.match-x.match)}
+function weightedScoreWith(p,a){const s=priceFit(p,a.budget)*.22+coffeeFit(p,a.coffee)*.28+automationFit(p,a.automation)*.22+cleaningFit(p,a.cleaning)*.10+espressoFit(p,a.automation)*.10+versatility(p)*.08;return Math.max(55,Math.min(99,Math.round(55+s*44)))}
+function fitReasons(p,a){const reasons=[];if(coffeeFit(p,a.coffee)>=.9)reasons.push('passar din kaffetyp');if(automationFit(p,a.automation)>=.9)reasons.push('matchar din nivå av handpåläggning');if(cleaningFit(p,a.cleaning)>=.9)reasons.push('passar ditt krav på enkel rengöring');if(priceFit(p,a.budget)>=.9)reasons.push('ligger i din budgetnivå');return reasons.slice(0,3)}
 function profileText(){const coffee={black:'svart kaffe',espresso:'espresso',milk:'cappuccino och latte',mixed:'lite av allt'}[answers.coffee],auto={easy:'så lite handpåläggning som möjligt',some:'lite egen kontroll',manual:'mycket egen kontroll'}[answers.automation],budget={low:'under 2 000 kr',mid:'2–5 000 kr',upper:'5–10 000 kr',premium:'10 000+ kr'}[answers.budget];return `Du prioriterar ${coffee}, vill ha ${auto} och har valt ${budget}.`}
 function showResults(){
- const ranked=rankedProducts().slice(0,6);$('results').classList.remove('hidden');$('profile').innerHTML=`<strong>Din profil:</strong> ${profileText()}`;renderDNA();renderDecisionMap(ranked);$('resultsGrid').innerHTML=buildRecommendationCards(ranked).map(card).join('');wireCards();updateSimulator();$('results').scrollIntoView({behavior:'smooth'});
+ const ranked=rankedProducts().slice(0,6);$('results').classList.remove('hidden');$('profile').innerHTML=`<strong>Din profil:</strong> ${profileText()}`;const top=ranked[0];$('matchSummary').innerHTML=top?`<span class="eyebrow">VARFÖR DEN HÄR?</span><p><strong>${escapeHtml(top.brand+' '+top.model)}</strong> ligger först eftersom den bäst balanserar dina svar.</p>`:'';renderDNA();$('resultsGrid').innerHTML=buildRecommendationCards(ranked).map(card).join('');wireCards();updateSimulator();$('results').scrollIntoView({behavior:'smooth'});
 }
-function renderDNA(){const vals=[['Bekvämlighet',automationValue(),answers.automation==='easy'?90:answers.automation==='some'?65:35],['Kontroll',answers.automation==='manual'?90:answers.automation==='some'?60:30],['Enkel rengöring',answers.cleaning==='high'?90:answers.cleaning==='normal'?65:35]];$('dna').innerHTML=`<div class="dna-head"><div><span class="eyebrow">COFFEE DNA</span><h3>Så här ser dina prioriteringar ut</h3></div></div><div class="dna-bars">${vals.map(v=>`<div class="dna-row"><span>${v[0]}</span><div><i style="width:${v[2]}%"></i></div><b>${v[2]}</b></div>`).join('')}</div>`}
-function automationValue(){return answers.automation==='easy'?'Bekvämlighet':answers.automation==='manual'?'Kontroll':'Balans'}
-function renderDecisionMap(ranked){$('decisionMap').innerHTML=`<div class="decision-axis x"><span>Mer kontroll</span><span>Mer bekvämlighet</span></div><div class="decision-axis y"><span>Mer espressofokus</span><span>Mer vardagskaffe</span></div>${ranked.slice(0,8).map((p,i)=>{const x=Math.round(((Number(p.automation)||3)/5)*100),y=100-Math.round(((Number(p.espresso)||3)/5)*100);return `<button class="decision-dot" style="left:${x}%;top:${y}%" data-detail="${p.id}" title="${escapeHtml(p.brand+' '+p.model)}"><span>${i+1}</span></button>`}).join('')}`;document.querySelectorAll('[data-detail]').forEach(b=>b.onclick=()=>openModal(b.dataset.detail))}
-function buildRecommendationCards(ranked){const top=ranked[0];const cheaper=ranked.filter(p=>{const a=currentPrice(p),b=currentPrice(top);return a&&b&&a<b*.8})[0];const premium=ranked.filter(p=>{const a=currentPrice(p),b=currentPrice(top);return a&&b&&a>b*1.25})[0];return [top,cheaper,premium].filter((p,i,a)=>p&&a.findIndex(x=>x.id===p.id)===i).map((p,i)=>({...p,recommendationLabel:i===0?'DIN BÄSTA MATCH':i===1?'SAMMA BEHOV · BILLIGARE':'OM DU VILL GÅ UPP EN NIVÅ'}))}
-function card(p){return `<article class="product-card"><div class="product-top"><span class="type">${escapeHtml(p.type||'Kaffemaskin')}</span>${p.recommendationLabel?`<span class="rec-label">${p.recommendationLabel}</span>`:''}</div><div class="product-image">${p.feed_image_url?`<img src="${escapeAttr(p.feed_image_url)}" alt="${escapeAttr(p.brand+' '+p.model)}">`:'☕'}</div><div class="brand">${escapeHtml(p.brand)}</div><h3>${escapeHtml(p.model)}</h3>${p.match?`<div class="match">${p.match}% match</div>`:''}<div class="price">${priceText(p)}</div><div class="card-copy">${escapeHtml(p.description||'')}</div><div class="card-bottom">${(p.tags||[]).slice(0,3).map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join('')}</div><div class="card-actions"><button class="mini-button" data-detail="${p.id}">Se varför</button><button class="mini-button" data-compare="${p.id}">Jämför</button></div></article>`}
+function renderDNA(){
+ const labels={coffee:{black:'Svart kaffe',espresso:'Espresso',milk:'Cappuccino & latte',mixed:'Lite av allt'},automation:{easy:'Så lite som möjligt',some:'Lite själv',manual:'Jag vill nörda'},budget:{low:'Under 2 000 kr',mid:'2–5 000 kr',upper:'5–10 000 kr',premium:'10 000+ kr'},cleaning:{high:'Väldigt viktigt',normal:'Ganska viktigt',low:'Spelar liten roll'}};
+ const vals=[['Kaffe',labels.coffee[answers.coffee]],['Hur mycket du vill göra själv',labels.automation[answers.automation]],['Budget',labels.budget[answers.budget]],['Rengöring',labels.cleaning[answers.cleaning]]];
+ $('dna').innerHTML=`<div class="dna-head"><span class="eyebrow">DINA VAL</span><h3>Det här utgick matchningen från</h3></div><div class="dna-grid">${vals.map(v=>`<div class="dna-item"><span>${v[0]}</span><strong>${v[1]||'–'}</strong></div>`).join('')}</div>`;
+}
+function renderDecisionMap(ranked){
+ const points=ranked.slice(0,8).map((p,i)=>{
+  const automation=Math.max(1,Math.min(5,Number(p.automation)||3));
+  const espresso=Math.max(1,Math.min(5,Number(p.espresso)||3));
+  const x=10+((automation-1)/4)*80;
+  const y=90-((espresso-1)/4)*80;
+  return `<button class="decision-dot" style="left:${x}%;top:${y}%" data-detail="${p.id}" title="${escapeHtml(p.brand+' '+p.model)}"><span>${i+1}</span></button>`;
+ }).join('');
+ $('decisionMap').innerHTML=`<div class="decision-y-labels"><span>Mer espresso</span><span>Mer vardagskaffe</span></div><div class="decision-plot"><div class="decision-gridline vertical"></div><div class="decision-gridline horizontal"></div>${points}</div><div class="decision-x-labels"><span>Mer kontroll</span><span>Mer bekvämlighet</span></div>`;
+ document.querySelectorAll('.decision-dot').forEach(b=>b.onclick=()=>openModal(b.dataset.detail));
+}
+function buildRecommendationCards(ranked){
+ const top=ranked[0];
+ const topPrice=priceVerified(top)?currentPrice(top):null;
+ const cheaper=ranked.find(p=>p.id!==top?.id&&(()=>{
+  const a=priceVerified(p)?currentPrice(p):null;
+  return a&&topPrice&&a<topPrice*.8;
+ })());
+ const premium=ranked.find(p=>p.id!==top?.id&&(()=>{
+  const a=priceVerified(p)?currentPrice(p):null;
+  return a&&topPrice&&a>topPrice*1.25;
+ })());
+ const selected=[];
+ const add=(p,label)=>{if(p&&selected.length<3&&!selected.some(x=>x.id===p.id))selected.push({...p,recommendationLabel:label});};
+ add(top,'DIN BÄSTA MATCH');
+ add(cheaper,'BILLIGARE ALTERNATIV');
+ add(premium,'ETT STEG UPP');
+ ranked.forEach(p=>add(p,'ALTERNATIV'));
+ return selected;
+}
+function matchLabel(n){n=Number(n)||0;return n>=90?'Mycket stark match':n>=80?'Stark match':n>=70?'Bra match':'Svagare match'}
+function productQuickFacts(p){
+ const items=[];
+ if(p.type==='Kaffekvarn'){
+   const d=p.details||{};
+   if(d.grind_settings)items.push(['Malning',String(d.grind_settings)+' lägen']);
+   else if(d.grinder_type)items.push(['Kvarntyp',d.grinder_type]);
+   if(d.capacity_g)items.push(['Kapacitet',String(d.capacity_g)+' g']);
+   if(d.power_w)items.push(['Effekt',String(d.power_w)+' W']);
+   return items.slice(0,3).map(([label,value])=>`<span><small>${label}</small><strong>${escapeHtml(value)}</strong></span>`).join('');
+ }
+ const coffeeLabels={svart:'Bryggkaffe',espresso:'Espresso',cappuccino:'Cappuccino',latte:'Latte'};
+ const coffee=(p.coffee||[]).map(v=>coffeeLabels[String(v).toLowerCase()]||v).slice(0,2).join(' · ');
+ if(coffee)items.push(['Kaffe',coffee]);
+ if(p.grinder===true)items.push(['Kvarn','Inbyggd']);
+ else if(p.grinder===false)items.push(['Kvarn','Ingen']);
+ const automation=Number(p.automation)>=5?'Hög automation':Number(p.automation)>=3?'Viss handpåläggning':'';
+ if(automation)items.push(['Arbete',automation]);
+ return items.map(([label,value])=>`<span><small>${label}</small><strong>${escapeHtml(value)}</strong></span>`).join('');
+}
+function compareButton(p){
+ const active=compare.includes(p.id);
+ return `<button class="mini-button compare-button${active?' is-active':''}" data-compare="${escapeAttr(p.id)}" aria-pressed="${active}">${active?'✓ Jämförd':'Jämför'}</button>`;
+}
+function card(p){
+ const reason=p.recommendationLabel?(p.recommendationLabel==='FÖRSTA FÖRSLAGET'?(p.fitReasons?.length?`Framför allt för att den ${p.fitReasons.join(', ')}.`:'Matchar flest av dina prioriteringar.'):p.recommendationLabel.startsWith('SAMMA BEHOV')?'Ett billigare alternativ med liknande profil.':p.recommendationLabel.startsWith('ALTERNATIV')?'Ett relevant alternativ, men priset är ännu inte verifierat.':p.recommendationLabel.startsWith('ETT STEG UPP')?'Om du vill lägga lite mer får du här ett alternativ med mer funktion.':'Ett alternativ om du vill prioritera mer funktion.') : '';
+ const image=displayImage(p);
+ return `<article class="product-card"><div class="product-top"><span class="type">${escapeHtml(p.type||'Kaffemaskin')}</span>${p.recommendationLabel?`<span class="rec-label">${escapeHtml(p.recommendationLabel)}</span>`:''}</div><div class="product-image">${image?`<img src="${escapeAttr(image)}" alt="${escapeAttr(p.brand+' '+p.model)}">`:'<span class="image-placeholder">Produktbild<br><small>läggs till när produktkällan är verifierad</small></span>'}</div><div class="brand">${escapeHtml(p.brand)}</div><h3>${escapeHtml(p.model)}</h3>${p.match?`<div class="match">${matchLabel(p.match)}</div>`:''}${reason?`<p class="recommendation-reason">${reason}</p>`:''}<div class="price">${priceText(p)}</div>${priceMeta(p)}<div class="product-quickfacts">${productQuickFacts(p)}</div><div class="card-copy">${escapeHtml(p.description||'')}</div><div class="card-bottom">${(p.tags||[]).slice(0,3).map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join('')}</div><div class="card-actions"><button class="mini-button detail-button" data-detail="${escapeAttr(p.id)}">Läs mer</button>${compareButton(p)}</div>${offerMarkup(p)}</article>`;
+}
 function renderProducts(list){$('productGrid').innerHTML=list.length?list.map(card).join(''):'<div class="empty">Inga maskiner matchade filtret.</div>';wireCards()}
-function wireCards(){document.querySelectorAll('[data-compare]').forEach(b=>b.onclick=e=>{e.stopPropagation();toggleCompare(b.dataset.compare)});document.querySelectorAll('[data-detail]').forEach(b=>b.onclick=e=>{e.stopPropagation();openModal(b.dataset.detail)})}
-function toggleCompare(id){if(compare.includes(id))compare=compare.filter(x=>x!==id);else if(compare.length<4)compare.push(id);else return alert('Du kan jämföra högst fyra maskiner.');$('compareCount').textContent=compare.length;track('compare_toggle',{id,active:compare.includes(id)});renderCompare()}
-function renderCompare(){if(!compare.length){$('compareEmpty').style.display='block';$('compareTable').innerHTML='';$('tradeoffBox').classList.add('hidden');return}$('compareEmpty').style.display='none';const ps=compare.map(id=>products.find(p=>p.id===id)).filter(Boolean);const row=(label,fn)=>`<tr><td>${label}</td>${ps.map(p=>`<td>${fn(p)}</td>`).join('')}</tr>`;$('compareTable').innerHTML=`<div class="compare-wrap"><table class="compare-table"><thead><tr><th></th>${ps.map(p=>`<th>${escapeHtml(p.brand)}<br><strong>${escapeHtml(p.model)}</strong></th>`).join('')}</tr></thead><tbody>${row('Pris',priceText)}${row('Typ',p=>escapeHtml(p.type))}${row('Automation',p=>stars(p.automation))}${row('Kontroll',p=>stars(p.control))}${row('Espresso',p=>stars(p.espresso))}${row('Mjölkdrycker',p=>stars(p.milk))}${row('Rengöring',p=>stars(p.cleaning))}${row('Inbyggd kvarn',p=>p.grinder?'Ja':'Nej')}</tbody></table></div>`;$('tradeoffBox').classList.remove('hidden');$('tradeoffBox').innerHTML='<strong>Jämför kompromisserna.</strong> Högre automation betyder normalt mindre handpåläggning, medan högre kontroll ofta innebär mer arbete.'}
+function wireAffiliateLinks(){
+ document.querySelectorAll('[data-affiliate]').forEach(a=>a.onclick=()=>{
+   const p=products.find(x=>x.id===a.dataset.affiliate);
+   track('affiliate_click',{
+     id:a.dataset.affiliate,
+     product_name:p?(`${p.brand} ${p.model}`):'',
+     merchant:a.dataset.merchant||a.textContent.trim(),
+     network:a.dataset.network||'',
+     placement:a.dataset.placement||'card',
+     price:a.dataset.price?Number(a.dataset.price):undefined,
+     type:p?.type||''
+   });
+ })
+}
+function wireCards(){
+ wireAffiliateLinks();
+ document.querySelectorAll('[data-compare]').forEach(b=>b.onclick=e=>{e.stopPropagation();toggleCompare(b.dataset.compare)});
+ document.querySelectorAll('[data-detail]').forEach(b=>b.onclick=e=>{e.stopPropagation();openModal(b.dataset.detail)});
+}
+function refreshCompareButtons(){
+ document.querySelectorAll('[data-compare]').forEach(b=>{
+   const active=compare.includes(b.dataset.compare);
+   b.classList.toggle('is-active',active);
+   b.setAttribute('aria-pressed',String(active));
+   b.textContent=active?'✓ Jämförd':'Jämför';
+ });
+}
+function toggleCompare(id){
+ if(compare.includes(id))compare=compare.filter(x=>x!==id);
+ else if(compare.length<4)compare.push(id);
+ else return alert('Du kan jämföra högst fyra maskiner.');
+ $('compareCount').textContent=compare.length;
+ track('compare_toggle',{id,active:compare.includes(id)});
+ renderCompare();
+ refreshCompareButtons();
+}
+function compareDetail(p,key,fallback=''){
+ const d=p.details||{};
+ const v=d[key];
+ return v!==undefined&&v!==null&&v!==''?String(v):fallback;
+}
+function renderCompare(){
+ if(!compare.length){
+   $('compareEmpty').style.display='block';
+   $('compareTable').innerHTML='';
+   $('tradeoffBox').classList.add('hidden');
+   if($('clearCompare'))$('clearCompare').classList.add('hidden');
+   return;
+ }
+ $('compareEmpty').style.display='none';
+ if($('clearCompare'))$('clearCompare').classList.remove('hidden');
+ const ps=compare.map(id=>products.find(p=>p.id===id)).filter(Boolean);
+ const row=(label,fn)=>`<tr><th scope="row">${label}</th>${ps.map(p=>`<td>${fn(p)}</td>`).join('')}</tr>`;
+ const head=ps.map(p=>`<th><div class="compare-product-name">${escapeHtml(p.brand)}<strong>${escapeHtml(p.model)}</strong><button class="compare-remove" data-remove-compare="${escapeAttr(p.id)}" type="button">Ta bort</button></div></th>`).join('');
+ $('compareTable').innerHTML=`<div class="compare-wrap"><table class="compare-table"><thead><tr><th></th>${head}</tr></thead><tbody>
+ ${row('Pris',priceText)}
+ ${row('Typ',p=>escapeHtml(p.type))}
+ ${row('Kaffetyp',p=>escapeHtml((p.coffee||[]).join(', ')))}
+ ${row('Automation',p=>stars(p.automation))}
+ ${row('Kontroll',p=>stars(p.control))}
+ ${row('Espresso',p=>stars(p.espresso))}
+ ${row('Mjölkdrycker',p=>stars(p.milk))}
+ ${row('Rengöring',p=>stars(p.cleaning))}
+ ${row('Inbyggd kvarn',p=>p.type==='Kaffekvarn'?'—':p.grinder?'Ja':'Nej')}
+ ${row('Kvarntyp',p=>p.type==='Kaffekvarn'?escapeHtml(compareDetail(p,'grinder_type','–')):'—')}
+ ${row('Malningslägen',p=>p.type==='Kaffekvarn'?escapeHtml(compareDetail(p,'grind_settings','–')):'—')}
+ ${row('Kvarnkapacitet',p=>p.type==='Kaffekvarn'?escapeHtml(compareDetail(p,'capacity_g','–')+(compareDetail(p,'capacity_g','')?' g':'')):'—')}
+ ${row('Mjölksystem',p=>escapeHtml(p.milk_system||compareDetail(p,'milk_system','–')))}
+ ${row('Vattentank',p=>escapeHtml(compareDetail(p,'water_tank_l','–')))}
+ ${row('Bönkapacitet',p=>escapeHtml(compareDetail(p,'bean_capacity_g','–')))}
+ </tbody></table></div>`;
+ $('tradeoffBox').classList.remove('hidden');
+ $('tradeoffBox').innerHTML='<strong>Jämför kompromisserna.</strong> Automation minskar normalt handpåläggningen. Högre kontroll ger fler möjligheter att påverka resultatet, men innebär också mer arbete. Inget av det är bättre i sig — det beror på hur du vill använda maskinen.';
+ document.querySelectorAll('[data-remove-compare]').forEach(b=>b.onclick=()=>toggleCompare(b.dataset.removeCompare));
+}
+function clearCompare(){
+ compare=[];
+ $('compareCount').textContent='0';
+ track('compare_clear');
+ renderCompare();
+ refreshCompareButtons();
+}
 function stars(n){n=Number(n)||0;return '★'.repeat(n)+'☆'.repeat(Math.max(0,5-n))}
-function openModal(id){const p=products.find(x=>x.id===id);if(!p)return;track('product_detail',{id});$('productModal').innerHTML=`<div class="modal-backdrop" data-close-modal><div class="modal-card" role="dialog" aria-modal="true"><button class="modal-close" data-close-modal>×</button><span class="eyebrow">${priceVerified(p)?'PRIS VERIFIERAT':'PRIS EJ VERIFIERAT'}</span><div class="product-image large">${p.feed_image_url?`<img src="${escapeAttr(p.feed_image_url)}" alt="${escapeAttr(p.brand+' '+p.model)}">`:'☕'}</div><div class="brand">${escapeHtml(p.brand)}</div><h2>${escapeHtml(p.model)}</h2><div class="price">${priceText(p)}</div><p>${escapeHtml(p.description||'')}</p><div class="modal-grid"><div><h4>Fördelar</h4><ul>${(p.pros||[]).map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul></div><div><h4>Nackdelar</h4><ul>${(p.cons||[]).map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul></div></div><p class="editorial-note">Matchningen är en redaktionell bedömning, inte ett laboratorietest.</p></div></div>`;$('productModal').classList.remove('hidden');document.querySelectorAll('[data-close-modal]').forEach(x=>x.onclick=()=>{$('productModal').classList.add('hidden')})}
+function detailFact(label,value){return value?`<div class="detail-fact"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`:''}
+function detailList(items){return Array.isArray(items)&&items.length?`<ul>${items.map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul>`:''}
+function detailScore(label,value){
+ const n=Math.max(0,Math.min(5,Number(value)||0));
+ return `<div class="detail-score"><span>${escapeHtml(label)}</span><div>${'★'.repeat(n)}${'☆'.repeat(5-n)}</div></div>`;
+}
+const detailLabels={grinder_type:'Kvarntyp',burr_material:'Kvarnmaterial',capacity_g:'Kapacitet',grind_settings:'Malningslägen',grind_adjustment:'Malningsjustering',brew_methods:'Bryggmetoder',dose_control:'Dosering',cup_measure:'Koppmätning',pulse_function:'Pulsfunktion',water_tank_l:'Vattentank',bean_capacity_g:'Bönkapacitet',max_cups:'Max antal koppar',power_w:'Effekt',pump_bar:'Pumptryck',grinder:'Kvarn',grinder_settings:'Kvarninställningar',brew_temperature:'Bryggtemperatur',brew_time:'Bryggtid',filter:'Filter',jug:'Kanna',keep_warm:'Varmhållning',keep_warm_w:'Varmhållningseffekt',auto_off:'Automatisk avstängning',timer:'Timer',profiles:'Bryggprofiler',preinfusion:'Förbryggning',water_outlet:'Vattenutlopp',ecbc:'ECBC',dimensions:'Mått',display:'Display',drinks:'Drycker',drip_stop:'Droppstopp',milk_system:'Mjölksystem',brew_group:'Bryggenhet',aroma_strength_settings:'Aromainställningar',temperature_settings:'Temperaturinställningar',auto_cleaning:'Automatisk rengöring',dishwasher_safe:'Diskmaskinssäkra delar',dishwasher_safe_milk_carafe:'Diskmaskinssäker mjölkkanna',descaling:'Avkalkning',repairability:'Reparerbarhet',special:'Särskilda funktioner',coffee_container:'Kaffebehållare'};
+function detailFactsFromData(d){return Object.entries(d||{}).map(([key,value])=>{if(value===null||value===undefined||value==='')return '';const label=detailLabels[key]||key.replace(/_/g,' ');return detailFact(label,String(value))}).filter(Boolean).join('')}
+function openModal(id){
+ const p=products.find(x=>x.id===id);
+ if(!p)return;
+ track('product_detail',{id});
+ const image=displayImage(p);
+ const d=p.details||{};
+ const facts=[
+  detailFact('Typ',p.type),
+  detailFact('Kaffetyp',Array.isArray(p.coffee)&&p.coffee.length?p.coffee.join(', '):''),
+  detailFact('Inbyggd kvarn',p.grinder===true?'Ja':p.grinder===false?'Nej':''),
+  detailFact('Mjölksystem',p.milk_system||d.milk_system||''),
+  detailFact('Passar särskilt',Array.isArray(p.audience)&&p.audience.length?p.audience.join(', '):''),
+  detailFactsFromData(d)
+ ].filter(Boolean).join('');
+ const scores=[
+  detailScore('Enkelhet',p.ease),
+  detailScore('Automation',p.automation),
+  detailScore('Kontroll',p.control),
+  detailScore('Espresso',p.espresso),
+  detailScore('Mjölkdrycker',p.milk),
+  detailScore('Rengöring',p.cleaning)
+ ].join('');
+ const hasPros=Array.isArray(p.pros)&&p.pros.length;
+ const hasCons=Array.isArray(p.cons)&&p.cons.length;
+ const tags=(p.tags||[]).map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join('');
+ const tradeoff=p.automation>=5?'du prioriterar enkelhet och vill göra så lite som möjligt själv.':p.control>=5?'du vill ha hög kontroll och tycker att själva kaffet är en del av hobbyn.':'du vill ha en balans mellan bekvämlighet och egen kontroll.';
+ const source=p.detail_source?`<p class="detail-source">Tekniska uppgifter verifierade mot <a href="${escapeAttr(p.detail_source)}" target="_blank" rel="noopener">tillverkarens produktinformation</a>.</p>`:'';
+ $('productModal').innerHTML=`<div class="modal-backdrop" data-close-modal><div class="modal-card" role="dialog" aria-modal="true">
+ <button class="modal-close" data-close-modal>×</button>
+ <span class="eyebrow">${priceVerified(p)?'PRIS VERIFIERAT':'PRIS EJ VERIFIERAT'}</span>
+ <div class="product-image large">${image?`<img src="${escapeAttr(image)}" alt="${escapeAttr(p.brand+' '+p.model)}">`:'☕'}</div>
+ <div class="brand">${escapeHtml(p.brand)}</div>
+ <h2>${escapeHtml(p.model)}</h2>
+ <div class="price">${priceText(p)}</div>
+ ${priceMeta(p)}${offerMarkup(p,'modal')}
+ <p class="detail-lead">${escapeHtml(p.description||'')}</p>
+ ${tags?`<div class="detail-tags">${tags}</div>`:''}
+ ${facts?`<section class="detail-section"><h3>Snabbfakta</h3><div class="detail-facts">${facts}</div></section>`:''}
+ ${scores?`<section class="detail-section"><h3>Vår bedömning</h3><div class="detail-scores">${scores}</div></section>`:''}
+ <section class="tradeoff-box"><strong>Det här är maskinen för dig om…</strong><p>${escapeHtml(tradeoff)}</p></section>
+ ${hasPros||hasCons?`<section class="detail-section"><div class="modal-grid">${hasPros?`<div><h4>Fördelar</h4>${detailList(p.pros)}</div>`:''}${hasCons?`<div><h4>Nackdelar</h4>${detailList(p.cons)}</div>`:''}</div></section>`:''}
+ ${source}
+ <p class="editorial-note">Matchningen är en redaktionell bedömning, inte ett laboratorietest.</p>
+ </div></div>`;
+ $('productModal').classList.remove('hidden');
+ document.querySelectorAll('[data-close-modal]').forEach(x=>x.onclick=()=>{$('productModal').classList.add('hidden')});
+}
 function wireQuickStarts(){document.querySelectorAll('[data-quick]').forEach(b=>b.onclick=()=>{const q=b.dataset.quick;const presets={easy:{coffee:'black',automation:'easy',budget:'mid',cleaning:'high'},milk:{coffee:'milk',automation:'easy',budget:'upper',cleaning:'high'},budget:{coffee:'black',automation:'easy',budget:'low',cleaning:'high'},manual:{coffee:'espresso',automation:'manual',budget:'upper',cleaning:'low'}};answers={...presets[q]};track('quick_start',{path:q});showResults()})}
 function wireSimulator(){ $('simBudget').oninput=updateSimulator }
-function updateSimulator(){if(!$('simBudget'))return;const value=Number($('simBudget').value);$('simBudgetLabel').textContent=value.toLocaleString('sv-SE')+' kr';const band=value<2000?'low':value<5000?'mid':value<10000?'upper':'premium';const p=rankedProducts(band)[0];if(!p)return;$('simulatorResult').innerHTML=`<strong>${escapeHtml(p.brand)} ${escapeHtml(p.model)}</strong><span>${p.match}% match med budget ${value.toLocaleString('sv-SE')} kr.</span><small>${currentPrice(p)?(currentPrice(p)<=value?'Inom budget enligt vår prisdata.':'Över budget enligt vår prisdata.'):'Priset är ännu inte verifierat.'}</small>`}
+function updateSimulator(){
+ if(!$('simBudget'))return;
+ const value=Number($('simBudget').value);
+ $('simBudgetLabel').textContent=value.toLocaleString('sv-SE')+' kr';
+ const band=value<2000?'low':value<5000?'mid':value<10000?'upper':'premium';
+ const ranked=rankedProducts(band);
+ const inBudget=ranked.filter(p=>priceVerified(p)&&currentPrice(p)<=value);
+ const nearBudget=ranked.filter(p=>priceVerified(p)&&currentPrice(p)>value&&currentPrice(p)<=value*1.2);
+ const candidates=[...inBudget,...nearBudget,...ranked.filter(p=>!priceVerified(p))];
+ const selected=[];
+ for(const p of candidates){if(!selected.some(x=>x.id===p.id))selected.push(p);if(selected.length===3)break}
+ const cards=selected.map((p,i)=>{
+   const price=priceVerified(p)?currentPrice(p):null;
+   const status=price?price<=value?'Inom budget':
+     price<=value*1.2?'Lite över budget':'Över budget':'Pris ej verifierat';
+   return `<div class="sim-option"><div><strong>${escapeHtml(p.brand)} ${escapeHtml(p.model)}</strong><span>${status}</span></div><b>${price?price.toLocaleString('sv-SE')+' kr':'Pris ej verifierat'}</b></div>`;
+ }).join('');
+ $('simulatorResult').innerHTML=cards||'<span>Inga tydliga alternativ med tillgänglig prisdata just nu.</span>';
+}
 function escapeHtml(s){return String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
 function escapeAttr(s){return escapeHtml(s)}
 window.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('productModal'))$('productModal').classList.add('hidden')});
