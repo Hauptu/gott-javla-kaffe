@@ -1395,27 +1395,25 @@
   position:absolute;
   inset:0;
   z-index:-1;
-  background:linear-gradient(90deg,rgba(250,244,236,.98) 0%,rgba(250,244,236,.91) 42%,rgba(250,244,236,.34) 72%,rgba(250,244,236,.04) 100%);
+  background:linear-gradient(90deg,rgba(250,244,236,.99) 0%,rgba(250,244,236,.95) 34%,rgba(250,244,236,.72) 53%,rgba(250,244,236,.18) 78%,rgba(250,244,236,.03) 100%);
 }
-.home-door-machine:before{background-image:url("https://images.unsplash.com/photo-1736276924647-886ef1a7cac3?auto=format&fit=crop&fm=jpg&q=78&w=1100");background-position:72% center}
+.home-door-machine:before{background-image:url("https://images.unsplash.com/photo-1769970631282-703328b5998a?auto=format&fit=crop&fm=jpg&q=78&w=1600");background-position:68% center}
 .home-door-academy{color:#fff;border-color:#74513a;background:#2e1c12}
-.home-door-academy:before{background-image:url("https://images.unsplash.com/photo-1654124803458-20772ab08c39?auto=format&fit=crop&fm=jpg&q=78&w=1100");background-position:center}
-.home-door-academy:after{background:linear-gradient(90deg,rgba(43,27,18,.98) 0%,rgba(43,27,18,.91) 43%,rgba(43,27,18,.42) 74%,rgba(43,27,18,.12) 100%)}
-.home-door-match:before{background-image:url("https://images.unsplash.com/photo-1693645758592-207a36b28896?auto=format&fit=crop&fm=jpg&q=78&w=1100");background-position:center}
-.home-door-match:after{background:linear-gradient(90deg,rgba(249,243,235,.98) 0%,rgba(249,243,235,.9) 42%,rgba(249,243,235,.28) 73%,rgba(249,243,235,.04) 100%)}
+.home-door-academy:before{background-image:url("https://images.unsplash.com/photo-1643148636637-58b3eb95cdad?auto=format&fit=crop&fm=jpg&q=78&w=1600");background-position:center}
+.home-door-academy:after{background:linear-gradient(90deg,rgba(43,27,18,.99) 0%,rgba(43,27,18,.94) 34%,rgba(43,27,18,.72) 54%,rgba(43,27,18,.22) 79%,rgba(43,27,18,.05) 100%)}
+.home-door-match:before{background-image:url("https://images.unsplash.com/photo-1771764753575-54dbd0ae8bf8?auto=format&fit=crop&fm=jpg&q=78&w=1600");background-position:center}
+.home-door-match:after{background:linear-gradient(90deg,rgba(249,243,235,.99) 0%,rgba(249,243,235,.94) 34%,rgba(249,243,235,.68) 54%,rgba(249,243,235,.16) 79%,rgba(249,243,235,.03) 100%)}
 .home-door:hover{transform:translateY(-5px);box-shadow:0 20px 46px rgba(48,38,28,.11);border-color:#9b8067}
 .home-door:hover:before{transform:scale(1.035)}
-.home-door-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;width:63%;min-height:100%;padding:44px 28px 52px 34px;position:relative;z-index:1}
-.home-door-visual{position:absolute;top:22px;left:28px;z-index:2;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:rgba(255,250,243,.7);border:1px solid rgba(112,82,58,.18);backdrop-filter:blur(4px)}
-.home-door-academy .home-door-visual{background:rgba(129,84,51,.55);border-color:rgba(255,226,197,.34)}
-.door-icon{font-family:Georgia,serif;font-size:27px;line-height:1;color:#5b3a27}
-.home-door-academy .door-icon{color:#fff;font-size:30px}
-.home-door-kicker{margin-bottom:16px;padding-top:45px;font-size:clamp(23px,2.1vw,31px);line-height:1.02;font-weight:850;letter-spacing:-.045em}
+.home-door-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;width:62%;min-height:100%;padding:48px 22px 52px 34px;position:relative;z-index:1}
+
+
+.home-door-kicker{margin-bottom:16px;padding-top:0;font-size:clamp(24px,2.1vw,31px);line-height:1.02;font-weight:850;letter-spacing:-.045em}
 .home-door strong{max-width:330px;font-size:clamp(15px,1.3vw,18px);line-height:1.48;letter-spacing:-.012em;font-weight:600}
 .home-door-note{max-width:270px;margin-top:20px;color:var(--muted);font-size:13px;line-height:1.45;font-style:italic}
 .home-door-academy .home-door-note{color:rgba(255,255,255,.7)}
 .home-door-arrow{position:absolute;right:20px;bottom:20px;width:50px;height:50px;display:grid;place-items:center;border-radius:50%;background:rgba(74,46,30,.9);color:#fff;font-size:27px;line-height:1;z-index:3;box-shadow:0 5px 16px rgba(48,38,28,.16)}
-.home-door-match .home-door-arrow{background:rgba(255,253,249,.88);color:var(--ink);border:1px solid rgba(112,82,58,.16)}
+.home-door-match .home-door-arrow{background:rgba(255,253,249,.9);color:var(--ink);border:1px solid rgba(112,82,58,.16)}
 @media(max-width:900px){
   .home-door-grid{grid-template-columns:1fr;max-width:760px}
   .home-door{min-height:300px}
