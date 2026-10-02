@@ -23,32 +23,53 @@
 <meta property="og:url" content="https://gottjavlakaffe.se/">
 <meta property="og:site_name" content="Gott Jävla Kaffe">
 <link rel="canonical" href="https://gottjavlakaffe.se/">
-<link rel="stylesheet" href="style.css?v=20260930d">
+<link rel="stylesheet" href="style.css?v=20261002c">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Gott Jävla Kaffe","description":"Svensk guide för att hitta rätt kaffemaskin utifrån behov, budget och preferenser.","potentialAction":{"@type":"SearchAction","target":"https://gottjavlakaffe.se/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Gott Jävla Kaffe","item":"https://gottjavlakaffe.se/"}]}</script>
 </head>
 <body>
 <header class="topbar">
   <div class="brand">Gott Jävla Kaffe</div>
-  <nav><a href="#finder">Matchmaker</a><a href="#products">Maskinparken</a><a href="#guides">Kaffeakademin</a><a href="#compare">Jämför <span id="compareCount">0</span></a></nav>
+  <nav><a href="#products">Maskinparken</a><a href="#finder">Matchmaker</a><a href="#guides">Kaffeakademin</a><a href="#compare">Jämför <span id="compareCount">0</span></a></nav>
 </header>
 <main>
-<section class="hero">
-  <div><span class="eyebrow">MATCHMAKER</span><h1>Hitta kaffemaskinen<br><em>som passar dig.</em></h1><p class="hero-lead">Helautomat, espresso eller bryggare? Vi hjälper dig hitta rätt utan att göra kaffet mer komplicerat än det behöver vara.</p><div class="hero-routes">
-<a class="hero-route" href="#finder"><span class="hero-route-no">01</span><span class="hero-route-copy"><strong>Matchmaker</strong><small>Matcha mig med kaffemaskiner</small></span><span class="hero-route-arrow">↗</span></a>
-<a class="hero-route" href="#products"><span class="hero-route-no">02</span><span class="hero-route-copy"><strong>Maskinparken</strong><small>Spana fritt bland alla fräcka maskiner</small></span><span class="hero-route-arrow">↗</span></a>
-<a class="hero-route" href="#guides"><span class="hero-route-no">03</span><span class="hero-route-copy"><strong>Kaffeakademin</strong><small>Lär mig mer om kaffe</small></span><span class="hero-route-arrow">↗</span></a>
-</div></div>
-  <a class="hero-card hero-visual-card" href="#finder" aria-label="Gå till matchningen"><div class="hero-visual-copy"><span class="eyebrow">MATCHMAKER</span><strong>Rätt maskin börjar med hur du faktiskt dricker kaffe.</strong></div><div class="hero-machine"><img src="https://dam.delonghi.com/902x902/assets/252896" alt="De'Longhi Magnifica S kaffemaskin"></div><div class="hero-match-row"><div><span>Exempel på profil</span><strong>Enkel vardagskaffe</strong></div><div class="chips"><span>Helautomatisk</span><span>Enkel</span></div></div></a>
+<section class="hero hero-video">
+  <video class="hero-video-bg" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+    <source src="assets/videos/hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero-video-overlay"></div>
+  <div class="hero-video-content">
+    <h1>Maskin, kvarn, böna.<br><em>Allt du behöver för<br>Gott Jävla Kaffe.</em></h1>
+  </div>
 </section>
-<section id="guides" class="section guides-section"><div class="section-head"><div><span class="eyebrow">KAFFEAKADEMIN</span><h2>Förstå kaffet. Inte bara maskinen.</h2><p class="section-intro">Från vilken maskin som passar dig till vad som faktiskt händer i koppen. Börja enkelt eller gå rakt ner i nördträsket.</p></div></div><div class="academy-group"><span class="academy-group-label">BÖRJA HÄR</span><div class="guide-grid">
-<a class="guide-card" href="kaffemaskin.html"><strong>Kaffemaskiner.</strong><span>Kaffebryggare, kapsel, helautomat eller espresso – vad skiljer dem åt?</span>→</a>
-<a class="guide-card" href="kaffedrycker.html"><strong>Kaffedrycker.</strong><span>Espresso, cappuccino, latte, cold brew och allt däremellan.</span>→</a>
-<a class="guide-card" href="bonor.html"><strong>Bönor.</strong><span>Rostning, ursprung, smak och hur du väljer rätt kaffe.</span>→</a>
-</div></div><div class="academy-group academy-deep-group"><span class="academy-group-label">FÖR DIG SOM VILL NER I NÖRDTRÄSKET</span><div class="guide-depth"><a class="guide-card guide-deep" href="kaffemaskin-nordkunskap.html"><strong>Kaffekunskap.</strong><span>Extraktion, malning, vatten, ratio och vad som faktiskt händer i koppen.</span>→</a><a class="guide-card guide-deep" href="espressomaskin-nordning.html"><strong>Dial-in.</strong><span>Ratio, channeling, TDS och hur du felsöker en espresso systematiskt.</span>→</a></div></div></section>
-<section id="finder" class="finder section"><div class="section-head"><div><span class="eyebrow">MATCHA</span><h2>Vad passar dig?</h2></div><span id="stepLabel">1 / 4</span></div><div class="finder-progress" aria-hidden="true"><i id="stepProgress"></i></div><div id="questions"></div><div class="finder-actions"><button id="back" class="button secondary" disabled>← Tillbaka</button><button id="next" class="button primary">Nästa →</button></div></section>
-<section id="results" class="section hidden"><div class="section-head"><div><span class="eyebrow">RESULTAT</span><h2>Din matchning</h2></div><button class="text-button" id="restart">Gör om testet</button></div><div id="profile"></div><div class="decision-head recommendation-heading"><div><span class="eyebrow">TRE FÖRSLAG</span><h3>Maskiner att titta på</h3></div></div><div id="resultsGrid" class="product-grid recommendation-grid"></div><div id="matchSummary" class="match-summary"></div><div id="dna" class="dna-panel"></div><div id="simulator" class="simulator-panel"><div class="simulator-copy"><span class="eyebrow">OM DU ÄNDRAR BUDGETEN</span><h3>Om du ändrar budgeten</h3></div><div class="simulator-control"><div class="simulator-label"><span>Budget</span><strong id="simBudgetLabel">5 000 kr</strong></div><input id="simBudget" type="range" min="1500" max="20000" step="500" value="5000" aria-label="Testa annan budget"><div class="range-labels"><span>1 500 kr</span><span>20 000 kr</span></div></div><div id="simulatorResult" class="simulator-result"></div></div></section>
-<section id="products" class="section"><div class="section-head"><div><span class="eyebrow">MASKINPARKEN</span><h2>Kaffemaskiner & kvarnar vi har koll på</h2><p class="section-intro">Bläddra fritt bland kaffemaskiner och fristående kaffekvarnar, eller börja med hur du faktiskt vill använda dem.</p></div><span id="productCount"></span></div>
+<section class="home-doors section" aria-label="Vad vill du göra?">
+  <div class="home-door-grid">
+    <a class="home-door home-door-machine" href="#products">
+      <span class="home-door-copy">
+        <span class="home-door-kicker">MASKINPARKEN</span>
+        <strong>Spana in en mängd olika kaffemaskiner, bryggare och kvarnar.</strong>
+        <span class="home-door-note">PS. snart fyllt med bönor &amp; kapslar.</span>
+      </span>
+      <span class="home-door-arrow" aria-hidden="true">↗</span>
+    </a>
+    <a class="home-door home-door-academy" href="#guides">
+      <span class="home-door-copy">
+        <span class="home-door-kicker">KAFFEAKADEMIN</span>
+        <strong>Rookie eller kaffe-nörd. Förkovra dig i massor av kunskap kring kaffet.</strong>
+      </span>
+      <span class="home-door-arrow" aria-hidden="true">↗</span>
+    </a>
+    <a class="home-door home-door-match" href="#finder">
+      <span class="home-door-copy">
+        <span class="home-door-kicker">MATCHMAKER</span>
+        <strong>Letar du efter din kaffe-match? Låt oss hjälpa dig hitta rätt.</strong>
+      </span>
+      <span class="home-door-note" aria-hidden="true"></span>
+      <span class="home-door-arrow" aria-hidden="true">↗</span>
+    </a>
+  </div>
+</section>
+<section id="products" class="section products-section"><div class="section-head"><div><span class="eyebrow">MASKINPARKEN · KÖP &amp; JÄMFÖR</span><h2>Hitta rätt kaffepryl för dig</h2><p class="section-intro">Jämför kaffemaskiner, bryggare och kvarnar utifrån kaffe, budget och hur mycket du vill göra själv.</p></div><span id="productCount"></span></div>
 <div class="machine-intents">
   <span class="machine-intents-label">JAG LETAR EFTER…</span>
   <div class="machine-intent-grid">
@@ -78,6 +99,13 @@
 <button id="clearFilters" class="filter-clear hidden" type="button">Rensa filter</button>
 </div>
 </div><div class="filter-status"><span id="filterSummary"></span></div><div id="productGrid" class="product-grid"></div></section>
+<section id="finder" class="finder section"><div class="section-head"><div><span class="eyebrow">MATCHMAKER</span><h2>Vad passar dig?</h2></div><span id="stepLabel">1 / 4</span></div><div class="finder-progress" aria-hidden="true"><i id="stepProgress"></i></div><div id="questions"></div><div class="finder-actions"><button id="back" class="button secondary" disabled>← Tillbaka</button><button id="next" class="button primary">Nästa →</button></div></section>
+<section id="results" class="section hidden"><div class="section-head"><div><span class="eyebrow">RESULTAT</span><h2>Din matchning</h2></div><button class="text-button" id="restart">Gör om testet</button></div><div id="profile"></div><div class="decision-head recommendation-heading"><div><span class="eyebrow">TRE FÖRSLAG</span><h3>Maskiner att titta på</h3></div></div><div id="resultsGrid" class="product-grid recommendation-grid"></div><div id="matchSummary" class="match-summary"></div><div id="dna" class="dna-panel"></div><div id="simulator" class="simulator-panel"><div class="simulator-copy"><span class="eyebrow">OM DU ÄNDRAR BUDGETEN</span><h3>Om du ändrar budgeten</h3></div><div class="simulator-control"><div class="simulator-label"><span>Budget</span><strong id="simBudgetLabel">5 000 kr</strong></div><input id="simBudget" type="range" min="1500" max="20000" step="500" value="5000" aria-label="Testa annan budget"><div class="range-labels"><span>1 500 kr</span><span>20 000 kr</span></div></div><div id="simulatorResult" class="simulator-result"></div></div></section>
+<section id="guides" class="section guides-section"><div class="section-head"><div><span class="eyebrow">KAFFEAKADEMIN</span><h2>Förstå kaffet. Inte bara maskinen.</h2><p class="section-intro">Från vilken maskin som passar dig till vad som faktiskt händer i koppen. Börja enkelt eller gå rakt ner i nördträsket.</p></div></div><div class="academy-group"><span class="academy-group-label">BÖRJA HÄR</span><div class="guide-grid">
+<a class="guide-card" href="kaffemaskin.html"><strong>Kaffemaskiner.</strong><span>Kaffebryggare, kapsel, helautomat eller espresso – vad skiljer dem åt?</span>→</a>
+<a class="guide-card" href="kaffedrycker.html"><strong>Kaffedrycker.</strong><span>Espresso, cappuccino, latte, cold brew och allt däremellan.</span>→</a>
+<a class="guide-card" href="bonor.html"><strong>Bönor.</strong><span>Rostning, ursprung, smak och hur du väljer rätt kaffe.</span>→</a>
+</div></div><div class="academy-group academy-deep-group"><span class="academy-group-label">FÖR DIG SOM VILL NER I NÖRDTRÄSKET</span><div class="guide-depth"><a class="guide-card guide-deep" href="kaffemaskin-nordkunskap.html"><strong>Kaffekunskap.</strong><span>Extraktion, malning, vatten, ratio och vad som faktiskt händer i koppen.</span>→</a><a class="guide-card guide-deep" href="espressomaskin-nordning.html"><strong>Dial-in.</strong><span>Ratio, channeling, TDS och hur du felsöker en espresso systematiskt.</span>→</a></div></div></section>
 <section id="compare" class="section compare-section"><div class="section-head"><div><span class="eyebrow">JÄMFÖR MASKINER</span><h2>Din jämförelse</h2><p class="section-intro">Lägg upp till fyra maskiner bredvid varandra och se vad som faktiskt skiljer dem åt.</p></div><button id="clearCompare" class="text-button hidden" type="button">Rensa jämförelse</button></div><div id="compareEmpty" class="empty">Välj upp till fyra maskiner genom att trycka <strong>Jämför</strong>.</div><div id="compareTable"></div><div id="tradeoffBox" class="tradeoff-box hidden"></div></section>
 </main>
 <div id="productModal" class="product-modal hidden"></div>
