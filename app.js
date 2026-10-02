@@ -102,7 +102,7 @@ function track(event,params={}){
 async function init(){
  try{const [r,g]=await Promise.all([fetch('data/products.json'),fetch('data/grinders.json')]);if(!r.ok)throw new Error('products.json '+r.status);if(!g.ok)throw new Error('grinders.json '+g.status);const base=await r.json(),grinders=await g.json();products=[...base,...grinders].filter(p=>p.lifecycle_status==='active'&&p.images?.status==='approved');}
  catch(e){console.error(e);$('productGrid').innerHTML='<div class="empty">Produktdata kunde inte laddas.</div>';return}
- setupFilters();setupMachineIntents();if($('clearCompare'))$('clearCompare').onclick=clearCompare;const initialQuery=new URLSearchParams(location.search).get('q');if(initialQuery){$('search').value=initialQuery;filterProducts()}else{renderProducts(products)}renderQuestion();wireQuickStarts();wireSimulator();track('page_view',{path:location.pathname,query:initialQuery||''});
+ setupFilters();if($('clearCompare'))$('clearCompare').onclick=clearCompare;const initialQuery=new URLSearchParams(location.search).get('q');if(initialQuery){$('search').value=initialQuery;filterProducts()}else{renderProducts(products)}renderQuestion();wireQuickStarts();wireSimulator();track('page_view',{path:location.pathname,query:initialQuery||''});
 }
 function setupMachineIntents(){
  document.querySelectorAll('[data-intent]').forEach(button=>{
@@ -190,23 +190,33 @@ function wireFilterChips(){
    $('coffeeFilter').value='';
    $('priceFilter').value='';
    $('featureFilter').value='';
-   document.querySelectorAll('[data-intent]').forEach(x=>x.classList.remove('is-active'));
    if(key==='coffee')$('coffeeFilter').value='svart';
    if(key==='espresso')$('coffeeFilter').value='espresso';
-   if(key==='automatic')$('typeFilter').value='Helautomatisk';
+   if(key==='automatic')$('featureFilter').value='automatic';
    if(key==='moka')$('typeFilter').value='Mokabryggare';
    if(key==='coffee-grinders')$('typeFilter').value='Kaffekvarn';
    if(key==='grinder')$('featureFilter').value='grinder';
+   if(key==='milk')$('featureFilter').value='milk';
    if(key==='under1000')$('priceFilter').value='0-1000';
    document.querySelectorAll('[data-quick-filter]').forEach(x=>x.classList.toggle('is-active',x===b));
    filterProducts();
  });
 }
 function updateFilterSummary(count,total){
- $('filterSummary').textContent=count===total?`${total} produkter`:`${count} av ${total} produkter`;
+ $('filterSummary').textContent=count===total?String(total)+' produkter':String(count)+' av '+String(total)+' produkter';
+ const labels=[];
+ const q=$('search').value.trim();
+ if(q)labels.push('Sökning: “'+q+'”');
+ if($('typeFilter').value)labels.push($('typeFilter').value);
+ if($('coffeeFilter').value){
+   const labelsMap={svart:'Bryggkaffe',espresso:'Espresso',cappuccino:'Cappuccino',latte:'Latte'};
+   labels.push(labelsMap[$('coffeeFilter').value]||$('coffeeFilter').value);
+ }
+ if($('priceFilter').value)labels.push($('priceFilter').selectedOptions[0]?.textContent||'Pris');
+ if($('featureFilter').value)labels.push($('featureFilter').selectedOptions[0]?.textContent||'Funktion');
+ $('activeFilterSummary').textContent=labels.length?'Aktivt: '+labels.join(' · '):'';
 }
 function clearFilters(){
- document.querySelectorAll('[data-intent]').forEach(x=>x.classList.remove('is-active'));
  $('search').value='';
  $('typeFilter').value='';
  $('coffeeFilter').value='';
