@@ -1434,3 +1434,62 @@
   background:var(--paper);
 }
 
+
+
+/* Commercial hub — make the product section a clear part of the site's conversion path */
+.products-section{
+  max-width:none;
+  padding-left:5vw;
+  padding-right:5vw;
+  background:#eee6dc;
+  border-top:1px solid #ded2c5;
+  border-bottom:1px solid #ded2c5;
+}
+.products-section>.section-head,
+.products-section>.machine-intents,
+.products-section>.filters,
+.products-section>.filter-status,
+.products-section>#productGrid{
+  width:1200px;
+  max-width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.products-section>.section-head{
+  padding-top:4px;
+  margin-bottom:28px;
+}
+.products-section>.section-head h2{
+  font-size:clamp(38px,4vw,52px);
+  letter-spacing:-.055em;
+}
+.products-section>.section-head .eyebrow{
+  color:var(--accent2);
+}
+.products-section>.section-head>span:last-child{
+  font-weight:750;
+}
+.products-section .machine-intents{
+  margin-bottom:20px;
+}
+.products-section .machine-intent-grid{
+  gap:10px;
+}
+.products-section .machine-intent{
+  background:rgba(255,253,249,.82);
+}
+.products-section .filters{
+  background:rgba(255,253,249,.72);
+}
+.products-section #productGrid{
+  padding-bottom:4px;
+}
+@media(max-width:560px){
+  .products-section{
+    padding-left:4vw;
+    padding-right:4vw;
+  }
+  .products-section>.section-head h2{
+    font-size:36px;
+  }
+}
