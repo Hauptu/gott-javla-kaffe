@@ -1559,3 +1559,113 @@
 @media(max-width:460px){
   .filter-controls{grid-template-columns:1fr}
 }
+
+
+/* Academy guides — contextual affiliate product blocks */
+.guide-product-slot{
+  max-width:1100px;
+  margin:38px auto 8px;
+  padding:24px;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:#eee6dc;
+}
+.guide-product-head{
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:24px;
+  margin-bottom:16px;
+}
+.guide-product-head .eyebrow{margin:0;color:var(--accent2)}
+.guide-product-head p{
+  max-width:520px;
+  margin:0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.45;
+}
+.guide-product-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+.guide-product{
+  display:grid;
+  grid-template-columns:118px minmax(0,1fr);
+  min-width:0;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:var(--paper);
+}
+.guide-product-image{
+  min-height:145px;
+  display:grid;
+  place-items:center;
+  padding:12px;
+  background:#f7f2eb;
+}
+.guide-product-image img{
+  width:100%;
+  height:100%;
+  max-height:145px;
+  object-fit:contain;
+}
+.guide-product-body{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  padding:15px 16px 14px;
+}
+.guide-product-label{
+  color:var(--muted);
+  font-size:9px;
+  font-weight:850;
+  letter-spacing:.13em;
+}
+.guide-product h3{
+  margin:7px 0 0;
+  font-size:17px;
+  line-height:1.18;
+  letter-spacing:-.025em;
+}
+.guide-product-meta{
+  margin:6px 0 0;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.35;
+}
+.guide-product-bottom{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-top:auto;
+  padding-top:12px;
+}
+.guide-product-bottom strong{
+  font-size:17px;
+  letter-spacing:-.02em;
+}
+.guide-product-bottom a{
+  color:var(--ink);
+  font-size:12px;
+  font-weight:800;
+  text-decoration:none;
+  white-space:nowrap;
+}
+.guide-product-bottom a:hover{text-decoration:underline}
+@media(max-width:700px){
+  .guide-product-slot{margin-top:30px;padding:17px}
+  .guide-product-head{display:block}
+  .guide-product-head p{margin-top:7px}
+  .guide-product-grid{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .guide-product{grid-template-columns:96px minmax(0,1fr)}
+  .guide-product-image{min-height:125px}
+  .guide-product-image img{max-height:125px}
+  .guide-product-body{padding:13px}
+  .guide-product-bottom{align-items:flex-end}
+}
