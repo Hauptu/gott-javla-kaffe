@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500">
+<rect width="1000" height="1500" fill="#f4efe7"/>
+<rect x="58" y="58" width="884" height="1384" rx="42" fill="#fffdf9" stroke="#ded6ca" stroke-width="2"/>
+<circle cx="500" cy="720" r="265" fill="#ece3d7"/>
+<path d="M350 850h300l-34 170H384z" fill="#3b2a20"/>
+<rect x="405" y="1015" width="190" height="42" rx="21" fill="#8b5e3c"/>
+<path d="M410 850h180" stroke="#fffdf9" stroke-width="12" stroke-linecap="round"/>
+<path d="M450 840c-15-95 15-140 0-210M500 840c-15-110 18-160 5-235M550 840c-5-95 22-140 10-205" fill="none" stroke="#3b2a20" stroke-width="11" stroke-linecap="round"/>
+<text x="90" y="125" class="brand">GOTT JÄVLA KAFFE</text>
+<text x="90" y="190" class="eyebrow">KÖPGUIDE</text>
+<text x="90" y="265" class="title">KAFFEMASKIN UNDER 5</text><text x="90" y="343" class="title">000 KR</text>
+<text x="90" y="560" class="sub">Här börjar det bli riktigt intressant.</text>
+<text x="90" y="610" class="detail">Budget, kaffe och arbetsinsats – välj rätt.</text>
+<line x1="90" y1="1245" x2="910" y2="1245" stroke="#ded6ca" stroke-width="2"/>
+<text x="90" y="1305" class="footer">Läs guiden → gottjavlakaffe.se/kaffemaskin-under-5000.html</text>
+<text x="90" y="1365" class="tiny">Kaffemaskiner · espresso · kaffe</text>
+<style>
+.brand{font:800 24px Inter,Arial,sans-serif;letter-spacing:2px;fill:#3b2a20}
+.eyebrow{font:800 18px Inter,Arial,sans-serif;letter-spacing:4px;fill:#746d64}
+.title{font:800 67px Inter,Arial,sans-serif;letter-spacing:-2px;fill:#3b2a20}
+.sub{font:400 34px Georgia,serif;fill:#3b2a20}
+.detail{font:500 22px Inter,Arial,sans-serif;fill:#746d64}
+.footer{font:700 18px Inter,Arial,sans-serif;fill:#3b2a20}
+.tiny{font:500 17px Inter,Arial,sans-serif;fill:#746d64}
+</style>
+</svg>
