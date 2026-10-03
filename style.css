@@ -1636,6 +1636,18 @@
   -webkit-line-clamp:3;
   overflow:hidden;
 }
+/* Kaffemaskin guide — keep contextual product titles compact */
+.machine-type-card .guide-product h3{
+  margin:6px 0 0;
+  font-size:15px;
+  line-height:1.15;
+  letter-spacing:-.02em;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3;
+  overflow:hidden;
+}
+
 .guide-product-meta{
   margin:6px 0 0;
   color:var(--muted);
