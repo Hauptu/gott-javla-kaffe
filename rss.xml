@@ -1,10 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel>
-<title>Gott Jävla Kaffe – Pinterest</title><link>https://gottjavlakaffe.se/</link>
-<description>Utvalda Pinterest-bilder från Gott Jävla Kaffe – kaffemaskiner, espresso och bryggkaffe.</description><language>sv-SE</language>
-<item><title>Espressomaskin för nybörjare</title><link>https://gottjavlakaffe.se/espressomaskin-for-nyborjare.html?utm_source=pinterest&amp;utm_medium=organic_social&amp;utm_campaign=pinterest&amp;utm_content=espressomaskin-for-nyborjare</link><description>Espresso utan krångel – en guide för dig som ska välja espressomaskin.</description><enclosure url="https://gottjavlakaffe.se/assets/pinterest/espressomaskin-for-nyborjare.png?v=4" type="image/png"/><media:content url="https://gottjavlakaffe.se/assets/pinterest/espressomaskin-for-nyborjare.png?v=4" type="image/png" medium="image"/></item>
-<item><title>Espresso</title><link>https://gottjavlakaffe.se/espressomaskin.html?utm_source=pinterest&amp;utm_medium=organic_social&amp;utm_campaign=pinterest&amp;utm_content=espressomaskin</link><description>Espresso utan trams – vad skiljer maskinerna åt och vad spelar faktiskt roll?</description><enclosure url="https://gottjavlakaffe.se/assets/pinterest/espressomaskin.png?v=4" type="image/png"/><media:content url="https://gottjavlakaffe.se/assets/pinterest/espressomaskin.png?v=4" type="image/png" medium="image"/></item>
-<item><title>En vanlig bryggkaffe</title><link>https://gottjavlakaffe.se/kaffebryggare.html?utm_source=pinterest&amp;utm_medium=organic_social&amp;utm_campaign=pinterest&amp;utm_content=kaffebryggare-en-vanlig-bryggkaffe</link><description>Mindre trams. Mer kaffe. Så väljer du rätt kaffebryggare.</description><enclosure url="https://gottjavlakaffe.se/assets/pinterest/kaffebryggare-en-vanlig-bryggkaffe-v3.png?v=4" type="image/png"/><media:content url="https://gottjavlakaffe.se/assets/pinterest/kaffebryggare-en-vanlig-bryggkaffe-v3.png?v=4" type="image/png" medium="image"/></item>
-<item><title>Bryggkaffe</title><link>https://gottjavlakaffe.se/kaffedrycker.html?utm_source=pinterest&amp;utm_medium=organic_social&amp;utm_campaign=pinterest&amp;utm_content=bryggkaffe</link><description>En vanlig kopp svart – för dig som gillar kaffe utan krångel.</description><enclosure url="https://gottjavlakaffe.se/assets/pinterest/kaffebryggare.png?v=4" type="image/png"/><media:content url="https://gottjavlakaffe.se/assets/pinterest/kaffebryggare.png?v=4" type="image/png" medium="image"/></item>
-<item><title>Kaffemaskin för cappuccino</title><link>https://gottjavlakaffe.se/kaffemaskin-for-cappuccino.html?utm_source=pinterest&amp;utm_medium=organic_social&amp;utm_campaign=pinterest&amp;utm_content=kaffemaskin-for-cappuccino</link><description>Mjölken är halva grejen – vad behöver du för en riktigt bra cappuccino?</description><enclosure url="https://gottjavlakaffe.se/assets/pinterest/kaffemaskin-for-cappuccino.png?v=4" type="image/png"/><media:content url="https://gottjavlakaffe.se/assets/pinterest/kaffemaskin-for-cappuccino.png?v=4" type="image/png" medium="image"/></item>
-</channel></rss>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Gott Jävla Kaffe – Pinterest</title>
+<link>https://gottjavlakaffe.se/</link>
+<atom:link href="https://gottjavlakaffe.se/rss.xml" rel="self" type="application/rss+xml"/>
+<description>Utvalda Pinterest-bilder från Gott Jävla Kaffe – kaffemaskiner, espresso och bryggkaffe.</description>
+<language>sv-SE</language>
+
+<item>
+<title>Espressomaskin för nybörjare</title>
+<link>https://gottjavlakaffe.se/espressomaskin-for-nyborjare.html?utm_source=pinterest&amp;utm_medium=organic_social&amp;utm_campaign=pinterest&amp;utm_content=espressomaskin-for-nyborjare</link>
+<description>Espresso utan krångel – en guide för dig som ska välja espressomaskin.</description>
+<guid isPermaLink="false">gottjavlakaffe-pinterest-2026-espressomaskin-nyborjare</guid>
+<enclosure url="https://gottjavlakaffe.se/assets/pinterest/rss-2026-espressomaskin-nyborjare.png" length="131920" type="image/png"/>
+<media:content url="https://gottjavlakaffe.se/assets/pinterest/rss-2026-espressomaskin-nyborjare.png" type="image/png" medium="image"/>
+</item>
+
+<item>
+<title>Espresso</title>
+<link>https://gottjavlakaffe.se/espressomaskin.html?utm_source=pinterest&amp;utm_medium=organic_social&amp;utm_campaign=pinterest&amp;utm_content=espressomaskin</link>
+<description>Espresso utan trams – vad skiljer maskinerna åt och vad spelar faktiskt roll?</description>
+<guid isPermaLink="false">gottjavlakaffe-pinterest-2026-espresso</guid>
+<enclosure url="https://gottjavlakaffe.se/assets/pinterest/rss-2026-espresso.png" length="118873" type="image/png"/>
+<media:content url="https://gottjavlakaffe.se/assets/pinterest/rss-2026-espresso.png" type="image/png" medium="image"/>
+</item>
+
+<item>
+<title>En vanlig bryggkaffe</title>
+<link>https://gottjavlakaffe.se/kaffebryggare.html?utm_source=pinterest&amp;utm_medium=organic_social&amp;utm_campaign=pinterest&amp;utm_content=kaffebryggare-en-vanlig-bryggkaffe</link>
+<description>Mindre trams. Mer kaffe. Så väljer du rätt kaffebryggare.</description>
+<guid isPermaLink="false">gottjavlakaffe-pinterest-2026-en-vanlig-bryggkaffe</guid>
+<enclosure url="https://gottjavlakaffe.se/assets/pinterest/rss-2026-en-vanlig-bryggkaffe.png" length="2108227" type="image/png"/>
+<media:content url="https://gottjavlakaffe.se/assets/pinterest/rss-2026-en-vanlig-bryggkaffe.png" type="image/png" medium="image"/>
+</item>
+
+<item>
+<title>Bryggkaffe</title>
+<link>https://gottjavlakaffe.se/kaffedrycker.html?utm_source=pinterest&amp;utm_medium=organic_social&amp;utm_campaign=pinterest&amp;utm_content=bryggkaffe</link>
+<description>En vanlig kopp svart – för dig som gillar kaffe utan krångel.</description>
+<guid isPermaLink="false">gottjavlakaffe-pinterest-2026-bryggkaffe</guid>
+<enclosure url="https://gottjavlakaffe.se/assets/pinterest/rss-2026-bryggkaffe.png" length="89126" type="image/png"/>
+<media:content url="https://gottjavlakaffe.se/assets/pinterest/rss-2026-bryggkaffe.png" type="image/png" medium="image"/>
+</item>
+
+<item>
+<title>Kaffemaskin för cappuccino</title>
+<link>https://gottjavlakaffe.se/kaffemaskin-for-cappuccino.html?utm_source=pinterest&amp;utm_medium=organic_social&amp;utm_campaign=pinterest&amp;utm_content=kaffemaskin-for-cappuccino</link>
+<description>Mjölken är halva grejen – vad behöver du för en riktigt bra cappuccino?</description>
+<guid isPermaLink="false">gottjavlakaffe-pinterest-2026-cappuccino</guid>
+<enclosure url="https://gottjavlakaffe.se/assets/pinterest/rss-2026-cappuccino.png" length="139679" type="image/png"/>
+<media:content url="https://gottjavlakaffe.se/assets/pinterest/rss-2026-cappuccino.png" type="image/png" medium="image"/>
+</item>
+
+</channel>
+</rss>
