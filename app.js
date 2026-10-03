@@ -102,7 +102,7 @@ function track(event,params={}){
 async function init(){
  try{const [r,g]=await Promise.all([fetch('data/products.json'),fetch('data/grinders.json')]);if(!r.ok)throw new Error('products.json '+r.status);if(!g.ok)throw new Error('grinders.json '+g.status);const base=await r.json(),grinders=await g.json();products=[...base,...grinders].filter(p=>p.lifecycle_status==='active'&&(p.images?.status==='approved'||p.images?.status==='no_suitable_image'));}
  catch(e){console.error(e);$('productGrid').innerHTML='<div class="empty">Produktdata kunde inte laddas.</div>';return}
- setupFilters();if($('clearCompare'))$('clearCompare').onclick=clearCompare;const initialQuery=new URLSearchParams(location.search).get('q');if(initialQuery){$('search').value=initialQuery;filterProducts()}else{renderProducts(products)}renderQuestion();wireQuickStarts();wireSimulator();track('page_view',{path:location.pathname,query:initialQuery||''});
+ setupFilters();if($('clearCompare'))$('clearCompare').onclick=clearCompare;const initialQuery=new URLSearchParams(location.search).get('q');if(initialQuery){$('search').value=initialQuery;filterProducts()}else{renderProducts(products)}renderQuestion();wireQuickStarts();wireConversionTracking();wireSimulator();track('page_view',{path:location.pathname,query:initialQuery||''});
 }
 function setupMachineIntents(){
  document.querySelectorAll('[data-intent]').forEach(button=>{
@@ -466,6 +466,23 @@ function openModal(id){
  document.querySelectorAll('[data-close-modal]').forEach(x=>x.onclick=()=>{$('productModal').classList.add('hidden')});
 }
 function wireQuickStarts(){document.querySelectorAll('[data-quick]').forEach(b=>b.onclick=()=>{const q=b.dataset.quick;const presets={easy:{coffee:'black',automation:'easy',budget:'mid',cleaning:'high'},milk:{coffee:'milk',automation:'easy',budget:'upper',cleaning:'high'},budget:{coffee:'black',automation:'easy',budget:'low',cleaning:'high'},manual:{coffee:'espresso',automation:'manual',budget:'upper',cleaning:'low'}};answers={...presets[q]};track('quick_start',{path:q});showResults()})}
+function wireConversionTracking(){
+ const path=location.pathname.split('/').pop()||'index.html';
+ const guidePaths=new Set(['kaffemaskin.html','kaffedrycker.html','bonor.html','helautomatisk-kaffemaskin.html','helautomatisk-eller-espressomaskin.html','kaffemaskin-for-hemmet.html','kaffemaskin-nordkunskap.html','espressomaskin-nordning.html','kaffemaskin-under-5000.html','kaffemaskin-under-3000.html','kaffemaskin-under-10000.html','kaffemaskin-med-mjolksystem.html','basta-kaffemaskinen-for-hemmet.html','espressomaskin-for-nyborjare.html','kaffemaskin-med-kvarn.html','kaffebryggare.html','espressomaskin.html','kaffemaskin-for-cappuccino.html']);
+ if(guidePaths.has(path))track('guide_landing',{guide:path});
+ document.addEventListener('click',e=>{
+   const a=e.target.closest('a[href]');
+   if(!a)return;
+   const href=a.getAttribute('href')||'';
+   const match=href.match(/(?:^|\\/)index\\.html#(finder|products)$/);
+   if(!match)return;
+   track('guide_conversion_click',{
+     destination:match[1],
+     source_path:location.pathname,
+     link_text:(a.textContent||'').trim().slice(0,120)
+   });
+ });
+}
 function wireSimulator(){ $('simBudget').oninput=updateSimulator }
 function updateSimulator(){
  if(!$('simBudget'))return;
