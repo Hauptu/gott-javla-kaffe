@@ -65,7 +65,7 @@
     <div class="review-actions">
       <button id="export" class="review-button primary">Exportera products.json</button>
       <button id="copy" class="review-button">Kopiera JSON</button>
-      <button id="reset" class="review-button">Rensa lokala beslut</button>
+      <button id="resetGrinders" class="review-button">Återställ kvarnar</button><button id="reset" class="review-button">Rensa lokala beslut</button>
     </div>
   </div>
   <div id="status" class="review-status">Laddar produkter…</div>
@@ -238,6 +238,15 @@ function download(){
 }
 $('export').onclick=download;
 $('copy').onclick=async()=>{try{await navigator.clipboard.writeText(json());updateStatus('products.json är kopierad till urklipp.')}catch(e){updateStatus('Kunde inte kopiera automatiskt. Använd Exportera products.json istället.')}};
+$('resetGrinders').onclick=()=>{
+  const grinderIds=new Set(grinderProducts.map(p=>p.id));
+  let count=0;
+  Object.keys(reviewState||{}).forEach(id=>{
+    if(grinderIds.has(id)){delete reviewState[id];count++;}
+  });
+  localStorage.setItem(REVIEW_STORAGE_KEY,JSON.stringify(reviewState));
+  location.reload();
+};
 $('reset').onclick=()=>{
   if(!confirm('Rensa alla lokalt sparade bildbeslut och börja om från repo-versionen?'))return;
   localStorage.removeItem(REVIEW_STORAGE_KEY);
