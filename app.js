@@ -458,6 +458,7 @@ function openModal(id){
  <p class="editorial-note">Matchningen är en redaktionell bedömning, inte ett laboratorietest.</p>
  </div></div>`;
  $('productModal').classList.remove('hidden');
+ wireAffiliateLinks();
  document.querySelectorAll('[data-close-modal]').forEach(x=>x.onclick=()=>{$('productModal').classList.add('hidden')});
 }
 function wireQuickStarts(){document.querySelectorAll('[data-quick]').forEach(b=>b.onclick=()=>{const q=b.dataset.quick;const presets={easy:{coffee:'black',automation:'easy',budget:'mid',cleaning:'high'},milk:{coffee:'milk',automation:'easy',budget:'upper',cleaning:'high'},budget:{coffee:'black',automation:'easy',budget:'low',cleaning:'high'},manual:{coffee:'espresso',automation:'manual',budget:'upper',cleaning:'low'}};answers={...presets[q]};track('quick_start',{path:q});showResults()})}
