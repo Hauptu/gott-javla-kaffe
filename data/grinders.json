@@ -40,12 +40,13 @@
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1549758_Fs&mw=1500",
+      "primary": "https://asset.conrad.com/media10/isa/160267/c1/-/nl/002789634PI00/image.jpg?align=center&ex=400&ey=400&format=jpg&x=400&y=400",
       "gallery": [],
-      "status": "needs_review",
+      "status": "approved",
       "alternates": [
         "https://asset.conrad.com/media10/isa/160267/c1/-/nl/002789634PI00/image.jpg?align=center&ex=400&ey=400&format=jpg&x=400&y=400"
-      ]
+      ],
+      "approved_at": "2026-10-03T09:54:15.782Z"
     },
     "affiliate_offers": [
       {
@@ -110,12 +111,13 @@
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2091605-01_Fs&mw=1500",
+      "primary": "https://www.elgiganten.se/image/dv_web_D1800012698191/855199/emerio-cg-125372-kaffekvarn.jpg",
       "gallery": [],
-      "status": "needs_review",
+      "status": "approved",
       "alternates": [
         "https://www.elgiganten.se/image/dv_web_D1800012698191/855199/emerio-cg-125372-kaffekvarn.jpg"
-      ]
+      ],
+      "approved_at": "2026-10-03T09:54:49.913Z"
     },
     "affiliate_offers": [
       {
@@ -185,10 +187,11 @@
     "images": {
       "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1957285_Fs&mw=1500",
       "gallery": [],
-      "status": "needs_review",
+      "status": "approved",
       "alternates": [
         "https://www.elgiganten.se/image/dv_web_D1800010021476475/622158/melitta-amigo-kaffekvarn-22421.jpg"
-      ]
+      ],
+      "approved_at": "2026-10-03T09:54:21.015Z"
     },
     "affiliate_offers": [
       {
@@ -254,12 +257,13 @@
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2237435_Fs&mw=1500",
+      "primary": "https://www.elgiganten.se/image/dv_web_D18000141010624/1077179/c3-kaffekvarn-design-85g-200w-cg700-borstad-rostfri-stal.jpg",
       "gallery": [],
-      "status": "needs_review",
+      "status": "approved",
       "alternates": [
         "https://www.elgiganten.se/image/dv_web_D18000141010624/1077179/c3-kaffekvarn-design-85g-200w-cg700-borstad-rostfri-stal.jpg"
-      ]
+      ],
+      "approved_at": "2026-10-03T09:54:27.030Z"
     },
     "affiliate_offers": [
       {
@@ -332,10 +336,11 @@
     "images": {
       "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1011267_Fs&mw=1500",
       "gallery": [],
-      "status": "needs_review",
+      "status": "approved",
       "alternates": [
         "https://www.teknikproffset.eu/img/bilder/artiklar/zoom/38-46308_1.jpg?m=1631015282"
-      ]
+      ],
+      "approved_at": "2026-10-03T09:54:30.514Z"
     },
     "affiliate_offers": [
       {
@@ -406,12 +411,13 @@
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1009865_Fs&mw=1500",
+      "primary": "",
       "gallery": [],
-      "status": "needs_review",
+      "status": "no_suitable_image",
       "alternates": [
         "https://www.elgiganten.se/image/dv_web_D18000100256267/KG89/delonghi-kaffekvarn-kg89.jpg"
-      ]
+      ],
+      "reviewed_at": "2026-10-03T09:54:43.998Z"
     },
     "affiliate_offers": [
       {
@@ -480,12 +486,13 @@
     "needs_review": false,
     "lifecycle_status": "active",
     "images": {
-      "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_2167281_Fs&mw=1500",
+      "primary": "https://cdn.webshopapp.com/shops/315282/files/443774094/1652x1652x2/bialetti-bialetti-koffiemolen-premium-rvs-6-maalgr.jpg",
       "gallery": [],
-      "status": "needs_review",
+      "status": "approved",
       "alternates": [
         "https://cdn.webshopapp.com/shops/315282/files/443774094/1652x1652x2/bialetti-bialetti-koffiemolen-premium-rvs-6-maalgr.jpg"
-      ]
+      ],
+      "approved_at": "2026-10-03T09:54:47.380Z"
     },
     "affiliate_offers": [
       {
