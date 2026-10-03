@@ -45,7 +45,7 @@
     if (!selected.length) return;
     const placement = slot.dataset.guidePlacement || 'guide';
     const label = selected.length === 1 ? 'EN SAK ATT KIKA PÅ' : 'ETT PAR SAKER ATT KIKA PÅ';
-    slot.innerHTML = `<div class="guide-product-head"><span class="eyebrow">${label}</span><p>Utvalda produkter från vårt bibliotek – där de faktiskt passar in i guiden.</p></div><div class="guide-product-grid">${selected.map(p => renderProduct(p, placement)).join('')}</div>`;
+    slot.innerHTML = `<div class="guide-product-head"><span class="eyebrow">${label}</span></div><div class="guide-product-grid">${selected.map(p => renderProduct(p, placement)).join('')}</div>`;
     slot.querySelectorAll('[data-guide-affiliate]').forEach(link => {
       link.addEventListener('click', () => {
         const params = {product_id:link.dataset.guideAffiliate,placement:link.dataset.placement,merchant:link.dataset.merchant,network:link.dataset.network};
