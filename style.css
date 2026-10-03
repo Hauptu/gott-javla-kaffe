@@ -997,10 +997,11 @@
   margin-bottom:6px;
 }
 .modal-card>.product-image.large{
-  margin:12px auto 24px;
-  width:min(100%,460px);
-  min-height:300px;
-  max-height:430px;
+  margin:13px auto 15px;
+  width:82%;
+  height:auto;
+  min-height:0;
+  max-height:none;
   aspect-ratio:4/5;
   background:linear-gradient(145deg,#eee5da 0%,#faf7f1 72%);
   border-radius:18px;
