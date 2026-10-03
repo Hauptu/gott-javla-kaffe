@@ -474,7 +474,7 @@ function wireConversionTracking(){
    const a=e.target.closest('a[href]');
    if(!a)return;
    const href=a.getAttribute('href')||'';
-   const match=href.match(/(?:^|\\/)index\\.html#(finder|products)$/);
+   const match=href.match(/(?:^|\/)index\.html#(finder|products)$/);
    if(!match)return;
    track('guide_conversion_click',{
      destination:match[1],
