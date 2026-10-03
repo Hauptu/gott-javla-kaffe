@@ -100,7 +100,7 @@ function track(event,params={}){
 }
 
 async function init(){
- try{const [r,g]=await Promise.all([fetch('data/products.json'),fetch('data/grinders.json')]);if(!r.ok)throw new Error('products.json '+r.status);if(!g.ok)throw new Error('grinders.json '+g.status);const base=await r.json(),grinders=await g.json();products=[...base,...grinders].filter(p=>p.lifecycle_status==='active'&&p.images?.status==='approved');}
+ try{const [r,g]=await Promise.all([fetch('data/products.json'),fetch('data/grinders.json')]);if(!r.ok)throw new Error('products.json '+r.status);if(!g.ok)throw new Error('grinders.json '+g.status);const base=await r.json(),grinders=await g.json();products=[...base,...grinders].filter(p=>p.lifecycle_status==='active'&&(p.images?.status==='approved'||p.images?.status==='no_suitable_image'));}
  catch(e){console.error(e);$('productGrid').innerHTML='<div class="empty">Produktdata kunde inte laddas.</div>';return}
  setupFilters();if($('clearCompare'))$('clearCompare').onclick=clearCompare;const initialQuery=new URLSearchParams(location.search).get('q');if(initialQuery){$('search').value=initialQuery;filterProducts()}else{renderProducts(products)}renderQuestion();wireQuickStarts();wireSimulator();track('page_view',{path:location.pathname,query:initialQuery||''});
 }
