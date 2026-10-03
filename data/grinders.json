@@ -413,11 +413,12 @@
     "images": {
       "primary": "",
       "gallery": [],
-      "status": "no_suitable_image",
+      "status": "needs_review",
       "alternates": [
-        "https://www.elgiganten.se/image/dv_web_D18000100256267/KG89/delonghi-kaffekvarn-kg89.jpg"
-      ],
-      "reviewed_at": "2026-10-03T09:54:43.998Z"
+        "https://dam.delonghi.com/300x300/assets/74593",
+        "https://delonghi.pe/cdn/shop/files/Molinillo.jpg?v=1757528572&width=1946",
+        "https://delonghi.pe/cdn/shop/files/Molinillo_KG89.jpg?v=1757528595&width=1946"
+      ]
     },
     "affiliate_offers": [
       {
