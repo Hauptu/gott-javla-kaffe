@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbf5ec"/><stop offset="1" stop-color="#6f7f87"/></linearGradient>
+ <linearGradient id="cup" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf9"/><stop offset="1" stop-color="#d8c8b6"/></linearGradient>
+ <radialGradient id="crema"><stop stop-color="#e8c99e"/><stop offset=".7" stop-color="#bd7d4d"/><stop offset="1" stop-color="#6b3524"/></radialGradient>
+ <linearGradient id="machine" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#50463f"/><stop offset=".5" stop-color="#26221f"/><stop offset="1" stop-color="#74685f"/></linearGradient>
+ <linearGradient id="carafe" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf9" stop-opacity=".9"/><stop offset="1" stop-color="#d5c9bb" stop-opacity=".8"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#251912" flood-opacity=".25"/></filter>
+</defs>
+<rect width="1000" height="1500" fill="url(#bg)"/>
+<rect x="48" y="48" width="904" height="1404" rx="48" fill="#fffaf3" fill-opacity=".92"/>
+<rect x="78" y="78" width="844" height="470" rx="36" fill="#6f7f87"/>
+<text x="110" y="125" class="brand">GOTT JÄVLA KAFFE</text>
+<text x="110" y="182" class="eyebrow">KÖPGUIDE</text>
+<text x="110" y="285" class="title"></text>
+
+<text x="110" y="385" class="sub">Bra bryggkaffe behöver inte vara tråkigt.</text>
+<text x="110" y="430" class="detail">Det här ska du kolla innan du köper.</text>
+<g><ellipse cx="500" cy="1180" rx="325" ry="42" fill="#3b2a20" opacity=".12"/><path d="M135 1155h730l-70-170H205z" fill="#d4bca0"/><path d="M300 770h400l-35-75H335z" fill="#e6d8c7" filter="url(#shadow)"/><path d="M335 695h330" stroke="#bba48b" stroke-width="12" stroke-linecap="round"/><path d="M355 775h290v300H355z" fill="#e8ddd0" filter="url(#shadow)"/><path d="M385 805h230v220H385z" fill="#6a3c28"/><path d="M385 805h230" stroke="#f2e9df" stroke-width="8"/><path d="M645 805c130-20 145 125 18 150-48 9-84-18-91-51" fill="none" stroke="#e8ddd0" stroke-width="30" stroke-linecap="round"/><path d="M500 675c-12 55 20 76 0 125" fill="none" stroke="#fff5e8" stroke-width="13" stroke-linecap="round"/></g>
+<path d="M110 1320h780" stroke="#d8cbbd" stroke-width="2"/>
+<text x="110" y="1370" class="footer">Läs guiden → gottjavlakaffe.se/kaffebryggare.html</text>
+<text x="110" y="1410" class="tiny">Kaffemaskiner · espresso · kaffe</text>
+<style>
+.brand{font:800 23px Arial,sans-serif;letter-spacing:3px;fill:#fffdf9}
+.eyebrow{font:800 17px Arial,sans-serif;letter-spacing:4px;fill:#fff1e4;opacity:.92}
+.title{font:900 67px Arial,sans-serif;letter-spacing:-2px;fill:#fffdf9}
+.sub{font:400 31px Georgia,serif;fill:#fffdf9}
+.detail{font:500 19px Arial,sans-serif;fill:#fff1e4}
+.footer{font:700 17px Arial,sans-serif;fill:#3b2a20}
+.tiny{font:500 16px Arial,sans-serif;fill:#746d64}
+</style>
+</svg>
