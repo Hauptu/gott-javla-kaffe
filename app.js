@@ -323,17 +323,21 @@ function card(p){
 }
 function renderProducts(list){$('productGrid').innerHTML=list.length?list.map(card).join(''):'<div class="empty">Inga maskiner matchade filtret.</div>';wireCards()}
 function wireAffiliateLinks(){
- document.querySelectorAll('[data-affiliate]').forEach(a=>a.onclick=()=>{
-   const p=products.find(x=>x.id===a.dataset.affiliate);
-   track('affiliate_click',{
-     id:a.dataset.affiliate,
-     product_name:p?(`${p.brand} ${p.model}`):'',
-     merchant:a.dataset.merchant||a.textContent.trim(),
-     network:a.dataset.network||'',
-     placement:a.dataset.placement||'card',
-     price:a.dataset.price?Number(a.dataset.price):undefined,
-     type:p?.type||''
-   });
+ document.querySelectorAll('[data-affiliate]').forEach(a=>{
+   if(a.dataset.affiliateWired==='1')return;
+   a.dataset.affiliateWired='1';
+   a.addEventListener('click',()=>{
+     const p=products.find(x=>x.id===a.dataset.affiliate);
+     track('affiliate_click',{
+       id:a.dataset.affiliate,
+       product_name:p?(`${p.brand} ${p.model}`):'',
+       merchant:a.dataset.merchant||a.textContent.trim(),
+       network:a.dataset.network||'',
+       placement:a.dataset.placement||'card',
+       price:a.dataset.price?Number(a.dataset.price):undefined,
+       type:p?.type||''
+     });
+   },{capture:true});
  })
 }
 function wireCards(){
