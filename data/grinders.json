@@ -42,7 +42,10 @@
     "images": {
       "primary": "https://assets.ellosgroup.com/i/ellos/b?$hg$&$hm$&$hp$&$hd$&n=ell_1549758_Fs&mw=1500",
       "gallery": [],
-      "status": "needs_review"
+      "status": "needs_review",
+      "alternates": [
+        "https://asset.conrad.com/media10/isa/160267/c1/-/nl/002789634PI00/image.jpg?align=center&ex=400&ey=400&format=jpg&x=400&y=400"
+      ]
     },
     "affiliate_offers": [
       {
