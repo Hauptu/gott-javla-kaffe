@@ -1,0 +1,31 @@
+{
+  "purpose": "Quality checks for Awin candidate review files; not live catalogue data",
+  "candidate_count": 118,
+  "source_counts": {
+    "Ginza": 108,
+    "SharkNinja": 10
+  },
+  "category_counts": {
+    "Espressomaskin": 35,
+    "Kaffebryggare/kaffemaskin": 64,
+    "Manuell bryggning": 2,
+    "Kaffekvarn": 13,
+    "Perkolator": 4
+  },
+  "missing_fields": {
+    "ean": 0,
+    "affiliate_url": 0,
+    "product_url": 0,
+    "image_url": 0,
+    "brand": 1,
+    "model": 0,
+    "price_sek": 0
+  },
+  "duplicate_eans_within_candidates": [],
+  "duplicate_ids": [],
+  "notes": [
+    "EAN overlaps with current catalogue are listed separately in awin-ean-overlap-report-v2.json.",
+    "Presence of an affiliate URL does not prove that the link is valid or tracking works.",
+    "Candidates remain review-only; none is automatically added to the live catalogue."
+  ]
+}
