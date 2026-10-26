@@ -1,0 +1,187 @@
+{
+  "purpose": "Manual review only; not live catalogue data",
+  "batch": 7,
+  "count": 20,
+  "items": [
+    {
+      "id": "awin-review-5038061111248",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffebryggare/kaffemaskin",
+      "ean": "5038061111248",
+      "price_sek": 1275,
+      "feed_product_id": "46103438255"
+    },
+    {
+      "id": "awin-review-5038061111279",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffebryggare/kaffemaskin",
+      "ean": "5038061111279",
+      "price_sek": 758,
+      "feed_product_id": "46103438257"
+    },
+    {
+      "id": "awin-review-4008146030734",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffebryggare/kaffemaskin",
+      "ean": "4008146030734",
+      "price_sek": 549,
+      "feed_product_id": "46103438261"
+    },
+    {
+      "id": "awin-review-4008146032127",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffebryggare/kaffemaskin",
+      "ean": "4008146032127",
+      "price_sek": 399,
+      "feed_product_id": "46196816511"
+    },
+    {
+      "id": "awin-review-4008146047510",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffebryggare/kaffemaskin",
+      "ean": "4008146047510",
+      "price_sek": 649,
+      "feed_product_id": "46295603102"
+    },
+    {
+      "id": "awin-review-4008146042232",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffebryggare/kaffemaskin",
+      "ean": "4008146042232",
+      "price_sek": 1539,
+      "feed_product_id": "46103438263"
+    },
+    {
+      "id": "awin-review-4008146049132",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffebryggare/kaffemaskin",
+      "ean": "4008146049132",
+      "price_sek": 2259,
+      "feed_product_id": "46103438265"
+    },
+    {
+      "id": "awin-review-4008146033643",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffebryggare/kaffemaskin",
+      "ean": "4008146033643",
+      "price_sek": 1889,
+      "feed_product_id": "46103438267"
+    },
+    {
+      "id": "awin-review-8414234206404",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffebryggare/kaffemaskin",
+      "ean": "8414234206404",
+      "price_sek": 499,
+      "feed_product_id": "46317327298"
+    },
+    {
+      "id": "awin-review-8414234206398",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffebryggare/kaffemaskin",
+      "ean": "8414234206398",
+      "price_sek": 399,
+      "feed_product_id": "46317327299"
+    },
+    {
+      "id": "awin-review-8414234206459",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffebryggare/kaffemaskin",
+      "ean": "8414234206459",
+      "price_sek": 579,
+      "feed_product_id": "46103438275"
+    },
+    {
+      "id": "awin-review-3094570153539",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffebryggare/kaffemaskin",
+      "ean": "3094570153539",
+      "price_sek": 499,
+      "feed_product_id": "46103438277"
+    },
+    {
+      "id": "awin-review-3094570153881",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffebryggare/kaffemaskin",
+      "ean": "3094570153881",
+      "price_sek": 499,
+      "feed_product_id": "46103438279"
+    },
+    {
+      "id": "awin-review-3094570154390",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffebryggare/kaffemaskin",
+      "ean": "3094570154390",
+      "price_sek": 826,
+      "feed_product_id": "46264297957"
+    },
+    {
+      "id": "awin-review-8712836995376",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffebryggare/kaffemaskin",
+      "ean": "8712836995376",
+      "price_sek": 249,
+      "feed_product_id": "46103438283"
+    },
+    {
+      "id": "awin-review-8003705115118",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffekvarn",
+      "ean": "8003705115118",
+      "price_sek": 399,
+      "feed_product_id": "46103438285"
+    },
+    {
+      "id": "awin-review-8432406080010",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffekvarn",
+      "ean": "8432406080010",
+      "price_sek": 399,
+      "feed_product_id": "46103438287"
+    },
+    {
+      "id": "awin-review-4242005108787",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffekvarn",
+      "ean": "4242005108787",
+      "price_sek": 369,
+      "feed_product_id": "46402128324"
+    },
+    {
+      "id": "awin-review-8711902090090",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffekvarn",
+      "ean": "8711902090090",
+      "price_sek": 249,
+      "feed_product_id": "46103438289"
+    },
+    {
+      "id": "awin-review-7331890000010",
+      "status": "pending_review",
+      "source": "Ginza",
+      "category": "Kaffekvarn",
+      "ean": "7331890000010",
+      "price_sek": 499,
+      "feed_product_id": "46103438291"
+    }
+  ]
+}
