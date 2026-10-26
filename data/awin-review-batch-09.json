@@ -1,0 +1,79 @@
+{
+  "purpose": "Manual review only; not live catalogue data",
+  "batch": 9,
+  "count": 8,
+  "items": [
+    {
+      "id": "awin-review-622356386692",
+      "status": "pending_review",
+      "source": "SharkNinja",
+      "category": "Espressomaskin",
+      "ean": "622356386692",
+      "price_sek": 5999,
+      "feed_product_id": "45147162845"
+    },
+    {
+      "id": "awin-review-622356411387",
+      "status": "pending_review",
+      "source": "SharkNinja",
+      "category": "Espressomaskin",
+      "ean": "622356411387",
+      "price_sek": 6499,
+      "feed_product_id": "46033111964"
+    },
+    {
+      "id": "awin-review-622356406703",
+      "status": "pending_review",
+      "source": "SharkNinja",
+      "category": "Espressomaskin",
+      "ean": "622356406703",
+      "price_sek": 6999,
+      "feed_product_id": "46076109579"
+    },
+    {
+      "id": "awin-review-622356287951",
+      "status": "pending_review",
+      "source": "SharkNinja",
+      "category": "Espressomaskin",
+      "ean": "622356287951",
+      "price_sek": 4999,
+      "feed_product_id": "41452694507"
+    },
+    {
+      "id": "awin-review-622356409476",
+      "status": "pending_review",
+      "source": "SharkNinja",
+      "category": "Espressomaskin",
+      "ean": "622356409476",
+      "price_sek": 11999,
+      "feed_product_id": "46415009470"
+    },
+    {
+      "id": "awin-review-622356409469",
+      "status": "pending_review",
+      "source": "SharkNinja",
+      "category": "Espressomaskin",
+      "ean": "622356409469",
+      "price_sek": 11999,
+      "feed_product_id": "46405720246"
+    },
+    {
+      "id": "awin-review-622356420631",
+      "status": "pending_review",
+      "source": "SharkNinja",
+      "category": "Espressomaskin",
+      "ean": "622356420631",
+      "price_sek": 6499,
+      "feed_product_id": "45688715956"
+    },
+    {
+      "id": "awin-review-622356408165",
+      "status": "pending_review",
+      "source": "SharkNinja",
+      "category": "Espressomaskin",
+      "ean": "622356408165",
+      "price_sek": 6999,
+      "feed_product_id": "46033111965"
+    }
+  ]
+}
