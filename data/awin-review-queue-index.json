@@ -1,0 +1,77 @@
+{
+  "title": "Awin Ginza + SharkNinja manual review queue",
+  "status": "review_only_not_live",
+  "candidate_count": 118,
+  "source_counts": {
+    "Ginza": 108,
+    "SharkNinja": 10
+  },
+  "category_counts": {
+    "Kaffebryggare/kaffemaskin": 64,
+    "Espressomaskin": 35,
+    "Kaffekvarn": 13,
+    "Perkolator": 4,
+    "Manuell bryggning": 2
+  },
+  "batches": [
+    {
+      "file": "data/awin-review-batch-01.json",
+      "expected_count": 10
+    },
+    {
+      "file": "data/awin-review-batch-02-full.json",
+      "expected_count": 10
+    },
+    {
+      "file": "data/awin-review-batch-03-full.json",
+      "expected_count": 10
+    },
+    {
+      "file": "data/awin-review-batch-04-full.json",
+      "expected_count": 10
+    },
+    {
+      "file": "data/awin-review-batch-05-full.json",
+      "expected_count": 10
+    },
+    {
+      "file": "data/awin-review-batch-06-full.json",
+      "expected_count": 10
+    },
+    {
+      "file": "data/awin-review-batch-07-full.json",
+      "expected_count": 10
+    },
+    {
+      "file": "data/awin-review-batch-08-full.json",
+      "expected_count": 10
+    },
+    {
+      "file": "data/awin-review-batch-09-full.json",
+      "expected_count": 10
+    },
+    {
+      "file": "data/awin-review-batch-10-full.json",
+      "expected_count": 10
+    },
+    {
+      "file": "data/awin-review-batch-11-full.json",
+      "expected_count": 10
+    },
+    {
+      "file": "data/awin-review-batch-12-full.json",
+      "expected_count": 8
+    }
+  ],
+  "ean_report": "data/awin-ean-overlap-report-v2.json",
+  "catalogue_files": [
+    "data/products.json",
+    "data/grinders.json"
+  ],
+  "safety_notes": [
+    "This queue is not imported by the live site.",
+    "Do not merge candidates into products.json or grinders.json until each candidate is reviewed.",
+    "EAN matches are possible duplicates and must be checked, not automatically rejected.",
+    "Verify product model, image, affiliate URL, price and category before approval."
+  ]
+}
